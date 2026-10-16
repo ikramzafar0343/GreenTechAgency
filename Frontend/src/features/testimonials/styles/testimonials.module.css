@@ -1,0 +1,65 @@
+.section {
+  --tm-bg: #030303;
+  --tm-card: #0c0c0c;
+  --tm-text: #f3f3f3;
+  --tm-muted: #b7b7be;
+  --tm-quote-bg: var(--brand-surface);
+  --tm-quote-text: var(--brand-ink);
+  --tm-accent: var(--brand-cyan);
+  --tm-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --tm-gutter: clamp(20px, 5.5vw, 90px);
+  background: var(--tm-bg);
+  color: var(--tm-text);
+  padding-block: clamp(72px, 7vw, 120px);
+  overflow: clip;
+}
+
+.container {
+  /* Wider than other sections so the 5-column diamond can fit on laptop widths. */
+  width: min(calc(100% - 2 * var(--tm-gutter)), 1600px);
+  margin-inline: auto;
+}
+
+.intro {
+  margin-bottom: clamp(40px, 4vw, 56px);
+}
+
+.wall {
+  --tm-cols: 5;
+  --tm-gap: 28px;
+  --tm-stagger-reserve: 258px;
+  display: grid;
+  grid-template-columns: repeat(var(--tm-cols), minmax(0, 1fr));
+  gap: var(--tm-gap);
+  align-items: start;
+  width: 100%;
+  padding-bottom: var(--tm-stagger-reserve);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tm-gap);
+  min-width: 0;
+  margin-top: var(--tm-col-offset, 0px);
+}
+
+@media (max-width: 539px) {
+  .section {
+    padding-block: 56px;
+  }
+
+  .intro {
+    margin-bottom: 32px;
+  }
+
+  .wall {
+    --tm-stagger-reserve: 0px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .column {
+    transform: none !important;
+  }
+}

@@ -1,0 +1,1858 @@
+[
+  {
+    "id": "web-development",
+    "slug": "web-development",
+    "sortOrder": 1,
+    "featured": false,
+    "doc": {
+      "title": "Web Development",
+      "label": "FOR FAST, SCALABLE WEBSITES",
+      "shortDescription": "High-performance websites built for speed, scalability, and conversion.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "We plan and ship high-performance websites that load quickly, scale with demand, and support conversion-focused journeys from first visit to enquiry."
+        },
+        {
+          "type": "paragraph",
+          "text": "Structure, content, and technical foundations are shaped around your audience and business goals—so the site stays useful after launch, not only on day one."
+        },
+        {
+          "type": "paragraph",
+          "text": "From marketing sites to product experiences, we focus on performance, accessibility, and maintainable builds your team can grow with."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Delivery detail photograph",
+      "heroHeadline": "Websites that feel clear, fast, and ready to grow.",
+      "heroIntro": "We plan and ship high-performance websites that load quickly, scale with demand, and support conversion-focused journeys from first visit to enquiry.",
+      "storyLabel": "About Web Development",
+      "storyParagraphs": [
+        "We plan and ship high-performance websites that load quickly, scale with demand, and support conversion-focused journeys from first visit to enquiry.",
+        "Structure, content, and technical foundations are shaped around your audience and business goals—so the site stays useful after launch, not only on day one.",
+        "From marketing sites to product experiences, we focus on performance, accessibility, and maintainable builds your team can grow with."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-dev.svg",
+      "leadImageAlt": "Editorial workspace scene for development services",
+      "principles": [
+        {
+          "id": "web-development-p1",
+          "title": "Start with the outcome",
+          "body": "Clarify who the site is for, what action matters, and how success will be measured before visual or technical choices."
+        },
+        {
+          "id": "web-development-p2",
+          "title": "Make structure do the work",
+          "body": "Information architecture and page hierarchy guide visitors without forcing them to hunt for answers."
+        },
+        {
+          "id": "web-development-p3",
+          "title": "Build for performance",
+          "body": "Speed, accessibility, and maintainability are treated as product requirements, not late-stage polish."
+        },
+        {
+          "id": "web-development-p4",
+          "title": "Integrate with purpose",
+          "body": "CMS, analytics, and tools connect to real workflows so content and measurement stay practical."
+        },
+        {
+          "id": "web-development-p5",
+          "title": "Ship in useful slices",
+          "body": "Iterative releases keep stakeholders aligned and reduce risk before a full launch."
+        },
+        {
+          "id": "web-development-p6",
+          "title": "Leave room to improve",
+          "body": "Handoff includes what to watch, what to refine, and how the site can grow with the business."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Services that strengthen the same journey.",
+      "relatedIntro": "Web delivery often pairs with design, commerce, and search when the business needs a fuller digital foundation.",
+      "relatedSlugs": [
+        "ui-ux-design",
+        "ecommerce-development",
+        "search-engine-optimization"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Team discussion at a workstation",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Close detail of interface design work",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Craft and environment detail",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Collaborative working session",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "mobile-app-development",
+    "slug": "mobile-app-development",
+    "sortOrder": 2,
+    "featured": false,
+    "doc": {
+      "title": "Mobile App Development",
+      "label": "FOR CONNECTED MOBILE EXPERIENCES",
+      "shortDescription": "Native and cross-platform apps that keep customers engaged on every device.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Native and cross-platform mobile products that keep customers engaged with clear navigation, reliable performance, and experiences tuned for every device."
+        },
+        {
+          "type": "paragraph",
+          "text": "We align product scope with your business model—so releases ship useful capabilities instead of unfinished feature lists."
+        },
+        {
+          "type": "paragraph",
+          "text": "From first prototype to store-ready release, we keep UX, APIs, and delivery cadence connected."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Delivery detail photograph",
+      "heroHeadline": "Mobile products people can rely on every day.",
+      "heroIntro": "Native and cross-platform apps shaped for clear navigation, reliable performance, and experiences tuned for every device.",
+      "storyLabel": "About Mobile App Development",
+      "storyParagraphs": [
+        "Native and cross-platform mobile products that keep customers engaged with clear navigation, reliable performance, and experiences tuned for every device.",
+        "We align product scope with your business model—so releases ship useful capabilities instead of unfinished feature lists.",
+        "From first prototype to store-ready release, we keep UX, APIs, and delivery cadence connected."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-dev.svg",
+      "leadImageAlt": "Editorial workspace scene for development services",
+      "principles": [
+        {
+          "id": "mobile-app-development-p1",
+          "title": "Define the useful release",
+          "body": "Prioritize outcomes, platforms, and the smallest product slice that still earns trust."
+        },
+        {
+          "id": "mobile-app-development-p2",
+          "title": "Design the real tasks",
+          "body": "Flows follow how people complete work on a phone—not desktop layouts squeezed down."
+        },
+        {
+          "id": "mobile-app-development-p3",
+          "title": "Engineer for reliability",
+          "body": "Stability, performance, and API contracts are part of everyday delivery quality."
+        },
+        {
+          "id": "mobile-app-development-p4",
+          "title": "Integrate thoughtfully",
+          "body": "Notifications, analytics, and backend systems support the product story without clutter."
+        },
+        {
+          "id": "mobile-app-development-p5",
+          "title": "Test on real devices",
+          "body": "QA and reviews catch friction before customers meet it in the store."
+        },
+        {
+          "id": "mobile-app-development-p6",
+          "title": "Plan the next iteration",
+          "body": "Release includes what to measure and how the roadmap can expand cleanly."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Related skills behind stronger apps.",
+      "relatedIntro": "Mobile work often pairs with product design, web platforms, and practical AI features.",
+      "relatedSlugs": [
+        "ui-ux-design",
+        "web-development",
+        "artificial-intelligence"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Team discussion at a workstation",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Close detail of interface design work",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Craft and environment detail",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Collaborative working session",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "ecommerce-development",
+    "slug": "ecommerce-development",
+    "sortOrder": 3,
+    "featured": false,
+    "doc": {
+      "title": "Ecommerce Development",
+      "label": "FOR HIGH-CONVERTING ONLINE STORES",
+      "shortDescription": "Ecommerce experiences designed to sell, scale, and retain shoppers.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Online stores shaped for discovery, trust, and checkout clarity—so catalogues, merchandising, and retention workflows support measurable sales growth."
+        },
+        {
+          "type": "paragraph",
+          "text": "We connect product data, payments, and content so shoppers move from browse to purchase with fewer friction points."
+        },
+        {
+          "type": "paragraph",
+          "text": "After launch, the foundation stays ready for campaigns, SEO, and ongoing merchandising changes."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Delivery detail photograph",
+      "heroHeadline": "Stores built for discovery, trust, and checkout clarity.",
+      "heroIntro": "Ecommerce experiences designed so catalogues, merchandising, and retention workflows support measurable sales growth.",
+      "storyLabel": "About Ecommerce Development",
+      "storyParagraphs": [
+        "Online stores shaped for discovery, trust, and checkout clarity—so catalogues, merchandising, and retention workflows support measurable sales growth.",
+        "We connect product data, payments, and content so shoppers move from browse to purchase with fewer friction points.",
+        "After launch, the foundation stays ready for campaigns, SEO, and ongoing merchandising changes."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-dev.svg",
+      "leadImageAlt": "Editorial workspace scene for development services",
+      "principles": [
+        {
+          "id": "ecommerce-development-p1",
+          "title": "Map the buying path",
+          "body": "Catalogue, product, and checkout steps are designed around how shoppers actually decide."
+        },
+        {
+          "id": "ecommerce-development-p2",
+          "title": "Earn trust early",
+          "body": "Clarity, proof, and performance reduce hesitation before payment."
+        },
+        {
+          "id": "ecommerce-development-p3",
+          "title": "Wire operations correctly",
+          "body": "Payments, inventory, and content tools match how your team runs the store."
+        },
+        {
+          "id": "ecommerce-development-p4",
+          "title": "Measure what sells",
+          "body": "Analytics hooks make campaigns and merchandising decisions evidence-based."
+        },
+        {
+          "id": "ecommerce-development-p5",
+          "title": "Keep pages fast",
+          "body": "Product and collection performance stay part of the commercial experience."
+        },
+        {
+          "id": "ecommerce-development-p6",
+          "title": "Support ongoing growth",
+          "body": "The storefront is built for content, SEO, and retention work after day one."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Commerce sits with design and demand.",
+      "relatedIntro": "Strong stores usually need web foundations, UX clarity, and marketing that feeds qualified traffic.",
+      "relatedSlugs": [
+        "web-development",
+        "ui-ux-design",
+        "digital-marketing"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Team discussion at a workstation",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Close detail of interface design work",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Craft and environment detail",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Collaborative working session",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "ui-ux-design",
+    "slug": "ui-ux-design",
+    "sortOrder": 4,
+    "featured": false,
+    "doc": {
+      "title": "UI/UX Design",
+      "label": "FOR INTUITIVE DIGITAL EXPERIENCES",
+      "shortDescription": "Clear interfaces and user journeys that make complex products feel simple.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Research-led interfaces and journeys that make complex products feel simple, with hierarchy, usability, and brand consistency across every screen."
+        },
+        {
+          "type": "paragraph",
+          "text": "We design for real tasks—not decoration—so teams can ship screens that reduce friction and support conversion."
+        },
+        {
+          "type": "paragraph",
+          "text": "Design systems and prototypes keep engineering and stakeholders aligned before expensive build cycles."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Creative delivery detail",
+      "heroHeadline": "Interfaces that make complex products feel simple.",
+      "heroIntro": "Research-led journeys and systems that keep hierarchy, usability, and brand consistency across every screen.",
+      "storyLabel": "About UI/UX Design",
+      "storyParagraphs": [
+        "Research-led interfaces and journeys that make complex products feel simple, with hierarchy, usability, and brand consistency across every screen.",
+        "We design for real tasks—not decoration—so teams can ship screens that reduce friction and support conversion.",
+        "Design systems and prototypes keep engineering and stakeholders aligned before expensive build cycles."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-creative.svg",
+      "leadImageAlt": "Editorial scene for creative services",
+      "principles": [
+        {
+          "id": "ui-ux-design-p1",
+          "title": "Understand the job",
+          "body": "Research and journey mapping ground every screen in a real user task."
+        },
+        {
+          "id": "ui-ux-design-p2",
+          "title": "Reduce friction",
+          "body": "Flows remove dead ends and make the next step obvious."
+        },
+        {
+          "id": "ui-ux-design-p3",
+          "title": "Prototype before build",
+          "body": "Interactive exploration catches issues cheaper than late engineering rework."
+        },
+        {
+          "id": "ui-ux-design-p4",
+          "title": "Systemize the UI",
+          "body": "Components and patterns keep product and marketing surfaces consistent."
+        },
+        {
+          "id": "ui-ux-design-p5",
+          "title": "Design with delivery",
+          "body": "Specs and states are ready for engineering, not just presentation decks."
+        },
+        {
+          "id": "ui-ux-design-p6",
+          "title": "Support the launch",
+          "body": "We stay close during implementation so intent survives trade-offs."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Design that connects product and brand.",
+      "relatedIntro": "UI/UX often pairs with web, mobile, and branding when experience and identity need to move together.",
+      "relatedSlugs": [
+        "web-development",
+        "mobile-app-development",
+        "digital-branding-creatives"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Brand and creative discussion",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Motion and visual detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Studio craft environment",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Creative collaboration",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "content-marketing",
+    "slug": "content-marketing",
+    "sortOrder": 5,
+    "featured": false,
+    "doc": {
+      "title": "Content Marketing",
+      "label": "FOR CONTENT THAT BUILDS AUDIENCE",
+      "shortDescription": "Strategic content systems that attract, educate, and convert buyers.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Strategic content systems that attract, educate, and convert buyers—aligned to search intent, sales conversations, and long-term brand authority."
+        },
+        {
+          "type": "paragraph",
+          "text": "We build topics and formats your team can sustain—not one-off posts that disappear after publish day."
+        },
+        {
+          "type": "paragraph",
+          "text": "Distribution across SEO, social, and sales enablement keeps each asset working harder."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Marketing delivery detail",
+      "heroHeadline": "Editorial systems that earn attention over time.",
+      "heroIntro": "Content planned for search intent, sales conversations, and lasting authority—not one-off posts.",
+      "storyLabel": "About Content Marketing",
+      "storyParagraphs": [
+        "Strategic content systems that attract, educate, and convert buyers—aligned to search intent, sales conversations, and long-term brand authority.",
+        "We build topics and formats your team can sustain—not one-off posts that disappear after publish day.",
+        "Distribution across SEO, social, and sales enablement keeps each asset working harder."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-marketing.svg",
+      "leadImageAlt": "Editorial scene for marketing services",
+      "principles": [
+        {
+          "id": "content-marketing-p1",
+          "title": "Choose topics with intent",
+          "body": "Themes map to audience needs and commercial conversations."
+        },
+        {
+          "id": "content-marketing-p2",
+          "title": "Build a sustainable system",
+          "body": "Calendars, briefs, and owners match real capacity."
+        },
+        {
+          "id": "content-marketing-p3",
+          "title": "Write for usefulness",
+          "body": "Depth and clarity beat empty thought-leadership filler."
+        },
+        {
+          "id": "content-marketing-p4",
+          "title": "Design for distribution",
+          "body": "Assets are planned for SEO, social, and sales reuse."
+        },
+        {
+          "id": "content-marketing-p5",
+          "title": "Compound authority",
+          "body": "Related pieces reinforce the same category story."
+        },
+        {
+          "id": "content-marketing-p6",
+          "title": "Measure what matters",
+          "body": "Reviews track engagement quality and pipeline support."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Content needs craft and distribution.",
+      "relatedIntro": "Editorial systems pair naturally with copywriting, SEO, and social channels.",
+      "relatedSlugs": [
+        "copywriting",
+        "search-engine-optimization",
+        "social-media-marketing"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Campaign planning discussion",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Content and brand detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Creative production environment",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Team reviewing channel work",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "copywriting",
+    "slug": "copywriting",
+    "sortOrder": 6,
+    "featured": false,
+    "doc": {
+      "title": "Copywriting",
+      "label": "FOR WORDS THAT CONVERT",
+      "shortDescription": "Persuasive messaging for websites, campaigns, and product storytelling.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Persuasive messaging for websites, campaigns, and product storytelling—written to clarify offers, reduce friction, and support conversion outcomes."
+        },
+        {
+          "type": "paragraph",
+          "text": "We write for real decisions: what to say, where to say it, and how to make the next step obvious."
+        },
+        {
+          "type": "paragraph",
+          "text": "Tone stays on-brand while remaining direct enough for busy buyers."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Marketing delivery detail",
+      "heroHeadline": "Words that clarify offers and reduce friction.",
+      "heroIntro": "Persuasive messaging for websites, campaigns, and product storytelling—written for real decisions.",
+      "storyLabel": "About Copywriting",
+      "storyParagraphs": [
+        "Persuasive messaging for websites, campaigns, and product storytelling—written to clarify offers, reduce friction, and support conversion outcomes.",
+        "We write for real decisions: what to say, where to say it, and how to make the next step obvious.",
+        "Tone stays on-brand while remaining direct enough for busy buyers."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-marketing.svg",
+      "leadImageAlt": "Editorial scene for marketing services",
+      "principles": [
+        {
+          "id": "copywriting-p1",
+          "title": "Brief for decisions",
+          "body": "Audience, offer, and objections are clear before drafting."
+        },
+        {
+          "id": "copywriting-p2",
+          "title": "Lead with clarity",
+          "body": "Value is stated without jargon or empty claims."
+        },
+        {
+          "id": "copywriting-p3",
+          "title": "Match the interface",
+          "body": "Hierarchy and length fit how the page or campaign is scanned."
+        },
+        {
+          "id": "copywriting-p4",
+          "title": "Support the next step",
+          "body": "CTAs and microcopy remove hesitation."
+        },
+        {
+          "id": "copywriting-p5",
+          "title": "Keep voice consistent",
+          "body": "Messaging frameworks help teams reuse the same language."
+        },
+        {
+          "id": "copywriting-p6",
+          "title": "Hand off cleanly",
+          "body": "Final copy includes notes for design and implementation."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Copy connects brand, content, and UX.",
+      "relatedIntro": "Strong messaging often sits beside editorial systems, visual identity, and interface design.",
+      "relatedSlugs": [
+        "content-marketing",
+        "digital-branding-creatives",
+        "ui-ux-design"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Campaign planning discussion",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Content and brand detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Creative production environment",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Team reviewing channel work",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "digital-marketing",
+    "slug": "digital-marketing",
+    "sortOrder": 7,
+    "featured": false,
+    "doc": {
+      "title": "Digital Marketing",
+      "label": "FOR TRAFFIC, LEADS & CONVERSIONS",
+      "shortDescription": "Paid and organic programs that grow visibility and qualified demand.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Paid and organic programs that grow visibility and qualified demand across the channels your buyers already use—measured against clear commercial goals."
+        },
+        {
+          "type": "paragraph",
+          "text": "Campaigns are planned around offers, audiences, and landing experiences—not vanity metrics alone."
+        },
+        {
+          "type": "paragraph",
+          "text": "We connect creative, tracking, and iteration so spend stays accountable to pipeline outcomes."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Marketing delivery detail",
+      "heroHeadline": "Demand programs measured against commercial goals.",
+      "heroIntro": "Paid and organic work across the channels your buyers already use—planned around offers, audiences, and clear outcomes.",
+      "storyLabel": "About Digital Marketing",
+      "storyParagraphs": [
+        "Paid and organic programs that grow visibility and qualified demand across the channels your buyers already use—measured against clear commercial goals.",
+        "Campaigns are planned around offers, audiences, and landing experiences—not vanity metrics alone.",
+        "We connect creative, tracking, and iteration so spend stays accountable to pipeline outcomes."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-marketing.svg",
+      "leadImageAlt": "Editorial scene for marketing services",
+      "principles": [
+        {
+          "id": "digital-marketing-p1",
+          "title": "Define qualified success",
+          "body": "Targets and audience definitions come before channel tactics."
+        },
+        {
+          "id": "digital-marketing-p2",
+          "title": "Choose channels with intent",
+          "body": "Mix paid and organic where buyers already look—not everywhere at once."
+        },
+        {
+          "id": "digital-marketing-p3",
+          "title": "Align landing experiences",
+          "body": "Creative and offers meet pages that can convert."
+        },
+        {
+          "id": "digital-marketing-p4",
+          "title": "Track the funnel",
+          "body": "Attribution shows what deserves more budget and what should stop."
+        },
+        {
+          "id": "digital-marketing-p5",
+          "title": "Iterate on evidence",
+          "body": "Creative, offers, and targeting improve on a steady review cadence."
+        },
+        {
+          "id": "digital-marketing-p6",
+          "title": "Report for decisions",
+          "body": "Updates focus on commercial impact, not activity noise."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Channels that reinforce each other.",
+      "relatedIntro": "Digital marketing is strongest when SEO, social, and content share the same demand story.",
+      "relatedSlugs": [
+        "search-engine-optimization",
+        "social-media-marketing",
+        "content-marketing"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Campaign planning discussion",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Content and brand detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Creative production environment",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Team reviewing channel work",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "social-media-marketing",
+    "slug": "social-media-marketing",
+    "sortOrder": 8,
+    "featured": false,
+    "doc": {
+      "title": "Social Media Marketing",
+      "label": "FOR ENGAGED SOCIAL AUDIENCES",
+      "shortDescription": "Channel strategy and creative that turns attention into community growth.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Channel strategy and creative that turns attention into community growth—with publishing rhythms, engagement plans, and content that supports demand."
+        },
+        {
+          "type": "paragraph",
+          "text": "We treat social as a system: audience, message, format, and follow-up—not isolated posts."
+        },
+        {
+          "type": "paragraph",
+          "text": "Reporting stays tied to reach quality, engagement usefulness, and contribution to pipeline where relevant."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Marketing delivery detail",
+      "heroHeadline": "Social systems that turn attention into community.",
+      "heroIntro": "Channel strategy, creative, and publishing rhythms that support demand—not isolated posts.",
+      "storyLabel": "About Social Media Marketing",
+      "storyParagraphs": [
+        "Channel strategy and creative that turns attention into community growth—with publishing rhythms, engagement plans, and content that supports demand.",
+        "We treat social as a system: audience, message, format, and follow-up—not isolated posts.",
+        "Reporting stays tied to reach quality, engagement usefulness, and contribution to pipeline where relevant."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-marketing.svg",
+      "leadImageAlt": "Editorial scene for marketing services",
+      "principles": [
+        {
+          "id": "social-media-marketing-p1",
+          "title": "Position with purpose",
+          "body": "Voice and audience roles are clear before the calendar fills."
+        },
+        {
+          "id": "social-media-marketing-p2",
+          "title": "Plan sustainable rhythms",
+          "body": "Formats and owners match what the team can actually ship."
+        },
+        {
+          "id": "social-media-marketing-p3",
+          "title": "Create for the channel",
+          "body": "Creative respects how people consume each platform."
+        },
+        {
+          "id": "social-media-marketing-p4",
+          "title": "Engage with usefulness",
+          "body": "Community work answers questions and builds trust."
+        },
+        {
+          "id": "social-media-marketing-p5",
+          "title": "Connect to demand",
+          "body": "Social supports campaigns, SEO topics, and sales conversations."
+        },
+        {
+          "id": "social-media-marketing-p6",
+          "title": "Learn every cycle",
+          "body": "Reviews refine what earns attention and what to stop."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Social works best with content and motion.",
+      "relatedIntro": "Strong social programs borrow from editorial systems, paid amplification, and animation.",
+      "relatedSlugs": [
+        "content-marketing",
+        "digital-marketing",
+        "video-animation-2d-3d"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Campaign planning discussion",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Content and brand detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Creative production environment",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Team reviewing channel work",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "search-engine-optimization",
+    "slug": "search-engine-optimization",
+    "sortOrder": 9,
+    "featured": false,
+    "doc": {
+      "title": "Search Engine Optimization",
+      "label": "FOR STRONGER SEARCH VISIBILITY",
+      "shortDescription": "Technical and content SEO that improves rankings and organic acquisition.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Technical and content SEO that improves rankings and organic acquisition—with structured priorities for crawl health, intent coverage, and conversion paths."
+        },
+        {
+          "type": "paragraph",
+          "text": "We start with diagnosis: what blocks visibility, which queries matter, and which pages should own them."
+        },
+        {
+          "type": "paragraph",
+          "text": "Recommendations stay practical—so engineering, content, and marketing can act in sequence."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Marketing delivery detail",
+      "heroHeadline": "Search work with clear technical and content priorities.",
+      "heroIntro": "SEO that improves organic acquisition through crawl health, intent coverage, and conversion-minded pages.",
+      "storyLabel": "About Search Engine Optimization",
+      "storyParagraphs": [
+        "Technical and content SEO that improves rankings and organic acquisition—with structured priorities for crawl health, intent coverage, and conversion paths.",
+        "We start with diagnosis: what blocks visibility, which queries matter, and which pages should own them.",
+        "Recommendations stay practical—so engineering, content, and marketing can act in sequence."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-marketing.svg",
+      "leadImageAlt": "Editorial scene for marketing services",
+      "principles": [
+        {
+          "id": "search-engine-optimization-p1",
+          "title": "Diagnose before prescribing",
+          "body": "Technical and content gaps are sequenced by impact."
+        },
+        {
+          "id": "search-engine-optimization-p2",
+          "title": "Cover real intent",
+          "body": "Pages map to the questions buyers actually search."
+        },
+        {
+          "id": "search-engine-optimization-p3",
+          "title": "Fix foundations first",
+          "body": "Crawl, indexation, and structure unlock later content work."
+        },
+        {
+          "id": "search-engine-optimization-p4",
+          "title": "Write for people and engines",
+          "body": "Clarity and usefulness beat keyword stuffing."
+        },
+        {
+          "id": "search-engine-optimization-p5",
+          "title": "Connect to conversion",
+          "body": "Ranking work points toward pages that can win the next step."
+        },
+        {
+          "id": "search-engine-optimization-p6",
+          "title": "Measure quality traffic",
+          "body": "Reporting watches rankings alongside useful acquisition."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "SEO connects content, GEO, and the site itself.",
+      "relatedIntro": "Organic growth usually needs editorial systems, AI-answer readiness, and a sound website.",
+      "relatedSlugs": [
+        "generative-engine-optimization",
+        "content-marketing",
+        "web-development"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Campaign planning discussion",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Content and brand detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Creative production environment",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Team reviewing channel work",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "generative-engine-optimization",
+    "slug": "generative-engine-optimization",
+    "sortOrder": 10,
+    "featured": false,
+    "doc": {
+      "title": "Generative Engine Optimization",
+      "label": "FOR VISIBILITY IN AI SEARCH",
+      "shortDescription": "Optimization for generative engines so your brand surfaces in AI answers.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Optimization for generative engines so your brand surfaces in AI answers—with entity clarity, authoritative content, and discovery-ready structure."
+        },
+        {
+          "type": "paragraph",
+          "text": "GEO builds on solid SEO foundations: clear topics, trustworthy sources, and content machines can cite accurately."
+        },
+        {
+          "type": "paragraph",
+          "text": "We help you prepare pages and knowledge assets for AI discovery without inventing unverified claims."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Marketing delivery detail",
+      "heroHeadline": "Make your brand clearer in AI answers.",
+      "heroIntro": "GEO work that strengthens entity clarity, authoritative content, and discovery-ready structure—without inventing claims.",
+      "storyLabel": "About Generative Engine Optimization",
+      "storyParagraphs": [
+        "Optimization for generative engines so your brand surfaces in AI answers—with entity clarity, authoritative content, and discovery-ready structure.",
+        "GEO builds on solid SEO foundations: clear topics, trustworthy sources, and content machines can cite accurately.",
+        "We help you prepare pages and knowledge assets for AI discovery without inventing unverified claims."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-marketing.svg",
+      "leadImageAlt": "Editorial scene for marketing services",
+      "principles": [
+        {
+          "id": "generative-engine-optimization-p1",
+          "title": "Map the entities",
+          "body": "Brand, services, and proof points are named consistently across the site."
+        },
+        {
+          "id": "generative-engine-optimization-p2",
+          "title": "Strengthen citeable facts",
+          "body": "Content is structured so accurate answers can be extracted."
+        },
+        {
+          "id": "generative-engine-optimization-p3",
+          "title": "Build on SEO foundations",
+          "body": "GEO extends technical and content health—not a shortcut around them."
+        },
+        {
+          "id": "generative-engine-optimization-p4",
+          "title": "Avoid invented claims",
+          "body": "Only verified facts enter answer-ready surfaces."
+        },
+        {
+          "id": "generative-engine-optimization-p5",
+          "title": "Align with content systems",
+          "body": "Editorial calendars reinforce the topics engines should associate with you."
+        },
+        {
+          "id": "generative-engine-optimization-p6",
+          "title": "Validate and refine",
+          "body": "Discovery signals guide the next content priorities."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "GEO sits with SEO, content, and AI.",
+      "relatedIntro": "Answer readiness is strongest when organic search, editorial systems, and practical AI are aligned.",
+      "relatedSlugs": [
+        "search-engine-optimization",
+        "content-marketing",
+        "artificial-intelligence"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Campaign planning discussion",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Content and brand detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Creative production environment",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Team reviewing channel work",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "artificial-intelligence",
+    "slug": "artificial-intelligence",
+    "sortOrder": 11,
+    "featured": false,
+    "doc": {
+      "title": "Artificial Intelligence",
+      "label": "FOR INTELLIGENT BUSINESS AUTOMATION",
+      "shortDescription": "AI systems that automate workflows, insights, and customer experiences.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Practical AI systems that automate workflows, surface insights, and improve customer experiences—grounded in your data, tools, and business process."
+        },
+        {
+          "type": "paragraph",
+          "text": "We prioritize use cases with clear owners and measurable outcomes—not speculative demos that never leave a slide deck."
+        },
+        {
+          "type": "paragraph",
+          "text": "Implementation stays responsible: privacy, evaluation, and maintainability are part of the delivery plan."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Emerging tech delivery detail",
+      "heroHeadline": "Practical AI for real workflows and decisions.",
+      "heroIntro": "Automation, assistants, and insights grounded in your data, tools, and business process—not speculative demos.",
+      "storyLabel": "About Artificial Intelligence",
+      "storyParagraphs": [
+        "Practical AI systems that automate workflows, surface insights, and improve customer experiences—grounded in your data, tools, and business process.",
+        "We prioritize use cases with clear owners and measurable outcomes—not speculative demos that never leave a slide deck.",
+        "Implementation stays responsible: privacy, evaluation, and maintainability are part of the delivery plan."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-emerging.svg",
+      "leadImageAlt": "Editorial scene for emerging technology",
+      "principles": [
+        {
+          "id": "artificial-intelligence-p1",
+          "title": "Pick useful use cases",
+          "body": "Work starts where automation or insight has a clear owner and outcome."
+        },
+        {
+          "id": "artificial-intelligence-p2",
+          "title": "Respect the data reality",
+          "body": "Readiness, privacy, and quality constraints shape the approach."
+        },
+        {
+          "id": "artificial-intelligence-p3",
+          "title": "Prototype for quality",
+          "body": "Early tests prove usefulness before full production investment."
+        },
+        {
+          "id": "artificial-intelligence-p4",
+          "title": "Integrate into existing tools",
+          "body": "AI lands where people already work—not in isolated experiments."
+        },
+        {
+          "id": "artificial-intelligence-p5",
+          "title": "Design the human handoff",
+          "body": "Accountability and review paths stay visible."
+        },
+        {
+          "id": "artificial-intelligence-p6",
+          "title": "Operate after launch",
+          "body": "Monitoring covers quality, cost, and feedback loops."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "AI that connects discovery and product.",
+      "relatedIntro": "Practical AI often pairs with GEO, web platforms, and mobile experiences.",
+      "relatedSlugs": [
+        "generative-engine-optimization",
+        "web-development",
+        "mobile-app-development"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Product exploration session",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Immersive experience detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Technology craft detail",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Collaborative prototyping",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "augmented-reality",
+    "slug": "augmented-reality",
+    "sortOrder": 12,
+    "featured": false,
+    "doc": {
+      "title": "Augmented Reality",
+      "label": "FOR INTERACTIVE PRODUCT EXPERIENCES",
+      "shortDescription": "AR experiences that help customers explore products in real context.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "AR experiences that help customers explore products in real context—bridging digital product stories with physical spaces and purchase confidence."
+        },
+        {
+          "type": "paragraph",
+          "text": "We design for clarity and performance on real devices, not only for polished demo reels."
+        },
+        {
+          "type": "paragraph",
+          "text": "Web AR and app-based options are chosen based on audience reach and maintenance reality."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Emerging tech delivery detail",
+      "heroHeadline": "AR that helps customers explore with confidence.",
+      "heroIntro": "Product and space experiences designed for real devices, clarity, and purchase confidence.",
+      "storyLabel": "About Augmented Reality",
+      "storyParagraphs": [
+        "AR experiences that help customers explore products in real context—bridging digital product stories with physical spaces and purchase confidence.",
+        "We design for clarity and performance on real devices, not only for polished demo reels.",
+        "Web AR and app-based options are chosen based on audience reach and maintenance reality."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-emerging.svg",
+      "leadImageAlt": "Editorial scene for emerging technology",
+      "principles": [
+        {
+          "id": "augmented-reality-p1",
+          "title": "Frame a commercial use case",
+          "body": "Who needs to see what in space—and why it matters."
+        },
+        {
+          "id": "augmented-reality-p2",
+          "title": "Prototype on target devices",
+          "body": "Interaction and assets are tested where customers will use them."
+        },
+        {
+          "id": "augmented-reality-p3",
+          "title": "Prefer sustainable delivery",
+          "body": "Web AR or apps are chosen for reach and maintenance reality."
+        },
+        {
+          "id": "augmented-reality-p4",
+          "title": "Keep experiences clear",
+          "body": "Guidance and UI reduce confusion in physical space."
+        },
+        {
+          "id": "augmented-reality-p5",
+          "title": "Plan content updates",
+          "body": "Product and campaign assets can change without a rebuild every time."
+        },
+        {
+          "id": "augmented-reality-p6",
+          "title": "Support the launch",
+          "body": "Teams get practical guidance for performance and customer help."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "AR sits with VR, UX, and commerce.",
+      "relatedIntro": "Spatial experiences often need immersion partners, interface design, and storefront integration.",
+      "relatedSlugs": [
+        "virtual-reality",
+        "ui-ux-design",
+        "ecommerce-development"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Product exploration session",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Immersive experience detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Technology craft detail",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Collaborative prototyping",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "virtual-reality",
+    "slug": "virtual-reality",
+    "sortOrder": 13,
+    "featured": false,
+    "doc": {
+      "title": "Virtual Reality",
+      "label": "FOR IMMERSIVE BRAND EXPERIENCES",
+      "shortDescription": "Immersive VR environments for training, storytelling, and engagement.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Immersive VR environments for training, storytelling, and engagement—built for clarity, comfort, and outcomes your teams can measure."
+        },
+        {
+          "type": "paragraph",
+          "text": "We design sessions people can complete—comfortable pacing, clear goals, and useful feedback."
+        },
+        {
+          "type": "paragraph",
+          "text": "Hardware choices and content pipelines stay realistic for your rollout plan."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Emerging tech delivery detail",
+      "heroHeadline": "Immersive environments with measurable purpose.",
+      "heroIntro": "VR for training, storytelling, and engagement—built for comfort, clarity, and outcomes you can review.",
+      "storyLabel": "About Virtual Reality",
+      "storyParagraphs": [
+        "Immersive VR environments for training, storytelling, and engagement—built for clarity, comfort, and outcomes your teams can measure.",
+        "We design sessions people can complete—comfortable pacing, clear goals, and useful feedback.",
+        "Hardware choices and content pipelines stay realistic for your rollout plan."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-emerging.svg",
+      "leadImageAlt": "Editorial scene for emerging technology",
+      "principles": [
+        {
+          "id": "virtual-reality-p1",
+          "title": "Define the outcome first",
+          "body": "Learning or engagement goals guide scene design."
+        },
+        {
+          "id": "virtual-reality-p2",
+          "title": "Storyboard before production",
+          "body": "Interactions and comfort constraints are agreed early."
+        },
+        {
+          "id": "virtual-reality-p3",
+          "title": "Respect session comfort",
+          "body": "Duration and motion are designed for real people."
+        },
+        {
+          "id": "virtual-reality-p4",
+          "title": "Build for the hardware plan",
+          "body": "Delivery matches devices and rollout reality."
+        },
+        {
+          "id": "virtual-reality-p5",
+          "title": "Test iteratively",
+          "body": "Device reviews catch friction before facilitators meet users."
+        },
+        {
+          "id": "virtual-reality-p6",
+          "title": "Hand off for operations",
+          "body": "Teams get training and a content update path."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "VR pairs with AR, motion, and UX.",
+      "relatedIntro": "Immersive work often needs spatial partners, animation craft, and interaction design.",
+      "relatedSlugs": [
+        "augmented-reality",
+        "video-animation-2d-3d",
+        "ui-ux-design"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Product exploration session",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Immersive experience detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Technology craft detail",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Collaborative prototyping",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "digital-branding-creatives",
+    "slug": "digital-branding-creatives",
+    "sortOrder": 14,
+    "featured": false,
+    "doc": {
+      "title": "Digital Branding & Creatives",
+      "label": "FOR A DISTINCTIVE BRAND IDENTITY",
+      "shortDescription": "Brand systems and creative assets that make your business unmistakable.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Brand systems and creative assets that make your business unmistakable across sites, campaigns, and product touchpoints—with clarity and consistency."
+        },
+        {
+          "type": "paragraph",
+          "text": "We build identities teams can apply—guidelines, components, and examples that reduce guesswork."
+        },
+        {
+          "type": "paragraph",
+          "text": "Creative work stays connected to the products and campaigns it must support."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Creative delivery detail",
+      "heroHeadline": "Brand systems that stay unmistakable.",
+      "heroIntro": "Identity and creative assets built for clarity and consistency across sites, campaigns, and product touchpoints.",
+      "storyLabel": "About Digital Branding & Creatives",
+      "storyParagraphs": [
+        "Brand systems and creative assets that make your business unmistakable across sites, campaigns, and product touchpoints—with clarity and consistency.",
+        "We build identities teams can apply—guidelines, components, and examples that reduce guesswork.",
+        "Creative work stays connected to the products and campaigns it must support."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-creative.svg",
+      "leadImageAlt": "Editorial scene for creative services",
+      "principles": [
+        {
+          "id": "digital-branding-creatives-p1",
+          "title": "Ground in positioning",
+          "body": "Audiences and competitive context shape visual direction."
+        },
+        {
+          "id": "digital-branding-creatives-p2",
+          "title": "Explore with intent",
+          "body": "Directions are validated before the system locks."
+        },
+        {
+          "id": "digital-branding-creatives-p3",
+          "title": "Systemize the identity",
+          "body": "Type, color, and usage rules become practical guidelines."
+        },
+        {
+          "id": "digital-branding-creatives-p4",
+          "title": "Design for application",
+          "body": "Assets work across web, social, and product surfaces."
+        },
+        {
+          "id": "digital-branding-creatives-p5",
+          "title": "Support campaigns",
+          "body": "Creative kits stay ready for real marketing moments."
+        },
+        {
+          "id": "digital-branding-creatives-p6",
+          "title": "Keep teams aligned",
+          "body": "Examples reduce guesswork when new work appears."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Brand connects words, motion, and interfaces.",
+      "relatedIntro": "Identity systems often pair with messaging, animation, and product UI.",
+      "relatedSlugs": [
+        "copywriting",
+        "video-animation-2d-3d",
+        "ui-ux-design"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Brand and creative discussion",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Motion and visual detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Studio craft environment",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Creative collaboration",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "it-resource-outsourcing",
+    "slug": "it-resource-outsourcing",
+    "sortOrder": 15,
+    "featured": false,
+    "doc": {
+      "title": "IT Resource Outsourcing",
+      "label": "FOR FLEXIBLE TECH TALENT",
+      "shortDescription": "Dedicated engineering and digital specialists that extend your team.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Extend your team with dedicated engineering and digital specialists who plug into your delivery rhythm without the overhead of a full permanent hire."
+        },
+        {
+          "type": "paragraph",
+          "text": "We match skills to your roadmap—development, design, or AI support—so capacity scales with real project demand."
+        },
+        {
+          "type": "paragraph",
+          "text": "Clear communication, scoped ownership, and predictable cadence keep outsourced work accountable."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Delivery detail photograph",
+      "heroHeadline": "Specialists who extend your team without the overhead.",
+      "heroIntro": "Dedicated engineering and digital talent that plugs into your delivery rhythm when capacity needs to scale.",
+      "storyLabel": "About IT Resource Outsourcing",
+      "storyParagraphs": [
+        "Extend your team with dedicated engineering and digital specialists who plug into your delivery rhythm without the overhead of a full permanent hire.",
+        "We match skills to your roadmap—development, design, or AI support—so capacity scales with real project demand.",
+        "Clear communication, scoped ownership, and predictable cadence keep outsourced work accountable."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-dev.svg",
+      "leadImageAlt": "Editorial workspace scene for development services",
+      "principles": [
+        {
+          "id": "it-resource-outsourcing-p1",
+          "title": "Scope the need honestly",
+          "body": "Roles, seniority, and hours are defined against outcomes—not vague headcount requests."
+        },
+        {
+          "id": "it-resource-outsourcing-p2",
+          "title": "Match real skills",
+          "body": "Specialists fit your stack, rituals, and definition of done."
+        },
+        {
+          "id": "it-resource-outsourcing-p3",
+          "title": "Embed into the team",
+          "body": "People work in your tools and backlog with clear ownership."
+        },
+        {
+          "id": "it-resource-outsourcing-p4",
+          "title": "Keep cadence visible",
+          "body": "Progress, blockers, and priorities stay shared—not hidden offshore."
+        },
+        {
+          "id": "it-resource-outsourcing-p5",
+          "title": "Adjust as priorities shift",
+          "body": "Capacity can expand or focus when the roadmap changes."
+        },
+        {
+          "id": "it-resource-outsourcing-p6",
+          "title": "Protect quality bars",
+          "body": "Outsourced delivery still meets the same review and release standards."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Talent that supports active delivery.",
+      "relatedIntro": "Outsourcing often pairs with web, mobile, and AI work already on your roadmap.",
+      "relatedSlugs": [
+        "web-development",
+        "mobile-app-development",
+        "artificial-intelligence"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Team discussion at a workstation",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Close detail of interface design work",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Craft and environment detail",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Collaborative working session",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  },
+  {
+    "id": "video-animation-2d-3d",
+    "slug": "video-animation-2d-3d",
+    "sortOrder": 16,
+    "featured": false,
+    "doc": {
+      "title": "2D/3D Video Animation",
+      "label": "FOR MOTION THAT CAPTIVATES",
+      "shortDescription": "Motion design and animation that explain products and elevate campaigns.",
+      "detailedContent": [
+        {
+          "type": "paragraph",
+          "text": "Motion design and animation that explain products, elevate campaigns, and help audiences understand value faster through intentional storytelling."
+        },
+        {
+          "type": "paragraph",
+          "text": "We match format to job: explainers, social loops, product demos, or brand films—with scripts and boards before production."
+        },
+        {
+          "type": "paragraph",
+          "text": "Delivery includes versions sized for the channels you actually use."
+        }
+      ],
+      "iconName": null,
+      "cardImagePath": "/services/editorial/rail-photo.svg",
+      "cardImageAlt": "Creative delivery detail",
+      "heroHeadline": "Motion that explains value faster.",
+      "heroIntro": "2D and 3D animation for explainers, campaigns, and product stories—planned before production begins.",
+      "storyLabel": "About 2D/3D Video Animation",
+      "storyParagraphs": [
+        "Motion design and animation that explain products, elevate campaigns, and help audiences understand value faster through intentional storytelling.",
+        "We match format to job: explainers, social loops, product demos, or brand films—with scripts and boards before production.",
+        "Delivery includes versions sized for the channels you actually use."
+      ],
+      "storyCtaLabel": "Talk about your project",
+      "storyCtaHref": "/contact",
+      "leadImagePath": "/services/editorial/lead-creative.svg",
+      "leadImageAlt": "Editorial scene for creative services",
+      "principles": [
+        {
+          "id": "video-animation-2d-3d-p1",
+          "title": "Brief the job",
+          "body": "Message, audience, length, and channels are clear first."
+        },
+        {
+          "id": "video-animation-2d-3d-p2",
+          "title": "Storyboard early",
+          "body": "Narrative and visual approach are approved before production."
+        },
+        {
+          "id": "video-animation-2d-3d-p3",
+          "title": "Animate with intention",
+          "body": "Motion supports understanding—not decoration alone."
+        },
+        {
+          "id": "video-animation-2d-3d-p4",
+          "title": "Review in milestones",
+          "body": "Feedback lands while changes are still affordable."
+        },
+        {
+          "id": "video-animation-2d-3d-p5",
+          "title": "Deliver for channels",
+          "body": "Exports match social, web, and campaign needs."
+        },
+        {
+          "id": "video-animation-2d-3d-p6",
+          "title": "Leave reusable systems",
+          "body": "Styles and templates can extend to future work."
+        }
+      ],
+      "benefits": [],
+      "processSteps": [],
+      "faqs": [],
+      "relatedHeading": "Motion supports brand and demand channels.",
+      "relatedIntro": "Animation often pairs with identity systems, social distribution, and editorial content.",
+      "relatedSlugs": [
+        "digital-branding-creatives",
+        "social-media-marketing",
+        "content-marketing"
+      ],
+      "seoTitle": null,
+      "seoDescription": null,
+      "ctaLabel": null,
+      "ctaHref": null,
+      "leadImageWidth": 2200,
+      "leadImageHeight": 1450,
+      "pairA": {
+        "left": {
+          "path": "/services/editorial/pair-a-left.svg",
+          "alt": "Brand and creative discussion",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-a-right.svg",
+          "alt": "Motion and visual detail",
+          "width": 1200,
+          "height": 1800
+        }
+      },
+      "pairB": {
+        "left": {
+          "path": "/services/editorial/pair-b-left.svg",
+          "alt": "Studio craft environment",
+          "width": 1200,
+          "height": 1800
+        },
+        "right": {
+          "path": "/services/editorial/pair-b-right.svg",
+          "alt": "Creative collaboration",
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    }
+  }
+]

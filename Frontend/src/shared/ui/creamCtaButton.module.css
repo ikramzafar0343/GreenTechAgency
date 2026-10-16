@@ -1,0 +1,74 @@
+.button {
+  --cream-fill: #f7f0dc;
+  --cream-fill-hover: #fff8e8;
+  --cream-ink: #0b1727;
+  --cream-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 13.45rem;
+  min-height: 50px;
+  padding: 0.85rem 1.75rem;
+  border: 0;
+  border-radius: 15px;
+  background: var(--cream-fill);
+  color: var(--cream-ink);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    transform 200ms var(--cream-ease),
+    background-color 200ms var(--cream-ease);
+}
+
+.button:hover,
+.button:focus-visible {
+  background: var(--cream-fill-hover);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.button:focus-visible {
+  outline: 2px solid #f7f0dc;
+  outline-offset: 3px;
+}
+
+.button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 767px) {
+  .button {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: background-color 200ms var(--cream-ease);
+  }
+
+  .button:hover,
+  .button:focus-visible,
+  .button:active {
+    transform: none;
+  }
+}
+
+@media (hover: none) {
+  .button:hover {
+    transform: none;
+    background: var(--cream-fill);
+  }
+
+  .button:active {
+    background: var(--cream-fill-hover);
+  }
+}

@@ -1,0 +1,326 @@
+[
+  {
+    "id": "tm-atlas",
+    "sortOrder": 1,
+    "featured": true,
+    "doc": {
+      "companyName": "Atlas Logistics",
+      "companyLogoUrl": "/testimonials/logo-atlas.svg",
+      "location": "Dubai",
+      "reviewerName": "Sara Al-Hassan",
+      "reviewerRole": "Head of Operations",
+      "reviewerPhotoUrl": null,
+      "quote": "GreenTech rebuilt our operations console with clarity and pace. The team understood our constraints and delivered a product our dispatchers actually use every day.",
+      "emphasisText": "a product our dispatchers actually use every day",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-lumen",
+    "sortOrder": 2,
+    "featured": true,
+    "doc": {
+      "companyName": "Lumen Apparel",
+      "companyLogoUrl": "/testimonials/logo-lumen.svg",
+      "location": "London",
+      "reviewerName": "James Whitfield",
+      "reviewerRole": "Ecommerce Director",
+      "reviewerPhotoUrl": null,
+      "quote": "You can see where the product is headed, what changed last quarter, and what to prioritize next.",
+      "emphasisText": "what to prioritize next",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-northline",
+    "sortOrder": 3,
+    "featured": true,
+    "doc": {
+      "companyName": "Northline Finance",
+      "companyLogoUrl": "/testimonials/logo-northline.svg",
+      "location": "Singapore",
+      "reviewerName": "Mei Ling Tan",
+      "reviewerRole": "Product Lead",
+      "reviewerPhotoUrl": null,
+      "quote": "They balanced compliance needs with a calm mobile experience. Stakeholders trusted the process because every milestone had clear deliverables.",
+      "emphasisText": "every milestone had clear deliverables",
+      "rating": 4.5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-carepath",
+    "sortOrder": 4,
+    "featured": true,
+    "doc": {
+      "companyName": "CarePath Health",
+      "companyLogoUrl": "/testimonials/logo-carepath.svg",
+      "location": "Toronto",
+      "reviewerName": "Daniel Okonkwo",
+      "reviewerRole": "Digital Transformation Manager",
+      "reviewerPhotoUrl": null,
+      "quote": "The patient portal reduced support tickets and helped our care teams share one source of truth. Communication stayed practical from discovery through launch.",
+      "emphasisText": "one source of truth",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-orbit",
+    "sortOrder": 5,
+    "featured": true,
+    "doc": {
+      "companyName": "Orbit Media",
+      "companyLogoUrl": "/testimonials/logo-orbit.svg",
+      "location": "Berlin",
+      "reviewerName": "Helena Krüger",
+      "reviewerRole": "Founder",
+      "reviewerPhotoUrl": null,
+      "quote": "Design and engineering moved together. We launched a campaign site that felt premium without slowing our marketing calendar.",
+      "emphasisText": "felt premium without slowing our marketing calendar",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-fieldwork",
+    "sortOrder": 6,
+    "featured": true,
+    "doc": {
+      "companyName": "Fieldwork Labs",
+      "companyLogoUrl": "/testimonials/logo-fieldwork.svg",
+      "location": "Austin",
+      "reviewerName": "Priya Natarajan",
+      "reviewerRole": "COO",
+      "reviewerPhotoUrl": null,
+      "quote": "GreenTech turned a messy internal toolkit into a reliable platform. Training was faster because the interface finally matched how our teams work.",
+      "emphasisText": "a reliable platform",
+      "rating": 4.5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-summit",
+    "sortOrder": 7,
+    "featured": true,
+    "doc": {
+      "companyName": "Summit Retail",
+      "companyLogoUrl": "/testimonials/logo-summit.svg",
+      "location": "Riyadh",
+      "reviewerName": "Omar Fahad",
+      "reviewerRole": "Marketing Lead",
+      "reviewerPhotoUrl": null,
+      "quote": "From SEO foundations to the storefront rebuild, they kept goals measurable. We saw stronger organic visibility within the first quarter after launch.",
+      "emphasisText": "goals measurable",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-verve",
+    "sortOrder": 8,
+    "featured": true,
+    "doc": {
+      "companyName": "Verve Studios",
+      "companyLogoUrl": "/testimonials/logo-verve.svg",
+      "location": "Amsterdam",
+      "reviewerName": "Elena Vos",
+      "reviewerRole": "Creative Director",
+      "reviewerPhotoUrl": null,
+      "quote": "A rare partner that respects craft and delivery dates. Our brand site feels distinctive and still loads with the performance we asked for.",
+      "emphasisText": "respects craft and delivery dates",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-harbor",
+    "sortOrder": 9,
+    "featured": true,
+    "doc": {
+      "companyName": "Harbor Legal",
+      "companyLogoUrl": "/testimonials/logo-harbor.svg",
+      "location": "Chicago",
+      "reviewerName": "Marcus Bell",
+      "reviewerRole": "Managing Partner",
+      "reviewerPhotoUrl": null,
+      "quote": "Our client intake flow finally matches the standard of our practice. The build was careful, documented, and easy for partners to adopt.",
+      "emphasisText": "easy for partners to adopt",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-pulse",
+    "sortOrder": 10,
+    "featured": true,
+    "doc": {
+      "companyName": "Pulse Fitness",
+      "companyLogoUrl": "/testimonials/logo-pulse.svg",
+      "location": "Sydney",
+      "reviewerName": "Amelia Grant",
+      "reviewerRole": "Growth Lead",
+      "reviewerPhotoUrl": null,
+      "quote": "Membership sign-ups improved after the redesign. Pages load quickly on mobile and the booking path no longer loses people mid-flow.",
+      "emphasisText": "booking path no longer loses people",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-keystone",
+    "sortOrder": 11,
+    "featured": true,
+    "doc": {
+      "companyName": "Keystone Property",
+      "companyLogoUrl": "/testimonials/logo-keystone.svg",
+      "location": "Dublin",
+      "reviewerName": "Conor Hayes",
+      "reviewerRole": "Director of Marketing",
+      "reviewerPhotoUrl": null,
+      "quote": "Listings, lead capture, and follow-up now live in one system. Our agents spend less time chasing admin and more time with buyers.",
+      "emphasisText": "one system",
+      "rating": 4.5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-nova",
+    "sortOrder": 12,
+    "featured": true,
+    "doc": {
+      "companyName": "Nova Education",
+      "companyLogoUrl": "/testimonials/logo-nova.svg",
+      "location": "Kuala Lumpur",
+      "reviewerName": "Aisha Rahman",
+      "reviewerRole": "Head of Digital",
+      "reviewerPhotoUrl": null,
+      "quote": "The learning portal feels calm for students and practical for faculty. Launch week stayed on schedule because ownership was clear.",
+      "emphasisText": "ownership was clear",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-ridge",
+    "sortOrder": 13,
+    "featured": true,
+    "doc": {
+      "companyName": "Ridge Outdoor",
+      "companyLogoUrl": "/testimonials/logo-ridge.svg",
+      "location": "Denver",
+      "reviewerName": "Tyler Brooks",
+      "reviewerRole": "Brand Manager",
+      "reviewerPhotoUrl": null,
+      "quote": "They rebuilt our catalog experience without losing the brand voice. Seasonal campaigns are easier to ship and still look intentional.",
+      "emphasisText": "still look intentional",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-cobalt",
+    "sortOrder": 14,
+    "featured": true,
+    "doc": {
+      "companyName": "Cobalt Energy",
+      "companyLogoUrl": "/testimonials/logo-cobalt.svg",
+      "location": "Oslo",
+      "reviewerName": "Ingrid Solberg",
+      "reviewerRole": "VP Product",
+      "reviewerPhotoUrl": null,
+      "quote": "Complex monitoring data became readable for operators. The interface is strict where it needs to be and quiet everywhere else.",
+      "emphasisText": "quiet everywhere else",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-willow",
+    "sortOrder": 15,
+    "featured": true,
+    "doc": {
+      "companyName": "Willow Foods",
+      "companyLogoUrl": "/testimonials/logo-willow.svg",
+      "location": "Melbourne",
+      "reviewerName": "Sophie Nguyen",
+      "reviewerRole": "Founder",
+      "reviewerPhotoUrl": null,
+      "quote": "From packaging stories to the online shop, everything feels connected. We finally have a site that matches the product on the shelf.",
+      "emphasisText": "matches the product on the shelf",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-beacon",
+    "sortOrder": 16,
+    "featured": true,
+    "doc": {
+      "companyName": "Beacon Civic",
+      "companyLogoUrl": "/testimonials/logo-beacon.svg",
+      "location": "Ottawa",
+      "reviewerName": "Jordan Blake",
+      "reviewerRole": "Program Director",
+      "reviewerPhotoUrl": null,
+      "quote": "Public services need clarity more than cleverness. GreenTech delivered an accessible site residents can actually complete forms on.",
+      "emphasisText": "residents can actually complete forms on",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-forge",
+    "sortOrder": 17,
+    "featured": true,
+    "doc": {
+      "companyName": "Forge Robotics",
+      "companyLogoUrl": "/testimonials/logo-forge.svg",
+      "location": "Munich",
+      "reviewerName": "Jonas Keller",
+      "reviewerRole": "Engineering Manager",
+      "reviewerPhotoUrl": null,
+      "quote": "Documentation, design system, and product UI arrived as one package. Our internal team could extend pages without guessing.",
+      "emphasisText": "without guessing",
+      "rating": 4.5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  },
+  {
+    "id": "tm-quartz",
+    "sortOrder": 18,
+    "featured": true,
+    "doc": {
+      "companyName": "Quartz Insurance",
+      "companyLogoUrl": "/testimonials/logo-quartz.svg",
+      "location": "Zurich",
+      "reviewerName": "Lea Hofmann",
+      "reviewerRole": "CX Lead",
+      "reviewerPhotoUrl": null,
+      "quote": "Claims journeys used to feel heavy. The new flow is shorter, clearer, and easier for advisors to support when customers need help.",
+      "emphasisText": "shorter",
+      "rating": 5,
+      "ratingScale": 5,
+      "sourceUrl": null
+    }
+  }
+]

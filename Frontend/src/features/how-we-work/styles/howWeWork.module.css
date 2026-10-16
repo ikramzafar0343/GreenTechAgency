@@ -1,0 +1,229 @@
+.section {
+  --hww-canvas: #f5f5f5;
+  --hww-ink: var(--brand-navy-panel);
+  --hww-accent: var(--brand-cyan);
+  --hww-accent-ink: var(--brand-navy-panel);
+  --hww-dark: var(--brand-navy-panel);
+  --hww-connector: #c9cdca;
+  --hww-port: #daddd9;
+  --hww-muted: color-mix(in srgb, var(--brand-navy-panel) 68%, transparent);
+  position: relative;
+  background: var(--hww-canvas);
+  color: var(--hww-ink);
+  padding-block: clamp(4.5rem, 8vw, 7rem);
+  overflow: clip;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1400px);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 5rem);
+}
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: end;
+  margin-bottom: clamp(3rem, 5vw, 4rem);
+}
+.introCopy {
+  margin: 0;
+  max-width: 36ch;
+  color: var(--brand-ink-muted);
+}
+.cta {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.35rem;
+  min-height: 48px;
+  padding: 0.75rem 1.35rem;
+  border-radius: 9999px;
+  background: var(--hww-ink);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 220ms ease;
+}
+.cta:hover,
+.cta:focus-visible {
+  background: color-mix(in srgb, var(--hww-ink) 88%, var(--brand-cyan));
+}
+.cta:focus-visible {
+  outline: 2px solid var(--brand-cyan);
+  outline-offset: 3px;
+}
+.boardWrap {
+  position: relative;
+}
+.board {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  aspect-ratio: 1200 / 900;
+}
+.connectors {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.path {
+  fill: none;
+  stroke: var(--hww-connector);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  transition: stroke 200ms ease, stroke-width 200ms ease;
+}
+.pathActive {
+  stroke: color-mix(in srgb, var(--brand-cyan) 55%, var(--hww-connector));
+  stroke-width: 2;
+}
+.port {
+  fill: var(--hww-port);
+  stroke: #fff;
+  stroke-width: 1.5;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  position: absolute;
+  z-index: 1;
+  width: 256px;
+  user-select: text;
+  -webkit-user-drag: none;
+}
+.itemDraggable {
+  cursor: grab;
+  touch-action: pan-y;
+}
+.itemDraggable[data-dragging="true"] {
+  cursor: grabbing;
+}
+.itemVisual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+}
+.stageLabel {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--hww-ink);
+  white-space: nowrap;
+  pointer-events: none;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  box-sizing: border-box;
+  min-height: 168px;
+  padding: 1rem 1.1rem 1.15rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px color-mix(in srgb, #000 8%, transparent);
+  transition: box-shadow 200ms ease;
+  -webkit-user-drag: none;
+}
+.cardAccent {
+  background: var(--hww-accent);
+  color: var(--hww-accent-ink);
+}
+.cardDark {
+  background: var(--hww-dark);
+  color: #fff;
+}
+.cardTitle {
+  margin: 0;
+  font-size: clamp(1.125rem, 1.4vw, 1.35rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+.bullets {
+  margin: 0;
+  padding: 0 0 0 1.05rem;
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.875rem;
+  line-height: 1.35;
+  font-weight: 400;
+}
+.outcome {
+  margin: 0.1rem 0 0;
+  padding-top: 0.45rem;
+  border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  opacity: 0.9;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+@media (hover: hover) and (pointer: fine) {
+  .itemDraggable:hover:not([data-dragging="true"]) .card {
+    box-shadow: 0 14px 32px color-mix(in srgb, #000 14%, transparent);
+  }
+}
+.itemDraggable[data-dragging="true"] .card {
+  box-shadow: 0 18px 36px color-mix(in srgb, #000 18%, transparent);
+  transition: none;
+}
+.compact {
+  display: none;
+}
+@media (max-width: 1119px) {
+  .board {
+    display: none;
+  }
+  .compact {
+    display: grid;
+    gap: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .compactItem {
+    display: grid;
+    gap: 0.75rem;
+  }
+  .compactItem .stageLabel {
+    position: static;
+    bottom: auto;
+    text-align: left;
+    white-space: normal;
+  }
+  .compactCard {
+    min-height: 0;
+  }
+}
+@media (max-width: 767px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .compact {
+    position: relative;
+    padding-left: 1.25rem;
+  }
+  .compact::before {
+    content: "";
+    position: absolute;
+    left: 0.2rem;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    width: 1.5px;
+    background: var(--hww-connector);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .path {
+    transition: none !important;
+  }
+}

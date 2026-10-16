@@ -1,0 +1,277 @@
+.websiteGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--pp-gap, 1.5rem);
+}
+
+.websiteCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  background: var(--pp-card, #fff);
+  border-radius: var(--pp-radius, 12px);
+  overflow: hidden;
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--pp-ink, #0f2430) 6%, transparent);
+}
+
+.websiteFrame {
+  position: relative;
+  height: var(--pp-website-h, 302px);
+  overflow: hidden;
+  background: color-mix(in srgb, var(--pp-ink, #0f2430) 4%, var(--pp-card, #fff));
+}
+
+.websiteImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
+  transition: object-position 8000ms ease;
+}
+
+.websiteCard:hover .websiteImage,
+.websiteCard:focus-within .websiteImage {
+  object-position: 0% 100%;
+}
+
+.websiteTitle {
+  margin: 0;
+  padding: 0 1rem 1rem;
+  color: var(--pp-ink, #0f2430);
+}
+
+.artworkGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--pp-gap, 1.5rem);
+}
+
+.artworkCard {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: var(--pp-card, #fff);
+  border-radius: var(--pp-radius, 12px);
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  color: inherit;
+  transform: translateY(0);
+  transition: transform 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.artworkCard:nth-child(even) {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.artworkCard:hover,
+.artworkCard:focus-visible {
+  transform: translateY(-10px);
+}
+
+.artworkMedia {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--pp-ink, #0f2430) 4%, var(--pp-card, #fff));
+}
+
+.artworkImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 600ms ease;
+}
+
+.artworkMedia:hover .artworkImage {
+  transform: scale(1.1);
+}
+
+.artworkTitle {
+  margin: 0;
+  padding: 0.9rem 1rem 1.1rem;
+  color: var(--pp-ink, #0f2430);
+}
+
+.socialGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--pp-gap, 1.5rem);
+  opacity: 1;
+  transition: opacity 400ms ease;
+}
+
+.socialGridFading {
+  opacity: 0;
+}
+
+.campaign {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  background: var(--pp-card, #fff);
+  border-radius: var(--pp-radius, 12px);
+  padding: 0.75rem;
+}
+
+.campaignTile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--pp-ink, #0f2430) 4%, var(--pp-card, #fff));
+}
+
+.campaignImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.mediaGrid {
+  display: grid;
+  gap: var(--pp-gap, 1.5rem);
+}
+
+.mediaGridBusiness {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mediaGridPhoto,
+.mediaGridPrint {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mediaTile {
+  margin: 0;
+  background: var(--pp-card, #fff);
+  border-radius: var(--pp-radius, 12px);
+  overflow: hidden;
+}
+
+.mediaImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.loadMoreWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.loadMore {
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--pp-ink, #0f2430) 18%, transparent);
+  background: var(--pp-card, #fff);
+  color: var(--pp-ink, #0f2430);
+  border-radius: 999px;
+  min-height: 44px;
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+.loadMore:hover {
+  border-color: var(--pp-accent, #4de8f4);
+}
+
+.loadMore:focus-visible {
+  outline: 2px solid var(--pp-accent, #4de8f4);
+  outline-offset: 3px;
+}
+
+.loadMore:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+.revealItem {
+  animation: ppReveal 400ms cubic-bezier(0.25, 0.8, 0.25, 1) both;
+}
+
+@keyframes ppReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 850px) {
+  .websiteGrid,
+  .artworkGrid,
+  .socialGrid,
+  .mediaGridPhoto,
+  .mediaGridPrint {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .campaign {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .websiteGrid,
+  .artworkGrid,
+  .socialGrid,
+  .mediaGridBusiness,
+  .mediaGridPhoto,
+  .mediaGridPrint {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .websiteImage,
+  .artworkCard,
+  .artworkImage,
+  .socialGrid,
+  .revealItem {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .websiteCard:hover .websiteImage,
+  .websiteCard:focus-within .websiteImage {
+    object-position: 0% 0%;
+  }
+
+  .artworkCard:hover,
+  .artworkCard:focus-visible {
+    transform: none;
+  }
+
+  .artworkMedia:hover .artworkImage {
+    transform: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .websiteImage {
+    object-position: 0% 35%;
+    transition: none;
+  }
+
+  .websiteCard:hover .websiteImage,
+  .websiteCard:focus-within .websiteImage {
+    object-position: 0% 35%;
+  }
+}

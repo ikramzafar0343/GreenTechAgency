@@ -1,0 +1,245 @@
+[
+  {
+    "id": "article-seo-foundations",
+    "slug": "seo-foundations-for-growing-sites",
+    "featured": false,
+    "homepageOrder": 1,
+    "firstPublishedAt": "2026-09-02T10:00:00.000Z",
+    "doc": {
+      "title": "SEO Foundations That Keep Growing Sites Discoverable",
+      "excerpt": "How technical structure, clear metadata, and intent-led content work together before you scale content production.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "How technical structure, clear metadata, and intent-led content work together before you scale content production."
+        }
+      ],
+      "coverPath": "/insights/seo-foundations.jpg",
+      "coverAlt": "Workspace desk with analytics notes for SEO planning",
+      "railLabel": "SEO Foundations",
+      "category": "SEO",
+      "authorDisplay": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 6
+    }
+  },
+  {
+    "id": "article-geo-visibility",
+    "slug": "geo-visibility-for-ai-discovery",
+    "featured": false,
+    "homepageOrder": 2,
+    "firstPublishedAt": "2026-09-08T10:00:00.000Z",
+    "doc": {
+      "title": "GEO Visibility: Being Clear When AI Answers",
+      "excerpt": "Entity clarity, concise answers, and trustworthy sourcing help brands show up in AI-assisted discovery without empty claims.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Entity clarity, concise answers, and trustworthy sourcing help brands show up in AI-assisted discovery without empty claims."
+        }
+      ],
+      "coverPath": "/insights/geo-visibility.jpg",
+      "coverAlt": "Abstract shapes representing AI-assisted discovery",
+      "railLabel": "GEO Visibility",
+      "category": "GEO",
+      "authorDisplay": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 7
+    }
+  },
+  {
+    "id": "article-conversion-ux",
+    "slug": "conversion-minded-ux-for-service-sites",
+    "featured": false,
+    "homepageOrder": 3,
+    "firstPublishedAt": "2026-09-14T10:00:00.000Z",
+    "doc": {
+      "title": "Conversion-Minded UX for Service Websites",
+      "excerpt": "Reduce friction in enquiry paths with clearer hierarchy, focused CTAs, and forms that respect visitor intent.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Reduce friction in enquiry paths with clearer hierarchy, focused CTAs, and forms that respect visitor intent."
+        }
+      ],
+      "coverPath": "/insights/conversion-ux.jpg",
+      "coverAlt": "Abstract interface blocks suggesting a focused user journey",
+      "railLabel": "Conversion UX",
+      "category": "UI/UX",
+      "authorDisplay": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 5
+    }
+  },
+  {
+    "id": "article-ecommerce-speed",
+    "slug": "ecommerce-performance-that-protects-revenue",
+    "featured": false,
+    "homepageOrder": 4,
+    "firstPublishedAt": "2026-09-20T10:00:00.000Z",
+    "doc": {
+      "title": "Ecommerce Performance That Protects Revenue",
+      "excerpt": "Practical performance work for product pages, media delivery, and checkout confidence on real store traffic.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Practical performance work for product pages, media delivery, and checkout confidence on real store traffic."
+        }
+      ],
+      "coverPath": "/insights/ecommerce-speed.jpg",
+      "coverAlt": "Abstract commerce and speed motif",
+      "railLabel": "Store Speed",
+      "category": "Ecommerce",
+      "authorDisplay": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 8
+    }
+  },
+  {
+    "id": "article-mobile-delivery",
+    "slug": "shipping-mobile-apps-with-stable-releases",
+    "featured": false,
+    "homepageOrder": 5,
+    "firstPublishedAt": "2026-09-26T10:00:00.000Z",
+    "doc": {
+      "title": "Shipping Mobile Apps With Stable Release Habits",
+      "excerpt": "Release planning, feedback loops, and QA checkpoints that keep product teams shipping without constant fire drills.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Release planning, feedback loops, and QA checkpoints that keep product teams shipping without constant fire drills."
+        }
+      ],
+      "coverPath": "/insights/mobile-delivery.jpg",
+      "coverAlt": "Abstract mobile device frames",
+      "railLabel": "Mobile Delivery",
+      "category": "Mobile",
+      "authorDisplay": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 6
+    }
+  },
+  {
+    "id": "article-content-systems",
+    "slug": "content-systems-for-consistent-marketing",
+    "featured": false,
+    "homepageOrder": 6,
+    "firstPublishedAt": "2026-10-01T10:00:00.000Z",
+    "doc": {
+      "title": "Content Systems for Consistent Digital Marketing",
+      "excerpt": "Build a repeatable editorial rhythm that supports SEO, campaigns, and sales enablement without constant reinvention.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Build a repeatable editorial rhythm that supports SEO, campaigns, and sales enablement without constant reinvention."
+        }
+      ],
+      "coverPath": "/insights/content-systems.jpg",
+      "coverAlt": "Abstract editorial grid composition",
+      "railLabel": "Content Systems",
+      "category": "Marketing",
+      "authorDisplay": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 7
+    }
+  },
+  {
+    "id": "article-ai-product",
+    "slug": "practical-ai-features-for-business-products",
+    "featured": false,
+    "homepageOrder": 7,
+    "firstPublishedAt": "2026-10-03T10:00:00.000Z",
+    "doc": {
+      "title": "Practical AI Features for Business Products",
+      "excerpt": "Choose AI use cases that reduce real work, with clear boundaries for accuracy, privacy, and human review.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Choose AI use cases that reduce real work, with clear boundaries for accuracy, privacy, and human review."
+        }
+      ],
+      "coverPath": "/insights/practical-ai.jpg",
+      "coverAlt": "Abstract neural and product interface motif",
+      "railLabel": "Practical AI",
+      "category": "AI",
+      "authorDisplay": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 9
+    }
+  },
+  {
+    "id": "article-brand-systems",
+    "slug": "brand-systems-that-survive-real-projects",
+    "featured": false,
+    "homepageOrder": 8,
+    "firstPublishedAt": "2026-10-05T10:00:00.000Z",
+    "doc": {
+      "title": "Brand Systems That Survive Real Projects",
+      "excerpt": "Tokens, type, and component rules that keep campaigns and product UI aligned as teams and vendors grow.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Tokens, type, and component rules that keep campaigns and product UI aligned as teams and vendors grow."
+        }
+      ],
+      "coverPath": "/insights/brand-systems.jpg",
+      "coverAlt": "Abstract brand color and type blocks",
+      "railLabel": "Brand Systems",
+      "category": "Branding",
+      "authorDisplay": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 5
+    }
+  },
+  {
+    "id": "article-handover",
+    "slug": "website-handover-your-team-can-own",
+    "featured": false,
+    "homepageOrder": 9,
+    "firstPublishedAt": "2026-10-07T10:00:00.000Z",
+    "doc": {
+      "title": "Website Handover Your Team Can Actually Own",
+      "excerpt": "Admin access, content ownership, and maintenance plans that prevent post-launch confusion for internal teams.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Admin access, content ownership, and maintenance plans that prevent post-launch confusion for internal teams."
+        }
+      ],
+      "coverPath": "/insights/site-handover.jpg",
+      "coverAlt": "Abstract checklist and handover motif",
+      "railLabel": "Site Handover",
+      "category": "Delivery",
+      "authorDisplay": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 6
+    }
+  }
+]

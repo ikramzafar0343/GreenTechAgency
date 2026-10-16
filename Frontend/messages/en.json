@@ -1,0 +1,133 @@
+{
+  "navigation": {
+    "about": "About",
+    "services": "Services",
+    "insights": "Insights",
+    "contact": "Contact",
+    "portfolio": "Portfolio",
+    "primary": "Primary",
+    "mobile": "Mobile",
+    "siteNavigation": "Site navigation",
+    "back": "Back",
+    "allServices": "All Services",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "openServices": "Open Services navigation"
+  },
+  "cta": {
+    "portfolio": "Portfolio",
+    "contactEmail": "Contact by email",
+    "contactPhone": "Contact by phone",
+    "discussProject": "Discuss your project",
+    "workWithUs": "Work with us",
+    "getStarted": "Get started",
+    "startProject": "Start Your Project",
+    "exploreServices": "Explore Our Services"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong.",
+    "retry": "Try again",
+    "learnMore": "Learn more",
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "close": "Close",
+    "submit": "Submit",
+    "sending": "Sending…",
+    "required": "Required",
+    "optional": "Optional",
+    "unavailable": "Unavailable",
+    "notFound": "Page not found",
+    "backHome": "Back to home",
+    "goBack": "Go back",
+    "play": "Play",
+    "pause": "Pause",
+    "previous": "Previous",
+    "next": "Next",
+    "closeGallery": "Close gallery",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "playLogos": "Play logos",
+    "pauseLogos": "Pause logos",
+    "pauseVideo": "Pause background video",
+    "playVideo": "Play background video",
+    "closeReview": "Close review",
+    "translationUnavailable": "This page is not yet available in the selected language."
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "copyright": "© {year}. {name}.",
+    "socialProfiles": "Social profiles"
+  },
+  "forms": {
+    "name": "Name",
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "companyName": "Company name",
+    "message": "Message",
+    "service": "Service",
+    "portfolioLink": "Portfolio link",
+    "yourName": "Your name",
+    "validationRequired": "This field is required.",
+    "validationEmail": "Enter a valid email address.",
+    "success": "Thanks — we received your message.",
+    "error": "Could not send your message. Please try again.",
+    "backToChoices": "Back to choices"
+  },
+  "contact": {
+    "title": "Contact",
+    "submit": "Send message",
+    "pageNavigation": "Contact page navigation"
+  },
+  "home": {
+    "heroUnavailable": "Hero unavailable",
+    "heroNotPublished": "This content is not published yet.",
+    "servicesUnavailable": "Services unavailable",
+    "portfolioUnavailable": "Portfolio unavailable",
+    "howWeWorkUnavailable": "How we work unavailable",
+    "statsUnavailable": "Stats unavailable",
+    "testimonialsUnavailable": "Testimonials unavailable",
+    "insightsUnavailable": "Insights unavailable",
+    "whyChooseUnavailable": "Why choose us unavailable",
+    "faqUnavailable": "FAQ unavailable"
+  },
+  "sections": {
+    "howWeWorkProcess": "How we work process",
+    "portfolioCategories": "Portfolio categories",
+    "websiteTypes": "Website types",
+    "socialMediaTypes": "Social media types",
+    "projectSteps": "Project steps",
+    "previousProject": "Previous project",
+    "nextProject": "Next project",
+    "archiveViewMode": "Archive view mode",
+    "viewLarge": "View in large layout",
+    "viewSmall": "View in small layout",
+    "ourTeam": "Our team members",
+    "exploreServices": "Explore our services",
+    "teamPortraits": "Team portraits",
+    "brandsWeWorkWith": "Brands we work with",
+    "clientBrands": "Client brands",
+    "impactResults": "Impact and project results",
+    "teamPhotoPending": "Team photograph pending approval",
+    "servicesHubUnavailable": "Services hub unavailable",
+    "impactUnavailable": "Impact section unavailable",
+    "servicePhotoPairA": "Service photography pair A",
+    "servicePhotoPairB": "Service photography pair B"
+  },
+  "seo": {
+    "siteName": "GreenTech Agency",
+    "defaultDescription": "GreenTech Agency — design, engineering, and growth."
+  },
+  "errors": {
+    "fetchFailed": "Could not load this content.",
+    "footerUnavailable": "Footer unavailable",
+    "ctaUnavailable": "Closing CTA unavailable"
+  },
+  "legal": {
+    "privacyTitle": "Privacy Policy",
+    "termsTitle": "Terms & Conditions"
+  }
+}

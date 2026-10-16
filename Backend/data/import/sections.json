@@ -1,0 +1,80 @@
+[
+  {
+    "key": "services",
+    "visible": true,
+    "doc": {
+      "eyebrow": "OUR SERVICES",
+      "heading": "Digital Solutions Built for Business Growth",
+      "introduction": "Development, design, marketing and emerging technology services built to help businesses grow online.",
+      "ctaLabel": null,
+      "ctaHref": null,
+      "featuredIds": [],
+      "maxItems": 16
+    }
+  },
+  {
+    "key": "blog",
+    "visible": true,
+    "doc": {
+      "eyebrow": "INSIGHTS",
+      "heading": "Ideas for Better Digital Experiences",
+      "introduction": "Perspectives on development, SEO, AI, and digital growth.",
+      "ctaLabel": "View All Insights",
+      "ctaHref": "/insights",
+      "featuredIds": [],
+      "maxItems": 9
+    }
+  },
+  {
+    "key": "portfolio",
+    "visible": true,
+    "doc": {
+      "eyebrow": null,
+      "heading": "Selected Work",
+      "introduction": "Products and digital experiences built for brands that need clarity, craft, and measurable outcomes.",
+      "ctaLabel": null,
+      "ctaHref": null,
+      "featuredIds": [],
+      "maxItems": 8
+    }
+  },
+  {
+    "key": "faq",
+    "visible": true,
+    "doc": {
+      "eyebrow": "FREQUENTLY ASKED QUESTIONS",
+      "heading": "Questions Before We Get Started?",
+      "introduction": "Find answers about our digital services, project planning, pricing, and ongoing support.",
+      "ctaLabel": "Start Your Project",
+      "ctaHref": "/contact",
+      "featuredIds": [],
+      "maxItems": 24
+    }
+  },
+  {
+    "key": "testimonials",
+    "visible": true,
+    "doc": {
+      "eyebrow": "CLIENT EXPERIENCES",
+      "heading": "What Our Clients Say",
+      "introduction": "Hear from the people behind the projects.",
+      "ctaLabel": null,
+      "ctaHref": null,
+      "featuredIds": [],
+      "maxItems": 24
+    }
+  },
+  {
+    "key": "stats",
+    "visible": true,
+    "doc": {
+      "eyebrow": null,
+      "heading": "Results that stay measurable",
+      "introduction": "Outcomes we track with clients over time.",
+      "ctaLabel": null,
+      "ctaHref": null,
+      "featuredIds": [],
+      "maxItems": 8
+    }
+  }
+]

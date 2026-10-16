@@ -1,0 +1,265 @@
+.section {
+  --arch-visual-height: clamp(720px, 62vw, 900px);
+  --arch-accent: var(--brand-cyan);
+  --arch-reveal: cubic-bezier(0.135, 0.9, 0.15, 1);
+  position: relative;
+  isolation: isolate;
+  min-height: var(--arch-visual-height);
+  overflow: hidden;
+  background: #01070c;
+  color: #fff;
+}
+
+.heroVariant {
+  --arch-visual-height: 100svh;
+  --arch-horizon-height: clamp(300px, 52vh, 560px);
+  min-height: 100svh;
+}
+
+.heroVariant .grid {
+  height: 100%;
+  inset: 0;
+}
+
+.heroVariant .arch {
+  top: auto;
+  bottom: 0;
+  left: 50%;
+  width: min(170%, 2400px);
+  height: var(--arch-horizon-height);
+  transform: translateX(-50%);
+}
+
+.heroVariant .content {
+  justify-content: center;
+  min-height: 100svh;
+  padding-top: clamp(5.5rem, 12vh, 7.5rem);
+  /* Keep copy in the dotted sky, clear of the cyan horizon rim. */
+  padding-bottom: calc(var(--arch-horizon-height) * 0.62);
+  box-sizing: border-box;
+}
+
+.heroVariant .heading {
+  max-width: min(18ch, 100%);
+  margin-top: 0.75rem;
+}
+
+.heroVariant .eyebrow {
+  gap: 0.85rem;
+}
+
+.grid {
+  position: absolute;
+  inset: 0 0 auto;
+  height: var(--arch-visual-height);
+  z-index: 0;
+  pointer-events: none;
+  background-color: #01070c;
+  background-image:
+    linear-gradient(
+      color-mix(in srgb, #edf6f8 10%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, #edf6f8 10%, transparent) 1px,
+      transparent 1px
+    );
+  background-size: 48px 48px;
+}
+
+.grid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, #edf6f8 22%, transparent) 0 1px,
+    transparent 2px
+  );
+  background-size: 48px 48px;
+  background-position: 0 0;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.arch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: var(--arch-visual-height);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.glowOuter {
+  filter: blur(33px);
+}
+
+.glowInner {
+  filter: blur(14px);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100% - 48px, 1240px);
+  margin-inline: auto;
+  padding-top: clamp(330px, 24vw, 365px);
+  text-align: center;
+}
+
+.eyebrow,
+.heading {
+  opacity: 1;
+  transform: none;
+}
+
+.section[data-revealed="false"] .eyebrow,
+.section[data-revealed="false"] .heading {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.section[data-revealed="true"] .eyebrow,
+.section[data-revealed="true"] .heading {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1000ms var(--arch-reveal),
+    transform 1000ms var(--arch-reveal);
+}
+
+.section[data-revealed="true"] .eyebrow {
+  transition-delay: 200ms;
+}
+
+.section[data-revealed="true"] .heading {
+  transition-delay: 300ms;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin: 0;
+  text-transform: none;
+  color: #fff;
+}
+
+.accentDot {
+  flex: 0 0 auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--arch-accent);
+  box-shadow:
+    0 0 10px color-mix(in srgb, var(--arch-accent) 90%, transparent),
+    0 0 22px color-mix(in srgb, var(--arch-accent) 70%, transparent);
+}
+
+.heading {
+  max-width: min(24ch, 100%);
+  margin: 38px auto 0;
+  color: #fff;
+  text-align: center;
+}
+
+.body {
+  max-width: 850px;
+  margin-top: 32px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eyebrow,
+  .heading,
+  .section[data-revealed="false"] .eyebrow,
+  .section[data-revealed="false"] .heading,
+  .section[data-revealed="true"] .eyebrow,
+  .section[data-revealed="true"] .heading {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .arch {
+    left: -12.5%;
+    width: 125%;
+  }
+
+  .content {
+    padding-top: clamp(310px, 34vw, 350px);
+  }
+
+  .heroVariant .arch {
+    left: 50%;
+    width: min(190%, 2400px);
+  }
+
+  .heroVariant .content {
+    padding-top: clamp(5.75rem, 14vh, 8rem);
+    padding-bottom: calc(var(--arch-horizon-height) * 0.58);
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    --arch-visual-height: 660px;
+  }
+
+  .heroVariant {
+    --arch-horizon-height: clamp(240px, 46vh, 380px);
+  }
+
+  .grid {
+    background-size: 38px 38px;
+  }
+
+  .grid::after {
+    background-size: 114px 114px;
+  }
+
+  .arch {
+    left: -37.5%;
+    width: 175%;
+  }
+
+  .heroVariant .arch {
+    left: 50%;
+    width: min(220%, 2600px);
+  }
+
+  .content {
+    width: min(100% - 36px, 520px);
+    padding-top: clamp(270px, 76vw, 320px);
+  }
+
+  .heroVariant .content {
+    width: min(100% - 36px, 520px);
+    padding-top: clamp(5.25rem, 12vh, 6.5rem);
+    padding-bottom: calc(var(--arch-horizon-height) * 0.55);
+  }
+
+  .eyebrow {
+    gap: 12px;
+  }
+
+  .accentDot {
+    width: 11px;
+    height: 11px;
+  }
+
+  .heading {
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,139 @@
+"use client";
+
+import Link from "next/link";
+import { useParams, useRouter } from "next/navigation";
+import { useEffect, useState, useTransition } from "react";
+import { EmployeePageHeader } from "@/components/employee/EmployeePageHeader";
+import { useEmployee } from "@/components/employee/EmployeeProvider";
+import { adminFieldClass } from "@/components/admin/AdminFormModal";
+import { projectStatusLabel, type ProjectStatus } from "@/constants/admin";
+import { updateProjectNotesAction } from "@/lib/submitEmployeeDelivery";
+
+const cardClass =
+  "rounded-2xl border border-black/8 bg-white p-5 shadow-[0_8px_24px_rgba(47,58,40,0.04)] md:p-6";
+
+const statusPillClass: Record<ProjectStatus, string> = {
+  requested: "bg-black/8 text-black/50",
+  approved: "bg-brand/12 text-brand",
+  in_progress: "bg-[rgba(249,161,55,0.18)] text-[#e8891a]",
+  completed: "bg-[rgba(47,58,40,0.12)] text-brand-deep",
+};
+
+export function ProjectDetailPage() {
+  const params = useParams();
+  const router = useRouter();
+  const { state, setProjects } = useEmployee();
+  const [pending, startTransition] = useTransition();
+
+  const projectId = typeof params.id === "string" ? params.id : "";
+  const project = state.projects.find((item) => item.id === projectId);
+  const client = project
+    ? state.clients.find((item) => item.id === project.clientId)
+    : undefined;
+
+  const [notesByProject, setNotesByProject] = useState<Record<string, string>>(
+    {},
+  );
+
+  const notes = project
+    ? (notesByProject[project.id] ?? project.notes)
+    : "";
+
+  const setNotes = (value: string) => {
+    if (!project) {
+      return;
+    }
+
+    setNotesByProject((current) => ({ ...current, [project.id]: value }));
+  };
+
+  useEffect(() => {
+    if (!project) {
+      router.replace("/employee/projects");
+    }
+  }, [project, router]);
+
+  if (!project) {
+    return null;
+  }
+
+  const onSaveNotes = () => {
+    startTransition(async () => {
+      const result = await updateProjectNotesAction({
+        id: project.id,
+        version: project.version,
+        notes: notes.trim(),
+      });
+      if (!result.ok) {
+        return;
+      }
+      setProjects(
+        state.projects.map((item) =>
+          item.id === result.data.id ? result.data : item,
+        ),
+      );
+      setNotesByProject((current) => ({
+        ...current,
+        [result.data.id]: result.data.notes,
+      }));
+    });
+  };
+
+  return (
+    <div className="space-y-6">
+      <EmployeePageHeader
+        title={project.title}
+        lede={`${project.service} · Updated ${project.updatedAt}`}
+      />
+
+      <section className={cardClass}>
+        <dl className="space-y-3">
+          <div className="flex flex-wrap justify-between gap-4">
+            <dt className="text-[0.84rem] font-medium text-black/45">Status</dt>
+            <dd>
+              <span
+                className={`inline-flex rounded-full px-2.5 py-1 text-[0.72rem] font-bold ${statusPillClass[project.status]}`}
+              >
+                {projectStatusLabel[project.status]}
+              </span>
+            </dd>
+          </div>
+          <div className="flex flex-wrap justify-between gap-4">
+            <dt className="text-[0.84rem] font-medium text-black/45">Client</dt>
+            <dd>
+              <Link
+                href={`/employee/clients/${project.clientId}`}
+                className="text-[0.88rem] font-semibold text-brand transition-colors hover:text-brand-deep"
+              >
+                {client?.company}
+              </Link>
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section className={cardClass}>
+        <h2 className="text-[1.05rem] font-extrabold tracking-[-0.02em] text-[#0d120b]">
+          Notes
+        </h2>
+        <label className="mt-4 block">
+          <span className="sr-only">Notes</span>
+          <textarea
+            rows={6}
+            value={notes}
+            onChange={(event) => setNotes(event.target.value)}
+            className={`${adminFieldClass} resize-y`}
+          />
+        </label>
+        <button
+          type="button"
+          onClick={onSaveNotes}
+          disabled={pending}
+          className="mt-4 rounded-xl bg-brand px-4 py-2.5 text-[0.88rem] font-bold text-cream transition-colors hover:bg-brand-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary disabled:opacity-50"
+        >
+          Save notes
+        </button>
+      </section>
+    </div>
+  );
+}

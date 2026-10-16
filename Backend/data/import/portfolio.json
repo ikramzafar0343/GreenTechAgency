@@ -1,0 +1,106 @@
+[
+  {
+    "id": "project-atlas",
+    "slug": "atlas-dashboard",
+    "sortOrder": 1,
+    "featured": true,
+    "doc": {
+      "title": "Atlas Operations Dashboard",
+      "summary": "A multi-tenant operations console that replaced spreadsheet-heavy shipping workflows.",
+      "description": "We designed and shipped a live operations dashboard with role-based views, shipment tracking, and reporting.",
+      "caseStudy": [
+        {
+          "type": "paragraph",
+          "text": "We designed and shipped a live operations dashboard with role-based views, shipment tracking, and reporting."
+        }
+      ],
+      "category": "Product Design",
+      "clientName": "Atlas Logistics",
+      "coverPath": "/portfolio/atlas-dashboard.jpg",
+      "coverAlt": "",
+      "projectUrl": null,
+      "relatedServiceSlug": null,
+      "gallery": [],
+      "seoTitle": null,
+      "seoDescription": null
+    }
+  },
+  {
+    "id": "project-lumen",
+    "slug": "lumen-shop",
+    "sortOrder": 2,
+    "featured": true,
+    "doc": {
+      "title": "Lumen Commerce Experience",
+      "summary": "A conversion-focused storefront for a sustainable fashion brand expanding online.",
+      "description": "We rebuilt the ecommerce journey across mobile and desktop with clearer merchandising and checkout.",
+      "caseStudy": [
+        {
+          "type": "paragraph",
+          "text": "We rebuilt the ecommerce journey across mobile and desktop with clearer merchandising and checkout."
+        }
+      ],
+      "category": "Ecommerce",
+      "clientName": "Lumen Apparel",
+      "coverPath": "/portfolio/lumen-shop.jpg",
+      "coverAlt": "",
+      "projectUrl": null,
+      "relatedServiceSlug": null,
+      "gallery": [],
+      "seoTitle": null,
+      "seoDescription": null
+    }
+  },
+  {
+    "id": "project-northline",
+    "slug": "northline-banking",
+    "sortOrder": 3,
+    "featured": true,
+    "doc": {
+      "title": "Northline Mobile Banking",
+      "summary": "A calm banking app for everyday money decisions, balances, and card controls.",
+      "description": "We delivered a mobile-first banking experience with spending insights and accessible navigation.",
+      "caseStudy": [
+        {
+          "type": "paragraph",
+          "text": "We delivered a mobile-first banking experience with spending insights and accessible navigation."
+        }
+      ],
+      "category": "Mobile App",
+      "clientName": "Northline Finance",
+      "coverPath": "/portfolio/northline-banking.jpg",
+      "coverAlt": "",
+      "projectUrl": null,
+      "relatedServiceSlug": null,
+      "gallery": [],
+      "seoTitle": null,
+      "seoDescription": null
+    }
+  },
+  {
+    "id": "project-carepath",
+    "slug": "carepath-portal",
+    "sortOrder": 4,
+    "featured": false,
+    "doc": {
+      "title": "CarePath Patient Portal",
+      "summary": "A patient portal that makes appointments, records, and follow-ups easier to manage.",
+      "description": "We created a healthcare portal with scheduling, visit summaries, and clear next steps.",
+      "caseStudy": [
+        {
+          "type": "paragraph",
+          "text": "We created a healthcare portal with scheduling, visit summaries, and clear next steps."
+        }
+      ],
+      "category": "Web Platform",
+      "clientName": "CarePath Health",
+      "coverPath": "/portfolio/carepath-portal.jpg",
+      "coverAlt": "",
+      "projectUrl": null,
+      "relatedServiceSlug": null,
+      "gallery": [],
+      "seoTitle": null,
+      "seoDescription": null
+    }
+  }
+]

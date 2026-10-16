@@ -1,0 +1,70 @@
+import type { PublicFooterSettings } from "@/features/footer/model/types";
+
+export const DEFAULT_FOOTER_SETTINGS: PublicFooterSettings = {
+  brandName: "GreenTech Agency",
+  logoUrl: "/logo.png",
+  showClosingCta: false,
+  ctaEyebrow: "LET'S GET STARTED",
+  ctaHeading: "DISCUSS YOUR REQUIREMENTS",
+  ctaBody:
+    "Tell us about your website, software, design, or digital growth project. We’ll help define the priorities, scope, and next steps.",
+  ctaLabel: "DISCUSS YOUR PROJECT",
+  ctaHref: "/contact",
+  showCtaArrow: true,
+  ctaEntryAnimation: true,
+  contact: {
+    address: "Digital product studio — design, engineering, and growth.",
+    email: "hello@greentech.agency",
+    phone: null,
+    hours: null,
+    mapUrl: null,
+  },
+  showBrandSignature: true,
+  copyrightName: "GreenTech Agency",
+  privacyHref: "/privacy",
+  termsHref: "/terms",
+  groupTitles: {
+    company: "Overview",
+    development: "Smart Technology Solutions",
+    marketing: "Digital Growth & Marketing",
+    additional: "Emerging Technology",
+  },
+  socialLinks: [
+    {
+      id: "facebook",
+      platform: "facebook",
+      label: "Facebook",
+      url: "https://www.facebook.com/",
+      displayOrder: 1,
+    },
+    {
+      id: "instagram",
+      platform: "instagram",
+      label: "Instagram",
+      url: "https://www.instagram.com/",
+      displayOrder: 2,
+    },
+    {
+      id: "youtube",
+      platform: "youtube",
+      label: "YouTube",
+      url: "https://www.youtube.com/",
+      displayOrder: 3,
+    },
+    {
+      id: "linkedin",
+      platform: "linkedin",
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/",
+      displayOrder: 4,
+    },
+    {
+      id: "behance",
+      platform: "behance",
+      label: "Behance",
+      url: "https://www.behance.net/",
+      displayOrder: 5,
+    },
+  ],
+  year: new Date().getFullYear(),
+};

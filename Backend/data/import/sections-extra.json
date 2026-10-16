@@ -1,0 +1,41 @@
+[
+  {
+    "key": "faq",
+    "visible": true,
+    "doc": {
+      "eyebrow": "FREQUENTLY ASKED QUESTIONS",
+      "heading": "Questions Before We Get Started?",
+      "introduction": "Find answers about our digital services, project planning, pricing, and ongoing support.",
+      "ctaLabel": "Start Your Project",
+      "ctaHref": "/contact",
+      "featuredIds": [],
+      "maxItems": 24
+    }
+  },
+  {
+    "key": "testimonials",
+    "visible": true,
+    "doc": {
+      "eyebrow": "CLIENT EXPERIENCES",
+      "heading": "What Our Clients Say",
+      "introduction": "Hear from the people behind the projects.",
+      "ctaLabel": null,
+      "ctaHref": null,
+      "featuredIds": [],
+      "maxItems": 24
+    }
+  },
+  {
+    "key": "stats",
+    "visible": true,
+    "doc": {
+      "eyebrow": null,
+      "heading": "Results that stay measurable",
+      "introduction": "Outcomes we track with clients over time.",
+      "ctaLabel": null,
+      "ctaHref": null,
+      "featuredIds": [],
+      "maxItems": 8
+    }
+  }
+]

@@ -1,0 +1,24 @@
+export type AstronautCtaContent = {
+  eyebrow: string;
+  heading: string;
+  paragraphs: readonly [string, string];
+  ctaLabel: string;
+  ctaHref: string;
+  imageSrc: string;
+  imageWidth: number;
+  imageHeight: number;
+};
+
+export const ASTRONAUT_CTA_CONTENT: AstronautCtaContent = {
+  eyebrow: "LET'S BUILD WHAT'S NEXT",
+  heading: "Your Business Deserves Better Digital Experiences. Let's Build Them.",
+  paragraphs: [
+    "Great digital experiences begin with a clear vision. We bring together thoughtful design, reliable technology, and a focus on what matters to your business.",
+    "Tell us what you're planning, what needs improving, or where you're ready to grow. We'll help you turn the next step into a practical plan.",
+  ],
+  ctaLabel: "Start a Project",
+  ctaHref: "/contact",
+  imageSrc: "/cta/cta.png",
+  imageWidth: 1536,
+  imageHeight: 1024,
+};

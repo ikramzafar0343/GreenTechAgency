@@ -1,0 +1,317 @@
+{
+  "rows": [
+    {
+      "position": "upper",
+      "configured_direction": "right",
+      "images": [
+        {
+          "name": "Gites",
+          "file": "logos/gites.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Tomorrowland",
+          "file": "logos/tomorrowland.png",
+          "width": 304,
+          "height": 182
+        },
+        {
+          "name": "Brussels Airport",
+          "file": "logos/brussels-airport.png",
+          "width": 1590,
+          "height": 600
+        },
+        {
+          "name": "IkZorg",
+          "file": "logos/ikzorg.png",
+          "width": 1590,
+          "height": 600
+        },
+        {
+          "name": "GoodNews Coffee",
+          "file": "logos/goodnews-coffee.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "David Lloyd",
+          "file": "logos/david-lloyd.png",
+          "width": 1590,
+          "height": 600
+        },
+        {
+          "name": "Sequoia Support",
+          "file": "logos/sequoia-support.png",
+          "width": 1077,
+          "height": 309
+        },
+        {
+          "name": "Collective Cafe Haarlem",
+          "file": "logos/collective-cafe-haarlem.png",
+          "width": 1914,
+          "height": 358
+        },
+        {
+          "name": "Loop",
+          "file": "logos/loop.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Apostrophe",
+          "file": "logos/apostrophe.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Schoots Gunter",
+          "file": "logos/schoots-gunter.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Lantis Antwerpen",
+          "file": "logos/lantis-antwerpen.png",
+          "width": 1590,
+          "height": 600
+        },
+        {
+          "name": "Panchos",
+          "file": "logos/panchos.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Mentalspot",
+          "file": "logos/mentalspot.png",
+          "width": 2560,
+          "height": 611
+        },
+        {
+          "name": "Pad Thai",
+          "file": "logos/pad-thai.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Qualiko",
+          "file": "logos/qualiko.png",
+          "width": 1024,
+          "height": 324
+        },
+        {
+          "name": "Infomedics",
+          "file": "logos/infomedics.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Logo 13",
+          "file": "logos/logo-13.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Logo 24",
+          "file": "logos/logo-24.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Gemeente Amsterdam",
+          "file": "logos/gemeente-amsterdam.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Co-office",
+          "file": "logos/co-office.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Metapsych",
+          "file": "logos/metapsych.png",
+          "width": 500,
+          "height": 120
+        },
+        {
+          "name": "Dar al Fahm",
+          "file": "logos/dar-al-fahm.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Logo 1",
+          "file": "logos/logo-1.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Bright",
+          "file": "logos/bright.png",
+          "width": 270,
+          "height": 115
+        }
+      ]
+    },
+    {
+      "position": "lower",
+      "configured_direction": "left",
+      "images": [
+        {
+          "name": "Co-office",
+          "file": "logos/co-office.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Metapsych",
+          "file": "logos/metapsych.png",
+          "width": 500,
+          "height": 120
+        },
+        {
+          "name": "Dar al Fahm",
+          "file": "logos/dar-al-fahm.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Logo 1",
+          "file": "logos/logo-1.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Bright",
+          "file": "logos/bright.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Gites",
+          "file": "logos/gites.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Tomorrowland",
+          "file": "logos/tomorrowland.png",
+          "width": 304,
+          "height": 182
+        },
+        {
+          "name": "Brussels Airport",
+          "file": "logos/brussels-airport.png",
+          "width": 1590,
+          "height": 600
+        },
+        {
+          "name": "IkZorg",
+          "file": "logos/ikzorg.png",
+          "width": 1590,
+          "height": 600
+        },
+        {
+          "name": "GoodNews Coffee",
+          "file": "logos/goodnews-coffee.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "David Lloyd",
+          "file": "logos/david-lloyd.png",
+          "width": 1590,
+          "height": 600
+        },
+        {
+          "name": "Mentalspot",
+          "file": "logos/mentalspot.png",
+          "width": 2560,
+          "height": 611
+        },
+        {
+          "name": "Pad Thai",
+          "file": "logos/pad-thai.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Qualiko",
+          "file": "logos/qualiko.png",
+          "width": 1024,
+          "height": 324
+        },
+        {
+          "name": "Collective Cafe Haarlem",
+          "file": "logos/collective-cafe-haarlem.png",
+          "width": 1914,
+          "height": 358
+        },
+        {
+          "name": "Loop",
+          "file": "logos/loop.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Apostrophe",
+          "file": "logos/apostrophe.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Infomedics",
+          "file": "logos/infomedics.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Schoots Gunter",
+          "file": "logos/schoots-gunter.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Logo 13",
+          "file": "logos/logo-13.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Logo 24",
+          "file": "logos/logo-24.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Gemeente Amsterdam",
+          "file": "logos/gemeente-amsterdam.png",
+          "width": 270,
+          "height": 115
+        },
+        {
+          "name": "Sequoia Support",
+          "file": "logos/sequoia-support.png",
+          "width": 1077,
+          "height": 309
+        },
+        {
+          "name": "Lantis Antwerpen",
+          "file": "logos/lantis-antwerpen.png",
+          "width": 1590,
+          "height": 600
+        },
+        {
+          "name": "Panchos",
+          "file": "logos/panchos.png",
+          "width": 270,
+          "height": 115
+        }
+      ]
+    }
+  ],
+  "visual_copies_per_row": 3
+}

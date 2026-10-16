@@ -1,0 +1,66 @@
+/* Opt in for articles, service copy, legal pages, or admin rich-text output. */
+.siteTypography .typeProse {
+  font-size: var(--fontSizeBody);
+  font-weight: var(--fontWeightHeading);
+  line-height: var(--lineHeightProse);
+  letter-spacing: normal;
+  max-inline-size: var(--measureBody);
+  overflow-wrap: break-word;
+}
+
+.siteTypography .typeProse :where(p, ul, ol, blockquote, pre, table) {
+  margin-block: 0 1.25em;
+}
+
+.siteTypography .typeProse :where(ul, ol) {
+  padding-inline-start: 1.4em;
+}
+
+.siteTypography .typeProse :where(ul) { list-style-type: disc; }
+.siteTypography .typeProse :where(ol) { list-style-type: decimal; }
+.siteTypography .typeProse :where(li + li) { margin-block-start: 0.35em; }
+
+.siteTypography .typeProse :where(h2) {
+  font-size: var(--fontSizeHeading);
+  line-height: var(--lineHeightHeading);
+  letter-spacing: var(--trackingHeading);
+  margin-block: 1.7em 0.65em;
+}
+
+.siteTypography .typeProse :where(h3) {
+  font-size: var(--fontSizeLead);
+  line-height: 1.3;
+  letter-spacing: var(--trackingLead);
+  margin-block: 1.5em 0.6em;
+}
+
+.siteTypography .typeProse :where(h4, h5, h6) {
+  font-size: var(--fontSizeBody);
+  font-weight: var(--fontWeightMedium);
+  line-height: var(--lineHeightUi);
+  letter-spacing: normal;
+  margin-block: 1.4em 0.6em;
+}
+
+.siteTypography .typeProse :where(blockquote) {
+  font-size: var(--fontSizeLead);
+  line-height: var(--lineHeightLead);
+  padding-inline-start: 1em;
+  border-inline-start: 1px solid currentColor;
+}
+
+.siteTypography .typeProse :where(a) {
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+  text-underline-offset: 0.18em;
+  overflow-wrap: anywhere;
+}
+
+.siteTypography .typeProse :where(pre) {
+  overflow-x: auto;
+  max-inline-size: 100%;
+  line-height: 1.6;
+}
+
+.siteTypography .typeProse > :first-child { margin-block-start: 0; }
+.siteTypography .typeProse > :last-child { margin-block-end: 0; }

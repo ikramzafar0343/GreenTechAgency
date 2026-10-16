@@ -1,0 +1,98 @@
+.viewport {
+  position: relative;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  outline-offset: -3px;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  align-items: flex-start;
+  animation: impactMarqueeSlide var(--impactMarqueeDuration, 60s) linear
+    infinite;
+  animation-play-state: paused;
+  will-change: transform;
+}
+
+.viewport[data-visible="true"][data-static="false"] .track {
+  animation-play-state: running;
+}
+
+.viewport:is(:hover, :focus-within) .track {
+  animation-play-state: paused !important;
+}
+
+.viewport[data-static="true"] .track {
+  animation: none;
+  transform: none;
+}
+
+.group {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--impactGap);
+  padding-inline-end: var(--impactGap);
+}
+
+.repeatGroup {
+}
+
+@keyframes impactMarqueeSlide {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (max-width: 767px), (hover: none) and (pointer: coarse) {
+  .viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .track {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .group:first-child {
+    padding-inline-start: 16px;
+  }
+
+  .group:last-child.repeatGroup {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .viewport {
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-inline: contain;
+  }
+
+  .track {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .repeatGroup {
+    display: none !important;
+  }
+}

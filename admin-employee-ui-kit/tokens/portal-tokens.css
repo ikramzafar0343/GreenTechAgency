@@ -1,0 +1,88 @@
+@theme {
+  --color-brand: #5c6849;
+  --color-brand-deep: #2f3a28;
+  --color-secondary: #f9a137;
+  --color-secondary-deep: #e8891a;
+  --color-white: #ffffff;
+  --color-cream: #f7f5f0;
+  --color-black: #000000;
+}
+
+@utility text-logo-gradient {
+  background-image: linear-gradient(
+    105deg,
+    #ffe3a8 0%,
+    #f9a137 38%,
+    #f0b24a 62%,
+    #e8891a 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-logo-gradient {
+  background-image: linear-gradient(
+    105deg,
+    #ffe3a8 0%,
+    #f9a137 38%,
+    #f0b24a 62%,
+    #e8891a 100%
+  );
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 210mm !important;
+    height: 297mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .invoice-print-shell {
+    min-height: 0 !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .invoice-document {
+    width: 210mm !important;
+    height: 297mm !important;
+    max-width: none !important;
+    aspect-ratio: auto !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .invoice-document * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}

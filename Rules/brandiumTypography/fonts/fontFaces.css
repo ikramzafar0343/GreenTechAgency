@@ -1,0 +1,33 @@
+/* Use this loader OR nextjs/fontConfig.ts, never both. */
+/* Add your licensed, unmodified WOFF2 files at these project-local URLs. */
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/fonts/twkLausanne/twkLausanne250.woff2") format("woff2");
+  font-weight: 250;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/fonts/twkLausanne/twkLausanne300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/fonts/twkLausanne/twkLausanne400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TWKLausanne";
+  src: url("/fonts/twkLausanne/twkLausanne500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

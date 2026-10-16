@@ -1,0 +1,215 @@
+.form {
+  --contact-ink: #edf6f8;
+  --contact-muted: rgba(237, 246, 248, 0.72);
+  --contact-cyan: var(--brand-cyan);
+  --contact-field: rgba(8, 28, 42, 0.55);
+  --contact-border: rgba(255, 255, 255, 0.12);
+  --contact-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  display: grid;
+  gap: 1.05rem;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.05rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.field label {
+  color: rgba(237, 246, 248, 0.88);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 50px;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--contact-border);
+  border-radius: 12px;
+  background: var(--contact-field);
+  color: var(--contact-ink);
+  font: inherit;
+  font-size: 0.98rem;
+  transition:
+    border-color 160ms var(--contact-ease),
+    background-color 160ms var(--contact-ease),
+    box-shadow 160ms var(--contact-ease);
+}
+
+.field textarea {
+  min-height: 148px;
+  resize: vertical;
+}
+
+.field select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--contact-cyan) 50%),
+    linear-gradient(135deg, var(--contact-cyan) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) calc(50% - 3px),
+    calc(100% - 12px) calc(50% - 3px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.field select option {
+  color: #0f2430;
+  background: #f4f8fa;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(237, 246, 248, 0.4);
+}
+
+.field input:hover,
+.field select:hover,
+.field textarea:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible {
+  outline: none;
+  border-color: color-mix(in srgb, var(--contact-cyan) 70%, white);
+  background: rgba(8, 28, 42, 0.72);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--contact-cyan) 28%, transparent);
+}
+
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border-color: #ff8f8f;
+}
+
+.fieldError,
+.formError {
+  margin: 0;
+  font-size: 0.86rem;
+  color: #ffb4b4;
+}
+
+.submitRow {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+}
+
+.submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  min-height: 54px;
+  padding: 0.9rem 1.5rem;
+  border: 0;
+  border-radius: 9999px;
+  background: linear-gradient(
+    105deg,
+    var(--brand-cyan) 0%,
+    #7cf0f8 48%,
+    var(--brand-cyan-soft) 100%
+  );
+  color: var(--brand-navy-deep);
+  font: inherit;
+  cursor: pointer;
+  transition:
+    filter 180ms var(--contact-ease),
+    transform 180ms var(--contact-ease);
+}
+
+.submitArrow {
+  transition: transform 180ms var(--contact-ease);
+}
+
+.submit:hover:not(:disabled),
+.submit:focus-visible {
+  filter: brightness(1.05);
+}
+
+.submit:hover:not(:disabled) .submitArrow,
+.submit:focus-visible .submitArrow {
+  transform: translateX(3px);
+}
+
+.submit:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.submitNote {
+  margin: 0;
+  text-align: center;
+  color: rgba(237, 246, 248, 0.55);
+}
+
+.success {
+  display: grid;
+  gap: 0.7rem;
+  min-height: 18rem;
+  align-content: center;
+  justify-items: start;
+  padding: 0.5rem 0.25rem;
+}
+
+.successMark {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin: 0;
+  border-radius: 9999px;
+  background: color-mix(in srgb, var(--brand-cyan) 22%, transparent);
+  color: var(--contact-cyan);
+  font-size: 1.25rem;
+}
+
+.successTitle {
+  margin: 0;
+  color: var(--contact-ink);
+}
+
+.successCopy {
+  margin: 0;
+  max-width: 28rem;
+  color: var(--contact-muted);
+}
+
+.honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .fieldGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .submit,
+  .submitArrow,
+  .field input,
+  .field select,
+  .field textarea {
+    transition: none;
+  }
+}

@@ -1,0 +1,248 @@
+/* Intentionally isolated: no global resets or site-wide font / color overrides. */
+.section {
+  --impactCardWidth: clamp(320px, 28.9vw, 459px);
+  --impactGap: 16px;
+  --impactCardRadius: 10px;
+  --impactHeightTall: 552px;
+  --impactHeightMedium: 358px;
+  --impactHeightCompact: 256px;
+  --impactCardInset: 32px;
+  --impactCanvas: var(--background, #fff);
+  --impactTextDark: var(--foreground, #222);
+  --impactTextLight: #fff;
+  --impactMetricBg: #1b1b1b;
+  --impactSurfaceMuted: #f3f3f3;
+  --impactMetricSecondary: #939393;
+
+  isolation: isolate;
+  padding-block: clamp(80px, 9vw, 150px);
+  background: var(--impactCanvas);
+  color: var(--impactTextDark);
+}
+
+.intro {
+  width: min(calc(100% - 48px), 1320px);
+  margin-inline: auto;
+  margin-bottom: clamp(42px, 6vw, 88px);
+}
+
+.eyebrow {
+  margin: 0 0 28px;
+  font-size: clamp(13px, 1vw, 16px);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.heading {
+  max-width: 1040px;
+  margin: 0;
+  font-size: clamp(44px, 6.25vw, 104px);
+  line-height: 1.01;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  text-wrap: balance;
+}
+
+.description {
+  max-width: 780px;
+  margin: clamp(22px, 3vw, 38px) 0 0;
+  font-size: clamp(17px, 1.4vw, 21px);
+  line-height: 1.5;
+  letter-spacing: -0.012em;
+}
+
+/* Rail purposely breaks out of content max-width. */
+.viewport {
+  position: relative;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  outline-offset: -3px;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  align-items: flex-start;
+  animation: impactMarqueeSlide var(--impactMarqueeDuration, 60s) linear infinite;
+  animation-play-state: paused;
+  will-change: transform;
+}
+
+.viewport[data-visible="true"][data-static="false"] .track {
+  animation-play-state: running;
+}
+
+.viewport:is(:hover, :focus-within) .track {
+  animation-play-state: paused !important;
+}
+
+.viewport[data-static="true"] .track {
+  animation: none;
+  transform: none;
+}
+
+.group {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--impactGap);
+  padding-inline-end: var(--impactGap);
+}
+
+.card {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 var(--impactCardWidth);
+  width: var(--impactCardWidth);
+  min-width: 0;
+  overflow: hidden;
+  border-radius: var(--impactCardRadius);
+  background: var(--impactSurfaceMuted);
+  color: var(--impactTextDark);
+}
+
+.card[data-size="tall"] { height: var(--impactHeightTall); }
+.card[data-size="medium"] { min-height: var(--impactHeightMedium); }
+.card[data-size="compact"] { min-height: var(--impactHeightCompact); }
+
+.card[data-theme="dark"] {
+  background: var(--impactMetricBg);
+  color: var(--impactTextLight);
+}
+
+.card[data-theme="light"] { background: #fff; }
+.card[data-theme="muted"] { background: var(--impactSurfaceMuted); }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+  min-height: var(--impactHeightCompact);
+  padding: var(--impactCardInset);
+}
+
+.metricPrimary,
+.metricSecondary,
+.cardHeading,
+.cardDescription,
+.imageCaption {
+  margin: 0;
+  font-size: clamp(19px, 1.48vw, 23px);
+  font-weight: 450;
+  line-height: 1.4;
+  letter-spacing: -0.038em;
+}
+
+.metricPrimary strong { font-weight: 550; }
+.metricSecondary { color: var(--impactMetricSecondary); }
+
+.card[data-size="medium"] .content { min-height: var(--impactHeightMedium); }
+.card[data-size="tall"] .content { min-height: var(--impactHeightTall); }
+
+.cardHeading { font-weight: 500; }
+.cardDescription { margin-top: 14px; opacity: 0.85; }
+
+.cardImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageLink {
+  position: absolute;
+  inset: 0;
+  display: block;
+  color: inherit;
+}
+
+.imageCaption {
+  position: absolute;
+  z-index: 1;
+  inset-inline: var(--impactCardInset);
+  bottom: var(--impactCardInset);
+  color: #fff;
+  pointer-events: none;
+}
+
+.ctaContent { justify-content: space-between; }
+
+.ctaLink {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 8px 9px;
+  margin-top: 28px;
+  color: inherit;
+  border-bottom: 1px solid currentColor;
+  text-decoration: none;
+  font-size: clamp(19px, 1.48vw, 23px);
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.ctaArrow { flex-shrink: 0; width: 22px; height: 22px; transition: transform 250ms ease; }
+.ctaLink:hover .ctaArrow { transform: translateX(4px); }
+.ctaLink:focus-visible, .imageLink:focus-visible { outline: 2px solid currentColor; outline-offset: -4px; }
+
+@keyframes impactMarqueeSlide {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section {
+    --impactCardWidth: 380px;
+    --impactHeightTall: 500px;
+    --impactHeightMedium: 350px;
+    --impactHeightCompact: 248px;
+  }
+}
+
+@media (max-width: 767px), (hover: none) and (pointer: coarse) {
+  .section {
+    --impactCardWidth: min(84vw, 360px);
+    --impactGap: 12px;
+    --impactCardInset: 24px;
+    --impactHeightTall: 460px;
+    --impactHeightMedium: 340px;
+    --impactHeightCompact: 240px;
+  }
+  .intro { width: calc(100% - 32px); margin-bottom: 44px; }
+  .heading { font-size: clamp(39px, 9vw, 68px); }
+  .viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .viewport::-webkit-scrollbar { display: none; }
+  .track { animation: none !important; transform: none !important; will-change: auto; }
+  .group:first-child { padding-inline-start: 16px; }
+  .group:last-child.repeatGroup { display: none; }
+  .card { scroll-snap-align: center; }
+  .card[data-size="medium"],
+  .card[data-size="compact"] { height: auto; }
+  .ctaContent { min-height: var(--impactHeightMedium); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .viewport {
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-inline: contain;
+  }
+  .track { animation: none !important; transform: none !important; will-change: auto; }
+  .repeatGroup { display: none !important; }
+  .ctaArrow { transition: none; }
+}

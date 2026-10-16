@@ -1,0 +1,124 @@
+.siteTypography .typeDisplay {
+  font-size: var(--fontSizeDisplay);
+  font-weight: var(--fontWeightHeading);
+  line-height: var(--lineHeightDisplay);
+  letter-spacing: var(--trackingDisplay);
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+.siteTypography .typeHero {
+  font-size: var(--fontSizeHero);
+  font-weight: var(--fontWeightLight);
+  line-height: var(--lineHeightHero);
+  letter-spacing: var(--trackingHero);
+  text-wrap: balance;
+}
+
+.siteTypography .typeSectionTitle {
+  font-size: var(--fontSizeSection);
+  font-weight: var(--fontWeightHeading);
+  line-height: var(--lineHeightSection);
+  letter-spacing: var(--trackingSection);
+  text-wrap: balance;
+}
+
+.siteTypography .typeHeading {
+  font-size: var(--fontSizeHeading);
+  font-weight: var(--fontWeightHeading);
+  line-height: var(--lineHeightHeading);
+  letter-spacing: var(--trackingHeading);
+}
+
+.siteTypography .typeCardTitle {
+  font-size: var(--fontSizeCard);
+  font-weight: var(--fontWeightLight);
+  line-height: var(--lineHeightCard);
+  letter-spacing: var(--trackingCard);
+  text-wrap: pretty;
+}
+
+.siteTypography .typeLead {
+  font-size: var(--fontSizeLead);
+  font-weight: var(--fontWeightLight);
+  line-height: var(--lineHeightLead);
+  letter-spacing: var(--trackingLead);
+}
+
+.siteTypography .typeBody {
+  font-size: var(--fontSizeBody);
+  font-weight: var(--fontWeightLight);
+  line-height: var(--lineHeightBody);
+  letter-spacing: var(--trackingBody);
+}
+
+.siteTypography .typeSmall {
+  font-size: var(--fontSizeSmall);
+  font-weight: var(--fontWeightHeading);
+  line-height: var(--lineHeightBody);
+  letter-spacing: normal;
+}
+
+.siteTypography .typeMeta {
+  font-size: var(--fontSizeMeta);
+  font-weight: var(--fontWeightRegular);
+  line-height: var(--lineHeightMeta);
+  letter-spacing: var(--trackingMeta);
+}
+
+.siteTypography .typeEyebrow {
+  font-size: var(--fontSizeEyebrow);
+  font-weight: var(--fontWeightHeading);
+  line-height: var(--lineHeightUi);
+  letter-spacing: var(--trackingLabel);
+}
+
+.siteTypography .typeNav {
+  font-size: var(--fontSizeNav);
+  font-weight: var(--fontWeightLight);
+  line-height: var(--lineHeightUi);
+  letter-spacing: normal;
+}
+
+.siteTypography .typeButton {
+  font-size: var(--fontSizeButton);
+  font-weight: var(--fontWeightHeading);
+  line-height: var(--lineHeightUi);
+  letter-spacing: var(--trackingLabel);
+}
+
+.siteTypography .typeQuote {
+  font-size: var(--fontSizeQuote);
+  font-weight: var(--fontWeightLight);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.siteTypography .typeMetric {
+  font-size: var(--fontSizeMetric);
+  font-weight: var(--fontWeightRegular);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.siteTypography .typeFaqQuestion {
+  font-size: var(--fontSizeFaq);
+  font-weight: var(--fontWeightHeading);
+  line-height: 1.25;
+  letter-spacing: var(--trackingLabel);
+}
+
+.siteTypography .typePrice {
+  font-size: var(--fontSizeHeading);
+  font-weight: var(--fontWeightRegular);
+  line-height: var(--lineHeightHeading);
+  letter-spacing: -0.02em;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.siteTypography .measureHero { max-inline-size: var(--measureHero); }
+.siteTypography .measureSection { max-inline-size: var(--measureSection); }
+.siteTypography .measureLead { max-inline-size: var(--measureLead); }
+.siteTypography .measureBody { max-inline-size: var(--measureBody); }
+.siteTypography .measureQuote { max-inline-size: var(--measureQuote); }

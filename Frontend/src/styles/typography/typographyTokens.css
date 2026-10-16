@@ -1,0 +1,64 @@
+/* Shared project values; responsive sizes are adaptations, not copied source CSS. */
+:where(.siteTypography) {
+  /* Brandium scale/roles; GreenTech licensed family is Nourd (not TWK Lausanne). */
+  --fontFamilySans: var(--fontBrand, var(--font-nourd), "Nourd"), Arial, sans-serif;
+  --fontFamilyCode: ui-monospace, "SFMono-Regular", Consolas, monospace;
+
+  --fontWeightLight: 250;
+  --fontWeightHeading: 300;
+  --fontWeightRegular: 400;
+  --fontWeightMedium: 500;
+
+  /* Caps tuned for GreenTech layouts (Brandium relationships, storefront-safe maxima). */
+  --fontSizeDisplay: clamp(3rem, calc(1rem + 6vw), 7rem);
+  --fontSizeHero: clamp(2rem, calc(1.15rem + 2.4vw), 3.75rem);
+  --fontSizeSection: clamp(1.85rem, calc(1.2rem + 1.6vw), 3.15rem);
+  --fontSizeHeading: clamp(1.35rem, calc(1.1rem + 0.9vw), 2rem);
+  --fontSizeCard: clamp(1.2rem, calc(1.05rem + 0.7vw), 1.65rem);
+  --fontSizeLead: clamp(1.05rem, calc(1rem + 0.25vw), 1.25rem);
+  --fontSizeBody: 1rem;
+  --fontSizeSmall: 0.875rem;
+  --fontSizeMeta: 0.8125rem;
+  --fontSizeEyebrow: clamp(0.8rem, calc(0.78rem + 0.15vw), 0.95rem);
+  --fontSizeButton: clamp(0.9375rem, calc(0.9rem + 0.15vw), 1.05rem);
+  --fontSizeNav: 0.9375rem;
+  --fontSizeQuote: clamp(1.25rem, calc(1.1rem + 0.8vw), 1.75rem);
+  --fontSizeMetric: clamp(2.75rem, calc(1.5rem + 4vw), 5rem);
+  --fontSizeFaq: clamp(1.05rem, calc(1.02rem + 0.15vw), 1.15rem);
+
+  --lineHeightDisplay: 1.02;
+  --lineHeightHero: 1.1;
+  --lineHeightSection: 1.1;
+  --lineHeightHeading: 1.15;
+  --lineHeightCard: 1.2;
+  --lineHeightLead: 1.45;
+  --lineHeightBody: 1.5;
+  --lineHeightProse: 1.65;
+  --lineHeightUi: 1.4;
+  --lineHeightMeta: 1.4;
+
+  --trackingDisplay: -0.05em;
+  --trackingHero: -0.05em;
+  --trackingSection: -0.047em;
+  --trackingHeading: -0.03em;
+  --trackingCard: -0.024em;
+  --trackingLead: -0.01em;
+  --trackingBody: 0em;
+  --trackingLabel: -0.01em;
+  --trackingMeta: 0.03em;
+
+  --measureHero: 22ch;
+  --measureSection: 24ch;
+  --measureLead: 48ch;
+  --measureBody: 65ch;
+  --measureQuote: 40ch;
+}
+
+@media (max-width: 47.999rem) {
+  :where(.siteTypography) {
+    --trackingDisplay: -0.04em;
+    --trackingHero: -0.04em;
+    --trackingSection: -0.03em;
+    --trackingHeading: -0.02em;
+  }
+}

@@ -1,0 +1,62 @@
+/* Shared project values; responsive sizes are adaptations, not copied source CSS. */
+:where(.siteTypography) {
+  --fontFamilySans: var(--fontBrand, "TWKLausanne"), Arial, sans-serif;
+  --fontFamilyCode: ui-monospace, "SFMono-Regular", Consolas, monospace;
+
+  --fontWeightLight: 250;
+  --fontWeightHeading: 300;
+  --fontWeightRegular: 400;
+  --fontWeightMedium: 500;
+
+  --fontSizeDisplay: clamp(4rem, calc(1rem + 10vw), 14rem);
+  --fontSizeHero: clamp(2.25rem, calc(1.25rem + 3.6vw), 6rem);
+  --fontSizeSection: clamp(2.2rem, calc(1.25rem + 2.6vw), 5rem);
+  --fontSizeHeading: clamp(1.5rem, calc(1.125rem + 1.25vw), 2.5rem);
+  --fontSizeCard: clamp(1.375rem, calc(1.1rem + 1.15vw), 2.2rem);
+  --fontSizeLead: clamp(1.125rem, calc(1.05rem + 0.4vw), 1.4rem);
+  --fontSizeBody: 1rem;
+  --fontSizeSmall: 0.875rem;
+  --fontSizeMeta: 0.8125rem;
+  --fontSizeEyebrow: clamp(0.9rem, calc(0.85rem + 0.2vw), 1.1rem);
+  --fontSizeButton: clamp(1rem, calc(0.94rem + 0.18vw), 1.1rem);
+  --fontSizeNav: 1rem;
+  --fontSizeQuote: clamp(1.5rem, calc(1.125rem + 1.25vw), 2rem);
+  --fontSizeMetric: clamp(3.5rem, calc(1.5rem + 7vw), 8rem);
+  --fontSizeFaq: clamp(1.1rem, calc(1.04rem + 0.2vw), 1.2rem);
+
+  --lineHeightDisplay: 1.02;
+  --lineHeightHero: 1.1;
+  --lineHeightSection: 1.1;
+  --lineHeightHeading: 1.15;
+  --lineHeightCard: 1.2;
+  --lineHeightLead: 1.45;
+  --lineHeightBody: 1.5;
+  --lineHeightProse: 1.65;
+  --lineHeightUi: 1.4;
+  --lineHeightMeta: 1.4;
+
+  --trackingDisplay: -0.05em;
+  --trackingHero: -0.05em;
+  --trackingSection: -0.047em;
+  --trackingHeading: -0.03em;
+  --trackingCard: -0.024em;
+  --trackingLead: -0.01em;
+  --trackingBody: 0em;
+  --trackingLabel: -0.01em;
+  --trackingMeta: 0.03em;
+
+  --measureHero: 22ch;
+  --measureSection: 24ch;
+  --measureLead: 48ch;
+  --measureBody: 65ch;
+  --measureQuote: 40ch;
+}
+
+@media (max-width: 47.999rem) {
+  :where(.siteTypography) {
+    --trackingDisplay: -0.04em;
+    --trackingHero: -0.04em;
+    --trackingSection: -0.03em;
+    --trackingHeading: -0.02em;
+  }
+}

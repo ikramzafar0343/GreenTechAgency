@@ -1,0 +1,220 @@
+.card {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 var(--impactCardWidth);
+  width: var(--impactCardWidth);
+  min-width: 0;
+  overflow: hidden;
+  border-radius: var(--impactCardRadius);
+  background: var(--impactSurfaceMuted);
+  color: var(--impactTextDark);
+}
+
+.card[data-size="tall"] {
+  height: var(--impactHeightTall);
+}
+
+.card[data-size="medium"] {
+  height: var(--impactHeightMedium);
+}
+
+.card[data-size="compact"] {
+  height: var(--impactHeightCompact);
+}
+
+.card[data-theme="dark"] {
+  background: var(--impactMetricBg);
+  color: var(--impactTextLight);
+}
+
+.card[data-theme="light"] {
+  background: #fff;
+}
+
+.card[data-theme="muted"] {
+  background: var(--impactSurfaceMuted);
+}
+
+.card[data-theme="mint"] {
+  background: var(--impactMint);
+  color: var(--impactTextDark);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+  height: 100%;
+  padding: var(--impactCardInset);
+}
+
+.metricPrimary,
+.metricSecondary,
+.cardHeading,
+.cardDescription,
+.imageCaption {
+  margin: 0;
+  font-size: clamp(1.1875rem, 1.48vw, 1.4375rem);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.038em;
+}
+
+.metricPrimary {
+  font-weight: 500;
+}
+
+.metricSecondary {
+  color: var(--impactMetricSecondary);
+}
+
+.cardHeading {
+  font-weight: 500;
+}
+
+.cardDescription {
+  margin-top: 0.85rem;
+  opacity: 0.88;
+}
+
+.cardImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageFade {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  height: 55%;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, #01070c 76%, transparent) 0%,
+    color-mix(in srgb, #01070c 48%, transparent) 24%,
+    color-mix(in srgb, #01070c 22%, transparent) 52%,
+    color-mix(in srgb, #01070c 8%, transparent) 74%,
+    transparent 100%
+  );
+}
+
+.imageTile {
+  position: absolute;
+  z-index: 2;
+  left: clamp(0.85rem, 4%, 1.25rem);
+  bottom: clamp(1.35rem, 6.5%, 2rem);
+  max-width: calc(100% - 1.7rem);
+  box-sizing: border-box;
+  padding: 0.85rem 1rem 0.95rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, #1a3a4c 78%, transparent);
+  border: 1px solid color-mix(in srgb, #a8f4f8 22%, transparent);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+}
+
+.imageTileTitle {
+  margin: 0;
+  font-family: var(--font-nourd), system-ui, sans-serif;
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: #edf6f8;
+}
+
+.imageTileCaption {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-nourd), system-ui, sans-serif;
+  font-size: clamp(0.6rem, 1.3vw, 0.72rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, #4de8f4 92%, transparent);
+}
+
+.imageLink {
+  position: absolute;
+  inset: 0;
+  display: block;
+  color: inherit;
+}
+
+.imageCaption {
+  position: absolute;
+  z-index: 2;
+  inset-inline: var(--impactCardInset);
+  bottom: calc(var(--impactCardInset) + 4.5rem);
+  max-width: calc(100% - (var(--impactCardInset) * 2));
+  color: #fff;
+  pointer-events: none;
+}
+
+.ctaContent {
+  justify-content: space-between;
+}
+
+.ctaLink {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-block: 0.5rem 0.55rem;
+  border-bottom: 1px solid currentColor;
+  color: inherit;
+  text-decoration: none;
+  font-size: clamp(1.1875rem, 1.48vw, 1.4375rem);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.035em;
+}
+
+.ctaArrow {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  transition: transform 250ms ease;
+}
+
+.ctaLink:hover .ctaArrow {
+  transform: translateX(4px);
+}
+
+.ctaLink:focus-visible,
+.imageLink:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -4px;
+}
+
+@media (max-width: 767px), (hover: none) and (pointer: coarse) {
+  .card {
+    scroll-snap-align: center;
+  }
+
+  .card[data-size="medium"],
+  .card[data-size="compact"] {
+    height: auto;
+    min-height: var(--impactHeightCompact);
+  }
+
+  .card[data-size="medium"] {
+    min-height: var(--impactHeightMedium);
+  }
+
+  .ctaContent {
+    min-height: var(--impactHeightMedium);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ctaArrow {
+    transition: none;
+  }
+}

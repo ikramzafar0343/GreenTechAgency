@@ -1,0 +1,301 @@
+.timeline {
+  --pt-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --pt-line: color-mix(in srgb, var(--brand-navy-panel) 22%, transparent);
+  --pt-ghost: color-mix(in srgb, var(--brand-ink) 26%, transparent);
+  --pt-muted: var(--brand-ink-muted);
+  --pt-stage-h: clamp(22.5rem, 38vw, 26.5rem);
+  display: grid;
+  gap: clamp(2.75rem, 4.5vw, 3.5rem);
+}
+
+.stage {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.88fr) minmax(0, 1.22fr);
+  column-gap: clamp(1.75rem, 4vw, 3.25rem);
+  align-items: center;
+}
+
+.mediaFrame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--brand-navy-panel) 7%, transparent);
+  margin-inline: auto 0;
+  will-change: transform, opacity;
+}
+
+.mediaLayer {
+  position: absolute;
+  inset: 0;
+}
+
+.mediaImage {
+  object-fit: cover;
+}
+
+.rail {
+  position: relative;
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  column-gap: clamp(0.85rem, 1.8vw, 1.35rem);
+  min-height: var(--pt-stage-h);
+  height: var(--pt-stage-h);
+  align-items: stretch;
+  overflow: clip;
+}
+
+.curve {
+  position: relative;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.curveSvg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.curvePath {
+  fill: none;
+  stroke: var(--pt-line);
+  stroke-width: 1.35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.markerRing {
+  fill: color-mix(in srgb, var(--brand-cyan) 14%, transparent);
+  stroke: var(--brand-cyan);
+  stroke-width: 1.35;
+}
+
+.markerDot,
+.markerPast {
+  fill: var(--brand-cyan);
+}
+
+.markerHollow {
+  fill: var(--brand-surface, #fff);
+  stroke: color-mix(in srgb, var(--brand-navy-panel) 38%, transparent);
+  stroke-width: 1.4;
+}
+
+.copyColumn {
+  grid-column: 2;
+  min-width: 0;
+  height: 100%;
+  overflow: clip;
+}
+
+.mobileActive {
+  display: none;
+}
+
+.copyLanes {
+  display: grid;
+  grid-template-rows: minmax(0, 0.92fr) minmax(0, 1.45fr) minmax(0, 0.92fr);
+  height: 100%;
+  min-height: 100%;
+  will-change: transform, opacity;
+}
+
+.slotTop,
+.slotMid,
+.slotBottom {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.slotTop {
+  justify-content: flex-start;
+  padding-top: 0.15rem;
+}
+
+.slotMid {
+  justify-content: center;
+  padding-block: 0.35rem;
+}
+
+.slotBottom {
+  justify-content: flex-end;
+  padding-bottom: 0.15rem;
+}
+
+.slotSpacer {
+  min-height: 1rem;
+}
+
+.ghostTitle {
+  margin: 0;
+  max-width: 22rem;
+  color: var(--pt-ghost);
+}
+
+.activeBlock {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 26rem;
+}
+
+.timeLabel {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--brand-navy);
+}
+
+.activeTitle {
+  margin: 0;
+}
+
+.activeBody {
+  margin: 0;
+  color: var(--pt-muted);
+  max-width: 38ch;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.15rem;
+}
+
+.navButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 10px;
+  background: var(--brand-navy-panel);
+  color: #fff;
+  cursor: pointer;
+  transition:
+    background-color 220ms var(--pt-ease),
+    color 220ms var(--pt-ease),
+    transform 220ms var(--pt-ease);
+}
+
+.navButton:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.navButtonAccent:not(:disabled) {
+  background: var(--brand-cyan);
+  color: var(--brand-navy-panel);
+}
+
+.navButtonAccent:hover:not(:disabled),
+.navButtonAccent:focus-visible {
+  background: color-mix(in srgb, var(--brand-cyan) 86%, var(--brand-navy-panel));
+}
+
+.navButton:hover:not(:disabled):not(.navButtonAccent),
+.navButton:focus-visible:not(.navButtonAccent) {
+  background: color-mix(in srgb, var(--brand-navy-panel) 88%, var(--brand-cyan));
+}
+
+.navButton:focus-visible {
+  outline: 2px solid var(--brand-cyan);
+  outline-offset: 3px;
+}
+
+.navButton:disabled {
+  background: color-mix(in srgb, var(--brand-navy-panel) 12%, #ececec);
+  color: color-mix(in srgb, var(--brand-ink) 35%, transparent);
+  transform: none;
+  cursor: not-allowed;
+}
+
+.counter {
+  min-width: 4.25rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  color: var(--brand-ink);
+}
+
+.liveRegion {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 1099px) {
+  .stage {
+    grid-template-columns: minmax(210px, 0.82fr) minmax(0, 1.2fr);
+    column-gap: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  .rail {
+    grid-template-columns: 64px minmax(0, 1fr);
+    --pt-stage-h: clamp(20rem, 48vw, 24rem);
+  }
+
+  .activeBody {
+    max-width: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .timeline {
+    gap: 1.75rem;
+  }
+
+  .stage {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+
+  .mediaFrame {
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .rail {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .curve {
+    display: none;
+  }
+
+  .copyLanes {
+    display: none;
+  }
+
+  .mobileActive {
+    display: block;
+  }
+
+  .activeBlock {
+    max-width: none;
+    gap: 0.65rem;
+  }
+
+  .activeBody {
+    max-width: none;
+  }
+
+  .navigation {
+    gap: 1.25rem;
+  }
+}

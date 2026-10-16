@@ -1,0 +1,243 @@
+.teamSection {
+  --teamCanvas: var(--brand-surface);
+  --teamCaption: #ffffff;
+  --teamCardGap: clamp(20px, 2.56vw, 40px);
+  --teamGutter: clamp(24px, 2.9vw, 45px);
+  --teamCardWidth: clamp(340px, calc((100vw - 150px) / 3), 470px);
+  --teamEase: cubic-bezier(0.22, 1, 0.36, 1);
+  width: 100%;
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+  background: var(--teamCanvas);
+  color: var(--brand-ink);
+  overflow: clip;
+}
+
+.visuallyHiddenHeading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  outline: none;
+}
+
+.viewport:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--brand-cyan);
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  align-items: stretch;
+  animation: teamMarqueeSlide var(--teamMarqueeDuration, 48s) linear infinite;
+  animation-play-state: paused;
+  will-change: transform;
+}
+
+.viewport[data-static="false"] .track {
+  animation-play-state: running;
+}
+
+.viewport:is(:hover, :focus-within) .track {
+  animation-play-state: paused !important;
+}
+
+.viewport[data-static="true"] .track {
+  animation: none;
+  transform: none;
+}
+
+.group {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: var(--teamCardGap);
+  margin: 0;
+  padding: 0;
+  padding-inline-end: var(--teamCardGap);
+  list-style: none;
+}
+
+@keyframes teamMarqueeSlide {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.card {
+  position: relative;
+  flex: 0 0 var(--teamCardWidth);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--brand-navy-deep);
+}
+
+.figure {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+}
+
+.cardImage {
+  object-fit: cover;
+  transition: transform 0.55s var(--teamEase);
+}
+
+.card:hover .cardImage {
+  transform: scale(1.035);
+}
+
+.cardCaption {
+  position: absolute;
+  z-index: 2;
+  left: clamp(18px, 2vw, 31px);
+  right: clamp(18px, 2vw, 31px);
+  bottom: clamp(24px, 3vw, 32px);
+  display: grid;
+  gap: 0.55rem;
+  color: var(--teamCaption);
+  pointer-events: none;
+}
+
+.cardCaption::before {
+  content: "";
+  position: absolute;
+  inset: auto -8% -40% -8%;
+  height: 70%;
+  background: linear-gradient(to top, rgb(0 0 0 / 48%) 0%, transparent 100%);
+  z-index: -1;
+}
+
+.cardName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: clamp(1.375rem, 1.8vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 16ch;
+}
+
+.cardRole {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: clamp(0.875rem, 1.1vw, 1.0625rem);
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 22ch;
+  color: color-mix(in srgb, #fff 88%, transparent);
+}
+
+@media (max-width: 1279px) {
+  .teamSection {
+    --teamCardWidth: clamp(285px, 42vw, 420px);
+    --teamGutter: clamp(24px, 3vw, 32px);
+    --teamCardGap: clamp(20px, 2.5vw, 28px);
+  }
+}
+
+@media (max-width: 767px), (hover: none) and (pointer: coarse) {
+  .teamSection {
+    --teamCardWidth: clamp(280px, 80vw, 360px);
+    --teamGutter: 16px;
+    --teamCardGap: 14px;
+    padding-block: 3rem 2.5rem;
+  }
+
+  .viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: var(--teamGutter);
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .track {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .group:first-child {
+    padding-inline-start: var(--teamGutter);
+  }
+
+  .card {
+    scroll-snap-align: start;
+  }
+
+  .repeatGroup {
+    display: none;
+  }
+
+  .card:hover .cardImage {
+    transform: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .teamSection {
+    --teamCardWidth: min(84vw, 340px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .viewport {
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+  }
+
+  .viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .track {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .repeatGroup {
+    display: none !important;
+  }
+
+  .card {
+    scroll-snap-align: start;
+  }
+
+  .cardImage {
+    transition: none;
+  }
+
+  .card:hover .cardImage {
+    transform: none;
+  }
+}

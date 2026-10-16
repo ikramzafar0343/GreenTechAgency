@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/typography/typographyTokens.css";
+@import "../styles/typography/typographyBase.css";
+@import "../styles/typography/typographyRoles.css";
+@import "../styles/typography/typographyProse.css";
+@import "../styles/portal-tokens.css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--brand-navy);
+  --color-navy-deep: var(--brand-navy-deep);
+  --color-navy-panel: var(--brand-navy-panel);
+  --color-navy-panel-80: var(--brand-navy-panel-80);
+  --color-cyan: var(--brand-cyan);
+  --color-cyan-soft: var(--brand-cyan-soft);
+  --color-surface: var(--brand-surface);
+  --color-ink: var(--brand-ink);
+  --color-ink-muted: var(--brand-ink-muted);
+  --color-nav-bg: var(--nav-bg-solid);
+  --font-sans: var(--fontBrand);
+}
+
+:root {
+  --font-nourd: var(--fontBrand);
+}
+
+html {
+  scroll-padding-top: 6.5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

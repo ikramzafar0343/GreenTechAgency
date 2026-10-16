@@ -1,0 +1,41 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  will-change: transform, opacity;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1023px), (pointer: coarse) {
+  .overlay {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    display: none;
+  }
+}

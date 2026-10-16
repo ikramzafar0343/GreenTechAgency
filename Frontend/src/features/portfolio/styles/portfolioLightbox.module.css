@@ -1,0 +1,108 @@
+.lightboxBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1400;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: rgb(15 36 48 / 0.6);
+  opacity: 0;
+  animation: ppLightboxFade 250ms ease forwards;
+}
+
+.lightboxBackdropOpen {
+  opacity: 1;
+}
+
+.lightboxDialog {
+  position: relative;
+  width: min(920px, 100%);
+  max-height: min(90vh, 900px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transform: translateY(16px);
+  opacity: 0;
+  animation: ppLightboxRise 250ms ease forwards;
+}
+
+@keyframes ppLightboxFade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ppLightboxRise {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.lightboxStage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: #000;
+  border-radius: var(--pp-radius, 12px);
+  overflow: hidden;
+  min-height: 240px;
+}
+
+.lightboxImage {
+  display: block;
+  width: 100%;
+  max-height: min(78vh, 780px);
+  object-fit: contain;
+}
+
+.lightboxClose,
+.lightboxNav {
+  appearance: none;
+  border: 0;
+  background: rgb(255 255 255 / 0.92);
+  color: var(--pp-ink, #0f2430);
+  border-radius: 999px;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.lightboxClose {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 2;
+}
+
+.lightboxNav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.lightboxPrev {
+  left: 0.75rem;
+}
+
+.lightboxNext {
+  right: 0.75rem;
+}
+
+.lightboxMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lightboxBackdrop,
+  .lightboxDialog {
+    transition: none !important;
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}

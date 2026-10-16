@@ -1,0 +1,202 @@
+.section {
+  --contact-bg: var(--brand-navy-panel);
+  --contact-ink: #edf6f8;
+  --contact-muted: rgba(237, 246, 248, 0.72);
+  --contact-cyan: var(--brand-cyan);
+  --contact-field: rgba(8, 28, 42, 0.55);
+  --contact-border: rgba(255, 255, 255, 0.12);
+  --contact-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background:
+    radial-gradient(
+      70% 55% at 85% 10%,
+      color-mix(in srgb, var(--brand-cyan) 18%, transparent),
+      transparent 58%
+    ),
+    radial-gradient(
+      55% 45% at 8% 90%,
+      color-mix(in srgb, var(--brand-cyan) 10%, transparent),
+      transparent 55%
+    ),
+    linear-gradient(
+      165deg,
+      #0a2030 0%,
+      var(--brand-navy-panel) 42%,
+      var(--brand-navy-deep) 100%
+    );
+  color: var(--contact-ink);
+  padding-block: clamp(4.75rem, 9vw, 7.75rem);
+  scroll-margin-top: 6rem;
+}
+
+.glow {
+  position: absolute;
+  inset: auto -10% -35% 35%;
+  height: 55%;
+  background: radial-gradient(
+    ellipse at center,
+    color-mix(in srgb, var(--brand-cyan) 22%, transparent),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gridPattern {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 88%);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1240px);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr);
+  gap: clamp(2.5rem, 6vw, 4.5rem);
+  align-items: stretch;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  padding-top: 0.35rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.9rem;
+  text-transform: uppercase;
+  color: var(--contact-cyan);
+}
+
+.heading {
+  margin: 0;
+}
+
+.supporting {
+  margin: 1.2rem 0 0;
+  color: var(--contact-muted);
+}
+
+.channels {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.channel {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.channelIndex {
+  color: var(--contact-cyan);
+}
+
+.channelLabel {
+  display: block;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  color: rgba(237, 246, 248, 0.58);
+}
+
+.channelText {
+  display: block;
+  color: var(--contact-ink);
+}
+
+.formPanel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  background:
+    linear-gradient(
+      160deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.04) 48%,
+      rgba(8, 28, 42, 0.35) 100%
+    );
+  padding: clamp(1.5rem, 3.2vw, 2.25rem);
+  backdrop-filter: blur(16px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.08) inset,
+    0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+.formAccent {
+  position: absolute;
+  top: 1.35rem;
+  bottom: 1.35rem;
+  left: 0;
+  width: 3px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    180deg,
+    var(--brand-cyan),
+    color-mix(in srgb, var(--brand-cyan) 20%, transparent)
+  );
+}
+
+.formHeader {
+  padding-left: 0.35rem;
+}
+
+.formEyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--contact-cyan);
+}
+
+.formLead {
+  margin: 0.45rem 0 0;
+  color: var(--contact-muted);
+}
+
+@media (max-width: 1023px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .intro {
+    max-width: 42rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .formPanel {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .formAccent {
+    top: 1rem;
+    bottom: 1rem;
+  }
+}

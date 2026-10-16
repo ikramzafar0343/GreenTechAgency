@@ -1,0 +1,84 @@
+.section {
+  padding-block: clamp(3rem, 6vw, 5rem) clamp(4rem, 8vw, 6.5rem);
+  background: var(--about-surface, var(--brand-surface));
+  overflow: clip;
+}
+
+.viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: clamp(16px, 2vw, 34px);
+  width: max-content;
+  padding-inline: var(--about-gutter, clamp(24px, 5vw, 80px));
+  will-change: transform;
+}
+
+.card {
+  flex: 0 0 clamp(270px, 28vw, 460px);
+  margin: 0;
+}
+
+.frame {
+  position: relative;
+  aspect-ratio: 0.72;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--brand-ink) 8%, var(--brand-surface));
+}
+
+.image {
+  object-fit: cover;
+}
+
+.caption {
+  margin: 0.75rem 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  color: var(--about-muted, var(--brand-ink-muted));
+}
+
+.name {
+  display: block;
+  color: var(--about-ink, var(--brand-ink));
+}
+
+.indicators {
+  display: flex;
+  gap: 0.5rem;
+  width: min(100%, 1440px);
+  margin: 1.5rem auto 0;
+  padding-inline: var(--about-gutter, clamp(24px, 5vw, 80px));
+}
+
+.indicator {
+  flex: 1;
+  height: 1px;
+  background: color-mix(in srgb, var(--about-ink, var(--brand-ink)) 16%, transparent);
+  transform-origin: left center;
+  transform: scaleX(0.18);
+}
+
+.indicator[data-active="true"] {
+  transform: scaleX(1);
+  background: var(--about-ink, var(--brand-ink));
+}
+
+@media (max-width: 767px) {
+  .viewport {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    touch-action: pan-x;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .track {
+    transform: none !important;
+  }
+
+  .card {
+    scroll-snap-align: start;
+  }
+}

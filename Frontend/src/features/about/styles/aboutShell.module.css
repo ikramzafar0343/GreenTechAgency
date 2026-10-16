@@ -1,0 +1,24 @@
+.page {
+  --about-surface: var(--brand-surface);
+  --about-ink: var(--brand-ink);
+  --about-muted: var(--brand-ink-muted);
+  --about-deep: var(--brand-navy-panel);
+  --about-deepest: var(--brand-navy-deep);
+  --about-accent: var(--brand-cyan);
+  --about-gutter: clamp(24px, 5vw, 80px);
+  --about-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  background: var(--about-surface);
+  color: var(--about-ink);
+}
+
+.gutter {
+  width: min(100%, 1440px);
+  margin-inline: auto;
+  padding-inline: var(--about-gutter);
+}
+
+.fullBleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}

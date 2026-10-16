@@ -1,0 +1,132 @@
+.stack {
+  background: var(--about-surface, var(--brand-surface));
+  color: var(--about-ink, var(--brand-ink));
+}
+
+.row {
+  min-height: clamp(510px, 49vw, 780px);
+  border-top: 1px solid color-mix(in srgb, var(--about-ink) 12%, transparent);
+  padding: clamp(3.5rem, 7vw, 5.5rem) var(--about-gutter, clamp(24px, 5vw, 80px));
+}
+
+.row:last-child {
+  border-bottom: 1px solid color-mix(in srgb, var(--about-ink) 12%, transparent);
+}
+
+.grid {
+  width: min(100%, 1440px);
+  margin-inline: auto;
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
+.left {
+  align-self: start;
+}
+
+.eyebrow {
+  margin: 0 0 0.85rem;
+  font-size: clamp(0.75rem, 1.1vw, 0.9375rem);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--about-muted, var(--brand-ink-muted));
+}
+
+.counterMask {
+  overflow: hidden;
+  display: block;
+}
+
+.counter {
+  display: block;
+  margin: 0;
+  font-size: clamp(5.625rem, 9vw, 10rem);
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+}
+
+.right {
+  max-width: 560px;
+  justify-self: end;
+  padding-top: clamp(2rem, 6vw, 5rem);
+}
+
+.description {
+  margin: 0;
+  font-size: clamp(1.375rem, 2.2vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+}
+
+.tile {
+  display: grid;
+  place-items: center;
+  width: clamp(215px, 22vw, 285px);
+  aspect-ratio: 1.55;
+  margin-top: 1.75rem;
+  background: var(--about-deepest, var(--brand-navy-deep));
+  color: #edf6f8;
+}
+
+.icon {
+  width: 42%;
+  height: 42%;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--about-ink) 14%, transparent);
+  list-style: none;
+  padding-left: 0;
+}
+
+.factLabel {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--about-muted, var(--brand-ink-muted));
+}
+
+.factValue {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.35;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    min-height: 0;
+    padding-block: clamp(4.5rem, 14vw, 6.25rem);
+  }
+
+  .counter {
+    font-size: clamp(4.25rem, 17vw, 6.25rem);
+  }
+
+  .right {
+    justify-self: start;
+    padding-top: 0;
+  }
+
+  .facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 390px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+}

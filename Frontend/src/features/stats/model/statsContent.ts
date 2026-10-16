@@ -1,0 +1,55 @@
+import type { PublicStatsSection } from "@/features/stats/model/types";
+
+/** Approved storefront stats content until a CMS backend owns this section. */
+export const STATS_CONTENT: PublicStatsSection = {
+  heading: "Results that stay measurable",
+  entryAnimationEnabled: true,
+  countUpEnabled: true,
+  homepageOrder: 60,
+  metrics: [
+    {
+      id: "stat-projects",
+      metricType: "COUNT",
+      preset: "OVERSIZED_NUMBER",
+      value: 120,
+      prefix: null,
+      suffix: "+",
+      label: "Projects delivered",
+      emphasisWord: null,
+      displayOrder: 1,
+    },
+    {
+      id: "stat-clients",
+      metricType: "COUNT",
+      preset: "STANDARD_NUMBER",
+      value: 48,
+      prefix: null,
+      suffix: null,
+      label: "Active client partnerships",
+      emphasisWord: null,
+      displayOrder: 2,
+    },
+    {
+      id: "stat-satisfaction",
+      metricType: "COUNT",
+      preset: "WORD_EMPHASIS",
+      value: 98,
+      prefix: null,
+      suffix: "%",
+      label: "Client satisfaction",
+      emphasisWord: "satisfaction",
+      displayOrder: 3,
+    },
+    {
+      id: "stat-since",
+      metricType: "YEAR",
+      preset: "YEAR",
+      value: 2018,
+      prefix: null,
+      suffix: null,
+      label: "Building digital products since",
+      emphasisWord: null,
+      displayOrder: 4,
+    },
+  ],
+};

@@ -1,0 +1,54 @@
+{
+  "name": "greentech-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "db:local": "node scripts/local-postgres.mjs",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "auth:create-admin": "tsx src/scripts/create-admin.ts",
+    "auth:create-employee": "tsx src/scripts/create-employee.ts",
+    "content:import": "tsx src/scripts/import-site-content.ts",
+    "content:sync-services": "tsx src/scripts/force-sync-services.ts",
+    "content:merge-services": "node scripts/merge-services-overlay.mjs",
+    "content:snapshot": "node scripts/build-import-snapshot.mjs",
+    "content:seed-translations": "tsx src/scripts/seed-content-translations.ts",
+    "content:seed-hero-curated": "tsx src/scripts/seed-hero-p1-curated.ts",
+    "i18n:check-db-coverage": "tsx src/scripts/check-db-coverage.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1151.0",
+    "@aws-sdk/s3-request-presigner": "^3.1151.0",
+    "@better-auth/drizzle-adapter": "1.7.7",
+    "better-auth": "1.7.7",
+    "busboy": "^1.6.0",
+    "cors": "2.8.6",
+    "dotenv": "17.4.2",
+    "drizzle-orm": "0.45.4",
+    "express": "5.3.0",
+    "pg": "8.23.1"
+  },
+  "devDependencies": {
+    "@types/busboy": "^1.5.4",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^20",
+    "@types/pg": "8.23.1",
+    "drizzle-kit": "0.31.11",
+    "embedded-postgres": "^18.4.0-beta.17",
+    "tsx": "4.23.15",
+    "typescript": "^5",
+    "vitest": "3.2.4"
+  },
+  "allowScripts": {
+    "@embedded-postgres/windows-x64@18.4.0-beta.17": true
+  }
+}

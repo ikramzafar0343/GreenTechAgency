@@ -1,0 +1,39 @@
+{
+  "id": "impactMadeVisible",
+  "eyebrow": "Impact made visible",
+  "heading": "From clear ideas to results that matter.",
+  "description": "Creative direction and practical delivery come together as measurable outcomes—sites people use, products teams can own, and growth your business can track.",
+  "cards": [
+    {
+      "id": "impact-creative-lead",
+      "kind": "image",
+      "size": "tall",
+      "theme": "mint",
+      "image": {
+        "src": "/services/editorial/rail-photo.svg",
+        "alt": "Collaborative digital craft across design and engineering.",
+        "objectPosition": "center",
+        "tileTitle": "Delivery",
+        "tileCaption": "EDITORIAL DEMO"
+      }
+    },
+    {
+      "id": "impact-projects",
+      "kind": "metric",
+      "size": "compact",
+      "theme": "dark",
+      "metric": "120+ projects delivered",
+      "description": "across websites, products, and growth systems"
+    },
+    {
+      "id": "impact-cta",
+      "kind": "cta",
+      "size": "medium",
+      "theme": "muted",
+      "heading": "Ready for digital experiences that support real growth.",
+      "description": "Tell us what you are planning, what needs improving, or where you are ready to scale.",
+      "linkLabel": "Work with us",
+      "href": "/contact"
+    }
+  ]
+}

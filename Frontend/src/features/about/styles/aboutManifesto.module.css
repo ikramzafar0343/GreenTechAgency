@@ -1,0 +1,78 @@
+.section {
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(640px, 88svh, 920px);
+  padding-block: clamp(100px, 11vw, 170px) clamp(80px, 9vw, 140px);
+  background: var(--about-surface, var(--brand-surface));
+  color: var(--about-ink, var(--brand-ink));
+  overflow: clip;
+}
+
+.layout {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1440px);
+  margin-inline: auto;
+  padding-inline: var(--about-gutter, clamp(24px, 5vw, 80px));
+  display: grid;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.headline {
+  margin: 0 auto;
+  max-width: 18.5em;
+  text-align: center;
+  font-size: clamp(2.125rem, 4.6vw, 4.75rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.word {
+  display: inline;
+  color: var(--about-muted, var(--brand-ink-muted));
+  transition: color 180ms linear;
+}
+
+.word[data-active="true"] {
+  color: var(--about-ink, var(--brand-ink));
+}
+
+.side {
+  margin: 0;
+  max-width: min(440px, 38vw);
+  justify-self: end;
+  font-size: clamp(0.875rem, 1.1vw, 1rem);
+  line-height: 1.55;
+  color: var(--about-muted, var(--brand-ink-muted));
+}
+
+.sideHeading {
+  margin: 0 0 0.65rem;
+  font-size: clamp(0.9375rem, 1.15vw, 1.05rem);
+  font-weight: 500;
+  color: var(--about-ink, var(--brand-ink));
+}
+
+.side p {
+  margin: 0;
+}
+
+@media (max-width: 899px) {
+  .section {
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .headline {
+    max-width: none;
+    text-align: left;
+    font-size: clamp(1.85rem, 7vw, 2.75rem);
+    line-height: 1.08;
+  }
+
+  .side {
+    max-width: none;
+    justify-self: start;
+  }
+}

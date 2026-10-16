@@ -1,0 +1,82 @@
+@import "./impactRail.part.css";
+@import "./impactCards.part.css";
+
+.section {
+  --impactCardWidth: clamp(320px, 28.9vw, 459px);
+  --impactGap: 16px;
+  --impactCardRadius: 10px;
+  --impactHeightTall: 552px;
+  --impactHeightMedium: 358px;
+  --impactHeightCompact: 256px;
+  --impactCardInset: 32px;
+  --impactCanvas: var(--brand-surface, #fff);
+  --impactTextDark: var(--brand-ink, #222);
+  --impactTextLight: #fff;
+  --impactMetricBg: #1b1b1b;
+  --impactSurfaceMuted: #f3f3f3;
+  --impactMetricSecondary: #919191;
+  --impactMint: #d8eee6;
+  isolation: isolate;
+  padding-block: clamp(80px, 9vw, 150px);
+  background: var(--impactCanvas);
+  color: var(--impactTextDark);
+}
+
+.intro {
+  width: min(calc(100% - 48px), 1320px);
+  margin-inline: auto;
+  margin-bottom: clamp(42px, 6vw, 88px);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 1.25rem;
+  color: var(--brand-navy-panel, #020b12);
+}
+
+.eyebrowMark {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 1px;
+  background: var(--brand-cyan, #4de8f4);
+  transform: rotate(45deg);
+}
+
+.heading {
+  max-width: 18ch;
+  margin: 0;
+  color: var(--impactTextDark);
+}
+
+.description {
+  max-width: 48ch;
+  margin: clamp(1.25rem, 2.5vw, 2rem) 0 0;
+  color: color-mix(in srgb, var(--impactTextDark) 72%, transparent);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section {
+    --impactCardWidth: 380px;
+    --impactHeightTall: 500px;
+    --impactHeightMedium: 350px;
+    --impactHeightCompact: 248px;
+  }
+}
+
+@media (max-width: 767px), (hover: none) and (pointer: coarse) {
+  .section {
+    --impactCardWidth: min(84vw, 360px);
+    --impactGap: 12px;
+    --impactCardInset: 24px;
+    --impactHeightTall: 460px;
+    --impactHeightMedium: 340px;
+    --impactHeightCompact: 240px;
+  }
+
+  .intro {
+    width: calc(100% - 32px);
+    margin-bottom: 2.75rem;
+  }
+}

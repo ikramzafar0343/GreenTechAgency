@@ -1,0 +1,259 @@
+.desktopNav {
+  display: none;
+  justify-self: center;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: var(--header-nav-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navTriggerGroup {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.navDisclosure {
+  flex: 0 0 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navDisclosure:focus-visible {
+  outline: 2px solid var(--brand-cyan);
+  outline-offset: 2px;
+}
+
+.navControl {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--header-text);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navControl::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--header-underline);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 250ms ease;
+}
+
+.navControl:hover::after,
+.navControl:focus-visible::after,
+.navControlActive::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+.navControl:not(:hover):not(:focus-visible):not(.navControlActive)::after {
+  transform-origin: right center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--header-actions-gap);
+  justify-self: end;
+}
+
+.cta {
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--header-contact);
+  padding: 0.4rem 1.15rem;
+  border: 0;
+  border-radius: 9999px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  isolation: isolate;
+}
+
+.ctaBase,
+.ctaHover {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  transition: opacity 250ms ease;
+}
+
+.ctaBase {
+  background: linear-gradient(
+    213deg,
+    var(--header-accent-start) -40%,
+    var(--header-accent-end) 85%
+  );
+  opacity: 1;
+}
+
+.ctaHover {
+  background: #000;
+  opacity: 0;
+}
+
+.cta:hover .ctaBase,
+.cta:focus-visible .ctaBase {
+  opacity: 0;
+}
+
+.cta:hover .ctaHover,
+.cta:focus-visible .ctaHover {
+  opacity: 1;
+}
+
+.ctaLabel {
+  position: relative;
+  z-index: 1;
+}
+
+.contact {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--header-contact);
+  height: var(--header-contact);
+  border: 1px solid var(--header-border);
+  border-radius: 9999px;
+  background: transparent;
+  color: var(--header-icon);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contactFill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--header-contact-fill);
+  transform: scale(0);
+  transition: transform 250ms ease;
+}
+
+.contact:hover .contactFill,
+.contact:focus-visible .contactFill {
+  transform: scale(1);
+}
+
+.contactIcon {
+  position: relative;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+  transition: color 250ms ease;
+}
+
+.contact:hover .contactIcon,
+.contact:focus-visible .contactIcon {
+  color: var(--header-contact-hover-icon);
+}
+
+.menuToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 9999px;
+  background: #fff;
+  color: var(--brand-navy-deep);
+  cursor: pointer;
+}
+
+.menuToggleBars {
+  position: relative;
+  width: 16px;
+  height: 12px;
+}
+
+.menuToggleBars span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transition: transform 500ms var(--header-ease), top 500ms var(--header-ease);
+}
+
+.menuToggleBars span:first-child {
+  top: 2px;
+}
+
+.menuToggleBars span:last-child {
+  top: 8px;
+}
+
+.menuToggleOpen span:first-child {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.menuToggleOpen span:last-child {
+  top: 5px;
+  transform: rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .cta {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .desktopNav {
+    display: block;
+  }
+
+  .menuToggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .contact {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navControl::after,
+  .ctaBase,
+  .ctaHover,
+  .contactFill,
+  .contactIcon,
+  .menuToggleBars span {
+    transition: none !important;
+  }
+}

@@ -1,0 +1,201 @@
+.media {
+  --wipe-ease: ease;
+  position: relative;
+  width: 100%;
+  max-width: 23.4375rem;
+  margin-inline: auto;
+  aspect-ratio: 375 / 421;
+  border-radius: 1.75rem;
+  overflow: hidden;
+  background: color-mix(in srgb, #ffffff 6%, transparent);
+  border: 1px solid color-mix(in srgb, #edf6f8 12%, transparent);
+}
+
+.backing {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--brand-cyan);
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.imageClip {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  clip-path: inset(0 100% 0 0);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1.25rem 1.35rem 1.4rem;
+  background:
+    radial-gradient(
+      circle at 28% 22%,
+      color-mix(in srgb, var(--brand-cyan) 30%, transparent),
+      transparent 58%
+    ),
+    linear-gradient(
+      160deg,
+      color-mix(in srgb, #ffffff 10%, transparent),
+      color-mix(in srgb, #000 24%, transparent)
+    );
+}
+
+.fallbackLabel {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  font-size: clamp(0.68rem, 1.5vw, 0.78rem);
+  line-height: 1.35;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, #edf6f8 78%, transparent);
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.media::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  height: 36%;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, #01070c 70%, transparent) 0%,
+    color-mix(in srgb, #01070c 26%, transparent) 52%,
+    transparent 100%
+  );
+}
+
+/* Matches editorial lead SVG caption panel (category + GREENTECH). */
+.tile {
+  position: absolute;
+  z-index: 2;
+  left: clamp(0.85rem, 4%, 1.35rem);
+  bottom: clamp(1.25rem, 6%, 1.85rem);
+  max-width: calc(100% - 1.7rem);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.85rem 1rem 0.9rem;
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, #0f2430 78%, transparent);
+  border: 1px solid color-mix(in srgb, var(--brand-cyan) 28%, transparent);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+}
+
+.tileTitle {
+  margin: 0;
+  font-family: var(--font-nourd), system-ui, sans-serif;
+  font-size: clamp(1rem, 2.6vw, 1.2rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: #edf6f8;
+}
+
+.tileBrand {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-nourd), system-ui, sans-serif;
+  font-size: clamp(0.62rem, 1.5vw, 0.72rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, #a8f4f8 88%, transparent);
+}
+
+.media[data-wipe="wiping"] .backing {
+  animation: backingExpand 500ms var(--wipe-ease) forwards;
+}
+
+.media[data-wipe="wiping"] .imageClip {
+  animation: imageUnclip 500ms var(--wipe-ease) 500ms forwards;
+}
+
+.media[data-wipe="done"] .backing {
+  transform: scaleX(1);
+  opacity: 0;
+}
+
+.media[data-wipe="done"] .imageClip {
+  clip-path: inset(0 0 0 0);
+}
+
+.media[data-wipe="idle"] .backing {
+  transform: scaleX(0);
+}
+
+.media[data-wipe="idle"] .imageClip {
+  clip-path: inset(0 100% 0 0);
+}
+
+@keyframes backingExpand {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes imageUnclip {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .media {
+    max-width: none;
+    min-height: 18.75rem;
+  }
+
+  .media[data-wipe="idle"] .backing,
+  .media[data-wipe="wiping"] .backing {
+    transform: scaleX(1);
+    opacity: 0;
+    animation: none;
+  }
+
+  .media[data-wipe="idle"] .imageClip,
+  .media[data-wipe="wiping"] .imageClip {
+    clip-path: inset(0 0 0 0);
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backing,
+  .imageClip {
+    animation: none !important;
+  }
+
+  .media .backing {
+    opacity: 0;
+    transform: scaleX(1);
+  }
+
+  .media .imageClip {
+    clip-path: inset(0 0 0 0);
+  }
+}

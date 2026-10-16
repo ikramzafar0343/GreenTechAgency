@@ -1,0 +1,2 @@
+"use server";
+export { createAdminSiteGalleryImageAction, updateAdminSiteGalleryImageAction, archiveAdminSiteGalleryImageAction, reorderAdminSiteGalleryImagesAction, createAdminSiteTestimonialAction, updateAdminSiteTestimonialAction, archiveAdminSiteTestimonialAction, reorderAdminSiteTestimonialsAction, createAdminSitePrincipleAction, updateAdminSitePrincipleAction, archiveAdminSitePrincipleAction, reorderAdminSitePrinciplesAction } from "@/lib/portal/actions";

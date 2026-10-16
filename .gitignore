@@ -1,0 +1,40 @@
+# Dependencies & build
+node_modules/
+**/node_modules/
+**/dist/
+**/.next/
+**/out/
+**/build/
+**/coverage/
+*.tsbuildinfo
+
+# Env & secrets (never commit)
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local databases / media runtime
+**/.data/
+Backend/.data/
+
+# Logs & OS
+*.log
+frontend-build.log
+.DS_Store
+Thumbs.db
+
+# IDE / agent local
+.cursor/
+.vscode/
+*.swp
+*.swo
+
+# Large local leftovers (not storefront assets)
+/14828551_1920_1080_30fps.mp4
+
+# Vercel / misc
+.vercel/
+*.pem

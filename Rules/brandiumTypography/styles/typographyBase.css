@@ -1,0 +1,71 @@
+/* Put siteTypography on body or on an owned site shell. */
+.siteTypography {
+  font-family: var(--fontFamilySans);
+  font-size: var(--fontSizeBody);
+  font-weight: var(--fontWeightLight);
+  line-height: var(--lineHeightBody);
+  letter-spacing: var(--trackingBody);
+  font-kerning: normal;
+  font-synthesis-weight: none;
+}
+
+.siteTypography :where(h1, h2, h3, h4, h5, h6) {
+  font-family: inherit;
+  font-weight: var(--fontWeightHeading);
+  margin: 0;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+.siteTypography :where(h1) {
+  font-size: var(--fontSizeHero);
+  line-height: var(--lineHeightHero);
+  letter-spacing: var(--trackingHero);
+}
+
+.siteTypography :where(h2) {
+  font-size: var(--fontSizeSection);
+  line-height: var(--lineHeightSection);
+  letter-spacing: var(--trackingSection);
+}
+
+.siteTypography :where(h3) {
+  font-size: var(--fontSizeHeading);
+  line-height: var(--lineHeightHeading);
+  letter-spacing: var(--trackingHeading);
+}
+
+.siteTypography :where(h4) {
+  font-size: var(--fontSizeCard);
+  line-height: var(--lineHeightCard);
+  letter-spacing: var(--trackingCard);
+}
+
+.siteTypography :where(h5, h6) {
+  font-size: var(--fontSizeBody);
+  line-height: var(--lineHeightUi);
+  letter-spacing: var(--trackingLabel);
+}
+
+.siteTypography :where(p) {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.siteTypography :where(strong, b) {
+  font-weight: var(--fontWeightMedium);
+}
+
+.siteTypography :where(button, input, select, textarea) {
+  font-family: inherit;
+  font-size: var(--fontSizeBody);
+  font-weight: var(--fontWeightRegular);
+  line-height: var(--lineHeightUi);
+  letter-spacing: normal;
+}
+
+.siteTypography :where(code, kbd, samp, pre) {
+  font-family: var(--fontFamilyCode);
+  font-weight: var(--fontWeightRegular);
+  letter-spacing: normal;
+}

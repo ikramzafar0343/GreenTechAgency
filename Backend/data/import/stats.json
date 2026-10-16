@@ -1,0 +1,6 @@
+[
+  {"id":"stat-projects","sortOrder":1,"doc":{"metricType":"COUNT","preset":"OVERSIZED_NUMBER","value":120,"prefix":null,"suffix":"+","label":"Projects delivered","emphasisWord":null}},
+  {"id":"stat-clients","sortOrder":2,"doc":{"metricType":"COUNT","preset":"STANDARD_NUMBER","value":48,"prefix":null,"suffix":null,"label":"Active client partnerships","emphasisWord":null}},
+  {"id":"stat-satisfaction","sortOrder":3,"doc":{"metricType":"COUNT","preset":"WORD_EMPHASIS","value":98,"prefix":null,"suffix":"%","label":"Client satisfaction","emphasisWord":"satisfaction"}},
+  {"id":"stat-since","sortOrder":4,"doc":{"metricType":"YEAR","preset":"YEAR","value":2018,"prefix":null,"suffix":null,"label":"Building digital products since","emphasisWord":null}}
+]

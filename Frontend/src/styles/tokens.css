@@ -1,0 +1,20 @@
+:root {
+  --brand-navy: #1a3a4c;
+  --brand-navy-deep: #0f2430;
+  --brand-navy-panel: rgb(12, 43, 71);
+  --brand-navy-panel-80: rgba(12, 43, 71, 0.8);
+  --brand-cyan: #4de8f4;
+  --brand-cyan-soft: #a8f4f8;
+  --brand-surface: #f4f8fa;
+  --brand-ink: #0f2430;
+  --brand-ink-muted: #4a6674;
+  --nav-bg: rgba(12, 28, 38, 0.94);
+  --nav-bg-solid: #0c1c26;
+  --nav-border: rgba(255, 255, 255, 0.14);
+  --nav-text: #ffffff;
+  --nav-muted: rgba(255, 255, 255, 0.72);
+  --nav-accent-start: #4de8f4;
+  --nav-accent-end: #1a6f8a;
+  --background: var(--brand-navy-panel);
+  --foreground: #edf6f8;
+}

@@ -1,0 +1,20 @@
+.section {
+  --pf-bg: var(--brand-surface);
+  --pf-ink: var(--brand-ink);
+  --pf-muted: var(--brand-ink-muted);
+  --pf-navy: var(--brand-navy-panel);
+  --pf-cyan: var(--brand-cyan);
+  background: var(--pf-bg);
+  color: var(--pf-ink);
+  padding-block: clamp(4.5rem, 8vw, 7rem);
+}
+
+.container {
+  width: min(100%, 1320px);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 4.5rem);
+}
+
+.intro {
+  margin-bottom: clamp(2.75rem, 5vw, 3.75rem);
+}

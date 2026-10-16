@@ -1,0 +1,277 @@
+.card {
+  --tm-card: #0c0c0c;
+  --tm-text: #f3f3f3;
+  --tm-muted: color-mix(in srgb, #f3f3f3 68%, transparent);
+  --tm-quote-bg: var(--brand-surface);
+  --tm-quote-text: var(--brand-ink);
+  --tm-accent: var(--brand-cyan);
+  --tm-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  min-height: 300px;
+  border-radius: 13px;
+  border: 1px solid color-mix(in srgb, #fff 6%, transparent);
+  background: var(--tm-card);
+  color: var(--tm-text);
+  transition: background-color 160ms var(--tm-ease);
+}
+
+.card[data-open="true"] {
+  background: var(--tm-quote-bg);
+  color: var(--tm-quote-text);
+  border-color: transparent;
+}
+
+.faces {
+  display: grid;
+  grid-template-areas: "face";
+  min-height: 300px;
+  border-radius: inherit;
+}
+
+.front,
+.back {
+  grid-area: face;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 300px;
+  padding: 30px 28px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.front {
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 150ms var(--tm-ease);
+}
+
+.back {
+  z-index: 2;
+  justify-content: center;
+  gap: 1.125rem;
+  background: var(--tm-quote-bg);
+  color: var(--tm-quote-text);
+  opacity: 0;
+  transform: translateY(5px);
+  pointer-events: none;
+  visibility: hidden;
+  transition:
+    opacity 200ms var(--tm-ease),
+    transform 200ms var(--tm-ease),
+    visibility 0ms linear 200ms;
+}
+
+.card[data-open="true"] .front {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition:
+    opacity 140ms var(--tm-ease),
+    visibility 0ms linear 140ms;
+}
+
+.card[data-open="true"] .back {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+  transition:
+    opacity 200ms var(--tm-ease),
+    transform 200ms var(--tm-ease),
+    visibility 0ms;
+}
+
+.logoWrap {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 54px;
+  margin-bottom: 1.35rem;
+}
+
+.logo {
+  max-width: 140px;
+  max-height: 54px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.companyName {
+  margin: 0;
+  text-align: center;
+}
+
+.location {
+  margin: 0.65rem 0 0;
+  text-align: center;
+  color: var(--tm-muted);
+}
+
+.reviewer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: auto;
+  margin-inline: auto;
+  padding-top: 1.75rem;
+  text-align: left;
+}
+
+.reviewerNoPhoto {
+  justify-content: center;
+  text-align: center;
+}
+
+.reviewerNoPhoto .reviewerText {
+  text-align: center;
+}
+
+.avatar {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.reviewerText {
+  min-width: 0;
+}
+
+.reviewerName {
+  margin: 0;
+}
+
+.reviewerRole {
+  margin: 0.2rem 0 0;
+  color: var(--tm-muted);
+}
+
+.revealButton,
+.closeButton {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.revealButton {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card[data-open="true"] .revealButton {
+  pointer-events: none;
+}
+
+.revealButton:focus-visible {
+  outline: 2px solid var(--tm-accent);
+  outline-offset: 3px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  color: var(--tm-quote-text);
+}
+
+.closeButton:focus-visible {
+  outline: 2px solid var(--brand-navy-panel);
+  outline-offset: 2px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin: 0;
+  color: var(--tm-accent);
+}
+
+.quote {
+  margin: 0;
+  max-width: 100%;
+  text-align: center;
+  color: var(--tm-quote-text);
+}
+
+.emphasis {
+  font-weight: 500;
+}
+
+.attribution {
+  margin: 0;
+  text-align: center;
+  color: color-mix(in srgb, var(--tm-quote-text) 72%, transparent);
+}
+
+.sourceLink {
+  display: inline-flex;
+  margin: 0.35rem auto 0;
+  color: var(--brand-navy-panel);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.noscriptQuote {
+  margin: 1rem 0 0;
+  color: var(--tm-muted);
+}
+
+.quoteBody,
+.quoteFooter {
+  display: grid;
+  gap: 0.85rem;
+  justify-items: center;
+}
+
+@media (max-width: 539px) {
+  .front,
+  .back {
+    padding: 24px;
+    min-height: 0;
+  }
+
+  .faces,
+  .card {
+    min-height: 0;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .front,
+  .back,
+  .card {
+    transition: none !important;
+  }
+
+  .back {
+    transform: none !important;
+  }
+}

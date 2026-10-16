@@ -1,0 +1,75 @@
+.trustCard {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  padding: 2rem 1.5rem 3.25rem;
+  border-radius: 13px;
+  border: 1px solid color-mix(in srgb, var(--brand-cyan) 18%, transparent);
+  background:
+    radial-gradient(
+      120% 80% at 50% 100%,
+      color-mix(in srgb, var(--brand-cyan) 22%, transparent) 0%,
+      transparent 55%
+    ),
+    color-mix(in srgb, var(--brand-navy-panel) 70%, #05080c);
+  color: #f3f3f3;
+  text-align: center;
+  overflow: hidden;
+}
+
+.stars {
+  margin: 0 0 0.85rem;
+  color: var(--brand-cyan);
+  letter-spacing: 0.2em;
+}
+
+.eyebrow {
+  margin: 0;
+  color: color-mix(in srgb, #f3f3f3 78%, transparent);
+}
+
+.value {
+  margin: 0.35rem 0 0;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.label {
+  margin: 0.65rem 0 0;
+  color: color-mix(in srgb, #f3f3f3 86%, transparent);
+}
+
+.ribbon {
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  z-index: 0;
+  width: 120px;
+  height: 56px;
+  border-radius: 40% 40% 45% 45%;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--brand-cyan) 70%, #1a6f8a),
+    color-mix(in srgb, var(--brand-navy) 55%, #4de8f4)
+  );
+  transform: translateX(-50%) rotate(-8deg);
+  opacity: 0.9;
+  filter: blur(0.2px);
+  box-shadow:
+    0 10px 24px color-mix(in srgb, var(--brand-cyan) 28%, transparent),
+    inset 0 1px 0 color-mix(in srgb, #fff 35%, transparent);
+}
+
+.ribbon::before,
+.ribbon::after {
+  content: "";
+  position: absolute;
+  inset: 18% 12%;
+  border-radius: inherit;
+  background: color-mix(in srgb, #fff 12%, transparent);
+}

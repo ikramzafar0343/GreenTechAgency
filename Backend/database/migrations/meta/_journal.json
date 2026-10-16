@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791916559923,
+      "tag": "0000_better_auth_core",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791919714101,
+      "tag": "0001_lying_blade",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791921256233,
+      "tag": "0002_brown_tattoo",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791922637258,
+      "tag": "0003_bright_ink",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791924000000,
+      "tag": "0004_employee_kind",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1792168000000,
+      "tag": "0005_content_translation",
+      "breakpoints": true
+    }
+  ]
+}

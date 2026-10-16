@@ -1,0 +1,361 @@
+.headerShell {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 60;
+  pointer-events: none;
+  padding: 24px 16px;
+  /* Transparent over the contact paper hero — no solid white bar. */
+  background: transparent;
+}
+
+@media (min-width: 1024px) {
+  .headerShell {
+    padding: 40px 48px;
+  }
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  pointer-events: none;
+}
+
+.brand {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--contact-ink, #0c1016);
+  transition:
+    transform 350ms cubic-bezier(0.22, 0.68, 0, 1),
+    opacity 350ms cubic-bezier(0.22, 0.68, 0, 1);
+}
+
+.brandHidden {
+  transform: translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.brandLogo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 999px;
+  background: var(--contact-paper, #f0f6f8);
+}
+
+@media (min-width: 1024px) {
+  .brandLogo {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.brandText {
+  display: none;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+@media (min-width: 768px) {
+  .brandText {
+    display: flex;
+  }
+}
+
+.brandEyebrow {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.brandName {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.controls {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (min-width: 1024px) {
+  .controls {
+    gap: 20px;
+  }
+}
+
+.portfolioPill {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 4.8px 4.8px 4.8px 18px;
+  border-radius: 999px;
+  background: var(--contact-control, #1e242c);
+  color: var(--contact-paper, #f0f6f8);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .portfolioPill {
+    display: inline-flex;
+    min-height: 58px;
+  }
+}
+
+.menuToggle {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 4.8px 4.8px 4.8px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--contact-control, #1e242c);
+  color: var(--contact-paper, #f0f6f8);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .menuToggle {
+    min-height: 58px;
+  }
+}
+
+.pillBadge {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: color-mix(in srgb, #fff 12%, transparent);
+  flex-shrink: 0;
+}
+
+@media (min-width: 1024px) {
+  .pillBadge {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.menuLabelWindow {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+  height: 1.2em;
+  min-width: 3.6em;
+}
+
+.menuLabelStack {
+  display: flex;
+  flex-direction: column;
+  transition: transform 500ms cubic-bezier(0.22, 0.68, 0, 1.2);
+}
+
+.menuLabelStackOpen {
+  transform: translateY(-50%);
+}
+
+.menuLabelStack span {
+  display: block;
+  line-height: 1.2;
+}
+
+.menuDots {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menuDots span {
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.portfolioArrow {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.menuToggle:focus-visible,
+.portfolioPill:focus-visible,
+.brand:focus-visible {
+  outline: 2px solid var(--brand-cyan, #4de8f4);
+  outline-offset: 3px;
+}
+
+.menuRoot {
+  position: fixed;
+  z-index: 59;
+  inset: 0;
+  pointer-events: none;
+}
+
+.menuCard {
+  pointer-events: auto;
+  position: absolute;
+  top: 80px;
+  right: 16px;
+  left: 16px;
+  max-height: min(70vh, 520px);
+  overflow: auto;
+  padding: 32px 24px;
+  border-radius: 24px;
+  background: var(--contact-panel, #d9e0e3);
+  color: var(--contact-ink, #0c1016);
+  transform-origin: top right;
+  transform: translateX(calc(100% + 48px)) rotate(8deg);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    transform 650ms cubic-bezier(0.22, 0.68, 0, 1),
+    opacity 650ms cubic-bezier(0.22, 0.68, 0, 1),
+    visibility 650ms;
+}
+
+.menuCardOpen {
+  transform: translateX(0) rotate(0deg);
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 1024px) {
+  .menuCard {
+    top: 122px;
+    right: 48px;
+    left: auto;
+    width: 475px;
+    padding: 48px 24px;
+  }
+}
+
+.menuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.875rem;
+  font-weight: 500;
+  letter-spacing: -0.075em;
+  line-height: 1.1;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
+}
+
+@media (min-width: 1024px) {
+  .menuLink {
+    padding: 16px 24px;
+    font-size: 3rem;
+  }
+}
+
+.menuLinkCurrent {
+  color: var(--contact-muted, #a5abad);
+}
+
+.menuArrow {
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    width 300ms ease,
+    opacity 300ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .menuLink:hover {
+    background: var(--contact-paper, #f0f6f8);
+  }
+
+  .menuLink:hover .menuArrow {
+    width: 28px;
+    opacity: 1;
+  }
+}
+
+.menuLink:focus-visible {
+  outline: 2px solid var(--brand-cyan, #4de8f4);
+  outline-offset: 2px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  background: var(--contact-ink, #0c1016);
+  transition:
+    transform 650ms cubic-bezier(0.76, 0, 0.24, 1),
+    opacity 650ms cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.overlayExit {
+  transform: translateY(-105%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlayLogo {
+  width: clamp(72px, 12vw, 128px);
+  height: auto;
+  object-fit: contain;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand,
+  .menuCard,
+  .menuLabelStack,
+  .menuArrow,
+  .overlay {
+    transition: none !important;
+  }
+}
