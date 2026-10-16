@@ -154,7 +154,9 @@ async function mapPool<T, R>(
   async function run() {
     while (next < items.length) {
       const i = next++;
-      results[i] = await worker(items[i], i);
+      const item = items[i];
+      if (item === undefined) continue;
+      results[i] = await worker(item, i);
     }
   }
   await Promise.all(

@@ -8,6 +8,8 @@ import {
   type ContentLocale,
 } from "../db/schema/translations.js";
 
+export type { ContentLocale, ContentEntityType };
+
 export function parseContentLocale(raw: unknown): ContentLocale {
   const value = typeof raw === "string" ? raw.trim() : "";
   if ((CONTENT_LOCALES as readonly string[]).includes(value)) {
