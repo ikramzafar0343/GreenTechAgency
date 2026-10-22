@@ -2,6 +2,8 @@ import { PublicFetchErrorPanel } from "@/components/site/PublicFetchErrorPanel";
 import { SectionIntro } from "@/components/site/SectionIntro";
 import { FaqAccordion } from "@/features/faq/components/FaqAccordion";
 import { getPublicFaqSection } from "@/features/faq/server/getPublicFaq";
+import { faqPageJsonLd } from "@/lib/seo/jsonLd";
+import { JsonLdScript } from "@/lib/seo/JsonLdScript";
 import styles from "@/features/faq/styles/faq.module.css";
 
 export async function FaqSection() {
@@ -19,6 +21,9 @@ export async function FaqSection() {
   const items = [...data.items].sort(
     (a, b) => a.displayOrder - b.displayOrder,
   );
+  const faqSchema = faqPageJsonLd(
+    items.map((item) => ({ question: item.question, answer: item.answer })),
+  );
 
   return (
     <section
@@ -27,6 +32,7 @@ export async function FaqSection() {
       aria-labelledby="faq-heading"
       data-faq-section
     >
+      <JsonLdScript data={faqSchema} />
       <div className={styles.container}>
         <div className={styles.layout}>
           <div className={styles.sidebar}>
@@ -37,7 +43,7 @@ export async function FaqSection() {
               supporting={data.supportingText}
               tone="light"
               align="start"
-              className={styles.intro}
+              {...(styles.intro ? { className: styles.intro } : {})}
             />
 
             <div className={styles.ctaBlock}>
@@ -51,7 +57,11 @@ export async function FaqSection() {
           </div>
 
           <div className={styles.accordionWrap}>
-            <FaqAccordion items={items} />
+            <FaqAccordion
+              items={items}
+              initialOpenId={data.initialOpenId}
+              animationEnabled={data.animationEnabled}
+            />
           </div>
         </div>
       </div>

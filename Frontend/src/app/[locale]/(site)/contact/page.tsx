@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/contact",
   },
+  openGraph: {
+    title: "Contact GreenTech Agency | Project Enquiries",
+    description:
+      "Start a project, join the team, or say hi. Tell us about your website, software, design, or digital growth plans.",
+    url: "/contact",
+  },
 };
 
 export default async function ContactPage() {

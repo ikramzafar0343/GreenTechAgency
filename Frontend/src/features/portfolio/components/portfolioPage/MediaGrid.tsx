@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Link } from "@/i18n/navigation";
 import { PortfolioEmptyState } from "@/features/portfolio/components/portfolioPage/PortfolioEmptyState";
 import type { MediaTile } from "@/features/portfolio/model/portfolioPageTypes";
 import styles from "@/features/portfolio/styles/portfolioGalleries.module.css";
@@ -40,19 +41,21 @@ export function MediaGrid({ items, variant, emptyLabel }: MediaGridProps) {
     <div className={`${styles.mediaGrid} ${variantClass(variant)}`}>
       {items.map((tile) => (
         <figure id={tile.id} key={tile.id} className={styles.mediaTile}>
-          <Image
-            src={tile.src}
-            alt={tile.alt}
-            width={tile.width}
-            height={tile.height}
-            className={styles.mediaImage}
-            sizes={
-              variant === "business"
-                ? "(max-width: 550px) 100vw, 50vw"
-                : "(max-width: 550px) 100vw, (max-width: 850px) 50vw, 33vw"
-            }
-            unoptimized={isCmsMediaSrc(tile.src)}
-          />
+          <Link href={`/portfolio/${tile.id}`}>
+            <Image
+              src={tile.src}
+              alt={tile.alt}
+              width={tile.width}
+              height={tile.height}
+              className={styles.mediaImage}
+              sizes={
+                variant === "business"
+                  ? "(max-width: 550px) 100vw, 50vw"
+                  : "(max-width: 550px) 100vw, (max-width: 850px) 50vw, 33vw"
+              }
+              unoptimized={isCmsMediaSrc(tile.src)}
+            />
+          </Link>
         </figure>
       ))}
     </div>

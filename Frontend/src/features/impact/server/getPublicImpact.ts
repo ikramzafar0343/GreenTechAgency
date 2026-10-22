@@ -23,7 +23,7 @@ function mapCard(card: ImpactCardData): ImpactCardData {
       ...card.image,
       src: resolved,
       tileTitle: card.image.tileTitle?.trim() || "Delivery",
-      tileCaption: card.image.tileCaption?.trim() || "EDITORIAL DEMO",
+      tileCaption: card.image.tileCaption?.trim() || "",
     },
   };
 }

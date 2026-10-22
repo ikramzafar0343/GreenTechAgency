@@ -48,7 +48,7 @@ export function ImpactCard({ card, isClone = false }: ImpactCardProps) {
 
   if (card.kind === "image") {
     const tileTitle = card.image.tileTitle?.trim() || "Delivery";
-    const tileCaption = card.image.tileCaption?.trim() || "EDITORIAL DEMO";
+    const tileCaption = card.image.tileCaption?.trim() || "";
     const unoptimized =
       card.image.src.endsWith(".svg") ||
       card.image.src.startsWith("/media/") ||
@@ -68,7 +68,9 @@ export function ImpactCard({ card, isClone = false }: ImpactCardProps) {
         <div className={styles.imageFade} aria-hidden="true" />
         <div className={styles.imageTile} aria-hidden={isClone || undefined}>
           <p className={styles.imageTileTitle}>{tileTitle}</p>
-          <p className={styles.imageTileCaption}>{tileCaption}</p>
+          {tileCaption ? (
+            <p className={styles.imageTileCaption}>{tileCaption}</p>
+          ) : null}
         </div>
         {card.caption ? (
           <p className={`${styles.imageCaption} typeBody`}>{card.caption}</p>

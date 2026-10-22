@@ -1,6 +1,7 @@
 "use client";
 
 import type { RefObject } from "react";
+import { Link } from "@/i18n/navigation";
 import type { MarkerSlot } from "@/features/portfolio/lib/curveSlots";
 import type { PortfolioTimelineStep } from "@/features/portfolio/model/timelineTypes";
 import styles from "@/features/portfolio/styles/portfolioTimeline.module.css";
@@ -17,7 +18,9 @@ function ActiveBlock({ step }: { step: PortfolioTimelineStep }) {
   return (
     <div className={styles.activeBlock}>
       <p className={`${styles.timeLabel} typeMeta`}>{step.timeLabel}</p>
-      <h3 className={`${styles.activeTitle} typeCardTitle`}>{step.title}</h3>
+      <h3 className={`${styles.activeTitle} typeCardTitle`}>
+        <Link href={`/portfolio/${step.slug}`}>{step.title}</Link>
+      </h3>
       <p className={`${styles.activeBody} typeBody`}>{step.description}</p>
     </div>
   );

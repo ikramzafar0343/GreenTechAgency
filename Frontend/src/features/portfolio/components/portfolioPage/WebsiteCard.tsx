@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Link } from "@/i18n/navigation";
 import type { WebsiteProject } from "@/features/portfolio/model/portfolioPageTypes";
 import styles from "@/features/portfolio/styles/portfolioGalleries.module.css";
 
@@ -17,6 +18,7 @@ function isCmsMediaSrc(src: string) {
 }
 
 export function WebsiteCard({ project, reveal = false }: WebsiteCardProps) {
+  const caseStudyHref = `/portfolio/${project.id}`;
   const frame = (
     <div className={styles.websiteFrame}>
       <Image
@@ -36,14 +38,20 @@ export function WebsiteCard({ project, reveal = false }: WebsiteCardProps) {
       id={project.id}
       className={`${styles.websiteCard}${reveal ? ` ${styles.revealItem}` : ""}`}
     >
+      <Link href={caseStudyHref}>
+        {frame}
+        <h3 className={`${styles.websiteTitle} typeHeading`}>{project.title}</h3>
+      </Link>
       {project.href ? (
-        <a href={project.href} target="_blank" rel="noreferrer">
-          {frame}
+        <a
+          href={project.href}
+          target="_blank"
+          rel="noreferrer"
+          className="typeMeta mt-2 inline-block text-[var(--nav-muted)] underline-offset-2 hover:underline"
+        >
+          Visit live site
         </a>
-      ) : (
-        frame
-      )}
-      <h3 className={`${styles.websiteTitle} typeHeading`}>{project.title}</h3>
+      ) : null}
     </article>
   );
 }

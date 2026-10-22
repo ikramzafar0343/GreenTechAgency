@@ -3,6 +3,9 @@ import { Link } from "@/i18n/navigation";
 import { BlogArticleBody } from "@/features/blog/components/BlogArticleBody";
 import { getBlogArticle } from "@/features/blog/server/getBlogArticle";
 import { formatInsightDate } from "@/features/insights/lib/formatInsightDate";
+import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo/jsonLd";
+import { JsonLdScript } from "@/lib/seo/JsonLdScript";
+import { absoluteUrl } from "@/lib/seo/siteUrl";
 import { redirectOrNotFound } from "@/server/backend/redirectOrNotFound";
 
 export const dynamic = "force-dynamic";
@@ -19,9 +22,17 @@ export async function generateMetadata({
   if (!article) {
     return { title: "Insight" };
   }
+  const path = `/blog/${article.slug}`;
   return {
-    title: `${article.seoTitle} | GreenTech Agency`,
+    title: article.seoTitle,
     description: article.seoDescription,
+    alternates: { canonical: path },
+    openGraph: {
+      title: article.seoTitle,
+      description: article.seoDescription,
+      url: absoluteUrl(path),
+      type: "article",
+    },
   };
 }
 
@@ -34,9 +45,25 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
   }
 
   const dateLabel = formatInsightDate(article.publishedAt);
+  const path = `/blog/${article.slug}`;
 
   return (
     <main className="mx-auto w-full max-w-3xl px-6 py-28 sm:px-8">
+      <JsonLdScript
+        data={[
+          articleJsonLd({
+            headline: article.title,
+            description: article.seoDescription,
+            path,
+            datePublished: article.publishedAt,
+          }),
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Insights", path: "/insights" },
+            { name: article.title, path },
+          ]),
+        ]}
+      />
       <p className="typeMeta text-[var(--nav-muted)]">{article.category}</p>
       <h1 className="typeHero mt-4 text-white">{article.title}</h1>
       <p className="typeMeta mt-4 text-[var(--nav-muted)]">

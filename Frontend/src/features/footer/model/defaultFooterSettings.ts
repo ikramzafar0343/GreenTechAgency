@@ -14,7 +14,7 @@ export const DEFAULT_FOOTER_SETTINGS: PublicFooterSettings = {
   ctaEntryAnimation: true,
   contact: {
     address: "Digital product studio — design, engineering, and growth.",
-    email: "hello@greentech.agency",
+    email: "hello@greentechagency.com",
     phone: null,
     hours: null,
     mapUrl: null,

@@ -19,6 +19,11 @@ export async function generateMetadata(): Promise<Metadata> {
     alternates: {
       canonical: result.content.seo.canonicalPath,
     },
+    openGraph: {
+      title: result.content.seo.title,
+      description: result.content.seo.description,
+      url: result.content.seo.canonicalPath,
+    },
   };
 }
 

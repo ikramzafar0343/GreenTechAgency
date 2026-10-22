@@ -18,7 +18,7 @@ const img = (
   width: number,
   height: number,
   tileTitle: string,
-  tileCaption = "EDITORIAL DEMO",
+  tileCaption = "",
 ): ServiceDetailImage => ({
   src: `/services/editorial/${file}`,
   alt,

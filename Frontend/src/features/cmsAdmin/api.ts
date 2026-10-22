@@ -108,7 +108,7 @@ export async function cmsAdminUploadMedia(
   }
   return {
     url,
-    objectKey: data.objectKey,
-    id: data.id,
+    ...(typeof data.objectKey === "string" ? { objectKey: data.objectKey } : {}),
+    ...(typeof data.id === "string" ? { id: data.id } : {}),
   };
 }

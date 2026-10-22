@@ -8,6 +8,7 @@ export function mapPortfolioSteps(
     .filter((project) => Boolean(project.coverUrl))
     .map((project) => ({
       id: project.id,
+      slug: project.slug,
       title: project.title,
       timeLabel: project.category,
       description: project.description,

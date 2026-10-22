@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { fetchPublishedServices } from "@/features/services/server/fetchPublishedServices";
+import { absoluteUrl } from "@/lib/seo/siteUrl";
 import { backendPublicGet } from "@/server/backend/client";
 import type {
   BackendBlogListItem,
@@ -8,16 +9,7 @@ import type {
 } from "@/server/backend/dtos";
 import { parseItemsResponse } from "@/server/backend/parseItemsResponse";
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-  "https://greentech.agency";
-
 export const dynamic = "force-dynamic";
-
-function absolutePath(path: string): string {
-  const normalized = path.startsWith("/") ? path : `/${path}`;
-  return `${SITE_URL}${normalized === "/" ? "/" : normalized}`;
-}
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
@@ -33,7 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   const staticEntries: MetadataRoute.Sitemap = staticPaths.map((path) => ({
-    url: absolutePath(path),
+    url: absoluteUrl(path),
     lastModified: now,
     changeFrequency: path === "/" ? "weekly" : "monthly",
     priority: path === "/" ? 1 : 0.7,
@@ -55,19 +47,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const dynamicEntries: MetadataRoute.Sitemap = [
     ...services.map((item) => ({
-      url: absolutePath(`/services/${item.slug}`),
+      url: absoluteUrl(`/services/${item.slug}`),
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })),
     ...blog.map((item) => ({
-      url: absolutePath(`/blog/${item.slug}`),
+      url: absoluteUrl(`/blog/${item.slug}`),
       lastModified: item.publishedAt ? new Date(item.publishedAt) : now,
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
     ...portfolio.map((item) => ({
-      url: absolutePath(`/portfolio#${item.slug}`),
+      url: absoluteUrl(`/portfolio/${item.slug}`),
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.5,

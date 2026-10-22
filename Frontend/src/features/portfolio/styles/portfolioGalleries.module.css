@@ -77,6 +77,9 @@
   width: 100%;
   aspect-ratio: 1;
   overflow: hidden;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
   background: color-mix(in srgb, var(--pp-ink, #0f2430) 4%, var(--pp-card, #fff));
 }
 
@@ -94,9 +97,11 @@
 }
 
 .artworkTitle {
+  display: block;
   margin: 0;
   padding: 0.9rem 1rem 1.1rem;
   color: var(--pp-ink, #0f2430);
+  text-decoration: none;
 }
 
 .socialGrid {

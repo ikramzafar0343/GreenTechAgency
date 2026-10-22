@@ -80,18 +80,13 @@ export function AboutGroupPortrait({ content }: AboutGroupPortraitProps) {
       ref={rootRef}
       id="about-group-portrait"
       className={styles.portrait}
-      aria-label={missing ? "Team photograph pending approval" : content.alt}
+      aria-label={missing ? "Team photograph" : content.alt}
       data-asset-status={content.assetStatus}
     >
       <div className={styles.clip} data-portrait-clip>
         <div className={styles.mediaWrap} data-portrait-media>
           {missing ? (
-            <div className={styles.fallback} aria-hidden="true">
-              <p className={styles.fallbackNote}>
-                Approved group portrait pending — upload from Admin → Site
-                sections → About page.
-              </p>
-            </div>
+            <div className={styles.fallback} aria-hidden="true" />
           ) : content.src ? (
             <Image
               src={content.src}

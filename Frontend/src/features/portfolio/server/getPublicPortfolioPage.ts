@@ -18,7 +18,7 @@ function toWebsite(row: ReturnType<typeof mapPortfolioListItem>): WebsiteProject
     return null;
   }
   return {
-    // Sitemap and deep links use `/portfolio#${slug}` — keep DOM id = slug.
+    // DOM id matches slug; case-study URL is `/portfolio/${slug}`.
     id: row.slug,
     title: row.title,
     websiteType: "staticWebsite",

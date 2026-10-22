@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | GreenTech Agency",
+  title: "Terms & Conditions",
   description: "Terms for using the GreenTech Agency website.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsPage() {
@@ -14,7 +17,7 @@ export default function TermsPage() {
           By using this website you agree to browse its content for information
           about our services. Project work is governed by a separate agreement.
           Site content remains GreenTech Agency property unless noted otherwise.
-          Contact hello@greentech.agency with any questions.
+          Contact hello@greentechagency.com with any questions.
         </p>
       </section>
     </main>

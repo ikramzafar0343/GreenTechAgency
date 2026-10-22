@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Link } from "@/i18n/navigation";
 import type { ArtworkProject } from "@/features/portfolio/model/portfolioPageTypes";
 import styles from "@/features/portfolio/styles/portfolioGalleries.module.css";
 
@@ -18,14 +19,13 @@ function isCmsMediaSrc(src: string) {
 
 export function ArtworkCard({ project, onOpen }: ArtworkCardProps) {
   return (
-    <button
-      id={project.id}
-      type="button"
-      className={styles.artworkCard}
-      onClick={() => onOpen(project)}
-      aria-label={`Open gallery for ${project.title}`}
-    >
-      <span className={styles.artworkMedia}>
+    <div id={project.id} className={styles.artworkCard}>
+      <button
+        type="button"
+        className={styles.artworkMedia}
+        onClick={() => onOpen(project)}
+        aria-label={`Open gallery for ${project.title}`}
+      >
         <Image
           src={project.coverUrl}
           alt=""
@@ -35,8 +35,13 @@ export function ArtworkCard({ project, onOpen }: ArtworkCardProps) {
           sizes="(max-width: 550px) 100vw, (max-width: 850px) 50vw, 33vw"
           unoptimized={isCmsMediaSrc(project.coverUrl)}
         />
-      </span>
-      <span className={`${styles.artworkTitle} typeHeading`}>{project.title}</span>
-    </button>
+      </button>
+      <Link
+        href={`/portfolio/${project.id}`}
+        className={`${styles.artworkTitle} typeHeading`}
+      >
+        {project.title}
+      </Link>
+    </div>
   );
 }

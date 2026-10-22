@@ -22,7 +22,7 @@ export const IMPACT_CONTENT: ImpactMadeVisibleContent = {
         alt: "Collaborative digital craft across design and engineering.",
         objectPosition: "center",
         tileTitle: "Delivery",
-        tileCaption: "EDITORIAL DEMO",
+        tileCaption: "",
       },
     },
     {
@@ -43,7 +43,7 @@ export const IMPACT_CONTENT: ImpactMadeVisibleContent = {
         alt: "Product and engineering delivery in progress.",
         objectPosition: "center 30%",
         tileTitle: "Delivery",
-        tileCaption: "EDITORIAL DEMO",
+        tileCaption: "",
       },
       caption:
         "Practical delivery that keeps scope clear from brief to launch.",

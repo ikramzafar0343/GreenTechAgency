@@ -57,7 +57,7 @@ function publicServiceDetailDto(
     deliveryRailImagePath: doc.deliveryRailImagePath ?? null,
     deliveryRailImageAlt: doc.deliveryRailImageAlt ?? "",
     deliveryRailTileTitle: doc.deliveryRailTileTitle ?? "Delivery",
-    deliveryRailTileCaption: doc.deliveryRailTileCaption ?? "EDITORIAL DEMO",
+    deliveryRailTileCaption: doc.deliveryRailTileCaption ?? "",
     pairA: doc.pairA ?? null,
     pairB: doc.pairB ?? null,
     principles: doc.principles,

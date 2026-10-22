@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | GreenTech Agency",
+  title: "Privacy Policy",
   description: "How GreenTech Agency handles personal information on this site.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {
@@ -14,7 +17,7 @@ export default function PrivacyPage() {
           This page outlines how we collect and use information when you browse
           this site or send an enquiry. We only use contact details you submit
           to respond to your request and do not sell personal data. For
-          questions, email hello@greentech.agency.
+          questions, email hello@greentechagency.com.
         </p>
       </section>
     </main>

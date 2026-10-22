@@ -34,8 +34,7 @@ function withServiceDeliveryRail(
           src: rail.src,
           alt: rail.alt || card.image.alt,
           tileTitle: rail.tileTitle || card.image.tileTitle || "Delivery",
-          tileCaption:
-            rail.tileCaption || card.image.tileCaption || "EDITORIAL DEMO",
+          tileCaption: rail.tileCaption || card.image.tileCaption || "",
         },
       };
     }),

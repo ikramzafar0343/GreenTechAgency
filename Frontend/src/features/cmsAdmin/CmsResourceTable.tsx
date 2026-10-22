@@ -21,7 +21,7 @@ type CmsResourceTableProps<T extends CmsListRow> = {
   readonly onPublish: (item: T) => void;
   readonly onUnpublish: (item: T) => void;
   readonly onArchive: (item: T) => void;
-  readonly onDelete?: (item: T) => void;
+  readonly onDelete?: ((item: T) => void) | undefined;
 };
 
 export function CmsResourceTable<T extends CmsListRow>({

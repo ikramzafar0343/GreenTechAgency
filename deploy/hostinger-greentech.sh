@@ -174,6 +174,7 @@ EOF
   # Frontend env (build + runtime)
   cat > "${APP_ROOT}/Frontend/.env.local" <<EOF
 BACKEND_URL=http://127.0.0.1:${BE_PORT}
+NEXT_PUBLIC_SITE_URL=https://${DOMAIN}
 NEXT_PUBLIC_APP_URL=https://${DOMAIN}
 NEXT_PUBLIC_MEDIA_BASE_URL=https://${DOMAIN}/media
 MEDIA_PUBLIC_BASE_URL=https://${DOMAIN}/media

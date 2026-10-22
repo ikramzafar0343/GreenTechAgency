@@ -9,8 +9,8 @@ export type SectionIntroProps = {
   /** Light surfaces use navy/ink; dark surfaces use cyan/white. */
   readonly tone?: "light" | "dark";
   readonly align?: "start" | "center";
-  readonly className?: string;
-  readonly action?: ReactNode;
+  readonly className?: string | undefined;
+  readonly action?: ReactNode | undefined;
 };
 
 function normalizeEyebrow(value: string): string {
