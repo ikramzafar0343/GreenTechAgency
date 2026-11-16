@@ -48,32 +48,36 @@ start_pm2() {
 
   # Bind "localhost", not 127.0.0.1. Next normalizes 127.0.0.1 to localhost
   # inside middleware, then proxies https://localhost:PORT and returns 500.
+  # ipv4first keeps that name on 127.0.0.1 so Nginx and Node agree.
   # `pm2 restart` keeps the old -H, so recreate the process every update.
   if as_app "pm2 describe '$PM2_FE'" >/dev/null 2>&1; then
     as_app "pm2 delete '$PM2_FE'" >/dev/null 2>&1 || true
   fi
-  as_app "cd '${APP_ROOT}/Frontend' && pm2 start npm --name '$PM2_FE' -- start -- -p '$FE_PORT' -H localhost"
+  as_app "cd '${APP_ROOT}/Frontend' && NODE_OPTIONS=--dns-result-order=ipv4first pm2 start npm --name '$PM2_FE' --update-env -- start -- -p '$FE_PORT' -H localhost"
 
   as_app "pm2 save"
   env PATH="$PATH:/usr/bin" pm2 startup systemd -u "$APP_USER" --hp "/home/${APP_USER}" >/dev/null 2>&1 || true
 
-  local upstream="127.0.0.1"
-  local i
-  for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15; do
-    if ss -tln | grep -qE "[:.]${FE_PORT}\\b"; then
-      break
-    fi
+  # Pick the upstream Nginx can actually reach rather than guessing from `ss`.
+  local upstream=""
+  local i host
+  for i in $(seq 1 30); do
+    for host in "127.0.0.1" "[::1]"; do
+      if curl -s -o /dev/null --max-time 2 "http://${host}:${FE_PORT}/"; then
+        upstream="$host"
+        break 2
+      fi
+    done
     sleep 1
   done
-  if ss -tln | grep -qE "\\[::1\\]:${FE_PORT}\\b" && ! ss -tln | grep -qE "127\\.0\\.0\\.1:${FE_PORT}\\b"; then
-    upstream="[::1]"
-  fi
-  if [[ -n "${NGINX_SITE:-}" && -f "/etc/nginx/sites-available/${NGINX_SITE}" ]]; then
+  if [[ -z "$upstream" ]]; then
+    warn "Frontend did not answer on ${FE_PORT}; leaving Nginx upstream unchanged"
+  elif [[ -n "${NGINX_SITE:-}" && -f "/etc/nginx/sites-available/${NGINX_SITE}" ]]; then
     sed -i -E "s#proxy_pass http://(127\\.0\\.0\\.1|\\[::1\\]|localhost):${FE_PORT};#proxy_pass http://${upstream}:${FE_PORT};#" \
       "/etc/nginx/sites-available/${NGINX_SITE}"
     nginx -t && systemctl reload nginx
   fi
-  log "PM2 apps (user ${APP_USER}): ${PM2_FE} ${upstream}:${FE_PORT} | ${PM2_BE} 127.0.0.1:${BE_PORT}"
+  log "PM2 apps (user ${APP_USER}): ${PM2_FE} ${upstream:-unreachable}:${FE_PORT} | ${PM2_BE} 127.0.0.1:${BE_PORT}"
 }
 
 # Licensed fonts are not in git. Upload them once to FONT_DIR, e.g.:
