@@ -45,3 +45,4 @@ export {
   contentTranslation,
 } from "./translations.js";
 export type { ContentEntityType, ContentLocale } from "./translations.js";
+export { rateLimitBucket } from "./rateLimit.js";

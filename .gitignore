@@ -38,3 +38,12 @@ Thumbs.db
 # Vercel / misc
 .vercel/
 *.pem
+
+# Licensed commercial fonts: never commit (repo is public). Copy them in before building.
+Frontend/src/styles/fonts/*.woff
+Frontend/src/styles/fonts/*.woff2
+Frontend/src/styles/fonts/*.ttf
+Frontend/src/styles/fonts/*.otf
+Rules/*.ttf
+Rules/*.otf
+*.zip

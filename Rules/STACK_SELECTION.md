@@ -16,11 +16,11 @@ Record chosen technologies here before installing infrastructure. Do not invent 
 | Backend HTTP framework | **Express 5** | Mounted with `better-auth/node` `toNodeHandler`. |
 | Backend deployment mode | **Hostinger VPS** (production) | Local: `http://localhost:4000`. Prod: Node process on Hostinger VPS behind Nginx (`/api`, `/media`). See `Rules/HOSTINGER_VPS_DEPLOY.md`. |
 | Media storage | **VPS disk** (`MEDIA_ROOT`) | Uploads via `POST /api/admin/media/upload`; served at `GET /media/*`. Public base: `MEDIA_PUBLIC_BASE_URL`. |
-| Rate limits | **Process-local memory** (default) | `RATE_LIMIT_MODE=memory` for single VPS process. Optional `RATE_LIMIT_MODE=redis` + `RATE_LIMIT_REDIS_URL` for multi-process. |
-| Database | **PostgreSQL 18** | Neon supplies the latest supported **minor** for major 18 (do not change major). |
+| Rate limits | **PostgreSQL shared counters** | Table `rate_limit_bucket` (migration `0006`), atomic upsert per request, fail closed (503) if the DB is down. Contact form 5 / 10 min per IP; staff writes 60 / min per IP. |
+| Database | **PostgreSQL** (VPS package) | Installed by `deploy/hostinger-greentech.sh` on the same Hostinger VPS; local socket/loopback only. |
 | ORM / driver | **Drizzle ORM** + **`node-postgres` (`pg`)** + **Drizzle Kit** | Versions recorded in `Backend/package.json` and lockfile. |
-| Frontend hosting | **Vercel** | Region: **`iad1`** (US East / N. Virginia). |
-| Database hosting | **Neon** | Region: **`aws-us-east-1`** (same region as app functions when possible). |
+| Frontend hosting | **Hostinger VPS** | `next start` under PM2 as user `greentech`, bound to `127.0.0.1`, behind Nginx. |
+| Database hosting | **Same VPS** | Daily `pg_dump` before every migrate (`/var/backups/greentech`, last 14 kept); copy off-server. |
 | Authentication | **Better Auth** + Drizzle PostgreSQL adapter | Database-backed sessions; secure HttpOnly cookies; permissions enforced on every protected operation. **No public registration**. Frontend same-origin proxy preserves cookies on the site origin. |
 | Application pool (per runtime instance) | `max: 5`, `min: 0`, connection timeout **5s**, idle timeout **10s** | Starting settings; reuse pool for process lifetime. Requires load validation. |
 | Connection URLs | Pooled URL for app traffic; separate **direct** URL + migration credentials for migrations | Both server-side only on the Backend (`DATABASE_URL`, `DATABASE_URL_DIRECT`). |
@@ -46,10 +46,10 @@ Recorded at install; **lockfile is authoritative** (stable only, no beta/RC/cana
 ## Connection and concurrency budget
 
 - Instance pool **max 5** is **not** the global database connection limit.
-- Global budget = Neon compute connection limit − reserved headroom (migrations, admin, monitoring, failover) − other workloads, divided across Backend process instances.
+- Global budget = Postgres `max_connections` − reserved headroom (migrations, admin, monitoring, failover) − other workloads, divided across Backend process instances.
 - **Production-release blockers until measured and recorded:**
   - Backend production host platform and max instance count
-  - Neon project compute size and documented max connections
+  - VPS Postgres `max_connections` setting
   - Calculated global pool ceiling and alert thresholds
   - Load-test evidence for p95/p99 against Section 13 gates in the backend rules
 
@@ -67,8 +67,7 @@ Recorded at install; **lockfile is authoritative** (stable only, no beta/RC/cana
 | `BETTER_AUTH_URL` | Canonical **Frontend** origin for Better Auth (e.g. `http://localhost:3000`) |
 | `MEDIA_ROOT` | Absolute path for VPS disk uploads (local: `./.data/media`) |
 | `MEDIA_PUBLIC_BASE_URL` | Public base for media URLs (e.g. `http://localhost:4000/media` or `https://api.example.com/media`) |
-| `RATE_LIMIT_MODE` | `memory` (default, single VPS process) or `redis` |
-| `RATE_LIMIT_REDIS_URL` | Required only when `RATE_LIMIT_MODE=redis` |
+| `HOST` | Bind address (default `127.0.0.1`; only Nginx/Next.js on the VPS reach the API) |
 
 ### Frontend (`Frontend/.env.local`)
 
@@ -103,7 +102,7 @@ Optional public origin for browser clients only when required: `NEXT_PUBLIC_APP_
 
 **Admin URLs:** `/admin/login`, `/admin/services`, `/admin/blog`, `/admin/portfolio`, `/admin/faqs`, `/admin/site-sections`, `/admin/contact` (enquiries)
 
-**Migrations:** `0000_better_auth_core.sql`, `0001_lying_blade.sql` (CMS), `0002_brown_tattoo.sql` (FAQ/testimonials/stats/site/enquiries)
+**Migrations:** `0000_better_auth_core`, `0001_lying_blade` (CMS), `0002_brown_tattoo` (FAQ/testimonials/stats/site/enquiries), `0003_bright_ink`, `0004_employee_kind`, `0005_content_translation`, `0006_rate_limit_bucket` (shared rate limits). Snapshots exist only up to 0003 — run `drizzle-kit generate` against a fresh DB to rebuild them before the next schema change.
 
 ## Verification status
 
@@ -112,7 +111,7 @@ Optional public origin for browser clients only when required: `NEXT_PUBLIC_APP_
 | Unit: env validation + pool settings | Run in `Backend/` (`npm test`) |
 | Unit: migration SQL contains auth tables/FKs | Run in `Backend/` |
 | Integration: live Postgres 18 + migrated tables | **Unverified** — requires credentials below |
-| `drizzle-kit migrate` against Neon | **Unverified** — needs `DATABASE_URL_DIRECT` |
+| `drizzle-kit migrate` against VPS Postgres | **Unverified** — needs `DATABASE_URL_DIRECT` |
 | Better Auth sign-in / session cookie E2E | **Unverified** — needs migrated DB + admin user + both processes |
 | Backend production host + global connection budget | **Production-release blocker** — not yet chosen/measured |
 | Section 13 load gates (p95/p99) | **Production-release blocker** — not yet run |
@@ -122,7 +121,7 @@ Optional public origin for browser clients only when required: `NEXT_PUBLIC_APP_
 1. In `Backend/.env.local`: `DATABASE_URL`, `DATABASE_URL_DIRECT`, `BETTER_AUTH_SECRET`, `BETTER_AUTH_URL`, `FRONTEND_ORIGIN`
 2. In `Frontend/.env.local`: `BACKEND_URL=http://localhost:4000`
 
-Provision Neon as **PostgreSQL 18** in `aws-us-east-1`. Then from `Backend/`: `npm run db:migrate`, then `npm run auth:create-admin -- --email … --name … --password …`.
+Provision Postgres (the deploy script does it on the VPS). Then from `Backend/`: `npm run db:migrate`, then `npm run auth:create-admin -- --email … --name … --password …`.
 
 ## Rules that apply
 

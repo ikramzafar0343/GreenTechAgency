@@ -1,28 +1,30 @@
 import localFont from "next/font/local";
 
 /**
- * Brandium role weights mapped onto licensed Nourd faces.
+ * Brandium role weights mapped onto licensed Nourd faces (WOFF, ~33 KB each).
  * 250 + 300 share nourd_light (no separate 250 file).
+ * The font files are licensed and NOT committed (see .gitignore and
+ * docs/ENHANCEMENT_2026-11.md → "Fonts"); place them in src/styles/fonts before building.
  */
 export const brandFont = localFont({
   src: [
     {
-      path: "../../styles/fonts/nourd_light.ttf",
+      path: "../../styles/fonts/nourd_light.woff",
       weight: "250",
       style: "normal",
     },
     {
-      path: "../../styles/fonts/nourd_light.ttf",
+      path: "../../styles/fonts/nourd_light.woff",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../../styles/fonts/nourd_regular.ttf",
+      path: "../../styles/fonts/nourd_regular.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../styles/fonts/nourd_medium.ttf",
+      path: "../../styles/fonts/nourd_medium.woff",
       weight: "500",
       style: "normal",
     },

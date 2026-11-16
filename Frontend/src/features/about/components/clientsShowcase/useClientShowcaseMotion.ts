@@ -3,88 +3,10 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef, type RefObject } from "react";
-import { prefersReducedMotion } from "@/features/about/lib/prefersReducedMotion";
+import { useEffect, useRef } from "react";
+import { FOCUS_RATIO, PREVIEW_LEFT_MIN, PREVIEW_LEFT_MAX, PREVIEW_LEFT_RATIO, type UseClientShowcaseMotionOptions, canPin, paintNames, closestIndex } from "./useClientShowcaseMotionPart";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
-
-const DESKTOP_MIN = 1024;
-const MIN_PIN_HEIGHT = 560;
-const INACTIVE = 0.28;
-const FOCUS_RATIO = 0.48;
-/** Brandium left-column inset for the logo tile (Y tracks active name only). */
-const PREVIEW_LEFT_MIN = 48;
-const PREVIEW_LEFT_MAX = 132;
-const PREVIEW_LEFT_RATIO = 0.09;
-
-type UseClientShowcaseMotionOptions = {
-  rootRef: RefObject<HTMLElement | null>;
-  namesRef: RefObject<HTMLUListElement | null>;
-  itemCount: number;
-  hoverIndex: number | null;
-  onScrollIndexChange: (index: number) => void;
-  onScrub: () => void;
-  scrollToIndexRef: RefObject<((index: number) => void) | null>;
-};
-
-function canPin() {
-  if (prefersReducedMotion()) return false;
-  if (window.innerWidth < DESKTOP_MIN) return false;
-  if (window.innerHeight < MIN_PIN_HEIGHT) return false;
-  return true;
-}
-
-function paintNames(
-  buttons: HTMLElement[],
-  position: number,
-  hoverIndex: number | null,
-) {
-  buttons.forEach((button, index) => {
-    if (hoverIndex !== null) {
-      const active = index === hoverIndex;
-      gsap.set(button, {
-        color: active ? "#f7f7f7" : "#4a4a4a",
-        scale: active ? 1 : 0.78,
-        opacity: active ? 1 : 0.55,
-        transformOrigin: "50% 50%",
-      });
-      return;
-    }
-
-    const distance = Math.abs(index - position);
-    const intensity = 1 - Math.min(Math.max((distance - 0.04) / 1.45, 0), 1);
-    const mix = INACTIVE + intensity * (1 - INACTIVE);
-    const channel = Math.round(70 + mix * (247 - 70));
-    const scale = 0.72 + intensity * 0.28;
-    const opacity = 0.32 + intensity * 0.68;
-    gsap.set(button, {
-      color: `rgb(${channel} ${channel} ${channel})`,
-      scale,
-      opacity,
-      transformOrigin: "50% 50%",
-    });
-  });
-}
-
-function closestIndex(
-  buttons: HTMLElement[],
-  focusViewportY: number,
-): number {
-  let bestIndex = 0;
-  let bestDistance = Number.POSITIVE_INFINITY;
-
-  buttons.forEach((button, index) => {
-    const rect = button.getBoundingClientRect();
-    const mid = rect.top + rect.height / 2;
-    const distance = Math.abs(mid - focusViewportY);
-    if (distance < bestDistance) {
-      bestDistance = distance;
-      bestIndex = index;
-    }
-  });
-
-  return bestIndex;
-}
 
 function pinPagesFor(itemCount: number) {
   return Math.max(2.4, (itemCount - 1) * 0.55);

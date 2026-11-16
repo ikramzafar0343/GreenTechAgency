@@ -60,11 +60,11 @@ export const WHY_CHOOSE_CARDS: readonly WhyChooseCard[] = [
 /** Temporary demo photos until CMS/media owns this section. */
 export const WHY_CHOOSE_MEDIA = {
   largeImage: {
-    src: "/why-choose/large.jpg",
+    src: "/why-choose/large.svg",
     alt: "Detail of a crafted workspace object with soft natural light",
   },
   smallImage: {
-    src: "/why-choose/small.jpg",
+    src: "/why-choose/small.svg",
     alt: "Two teammates collaborating on a laptop in a modern studio",
   },
 } as const satisfies {

@@ -10,6 +10,7 @@ import { CmsEditorActions } from "@/features/cmsAdmin/CmsEditorActions";
 import { cmsCardClass } from "@/features/cmsAdmin/cmsUi";
 import type { BlogAdminRow } from "@/features/cmsAdmin/types";
 import { useDirtyGuard } from "@/features/cmsAdmin/useDirtyGuard";
+import { paragraphsToText, textToBody } from "@/features/cmsAdmin/blogBodyText";
 
 type BlogForm = {
   slug: string;
@@ -24,32 +25,6 @@ type BlogForm = {
   featured: boolean;
   homepageOrder: number;
 };
-
-function paragraphsToText(body: unknown): string {
-  if (!Array.isArray(body)) return "";
-  return body
-    .map((block) => {
-      if (!block || typeof block !== "object") return "";
-      const row = block as { type?: string; text?: string };
-      if (row.type === "heading") return `## ${row.text ?? ""}`;
-      return row.text ?? "";
-    })
-    .filter(Boolean)
-    .join("\n\n");
-}
-
-function textToBody(text: string) {
-  return text
-    .split(/\n\n+/)
-    .map((chunk) => chunk.trim())
-    .filter(Boolean)
-    .map((chunk) => {
-      if (chunk.startsWith("## ")) {
-        return { type: "heading" as const, level: 2 as const, text: chunk.slice(3).trim() };
-      }
-      return { type: "paragraph" as const, text: chunk };
-    });
-}
 
 function formFromRow(row: BlogAdminRow): BlogForm {
   const doc = row.draftDoc;
@@ -257,7 +232,7 @@ export function BlogEditor({ id }: BlogEditorProps) {
         ))}
         <div className="md:col-span-2">
           <label htmlFor="blog-body" className={adminLabelClass}>
-            Body (paragraphs separated by blank lines; prefix ## for headings)
+            Body — blank line between blocks; ## heading, ### sub-heading, "- " bullets, "1. " numbered; end a list item with " | https://…" to link it
           </label>
           <textarea
             id="blog-body"

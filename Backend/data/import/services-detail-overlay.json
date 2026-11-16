@@ -11,21 +11,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-dev.svg",
-    "leadImageAlt": "Editorial workspace scene for development services",
+    "leadImagePath": "/services/editorial/web-development/lead.svg",
+    "leadImageAlt": "Web Development — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Delivery detail photograph",
+    "cardImagePath": "/services/editorial/web-development/card.svg",
+    "cardImageAlt": "Web Development service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/web-development/pair-a-left.svg",
         "alt": "Team discussion at a workstation",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/web-development/pair-a-right.svg",
         "alt": "Close detail of interface design work",
         "width": 1200,
         "height": 1800
@@ -33,13 +33,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/web-development/pair-b-left.svg",
         "alt": "Craft and environment detail",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/web-development/pair-b-right.svg",
         "alt": "Collaborative working session",
         "width": 1200,
         "height": 1800
@@ -97,21 +97,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-dev.svg",
-    "leadImageAlt": "Editorial workspace scene for development services",
+    "leadImagePath": "/services/editorial/mobile-app-development/lead.svg",
+    "leadImageAlt": "Mobile App Development — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Delivery detail photograph",
+    "cardImagePath": "/services/editorial/mobile-app-development/card.svg",
+    "cardImageAlt": "Mobile App Development service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/mobile-app-development/pair-a-left.svg",
         "alt": "Team discussion at a workstation",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/mobile-app-development/pair-a-right.svg",
         "alt": "Close detail of interface design work",
         "width": 1200,
         "height": 1800
@@ -119,13 +119,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/mobile-app-development/pair-b-left.svg",
         "alt": "Craft and environment detail",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/mobile-app-development/pair-b-right.svg",
         "alt": "Collaborative working session",
         "width": 1200,
         "height": 1800
@@ -183,21 +183,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-dev.svg",
-    "leadImageAlt": "Editorial workspace scene for development services",
+    "leadImagePath": "/services/editorial/ecommerce-development/lead.svg",
+    "leadImageAlt": "Ecommerce Development — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Delivery detail photograph",
+    "cardImagePath": "/services/editorial/ecommerce-development/card.svg",
+    "cardImageAlt": "Ecommerce Development service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/ecommerce-development/pair-a-left.svg",
         "alt": "Team discussion at a workstation",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/ecommerce-development/pair-a-right.svg",
         "alt": "Close detail of interface design work",
         "width": 1200,
         "height": 1800
@@ -205,13 +205,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/ecommerce-development/pair-b-left.svg",
         "alt": "Craft and environment detail",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/ecommerce-development/pair-b-right.svg",
         "alt": "Collaborative working session",
         "width": 1200,
         "height": 1800
@@ -269,21 +269,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-creative.svg",
-    "leadImageAlt": "Editorial scene for creative services",
+    "leadImagePath": "/services/editorial/ui-ux-design/lead.svg",
+    "leadImageAlt": "UI/UX Design — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Creative delivery detail",
+    "cardImagePath": "/services/editorial/ui-ux-design/card.svg",
+    "cardImageAlt": "UI/UX Design service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/ui-ux-design/pair-a-left.svg",
         "alt": "Brand and creative discussion",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/ui-ux-design/pair-a-right.svg",
         "alt": "Motion and visual detail",
         "width": 1200,
         "height": 1800
@@ -291,13 +291,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/ui-ux-design/pair-b-left.svg",
         "alt": "Studio craft environment",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/ui-ux-design/pair-b-right.svg",
         "alt": "Creative collaboration",
         "width": 1200,
         "height": 1800
@@ -355,21 +355,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-dev.svg",
-    "leadImageAlt": "Editorial workspace scene for development services",
+    "leadImagePath": "/services/editorial/it-resource-outsourcing/lead.svg",
+    "leadImageAlt": "IT Resource Outsourcing — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Delivery detail photograph",
+    "cardImagePath": "/services/editorial/it-resource-outsourcing/card.svg",
+    "cardImageAlt": "IT Resource Outsourcing service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/it-resource-outsourcing/pair-a-left.svg",
         "alt": "Team discussion at a workstation",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/it-resource-outsourcing/pair-a-right.svg",
         "alt": "Close detail of interface design work",
         "width": 1200,
         "height": 1800
@@ -377,13 +377,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/it-resource-outsourcing/pair-b-left.svg",
         "alt": "Craft and environment detail",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/it-resource-outsourcing/pair-b-right.svg",
         "alt": "Collaborative working session",
         "width": 1200,
         "height": 1800
@@ -441,21 +441,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-marketing.svg",
-    "leadImageAlt": "Editorial scene for marketing services",
+    "leadImagePath": "/services/editorial/digital-marketing/lead.svg",
+    "leadImageAlt": "Digital Marketing — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Marketing delivery detail",
+    "cardImagePath": "/services/editorial/digital-marketing/card.svg",
+    "cardImageAlt": "Digital Marketing service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/digital-marketing/pair-a-left.svg",
         "alt": "Campaign planning discussion",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/digital-marketing/pair-a-right.svg",
         "alt": "Content and brand detail",
         "width": 1200,
         "height": 1800
@@ -463,13 +463,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/digital-marketing/pair-b-left.svg",
         "alt": "Creative production environment",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/digital-marketing/pair-b-right.svg",
         "alt": "Team reviewing channel work",
         "width": 1200,
         "height": 1800
@@ -527,21 +527,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-marketing.svg",
-    "leadImageAlt": "Editorial scene for marketing services",
+    "leadImagePath": "/services/editorial/social-media-marketing/lead.svg",
+    "leadImageAlt": "Social Media Marketing — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Marketing delivery detail",
+    "cardImagePath": "/services/editorial/social-media-marketing/card.svg",
+    "cardImageAlt": "Social Media Marketing service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/social-media-marketing/pair-a-left.svg",
         "alt": "Campaign planning discussion",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/social-media-marketing/pair-a-right.svg",
         "alt": "Content and brand detail",
         "width": 1200,
         "height": 1800
@@ -549,13 +549,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/social-media-marketing/pair-b-left.svg",
         "alt": "Creative production environment",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/social-media-marketing/pair-b-right.svg",
         "alt": "Team reviewing channel work",
         "width": 1200,
         "height": 1800
@@ -613,21 +613,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-marketing.svg",
-    "leadImageAlt": "Editorial scene for marketing services",
+    "leadImagePath": "/services/editorial/search-engine-optimization/lead.svg",
+    "leadImageAlt": "Search Engine Optimization — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Marketing delivery detail",
+    "cardImagePath": "/services/editorial/search-engine-optimization/card.svg",
+    "cardImageAlt": "Search Engine Optimization service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/search-engine-optimization/pair-a-left.svg",
         "alt": "Campaign planning discussion",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/search-engine-optimization/pair-a-right.svg",
         "alt": "Content and brand detail",
         "width": 1200,
         "height": 1800
@@ -635,13 +635,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/search-engine-optimization/pair-b-left.svg",
         "alt": "Creative production environment",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/search-engine-optimization/pair-b-right.svg",
         "alt": "Team reviewing channel work",
         "width": 1200,
         "height": 1800
@@ -699,21 +699,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-marketing.svg",
-    "leadImageAlt": "Editorial scene for marketing services",
+    "leadImagePath": "/services/editorial/generative-engine-optimization/lead.svg",
+    "leadImageAlt": "Generative Engine Optimization — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Marketing delivery detail",
+    "cardImagePath": "/services/editorial/generative-engine-optimization/card.svg",
+    "cardImageAlt": "Generative Engine Optimization service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/generative-engine-optimization/pair-a-left.svg",
         "alt": "Campaign planning discussion",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/generative-engine-optimization/pair-a-right.svg",
         "alt": "Content and brand detail",
         "width": 1200,
         "height": 1800
@@ -721,13 +721,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/generative-engine-optimization/pair-b-left.svg",
         "alt": "Creative production environment",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/generative-engine-optimization/pair-b-right.svg",
         "alt": "Team reviewing channel work",
         "width": 1200,
         "height": 1800
@@ -785,21 +785,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-marketing.svg",
-    "leadImageAlt": "Editorial scene for marketing services",
+    "leadImagePath": "/services/editorial/content-marketing/lead.svg",
+    "leadImageAlt": "Content Marketing — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Marketing delivery detail",
+    "cardImagePath": "/services/editorial/content-marketing/card.svg",
+    "cardImageAlt": "Content Marketing service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/content-marketing/pair-a-left.svg",
         "alt": "Campaign planning discussion",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/content-marketing/pair-a-right.svg",
         "alt": "Content and brand detail",
         "width": 1200,
         "height": 1800
@@ -807,13 +807,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/content-marketing/pair-b-left.svg",
         "alt": "Creative production environment",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/content-marketing/pair-b-right.svg",
         "alt": "Team reviewing channel work",
         "width": 1200,
         "height": 1800
@@ -871,21 +871,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-marketing.svg",
-    "leadImageAlt": "Editorial scene for marketing services",
+    "leadImagePath": "/services/editorial/copywriting/lead.svg",
+    "leadImageAlt": "Copywriting — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Marketing delivery detail",
+    "cardImagePath": "/services/editorial/copywriting/card.svg",
+    "cardImageAlt": "Copywriting service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/copywriting/pair-a-left.svg",
         "alt": "Campaign planning discussion",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/copywriting/pair-a-right.svg",
         "alt": "Content and brand detail",
         "width": 1200,
         "height": 1800
@@ -893,13 +893,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/copywriting/pair-b-left.svg",
         "alt": "Creative production environment",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/copywriting/pair-b-right.svg",
         "alt": "Team reviewing channel work",
         "width": 1200,
         "height": 1800
@@ -957,21 +957,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-emerging.svg",
-    "leadImageAlt": "Editorial scene for emerging technology",
+    "leadImagePath": "/services/editorial/artificial-intelligence/lead.svg",
+    "leadImageAlt": "Artificial Intelligence — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Emerging tech delivery detail",
+    "cardImagePath": "/services/editorial/artificial-intelligence/card.svg",
+    "cardImageAlt": "Artificial Intelligence service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/artificial-intelligence/pair-a-left.svg",
         "alt": "Product exploration session",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/artificial-intelligence/pair-a-right.svg",
         "alt": "Immersive experience detail",
         "width": 1200,
         "height": 1800
@@ -979,13 +979,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/artificial-intelligence/pair-b-left.svg",
         "alt": "Technology craft detail",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/artificial-intelligence/pair-b-right.svg",
         "alt": "Collaborative prototyping",
         "width": 1200,
         "height": 1800
@@ -1043,21 +1043,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-emerging.svg",
-    "leadImageAlt": "Editorial scene for emerging technology",
+    "leadImagePath": "/services/editorial/augmented-reality/lead.svg",
+    "leadImageAlt": "Augmented Reality — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Emerging tech delivery detail",
+    "cardImagePath": "/services/editorial/augmented-reality/card.svg",
+    "cardImageAlt": "Augmented Reality service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/augmented-reality/pair-a-left.svg",
         "alt": "Product exploration session",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/augmented-reality/pair-a-right.svg",
         "alt": "Immersive experience detail",
         "width": 1200,
         "height": 1800
@@ -1065,13 +1065,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/augmented-reality/pair-b-left.svg",
         "alt": "Technology craft detail",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/augmented-reality/pair-b-right.svg",
         "alt": "Collaborative prototyping",
         "width": 1200,
         "height": 1800
@@ -1129,21 +1129,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-emerging.svg",
-    "leadImageAlt": "Editorial scene for emerging technology",
+    "leadImagePath": "/services/editorial/virtual-reality/lead.svg",
+    "leadImageAlt": "Virtual Reality — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Emerging tech delivery detail",
+    "cardImagePath": "/services/editorial/virtual-reality/card.svg",
+    "cardImageAlt": "Virtual Reality service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/virtual-reality/pair-a-left.svg",
         "alt": "Product exploration session",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/virtual-reality/pair-a-right.svg",
         "alt": "Immersive experience detail",
         "width": 1200,
         "height": 1800
@@ -1151,13 +1151,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/virtual-reality/pair-b-left.svg",
         "alt": "Technology craft detail",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/virtual-reality/pair-b-right.svg",
         "alt": "Collaborative prototyping",
         "width": 1200,
         "height": 1800
@@ -1215,21 +1215,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-creative.svg",
-    "leadImageAlt": "Editorial scene for creative services",
+    "leadImagePath": "/services/editorial/digital-branding-creatives/lead.svg",
+    "leadImageAlt": "Digital Branding & Creatives — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Creative delivery detail",
+    "cardImagePath": "/services/editorial/digital-branding-creatives/card.svg",
+    "cardImageAlt": "Digital Branding & Creatives service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/digital-branding-creatives/pair-a-left.svg",
         "alt": "Brand and creative discussion",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/digital-branding-creatives/pair-a-right.svg",
         "alt": "Motion and visual detail",
         "width": 1200,
         "height": 1800
@@ -1237,13 +1237,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/digital-branding-creatives/pair-b-left.svg",
         "alt": "Studio craft environment",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/digital-branding-creatives/pair-b-right.svg",
         "alt": "Creative collaboration",
         "width": 1200,
         "height": 1800
@@ -1301,21 +1301,21 @@
     ],
     "storyCtaLabel": "Talk about your project",
     "storyCtaHref": "/contact",
-    "leadImagePath": "/services/editorial/lead-creative.svg",
-    "leadImageAlt": "Editorial scene for creative services",
+    "leadImagePath": "/services/editorial/video-animation-2d-3d/lead.svg",
+    "leadImageAlt": "2D/3D Video Animation — overview illustration",
     "leadImageWidth": 2200,
     "leadImageHeight": 1450,
-    "cardImagePath": "/services/editorial/rail-photo.svg",
-    "cardImageAlt": "Creative delivery detail",
+    "cardImagePath": "/services/editorial/video-animation-2d-3d/card.svg",
+    "cardImageAlt": "2D/3D Video Animation service illustration",
     "pairA": {
       "left": {
-        "path": "/services/editorial/pair-a-left.svg",
+        "path": "/services/editorial/video-animation-2d-3d/pair-a-left.svg",
         "alt": "Brand and creative discussion",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-a-right.svg",
+        "path": "/services/editorial/video-animation-2d-3d/pair-a-right.svg",
         "alt": "Motion and visual detail",
         "width": 1200,
         "height": 1800
@@ -1323,13 +1323,13 @@
     },
     "pairB": {
       "left": {
-        "path": "/services/editorial/pair-b-left.svg",
+        "path": "/services/editorial/video-animation-2d-3d/pair-b-left.svg",
         "alt": "Studio craft environment",
         "width": 1200,
         "height": 1800
       },
       "right": {
-        "path": "/services/editorial/pair-b-right.svg",
+        "path": "/services/editorial/video-animation-2d-3d/pair-b-right.svg",
         "alt": "Creative collaboration",
         "width": 1200,
         "height": 1800

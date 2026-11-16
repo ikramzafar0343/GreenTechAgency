@@ -2,7 +2,7 @@
 # =============================================================================
 # GreenTech Agency — Hostinger VPS production deploy
 # Domain : greentechagency.com
-# VPS IP : 72.61.19.3
+# VPS IP : set VPS_IP below (or export VPS_IP before running)
 #
 # SAFETY: Creates ONLY new paths, ports, DB, nginx site, and PM2 apps.
 #         Does NOT edit/delete other sites' nginx configs or PM2 processes.
@@ -10,12 +10,13 @@
 # Usage (as root on the VPS):
 #   bash hostinger-greentech.sh inspect   # read-only check first
 #   bash hostinger-greentech.sh deploy    # full install + start
-#   bash hostinger-greentech.sh ssl       # Let's Encrypt (after DNS points here)
+#   CERTBOT_EMAIL=you@example.com bash hostinger-greentech.sh ssl   # Let's Encrypt (after DNS points here)
 #   bash hostinger-greentech.sh update    # git pull + rebuild + restart
 # =============================================================================
 
 set -euo pipefail
 
+VPS_IP="${VPS_IP:-72.61.19.3}"
 DOMAIN="greentechagency.com"
 WWW="www.${DOMAIN}"
 APP_ROOT="/var/www/greentechagency"
@@ -32,6 +33,10 @@ NGINX_SITE="greentechagency"
 DB_NAME="greentech"
 DB_USER="greentech"
 MEDIA_ROOT="${APP_ROOT}/data/media"
+# Apps run as this unprivileged user, never as root.
+APP_USER="greentech"
+BACKUP_DIR="/var/backups/greentech"
+BACKUP_KEEP=14
 
 RED='\033[0;31m'
 GRN='\033[0;32m'
@@ -42,8 +47,12 @@ log()  { echo -e "${GRN}[OK]${NC} $*"; }
 warn() { echo -e "${YLW}[!!]${NC} $*"; }
 die()  { echo -e "${RED}[ERR]${NC} $*"; exit 1; }
 
+# App user + database backup helpers (kept separate to stay under the 300-line script limit).
+# shellcheck source=deploy/greentech-ops.sh
+source "$(dirname "${BASH_SOURCE[0]}")/greentech-ops.sh"
+
 need_root() {
-  [[ "$(id -u)" -eq 0 ]] || die "Run as root (Hostinger web console / ssh root@72.61.19.3)"
+  [[ "$(id -u)" -eq 0 ]] || die "Run as root (Hostinger web console / ssh root@${VPS_IP})"
 }
 
 port_free() {
@@ -78,7 +87,7 @@ cmd_inspect() {
   if port_free "$BE_PORT"; then log "Backend port ${BE_PORT} is free"; else warn "Port ${BE_PORT} IN USE — change BE_PORT in this script"; fi
   echo
   echo "--- DNS tip ---"
-  echo "GoDaddy A record @ must be 72.61.19.3 (not the old 132.148.73.92)"
+  echo "GoDaddy A record @ must be ${VPS_IP}"
   echo "=============================================="
 }
 
@@ -119,13 +128,15 @@ setup_db() {
     || sudo -u postgres psql -c "CREATE USER ${DB_USER} WITH PASSWORD '${DB_PASS}';"
   sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_NAME}'" | grep -q 1 \
     || sudo -u postgres psql -c "CREATE DATABASE ${DB_NAME} OWNER ${DB_USER};"
-  sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE ${DB_NAME} TO ${DB_USER};"
-  sudo -u postgres psql -d "$DB_NAME" -c "GRANT ALL ON SCHEMA public TO ${DB_USER};" || true
+  # The DB is owned by DB_USER (created above), so no blanket GRANT ALL is needed.
 
   log "Postgres DB '${DB_NAME}' ready (user ${DB_USER})"
 }
 
 clone_or_update() {
+  # Repo files belong to APP_USER; let root's git operate on them.
+  git config --global --get-all safe.directory | grep -qx "$APP_ROOT" \
+    || git config --global --add safe.directory "$APP_ROOT"
   if [[ -d "${APP_ROOT}/.git" ]]; then
     git -C "$APP_ROOT" fetch origin
     git -C "$APP_ROOT" checkout "$BRANCH"
@@ -159,6 +170,8 @@ write_env() {
 
   # Backend env
   cat > "${APP_ROOT}/Backend/.env" <<EOF
+NODE_ENV=production
+HOST=127.0.0.1
 PORT=${BE_PORT}
 FRONTEND_ORIGIN=https://${DOMAIN},https://${WWW}
 DATABASE_URL=${DB_URL}
@@ -167,7 +180,6 @@ BETTER_AUTH_SECRET=${AUTH_SECRET}
 BETTER_AUTH_URL=https://${DOMAIN}
 MEDIA_ROOT=${MEDIA_ROOT}
 MEDIA_PUBLIC_BASE_URL=https://${DOMAIN}/media
-RATE_LIMIT_MODE=memory
 EOF
   chmod 600 "${APP_ROOT}/Backend/.env"
 
@@ -181,42 +193,19 @@ MEDIA_PUBLIC_BASE_URL=https://${DOMAIN}/media
 PORT=${FE_PORT}
 EOF
   chmod 600 "${APP_ROOT}/Frontend/.env.local"
+  chown "$APP_USER:$APP_USER" "${APP_ROOT}/Backend/.env" "${APP_ROOT}/Frontend/.env.local"
 
   log "Env files written (secrets kept on server only)"
 }
 
 build_apps() {
-  cd "${APP_ROOT}/Backend"
-  npm ci
-  npm run build
-  npm run db:migrate
-
-  cd "${APP_ROOT}/Frontend"
-  npm ci
-  npm run build
+  ensure_app_user
+  as_app "cd '${APP_ROOT}/Backend' && npm ci && npm run build"
+  backup_db
+  as_app "cd '${APP_ROOT}/Backend' && npm run db:migrate"
+  build_frontend
 
   log "Backend + Frontend built"
-}
-
-start_pm2() {
-  # Only restart/create OUR apps — never delete others
-  cd "${APP_ROOT}/Backend"
-  if pm2 describe "$PM2_BE" >/dev/null 2>&1; then
-    pm2 restart "$PM2_BE" --update-env
-  else
-    pm2 start dist/index.js --name "$PM2_BE" --cwd "${APP_ROOT}/Backend"
-  fi
-
-  cd "${APP_ROOT}/Frontend"
-  if pm2 describe "$PM2_FE" >/dev/null 2>&1; then
-    pm2 restart "$PM2_FE" --update-env
-  else
-    pm2 start npm --name "$PM2_FE" --cwd "${APP_ROOT}/Frontend" -- start -- -p "$FE_PORT"
-  fi
-
-  pm2 save
-  pm2 startup systemd -u root --hp /root >/dev/null 2>&1 || true
-  log "PM2 apps: ${PM2_FE} :${FE_PORT} | ${PM2_BE} :${BE_PORT}"
 }
 
 write_nginx() {
@@ -231,6 +220,11 @@ server {
     server_name ${DOMAIN} ${WWW};
 
     client_max_body_size 50m;
+
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header Permissions-Policy "camera=(), microphone=(), geolocation=()" always;
 
     location / {
         proxy_pass http://127.0.0.1:${FE_PORT};
@@ -255,8 +249,8 @@ EOF
 cmd_ssl() {
   need_root
   [[ -f "/etc/nginx/sites-available/${NGINX_SITE}" ]] || die "Run deploy first"
-  certbot --nginx -d "$DOMAIN" -d "$WWW" --non-interactive --agree-tos --register-unsafely-without-email --redirect || \
-    certbot --nginx -d "$DOMAIN" -d "$WWW" --agree-tos --redirect
+  [[ -n "${CERTBOT_EMAIL:-}" ]] || die "Set CERTBOT_EMAIL so Let's Encrypt can warn you before the certificate expires"
+  certbot --nginx -d "$DOMAIN" -d "$WWW" --non-interactive --agree-tos -m "$CERTBOT_EMAIL" --redirect --hsts
   nginx -t && systemctl reload nginx
   log "SSL installed for ${DOMAIN} + ${WWW}"
 }
@@ -277,11 +271,11 @@ cmd_deploy() {
 
   echo
   log "HTTP deploy complete."
-  warn "1) GoDaddy: set A @ → 72.61.19.3 and A www → 72.61.19.3"
-  warn "2) Wait for DNS, then run: bash $0 ssl"
-  warn "3) Optional seed: cd ${APP_ROOT}/Backend && npm run content:import"
+  warn "1) GoDaddy: set A @ → ${VPS_IP} and A www → ${VPS_IP}"
+  warn "2) Wait for DNS, then run: CERTBOT_EMAIL=you@example.com bash $0 ssl"
+  warn "3) Content: sudo -u ${APP_USER} -H bash -lc 'cd ${APP_ROOT}/Backend && npm run content:import && npm run content:seed-blog && npm run content:sync-media'"
   echo
-  pm2 list | grep -E "greentech|Name" || pm2 list
+  as_app "pm2 list"
 }
 
 cmd_update() {

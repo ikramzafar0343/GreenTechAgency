@@ -1,42 +1,9 @@
 import "server-only";
-
-import type {
-  BackendServiceDetail,
-  BackendServiceListItem,
-  BackendServicePairImage,
-  BackendServicePhotoPair,
-} from "@/server/backend/dtos";
+import type { BackendServiceDetail, BackendServiceListItem, BackendServicePairImage, BackendServicePhotoPair } from "@/server/backend/dtos";
 import { resolveMediaUrl } from "@/server/backend/resolveMediaUrl";
-import {
-  getServiceMediaSet,
-  type ServiceMediaSetId,
-} from "@/features/services/model/serviceDetailMedia";
-import type {
-  PublicServiceDetail,
-  ServiceDetailImage,
-  ServiceDetailLink,
-  ServiceDetailPhotoPair,
-} from "@/features/services/model/serviceDetailTypes";
+import { getServiceMedia } from "@/features/services/model/serviceDetailMedia";
+import type { PublicServiceDetail, ServiceDetailImage, ServiceDetailLink, ServiceDetailPhotoPair } from "@/features/services/model/serviceDetailTypes";
 import { getServiceHref } from "@/features/services/model/serviceItems";
-
-const MEDIA_SET_BY_SLUG: Record<string, ServiceMediaSetId> = {
-  "web-development": "dev",
-  "mobile-app-development": "dev",
-  "ecommerce-development": "dev",
-  "ui-ux-design": "creative",
-  "content-marketing": "marketing",
-  "copywriting": "marketing",
-  "digital-marketing": "marketing",
-  "social-media-marketing": "marketing",
-  "search-engine-optimization": "marketing",
-  "generative-engine-optimization": "marketing",
-  "digital-branding-creatives": "creative",
-  "video-animation-2d-3d": "creative",
-  "artificial-intelligence": "emerging",
-  "augmented-reality": "emerging",
-  "virtual-reality": "emerging",
-  "it-resource-outsourcing": "dev",
-};
 
 function toImage(
   path: string | null | undefined,
@@ -110,7 +77,7 @@ export function mapBackendServiceDetail(
   detail: BackendServiceDetail,
   catalog: ReadonlyMap<string, BackendServiceListItem>,
 ): PublicServiceDetail {
-  const media = getServiceMediaSet(MEDIA_SET_BY_SLUG[detail.slug] ?? "dev");
+  const media = getServiceMedia(detail.slug, detail.title);
   const storyCtaHref =
     detail.storyCtaHref?.startsWith("/") ? detail.storyCtaHref : "/contact";
 
@@ -137,6 +104,7 @@ export function mapBackendServiceDetail(
     pairA: toPair(detail.pairA, media.pairA),
     pairB: toPair(detail.pairB, media.pairB),
     principles: detail.principles,
+    faqs: (detail.faqs ?? []).filter((faq) => faq.question.trim() && faq.answer.trim()),
     relatedHeading: detail.relatedHeading,
     relatedIntro: detail.relatedIntro,
     related: relatedLinks(detail.relatedSlugs, catalog),

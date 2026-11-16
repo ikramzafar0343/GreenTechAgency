@@ -19,10 +19,10 @@
     "footRight": "About GreenTech"
   },
   "groupPortrait": {
-    "src": null,
-    "alt": "GreenTech Agency team working together",
+    "src": "/about/group-portrait.svg",
+    "alt": "GreenTech team collaborating across design, engineering and growth",
     "focalPoint": "50% 42%",
-    "assetStatus": "missing"
+    "assetStatus": "ready"
   },
   "manifesto": {
     "headline": "As a focused team, we offer a more collaborative and direct partnership, perfectly scaled to integrate and problem-solve alongside you—a true extension of your brand team.",
@@ -200,7 +200,7 @@
         "awardCount": null,
         "evidenceHref": "/#our-work",
         "previewImage": {
-          "src": "/images/about/photoFan/aboutDeveloperCollaboration06.jpg",
+          "src": "/about/achievements/development.svg",
           "width": 800,
           "height": 1120
         },
@@ -214,7 +214,7 @@
         "awardCount": null,
         "evidenceHref": "/#our-work",
         "previewImage": {
-          "src": "/images/about/photoFan/aboutDesignReview05.jpg",
+          "src": "/about/achievements/design.svg",
           "width": 800,
           "height": 1120
         },
@@ -228,7 +228,7 @@
         "awardCount": null,
         "evidenceHref": "/#our-work",
         "previewImage": {
-          "src": "/images/about/photoFan/aboutCreativeWorkshop02.jpg",
+          "src": "/about/achievements/growth.svg",
           "width": 800,
           "height": 1120
         },
@@ -242,7 +242,7 @@
         "awardCount": null,
         "evidenceHref": "/#our-work",
         "previewImage": {
-          "src": "/images/about/photoFan/aboutStudioTeam03.jpg",
+          "src": "/about/achievements/creative.svg",
           "width": 800,
           "height": 1120
         },
@@ -256,7 +256,7 @@
         "awardCount": null,
         "evidenceHref": "/#our-work",
         "previewImage": {
-          "src": "/images/about/photoFan/aboutWorkspaceMeeting04.jpg",
+          "src": "/about/achievements/emerging.svg",
           "width": 800,
           "height": 1120
         },
@@ -270,7 +270,7 @@
         "awardCount": null,
         "evidenceHref": "/#our-work",
         "previewImage": {
-          "src": "/images/about/photoFan/aboutTeamCollaboration01.jpg",
+          "src": "/about/achievements/partnership.svg",
           "width": 800,
           "height": 1120
         },

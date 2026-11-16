@@ -39,7 +39,9 @@ function createAuth() {
       },
     },
     advanced: {
-      useSecureCookies: process.env.NODE_ENV === "production",
+      // Secure cookies follow the public URL scheme, so an unset NODE_ENV on the VPS
+      // can no longer downgrade production sessions to non-Secure cookies.
+      useSecureCookies: env.betterAuthUrl.startsWith("https://"),
       database: {
         joins: true,
       },

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ServiceDetailPage } from "@/features/services/components/ServiceDetailPage";
 import { getPublicServiceDetail } from "@/features/services/server/getPublicServiceDetail";
-import { breadcrumbJsonLd, serviceJsonLd } from "@/lib/seo/jsonLd";
+import { breadcrumbJsonLd, faqPageJsonLd, serviceJsonLd } from "@/lib/seo/jsonLd";
 import { JsonLdScript } from "@/lib/seo/JsonLdScript";
 import { absoluteUrl } from "@/lib/seo/siteUrl";
 import { redirectOrNotFound } from "@/server/backend/redirectOrNotFound";
@@ -42,6 +42,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   }
 
   const path = `/services/${detail.slug}`;
+  const faqLd = faqPageJsonLd(detail.faqs);
 
   return (
     <main>
@@ -57,6 +58,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             { name: "Services", path: "/services" },
             { name: detail.title, path },
           ]),
+          ...(faqLd ? [faqLd] : []),
         ]}
       />
       <ServiceDetailPage detail={detail} />

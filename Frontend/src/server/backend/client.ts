@@ -1,5 +1,4 @@
 import "server-only";
-
 import { cookies, headers } from "next/headers";
 import { getLocale } from "next-intl/server";
 import { getBackendUrl } from "@/server/backend/env";
@@ -38,21 +37,39 @@ type FetchOptions = {
   method?: string;
   body?: unknown;
   withSession?: boolean;
+  /** Forward the visitor's X-Forwarded-For (public forms) so per-IP limits work. */
+  forwardClientIp?: boolean;
   cache?: RequestCache;
 };
+
+/** Read 5 s, write 10 s (saved frontend rules §9). */
+const READ_TIMEOUT_MS = 5_000;
+const WRITE_TIMEOUT_MS = 10_000;
+
+function appOrigin(): string {
+  const configured = process.env.NEXT_PUBLIC_APP_URL?.trim();
+  if (configured) {
+    return configured.replace(/\/$/, "");
+  }
+  if (process.env.NODE_ENV !== "production") {
+    return "http://localhost:3000";
+  }
+  throw new BackendHttpError(503, "UNAVAILABLE", "NEXT_PUBLIC_APP_URL is not configured");
+}
 
 async function buildSessionHeaders(): Promise<HeadersInit> {
   const cookieStore = await cookies();
   const headerStore = await headers();
   const cookieHeader = cookieStore.toString();
-  const origin =
-    headerStore.get("origin") ??
-    process.env.NEXT_PUBLIC_APP_URL?.trim() ??
-    "http://localhost:3000";
   const result: Record<string, string> = {
     Accept: "application/json",
-    Origin: origin,
+    Origin: headerStore.get("origin") ?? appOrigin(),
   };
+  // Keep the visitor's IP so Backend rate limits apply per client, not per Next.js server.
+  const forwardedFor = headerStore.get("x-forwarded-for");
+  if (forwardedFor) {
+    result["X-Forwarded-For"] = forwardedFor;
+  }
   if (cookieHeader) {
     result.Cookie = cookieHeader;
   }
@@ -64,13 +81,22 @@ export async function backendFetch<T>(
   options: FetchOptions = {},
 ): Promise<T> {
   const url = `${getBackendUrl()}${path.startsWith("/") ? path : `/${path}`}`;
+  const method = options.method ?? "GET";
+  const timeoutMs = method === "GET" ? READ_TIMEOUT_MS : WRITE_TIMEOUT_MS;
   const init: RequestInit = {
-    method: options.method ?? "GET",
+    method,
+    signal: AbortSignal.timeout(timeoutMs),
     cache: options.cache ?? "no-store",
     headers: options.withSession
       ? await buildSessionHeaders()
       : { Accept: "application/json" },
   };
+  if (options.forwardClientIp && !options.withSession) {
+    const forwardedFor = (await headers()).get("x-forwarded-for");
+    if (forwardedFor) {
+      (init.headers as Record<string, string>)["X-Forwarded-For"] = forwardedFor;
+    }
+  }
   if (options.body !== undefined) {
     (init.headers as Record<string, string>)["Content-Type"] =
       "application/json";
@@ -80,10 +106,11 @@ export async function backendFetch<T>(
   try {
     response = await fetch(url, init);
   } catch (err) {
+    const timedOut = err instanceof Error && err.name === "TimeoutError";
     throw new BackendHttpError(
-      503,
-      "UNAVAILABLE",
-      err instanceof Error ? err.message : "Backend unreachable",
+      timedOut ? 504 : 503,
+      timedOut ? "TIMEOUT" : "UNAVAILABLE",
+      timedOut ? `Backend did not answer within ${timeoutMs} ms` : "Backend unreachable",
     );
   }
   const text = await response.text();

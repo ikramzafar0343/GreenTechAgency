@@ -37,22 +37,19 @@ import {
   createEmployeeWithCredentials,
   setEmployeePassword,
 } from "./employeeCredentials.js";
-import { AppError } from "../../http/errors.js";
+import {
+  enforceEmployeeRecordAccess,
+  enforceOpsAccess,
+  isAdmin,
+  requireAdminActor,
+  toEmployeeDirectoryRow,
+  type OpsAccess,
+} from "./accessPolicy.js";
 
 export const adminOpsRouter = Router();
 
-/** Admin and employee (staff) share Ops CRUD so portals stay on one API. */
+/** Admin and employee portals share one API; per-resource policy lives in accessPolicy.ts. */
 adminOpsRouter.use(requireStaff, requireCsrf, rateLimitAdminWrites);
-
-function requireAdminActor(req: StaffRequest): string {
-  const session = req.staffSession;
-  const role =
-    session && "role" in session.user ? String(session.user.role ?? "") : "";
-  if (role !== "admin") {
-    throw new AppError("FORBIDDEN", "Admin role required");
-  }
-  return getStaffActorId(req);
-}
 
 const teamCrud = createOpsResourceCrud({
   table: opsTeamMember,
@@ -133,8 +130,14 @@ const sitePrinciplesCrud = createOpsResourceCrud({
   entityType: "ops_site_principle",
 });
 
-function mountOpsResource(router: Router, path: string, crud: OpsResourceCrud) {
+function mountOpsResource(
+  router: Router,
+  path: string,
+  crud: OpsResourceCrud,
+  access: OpsAccess,
+) {
   const sub = Router();
+  sub.use(enforceOpsAccess(access));
   sub.get(
     "/",
     asyncHandler(async (req, res) => {
@@ -188,6 +191,7 @@ function mountOpsResource(router: Router, path: string, crud: OpsResourceCrud) {
 
 function mountEmployeesResource(router: Router, crud: OpsResourceCrud) {
   const sub = Router();
+  sub.use(enforceEmployeeRecordAccess);
   sub.get(
     "/",
     asyncHandler(async (req, res) => {
@@ -195,7 +199,12 @@ function mountEmployeesResource(router: Router, crud: OpsResourceCrud) {
         req.query as Record<string, unknown>,
         OPS_STATUSES,
       );
-      res.json(await crud.list(query));
+      const result = await crud.list(query);
+      if (isAdmin(req as StaffRequest)) {
+        res.json(result);
+        return;
+      }
+      res.json({ ...result, items: result.items.map(toEmployeeDirectoryRow) });
     }),
   );
   sub.post(
@@ -254,21 +263,21 @@ function mountEmployeesResource(router: Router, crud: OpsResourceCrud) {
   router.use("/employees", sub);
 }
 
-mountOpsResource(adminOpsRouter, "/team", teamCrud);
+mountOpsResource(adminOpsRouter, "/team", teamCrud, "adminOnly");
 mountEmployeesResource(adminOpsRouter, employeesCrud);
-mountOpsResource(adminOpsRouter, "/clients", clientsCrud);
-mountOpsResource(adminOpsRouter, "/projects", projectsCrud);
-mountOpsResource(adminOpsRouter, "/messages", messagesCrud);
-mountOpsResource(adminOpsRouter, "/invoices", invoicesCrud);
-mountOpsResource(adminOpsRouter, "/salary-slips", salarySlipsCrud);
-mountOpsResource(adminOpsRouter, "/files", filesCrud);
-mountOpsResource(adminOpsRouter, "/callbacks", callbacksCrud);
-mountOpsResource(adminOpsRouter, "/sales", salesCrud);
-mountOpsResource(adminOpsRouter, "/leads", leadsCrud);
-mountOpsResource(adminOpsRouter, "/lead-follow-ups", leadFollowUpsCrud);
-mountOpsResource(adminOpsRouter, "/sales-messages", salesMessagesCrud);
-mountOpsResource(adminOpsRouter, "/site-gallery", siteGalleryCrud);
-mountOpsResource(adminOpsRouter, "/site-principles", sitePrinciplesCrud);
+mountOpsResource(adminOpsRouter, "/clients", clientsCrud, "staff");
+mountOpsResource(adminOpsRouter, "/projects", projectsCrud, "staff");
+mountOpsResource(adminOpsRouter, "/messages", messagesCrud, "staff");
+mountOpsResource(adminOpsRouter, "/invoices", invoicesCrud, "adminOnly");
+mountOpsResource(adminOpsRouter, "/salary-slips", salarySlipsCrud, "adminOnly");
+mountOpsResource(adminOpsRouter, "/files", filesCrud, "staff");
+mountOpsResource(adminOpsRouter, "/callbacks", callbacksCrud, "staff");
+mountOpsResource(adminOpsRouter, "/sales", salesCrud, "staff");
+mountOpsResource(adminOpsRouter, "/leads", leadsCrud, "staff");
+mountOpsResource(adminOpsRouter, "/lead-follow-ups", leadFollowUpsCrud, "staff");
+mountOpsResource(adminOpsRouter, "/sales-messages", salesMessagesCrud, "staff");
+mountOpsResource(adminOpsRouter, "/site-gallery", siteGalleryCrud, "adminOnly");
+mountOpsResource(adminOpsRouter, "/site-principles", sitePrinciplesCrud, "adminOnly");
 
 adminOpsRouter.get(
   "/overview",

@@ -2,11 +2,7 @@ import type { MetadataRoute } from "next";
 import { fetchPublishedServices } from "@/features/services/server/fetchPublishedServices";
 import { absoluteUrl } from "@/lib/seo/siteUrl";
 import { backendPublicGet } from "@/server/backend/client";
-import type {
-  BackendBlogListItem,
-  BackendListResponse,
-  BackendPortfolioListItem,
-} from "@/server/backend/dtos";
+import type { BackendBlogListItem, BackendListResponse, BackendPortfolioListItem, BackendSubserviceListItem } from "@/server/backend/dtos";
 import { parseItemsResponse } from "@/server/backend/parseItemsResponse";
 
 export const dynamic = "force-dynamic";
@@ -45,6 +41,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       .catch(() => [] as BackendPortfolioListItem[]),
   ]);
 
+  // 16 services → one bounded parallel request each for their sub-service pages.
+  const subservices = (
+    await Promise.all(
+      services.map((item) =>
+        backendPublicGet<
+          BackendListResponse<BackendSubserviceListItem> | BackendSubserviceListItem[]
+        >(`/api/services/${encodeURIComponent(item.slug)}/subservices`)
+          .then(parseItemsResponse)
+          .catch(() => [] as BackendSubserviceListItem[]),
+      ),
+    )
+  ).flat();
+
   const dynamicEntries: MetadataRoute.Sitemap = [
     ...services.map((item) => ({
       url: absoluteUrl(`/services/${item.slug}`),
@@ -55,6 +64,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...blog.map((item) => ({
       url: absoluteUrl(`/blog/${item.slug}`),
       lastModified: item.publishedAt ? new Date(item.publishedAt) : now,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    ...subservices.map((item) => ({
+      url: absoluteUrl(`/services/${item.serviceSlug}/${item.slug}`),
+      lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),

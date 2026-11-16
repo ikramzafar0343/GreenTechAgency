@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import { RichContent } from "@/shared/ui/RichContent";
 import { getPublicPortfolioBySlug } from "@/features/portfolio/server/getPublicPortfolioBySlug";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo/jsonLd";
 import { JsonLdScript } from "@/lib/seo/JsonLdScript";
@@ -98,25 +99,11 @@ export default async function PortfolioCaseStudyPage({
           />
         </div>
       ) : null}
-      <div className="mt-10 space-y-5">
-        {bodyBlocks.map((block, index) =>
-          block.type === "heading" ? (
-            block.level === 3 ? (
-              <h3 key={index} className="typeHeading text-white">
-                {block.text}
-              </h3>
-            ) : (
-              <h2 key={index} className="typeHeading text-white">
-                {block.text}
-              </h2>
-            )
-          ) : (
-            <p key={index} className="typeBody text-[var(--nav-muted)]">
-              {block.text}
-            </p>
-          ),
-        )}
-      </div>
+      <RichContent
+        idPrefix={project.slug}
+        blocks={bodyBlocks}
+        className="typeProse mt-10 text-[var(--nav-muted)] [&_h2]:text-white [&_h3]:text-white"
+      />
       {project.relatedServiceSlug ? (
         <p className="mt-10">
           <Link

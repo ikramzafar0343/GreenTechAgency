@@ -8,17 +8,8 @@ import { PortfolioIntro } from "@/features/portfolio/components/portfolioPage/Po
 import { PortfolioSubfilterCapsule } from "@/features/portfolio/components/portfolioPage/PortfolioSubfilterCapsule";
 import { SocialGridGallery } from "@/features/portfolio/components/portfolioPage/SocialGridGallery";
 import { WebsiteGallery } from "@/features/portfolio/components/portfolioPage/WebsiteGallery";
-import {
-  defaultSocialType,
-  defaultWebsiteType,
-  filterWebsites,
-} from "@/features/portfolio/lib/portfolioPageFilters";
-import type {
-  PortfolioCategory,
-  PortfolioPageData,
-  SocialType,
-  WebsiteType,
-} from "@/features/portfolio/model/portfolioPageTypes";
+import { defaultSocialType, defaultWebsiteType, filterWebsites } from "@/features/portfolio/lib/portfolioPageFilters";
+import type { PortfolioCategory, PortfolioPageData, SocialType, WebsiteType } from "@/features/portfolio/model/portfolioPageTypes";
 import { PORTFOLIO_CATEGORIES } from "@/features/portfolio/model/portfolioPageTypes";
 import styles from "@/features/portfolio/styles/portfolioPage.module.css";
 
@@ -47,6 +38,19 @@ export function PortfolioPageView({ data }: PortfolioPageViewProps) {
     [data.websites, websiteType],
   );
 
+  const categories = useMemo(() => {
+    const counts: Record<PortfolioCategory, number> = {
+      websites: data.websites.length,
+      logoDesign: data.logoDesign.length,
+      socialMedia: data.socialPosts.length + data.socialGrids.length,
+      businessCards: data.businessCards.length,
+      photography: data.photography.length,
+      printDesign: data.printDesign.length,
+    };
+    // Websites always shows; other tabs appear once real work is published in the CMS.
+    return PORTFOLIO_CATEGORIES.filter((item) => item.id === "websites" || counts[item.id] > 0);
+  }, [data]);
+
   function onCategoryChange(next: PortfolioCategory) {
     setCategory(next);
     if (next === "websites") {
@@ -64,7 +68,11 @@ export function PortfolioPageView({ data }: PortfolioPageViewProps) {
           heading={data.settings.heading}
           intro={data.settings.intro}
         />
-        <PortfolioCategoryTabs active={category} onChange={onCategoryChange} />
+        <PortfolioCategoryTabs
+          categories={categories}
+          active={category}
+          onChange={onCategoryChange}
+        />
 
         {category === "websites" ? (
           <div className={styles.tabsWrap}>
@@ -88,7 +96,7 @@ export function PortfolioPageView({ data }: PortfolioPageViewProps) {
           </div>
         ) : null}
 
-        {PORTFOLIO_CATEGORIES.map((item) => {
+        {categories.map((item) => {
           const selected = item.id === category;
           return (
             <div

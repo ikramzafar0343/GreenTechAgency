@@ -1,0 +1,274 @@
+{
+ "web-development": [
+  {
+   "id": "web-development-faq-1",
+   "question": "How long does it take to build a business website?",
+   "answer": "A focused marketing website usually takes six to fourteen weeks, depending on the number of templates, the amount of content and the integrations required. Web applications with accounts or payments take longer."
+  },
+  {
+   "id": "web-development-faq-2",
+   "question": "What is the difference between web design and web development?",
+   "answer": "Web design defines how a site looks and how people move through it. Web development turns that design into working code, connects data and integrations, and keeps the site fast and secure."
+  },
+  {
+   "id": "web-development-faq-3",
+   "question": "Should I use a CMS?",
+   "answer": "Yes, if non-technical people need to update content. A well-structured CMS keeps pages consistent while letting your team publish news, case studies and service updates without developer time."
+  }
+ ],
+ "mobile-app-development": [
+  {
+   "id": "mobile-app-development-faq-1",
+   "question": "Is cross-platform development good enough for a business app?",
+   "answer": "For most business apps, yes. Cross-platform frameworks are mature and widely used. Native development is worth the extra cost when an app depends heavily on the newest platform features or demanding graphics."
+  },
+  {
+   "id": "mobile-app-development-faq-2",
+   "question": "How long does it take to build an app?",
+   "answer": "A focused first release often takes three to six months, including design, back-end work, testing and store review. Complex apps with many integrations take longer."
+  },
+  {
+   "id": "mobile-app-development-faq-3",
+   "question": "Do I need a back end for my app?",
+   "answer": "Most apps do. Accounts, payments, content and notifications all require a secure server and database. The back end can often be shared with your website."
+  }
+ ],
+ "ecommerce-development": [
+  {
+   "id": "ecommerce-development-faq-1",
+   "question": "Which ecommerce platform is best?",
+   "answer": "There is no single best platform. Hosted platforms suit most stores; open-source or headless setups suit businesses with complex catalogues, custom pricing or very high performance targets. The right choice depends on catalogue size, integrations and team skills."
+  },
+  {
+   "id": "ecommerce-development-faq-2",
+   "question": "How can I reduce cart abandonment?",
+   "answer": "Show full costs early, offer guest checkout, keep forms short, support popular payment methods and make delivery and returns information easy to find."
+  },
+  {
+   "id": "ecommerce-development-faq-3",
+   "question": "Do product pages need structured data?",
+   "answer": "Structured data is not required, but it helps search engines understand price, availability and reviews, and can make your listings more informative in results."
+  }
+ ],
+ "ui-ux-design": [
+  {
+   "id": "ui-ux-design-faq-1",
+   "question": "What is the difference between UI and UX?",
+   "answer": "UX is about how a product works for people across a whole task. UI is the visible layer of that experience: screens, controls and visual style. Both are needed for a product to feel good to use."
+  },
+  {
+   "id": "ui-ux-design-faq-2",
+   "question": "Why is user testing important?",
+   "answer": "Teams are too close to their own product to see its problems. Watching five or six real users attempt key tasks usually reveals the biggest usability issues quickly and cheaply."
+  },
+  {
+   "id": "ui-ux-design-faq-3",
+   "question": "Do small businesses need a design system?",
+   "answer": "Even a small site benefits from a lightweight design system: a defined palette, type scale and a handful of reusable components. It keeps the brand consistent as the site grows."
+  }
+ ],
+ "content-marketing": [
+  {
+   "id": "content-marketing-faq-1",
+   "question": "How often should we publish?",
+   "answer": "Consistency matters more than volume. One well-researched article every week or two, promoted properly, usually outperforms daily thin posts."
+  },
+  {
+   "id": "content-marketing-faq-2",
+   "question": "How long does content marketing take to work?",
+   "answer": "Search-driven content typically needs several months to gain visibility. Email and social distribution can show engagement sooner. Treat content as a compounding asset rather than a short campaign."
+  },
+  {
+   "id": "content-marketing-faq-3",
+   "question": "Should content be gated behind a form?",
+   "answer": "Gate only high-value assets such as detailed reports or templates. Keep educational articles open so they can be found, shared and cited."
+  }
+ ],
+ "copywriting": [
+  {
+   "id": "copywriting-faq-1",
+   "question": "What is the difference between copywriting and content writing?",
+   "answer": "Copywriting aims to drive a specific action, such as a purchase or enquiry. Content writing informs and educates over a longer period. Most websites need both."
+  },
+  {
+   "id": "copywriting-faq-2",
+   "question": "How long should a landing page be?",
+   "answer": "As long as needed to answer the buyer's questions and no longer. Simple, low-cost offers can be short; complex or expensive services usually need more explanation and proof."
+  },
+  {
+   "id": "copywriting-faq-3",
+   "question": "Can AI write my copy?",
+   "answer": "AI tools can help with drafts and variations, but strong copy still needs human understanding of the audience, the offer and the brand, plus careful fact-checking."
+  }
+ ],
+ "digital-marketing": [
+  {
+   "id": "digital-marketing-faq-1",
+   "question": "Which digital marketing channel is best?",
+   "answer": "It depends on intent. Paid search captures existing demand quickly, SEO builds durable traffic, and social media creates awareness. Most businesses benefit from combining one demand-capture channel with one demand-building channel."
+  },
+  {
+   "id": "digital-marketing-faq-2",
+   "question": "How much should we spend on digital marketing?",
+   "answer": "Start from your target cost per customer and the value of a customer, then test a budget large enough to gather meaningful data for a few weeks before scaling."
+  },
+  {
+   "id": "digital-marketing-faq-3",
+   "question": "How soon will we see results?",
+   "answer": "Paid channels can produce leads within days of launch. SEO and content usually take several months."
+  }
+ ],
+ "social-media-marketing": [
+  {
+   "id": "social-media-marketing-faq-1",
+   "question": "How often should a business post on social media?",
+   "answer": "Post as often as you can maintain quality and consistency. For many businesses three to five posts per week on a primary platform is sustainable."
+  },
+  {
+   "id": "social-media-marketing-faq-2",
+   "question": "Should we use influencers or creators?",
+   "answer": "Creators can be effective when their audience matches your buyers. Agree clear deliverables, disclose paid partnerships as required, and measure results like any other channel."
+  },
+  {
+   "id": "social-media-marketing-faq-3",
+   "question": "Is paid social worth it?",
+   "answer": "Paid social is worth testing when you have a clear offer, a fast landing page and conversion tracking in place."
+  }
+ ],
+ "search-engine-optimization": [
+  {
+   "id": "search-engine-optimization-faq-1",
+   "question": "How long does SEO take?",
+   "answer": "Most sites need several months to see meaningful change, depending on competition, the site's history and how much work is done. Technical fixes can show effects sooner."
+  },
+  {
+   "id": "search-engine-optimization-faq-2",
+   "question": "Is SEO still relevant with AI search?",
+   "answer": "Yes. AI-powered search features still rely on crawlable, high-quality pages. Strong SEO foundations also support generative engine optimization."
+  },
+  {
+   "id": "search-engine-optimization-faq-3",
+   "question": "Can we guarantee a number one ranking?",
+   "answer": "No one can guarantee rankings, because search engines control their algorithms. Be wary of any provider who promises a specific position."
+  }
+ ],
+ "generative-engine-optimization": [
+  {
+   "id": "generative-engine-optimization-faq-1",
+   "question": "Is GEO different from AEO?",
+   "answer": "Answer engine optimization (AEO) usually refers to winning direct answers such as featured snippets and voice results. GEO extends the idea to generative AI answers. The practical techniques overlap heavily."
+  },
+  {
+   "id": "generative-engine-optimization-faq-2",
+   "question": "Can I pay to appear in AI answers?",
+   "answer": "Organic AI answers cannot be bought. Some platforms offer advertising formats, but citations in generated answers depend on content quality and relevance."
+  },
+  {
+   "id": "generative-engine-optimization-faq-3",
+   "question": "Do I need new content for GEO?",
+   "answer": "Often you can improve existing pages first: add clear definitions, sources, FAQs and structured data to the content that already ranks."
+  }
+ ],
+ "artificial-intelligence": [
+  {
+   "id": "artificial-intelligence-faq-1",
+   "question": "Will AI replace our staff?",
+   "answer": "In most businesses AI changes tasks rather than replacing whole roles. It handles repetitive steps so people can focus on judgement, relationships and exceptions."
+  },
+  {
+   "id": "artificial-intelligence-faq-2",
+   "question": "Is our data safe with AI tools?",
+   "answer": "It depends on the tool and configuration. Use providers with clear data-handling terms, restrict access to sensitive data and avoid sending personal information unless necessary and lawful."
+  },
+  {
+   "id": "artificial-intelligence-faq-3",
+   "question": "How do we measure AI value?",
+   "answer": "Compare the pilot against a baseline: time per task, error rate, customer satisfaction and cost. If the numbers do not improve, the project should not scale."
+  }
+ ],
+ "augmented-reality": [
+  {
+   "id": "augmented-reality-faq-1",
+   "question": "Do customers need special hardware for AR?",
+   "answer": "No. Most recent smartphones support AR. Headsets and glasses add hands-free use but are not required for most marketing and product experiences."
+  },
+  {
+   "id": "augmented-reality-faq-2",
+   "question": "How much 3D content do we need?",
+   "answer": "Start with a small set of priority products or scenes. Well-optimised 3D models load faster and look better than a large library of heavy files."
+  },
+  {
+   "id": "augmented-reality-faq-3",
+   "question": "What is the difference between AR and VR?",
+   "answer": "AR adds digital content to the real world; VR replaces the real world with a fully virtual environment."
+  }
+ ],
+ "virtual-reality": [
+  {
+   "id": "virtual-reality-faq-1",
+   "question": "Is VR only for gaming?",
+   "answer": "No. Training, healthcare, engineering, real estate and education all use VR because practising in a simulated environment is safe and repeatable."
+  },
+  {
+   "id": "virtual-reality-faq-2",
+   "question": "Do we need expensive equipment?",
+   "answer": "Standalone headsets have made VR far more affordable and portable. PC-connected headsets are needed only for very high-fidelity simulations."
+  },
+  {
+   "id": "virtual-reality-faq-3",
+   "question": "How is VR different from AR?",
+   "answer": "VR replaces your surroundings with a virtual world; AR adds digital content to the real world you can still see."
+  }
+ ],
+ "digital-branding-creatives": [
+  {
+   "id": "digital-branding-creatives-faq-1",
+   "question": "What is the difference between a brand and a logo?",
+   "answer": "A logo is one symbol. A brand is the whole perception people have of a business, shaped by its promise, behaviour, visuals and words."
+  },
+  {
+   "id": "digital-branding-creatives-faq-2",
+   "question": "When should a business rebrand?",
+   "answer": "Consider a rebrand when the current identity no longer reflects what the company offers, confuses customers, fails on digital channels or follows a merger or major change in strategy."
+  },
+  {
+   "id": "digital-branding-creatives-faq-3",
+   "question": "Do brand colours need to be accessible?",
+   "answer": "Yes. Text and interface colours must have enough contrast to be readable. A good palette includes accessible combinations for both light and dark backgrounds."
+  }
+ ],
+ "it-resource-outsourcing": [
+  {
+   "id": "it-resource-outsourcing-faq-1",
+   "question": "Is outsourcing cheaper than hiring?",
+   "answer": "It is often more cost-effective for short or variable needs because you avoid recruitment, onboarding and idle time. For permanent core roles, hiring may be better long term."
+  },
+  {
+   "id": "it-resource-outsourcing-faq-2",
+   "question": "Who owns the code an outsourced team writes?",
+   "answer": "Ownership should be set out in the contract. Normally the client owns all work product and intellectual property once paid for."
+  },
+  {
+   "id": "it-resource-outsourcing-faq-3",
+   "question": "How do we keep knowledge in-house?",
+   "answer": "Require documentation, keep everything in your repositories and accounts, and plan structured handovers when people rotate."
+  }
+ ],
+ "video-animation-2d-3d": [
+  {
+   "id": "video-animation-2d-3d-faq-1",
+   "question": "How long should an explainer video be?",
+   "answer": "Most explainer videos work best at 60 to 90 seconds. Social clips are often 15 to 30 seconds."
+  },
+  {
+   "id": "video-animation-2d-3d-faq-2",
+   "question": "Is 3D animation always better than 2D?",
+   "answer": "No. 3D is more realistic and impressive for physical products, while 2D is faster, more flexible and often clearer for abstract services."
+  },
+  {
+   "id": "video-animation-2d-3d-faq-3",
+   "question": "Can animations be reused?",
+   "answer": "Yes. A good production delivers source files and cut-downs so scenes can be reused in ads, social posts, presentations and the website."
+  }
+ ]
+}

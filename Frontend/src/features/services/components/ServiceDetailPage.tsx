@@ -2,6 +2,7 @@ import { PublicFetchErrorPanel } from "@/components/site/PublicFetchErrorPanel";
 import { ImpactMadeVisibleSection } from "@/features/impact";
 import type { ImpactMadeVisibleContent } from "@/features/impact/model/impactTypes";
 import { getPublicImpact } from "@/features/impact/server/getPublicImpact";
+import { ServiceDetailFaq } from "@/features/services/components/ServiceDetailFaq";
 import { ServiceDetailEditorialHero } from "@/features/services/components/ServiceDetailEditorialHero";
 import { ServiceDetailLeadPhoto } from "@/features/services/components/ServiceDetailLeadPhoto";
 import { ServiceDetailPhotoPair } from "@/features/services/components/ServiceDetailPhotoPair";
@@ -52,6 +53,7 @@ export async function ServiceDetailPage({ detail }: ServiceDetailPageProps) {
       <ServiceDetailPhotoPair pair={detail.pairA} variant="a" />
       <ServiceDetailPrinciples principles={detail.principles} />
       <ServiceDetailPhotoPair pair={detail.pairB} variant="b" />
+      <ServiceDetailFaq detail={detail} />
       <ServiceDetailRelatedStrip detail={detail} />
       {impact.ok ? (
         <ImpactMadeVisibleSection

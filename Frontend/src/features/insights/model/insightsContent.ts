@@ -20,7 +20,7 @@ export const INSIGHTS_CONTENT: InsightsSectionData = {
       category: "SEO",
       excerpt:
         "How technical structure, clear metadata, and intent-led content work together before you scale content production.",
-      coverUrl: "/insights/seo-foundations.jpg",
+      coverUrl: "/insights/seo-foundations.svg",
       coverAlt: "Workspace desk with analytics notes for SEO planning",
       focalX: 0.5,
       focalY: 0.45,
@@ -37,7 +37,7 @@ export const INSIGHTS_CONTENT: InsightsSectionData = {
       category: "GEO",
       excerpt:
         "Entity clarity, concise answers, and trustworthy sourcing help brands show up in AI-assisted discovery without empty claims.",
-      coverUrl: "/insights/geo-visibility.jpg",
+      coverUrl: "/insights/geo-visibility.svg",
       coverAlt: "Abstract shapes representing AI-assisted discovery",
       focalX: 0.5,
       focalY: 0.45,
@@ -54,7 +54,7 @@ export const INSIGHTS_CONTENT: InsightsSectionData = {
       category: "UI/UX",
       excerpt:
         "Reduce friction in enquiry paths with clearer hierarchy, focused CTAs, and forms that respect visitor intent.",
-      coverUrl: "/insights/conversion-ux.jpg",
+      coverUrl: "/insights/conversion-ux.svg",
       coverAlt: "Abstract interface blocks suggesting a focused user journey",
       focalX: 0.5,
       focalY: 0.45,
@@ -71,7 +71,7 @@ export const INSIGHTS_CONTENT: InsightsSectionData = {
       category: "Ecommerce",
       excerpt:
         "Practical performance work for product pages, media delivery, and checkout confidence on real store traffic.",
-      coverUrl: "/insights/ecommerce-speed.jpg",
+      coverUrl: "/insights/ecommerce-speed.svg",
       coverAlt: "Abstract commerce and speed motif",
       focalX: 0.5,
       focalY: 0.45,
@@ -88,7 +88,7 @@ export const INSIGHTS_CONTENT: InsightsSectionData = {
       category: "Mobile",
       excerpt:
         "Release planning, feedback loops, and QA checkpoints that keep product teams shipping without constant fire drills.",
-      coverUrl: "/insights/mobile-delivery.jpg",
+      coverUrl: "/insights/mobile-delivery.svg",
       coverAlt: "Abstract mobile device frames",
       focalX: 0.5,
       focalY: 0.45,
@@ -105,7 +105,7 @@ export const INSIGHTS_CONTENT: InsightsSectionData = {
       category: "Marketing",
       excerpt:
         "Build a repeatable editorial rhythm that supports SEO, campaigns, and sales enablement without constant reinvention.",
-      coverUrl: "/insights/content-systems.jpg",
+      coverUrl: "/insights/content-systems.svg",
       coverAlt: "Abstract editorial grid composition",
       focalX: 0.5,
       focalY: 0.45,
@@ -122,7 +122,7 @@ export const INSIGHTS_CONTENT: InsightsSectionData = {
       category: "AI",
       excerpt:
         "Choose AI use cases that reduce real work, with clear boundaries for accuracy, privacy, and human review.",
-      coverUrl: "/insights/practical-ai.jpg",
+      coverUrl: "/insights/practical-ai.svg",
       coverAlt: "Abstract neural and product interface motif",
       focalX: 0.5,
       focalY: 0.45,
@@ -139,7 +139,7 @@ export const INSIGHTS_CONTENT: InsightsSectionData = {
       category: "Branding",
       excerpt:
         "Tokens, type, and component rules that keep campaigns and product UI aligned as teams and vendors grow.",
-      coverUrl: "/insights/brand-systems.jpg",
+      coverUrl: "/insights/brand-systems.svg",
       coverAlt: "Abstract brand color and type blocks",
       focalX: 0.5,
       focalY: 0.45,
@@ -156,7 +156,7 @@ export const INSIGHTS_CONTENT: InsightsSectionData = {
       category: "Delivery",
       excerpt:
         "Admin access, content ownership, and maintenance plans that prevent post-launch confusion for internal teams.",
-      coverUrl: "/insights/site-handover.jpg",
+      coverUrl: "/insights/site-handover.svg",
       coverAlt: "Abstract checklist and handover motif",
       focalX: 0.5,
       focalY: 0.45,

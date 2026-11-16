@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SalarySlipDocumentClient } from "@/components/salaries/SalarySlipDocumentClient";
-import { loadSalarySlipDocument } from "@/lib/portal/portalBackendActions";
+import { loadSalarySlipDocument } from "@/lib/portal/portalDocumentActions";
 import { requireAdminActor } from "@/lib/portal/session";
 
 export const metadata: Metadata = {

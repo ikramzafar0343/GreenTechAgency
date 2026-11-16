@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import styles from "@/components/site/sectionIntro.module.css";
+import { SplitReveal } from "@/shared/motion/SplitReveal";
 
 export type SectionIntroProps = {
   readonly headingId: string;
@@ -37,9 +38,9 @@ export function SectionIntro({
         {eyebrowText ? (
           <p className={`${styles.eyebrow} typeEyebrow`}>{eyebrowText}</p>
         ) : null}
-        <h2 id={headingId} className={`${styles.heading} typeSectionTitle`}>
+        <SplitReveal as="h2" id={headingId} className={`${styles.heading} typeSectionTitle`}>
           {heading}
-        </h2>
+        </SplitReveal>
         {supportingText ? (
           <p className={`${styles.supporting} typeLead`}>{supportingText}</p>
         ) : null}

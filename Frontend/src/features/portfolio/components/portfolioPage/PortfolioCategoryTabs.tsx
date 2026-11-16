@@ -1,18 +1,20 @@
 "use client";
 
 import { useId, useRef, type KeyboardEvent } from "react";
-import {
-  PORTFOLIO_CATEGORIES,
-  type PortfolioCategory,
-} from "@/features/portfolio/model/portfolioPageTypes";
+import { PORTFOLIO_CATEGORIES, type PortfolioCategory } from "@/features/portfolio/model/portfolioPageTypes";
 import styles from "@/features/portfolio/styles/portfolioPage.module.css";
 
+type CategoryOption = (typeof PORTFOLIO_CATEGORIES)[number];
+
 type PortfolioCategoryTabsProps = {
+  /** Only categories that have published work; empty ones are hidden. */
+  categories: readonly CategoryOption[];
   active: PortfolioCategory;
   onChange: (category: PortfolioCategory) => void;
 };
 
 export function PortfolioCategoryTabs({
+  categories,
   active,
   onChange,
 }: PortfolioCategoryTabsProps) {
@@ -28,7 +30,7 @@ export function PortfolioCategoryTabs({
     event: KeyboardEvent<HTMLButtonElement>,
     index: number,
   ) {
-    const last = PORTFOLIO_CATEGORIES.length - 1;
+    const last = categories.length - 1;
     let nextIndex = index;
 
     if (event.key === "ArrowRight" || event.key === "ArrowDown") {
@@ -47,7 +49,7 @@ export function PortfolioCategoryTabs({
       return;
     }
 
-    const next = PORTFOLIO_CATEGORIES[nextIndex];
+    const next = categories[nextIndex];
     if (!next) {
       return;
     }
@@ -63,7 +65,7 @@ export function PortfolioCategoryTabs({
         aria-label="Portfolio categories"
         id={listId}
       >
-        {PORTFOLIO_CATEGORIES.map((category, index) => {
+        {categories.map((category, index) => {
           const selected = category.id === active;
           return (
             <button

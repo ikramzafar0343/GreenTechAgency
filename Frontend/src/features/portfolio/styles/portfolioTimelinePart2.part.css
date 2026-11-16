@@ -1,0 +1,47 @@
+@media (max-width: 767px) {
+  .timeline {
+    gap: 1.75rem;
+  }
+
+  .stage {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+
+  .mediaFrame {
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .rail {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .curve {
+    display: none;
+  }
+
+  .copyLanes {
+    display: none;
+  }
+
+  .mobileActive {
+    display: block;
+  }
+
+  .activeBlock {
+    max-width: none;
+    gap: 0.65rem;
+  }
+
+  .activeBody {
+    max-width: none;
+  }
+
+  .navigation {
+    gap: 1.25rem;
+  }
+}

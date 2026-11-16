@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1347" width="1200" height="1347" role="img" aria-label="Mobile App Development service illustration"><title>Mobile App Development service illustration</title><defs>
+<linearGradient id="g68625bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06111c"/><stop offset=".6" stop-color="#0b1d2e"/><stop offset="1" stop-color="#10324a"/></linearGradient>
+<radialGradient id="g68625glow" cx="0.67" cy="0.21" r=".6"><stop offset="0" stop-color="#58e2ec" stop-opacity=".38"/><stop offset=".45" stop-color="#1f7a8c" stop-opacity=".16"/><stop offset="1" stop-color="#1f7a8c" stop-opacity="0"/></radialGradient>
+<linearGradient id="g68625acc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#58e2ec"/><stop offset="1" stop-color="#1f7a8c"/></linearGradient>
+<linearGradient id="g68625glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".10"/><stop offset="1" stop-color="#ffffff" stop-opacity=".03"/></linearGradient>
+<linearGradient id="g68625edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#58e2ec" stop-opacity=".75"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".12"/><stop offset="1" stop-color="#1f7a8c" stop-opacity=".5"/></linearGradient>
+<pattern id="g68625grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#1d3b52" stroke-width="1" opacity=".55"/></pattern>
+<filter id="g68625soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+<filter id="g68625shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".45"/></filter>
+</defs><style>
+@media (prefers-reduced-motion: no-preference){
+.fl{animation:fl 7s ease-in-out infinite}.fl2{animation:fl 9s ease-in-out -3s infinite}
+.pu{animation:pu 4s ease-in-out infinite}.da{stroke-dasharray:10 14;animation:da 6s linear infinite}
+.sp{transform-box:fill-box;transform-origin:center;animation:sp 24s linear infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes pu{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes da{to{stroke-dashoffset:-240}}
+@keyframes sp{to{transform:rotate(360deg)}}}
+</style><rect width="1200" height="1347" fill="url(#g68625bg)"/>
+<rect width="1200" height="1347" fill="url(#g68625grid)"/>
+<rect width="1200" height="1347" fill="url(#g68625glow)"/>
+<circle cx="616" cy="957" r="2.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="828" cy="1274" r="2.2" fill="#58e2ec" opacity=".5" class="pu"/>
+<circle cx="601" cy="626" r="1.6" fill="#58e2ec" opacity=".5"/>
+<circle cx="262" cy="891" r="1.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="925" cy="624" r="1.2" fill="#58e2ec" opacity=".5" class="pu"/>
+<circle cx="374" cy="1057" r="2.2" fill="#58e2ec" opacity=".5" class="pu"/>
+<circle cx="208" cy="303" r="1.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="886" cy="503" r="1.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="583" cy="1124" r="1.6" fill="#58e2ec" opacity=".5"/>
+<circle cx="867" cy="838" r="1.6" fill="#58e2ec" opacity=".5" class="pu"/>
+<circle cx="1049" cy="1211" r="1.6" fill="#58e2ec" opacity=".5" class="pu"/>
+<circle cx="377" cy="334" r="2.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="679" cy="1236" r="1.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="1134" cy="1202" r="1.6" fill="#58e2ec" opacity=".5" class="pu"/>
+<circle cx="1000" cy="26" r="1.6" fill="#58e2ec" opacity=".5"/>
+<circle cx="64" cy="690" r="1.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="583" cy="1134" r="2.2" fill="#58e2ec" opacity=".5" class="pu"/>
+<circle cx="520" cy="817" r="2.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="497" cy="1251" r="1.6" fill="#58e2ec" opacity=".5"/>
+<circle cx="634" cy="401" r="2.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="810" cy="566" r="1.2" fill="#58e2ec" opacity=".5" class="pu"/>
+<circle cx="446" cy="853" r="2.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="695" cy="1171" r="1.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="961" cy="450" r="2.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="794" cy="111" r="2.2" fill="#58e2ec" opacity=".5"/>
+<circle cx="643" cy="504" r="1.2" fill="#58e2ec" opacity=".5"/>
+<g class="fl2"><rect x="120" y="162" width="960" height="674" rx="26" fill="#0f2a40" opacity=".92" filter="url(#g68625shadow)"/><rect x="120" y="162" width="960" height="674" rx="26" fill="url(#g68625glass)" stroke="url(#g68625edge)" stroke-width="2"/></g><g class="fl2"><circle cx="600.0" cy="499.0" r="215.68" fill="none" stroke="#1d3b52" stroke-width="47"/><circle cx="600.0" cy="499.0" r="215.68" fill="none" stroke="url(#g68625acc)" stroke-width="47" stroke-linecap="round" stroke-dasharray="976 1355" transform="rotate(-90 600.0 499.0)"/><circle cx="600.0" cy="499.0" r="108" fill="#58e2ec" opacity=".12"/></g>
+<g class="fl2"><rect x="240" y="916" width="720" height="269" rx="24" fill="#0f2a40" opacity=".92" filter="url(#g68625shadow)"/><rect x="240" y="916" width="720" height="269" rx="24" fill="url(#g68625glass)" stroke="url(#g68625edge)" stroke-width="2"/></g><g class="fl2"><rect x="268" y="944" width="216" height="14" rx="6" fill="#58e2ec" opacity=".9"/><rect x="268" y="1057" width="57" height="98" rx="6" fill="url(#g68625acc)" opacity="0.45"/><rect x="363" y="1086" width="57" height="69" rx="6" fill="url(#g68625acc)" opacity="0.52"/><rect x="458" y="1049" width="57" height="106" rx="6" fill="url(#g68625acc)" opacity="0.59"/><rect x="553" y="1081" width="57" height="74" rx="6" fill="url(#g68625acc)" opacity="0.66"/><rect x="647" y="1009" width="57" height="146" rx="6" fill="url(#g68625acc)" opacity="0.73"/><rect x="742" y="1111" width="57" height="44" rx="6" fill="url(#g68625acc)" opacity="0.80"/><rect x="837" y="1090" width="57" height="65" rx="6" fill="url(#g68625acc)" opacity="0.87"/></g></svg>

@@ -20,6 +20,7 @@ export function InsightCard({ article }: InsightCardProps) {
     <Link
       href={article.href}
       className={styles.card}
+      data-cursor="Read"
       aria-label={`Read '${article.title}' article`}
     >
       <div className={styles.media}>

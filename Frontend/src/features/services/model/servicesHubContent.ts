@@ -1,12 +1,7 @@
 import { SERVICE_GROUP_SEEDS } from "@/features/services/model/servicesHubGroupSeeds";
 import type { ServiceEntrySeed } from "@/features/services/model/servicesHubGroupSeeds";
 import { getServiceHref } from "@/features/services/model/serviceItems";
-import type {
-  ServiceShowcaseEntry,
-  ServiceShowcaseGroup,
-  ServicesHubPageData,
-  ServiceSpecialty,
-} from "@/features/services/model/servicesHubTypes";
+import type { ServiceShowcaseEntry, ServiceShowcaseGroup, ServicesHubPageData, ServiceSpecialty } from "@/features/services/model/servicesHubTypes";
 import { resolveMediaUrl } from "@/server/backend/resolveMediaUrl";
 import type { BackendServiceListItem } from "@/server/backend/dtos";
 
@@ -64,7 +59,9 @@ function buildEntry(
     summary: service.summary,
     description: seed.description,
     href: getServiceHref(service.slug),
-    imageSrc: resolveMediaUrl(service.cardImagePath),
+    // Each service ships its own card illustration until a CMS image is uploaded.
+    imageSrc:
+      resolveMediaUrl(service.cardImagePath) ?? `/services/editorial/${service.slug}/card.svg`,
     imageAlt: service.cardImageAlt || `${service.title} service overview`,
     specialties,
   };

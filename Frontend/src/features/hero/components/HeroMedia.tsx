@@ -17,16 +17,25 @@ export function HeroMedia({ media }: HeroMediaProps) {
   const [isReady, setIsReady] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [userPaused, setUserPaused] = useState(false);
-  const [allowMotion, setAllowMotion] = useState(true);
+  // Starts false so the server HTML ships only the poster (the LCP image). The 2.7 MB
+  // decorative video is attached after hydration on wide screens, never on phones,
+  // Save-Data connections or when the visitor prefers reduced motion.
+  const [allowMotion, setAllowMotion] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const wide = window.matchMedia("(min-width: 768px)");
+    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
     const syncMotion = () => {
-      setAllowMotion(!mediaQuery.matches);
+      setAllowMotion(!reduce.matches && wide.matches && connection?.saveData !== true);
     };
     syncMotion();
-    mediaQuery.addEventListener("change", syncMotion);
-    return () => mediaQuery.removeEventListener("change", syncMotion);
+    reduce.addEventListener("change", syncMotion);
+    wide.addEventListener("change", syncMotion);
+    return () => {
+      reduce.removeEventListener("change", syncMotion);
+      wide.removeEventListener("change", syncMotion);
+    };
   }, []);
 
   useEffect(() => {
@@ -116,6 +125,7 @@ export function HeroMedia({ media }: HeroMediaProps) {
         alt=""
         className={styles.poster}
         aria-hidden="true"
+        fetchPriority="high"
         decoding="async"
       />
 
@@ -128,7 +138,7 @@ export function HeroMedia({ media }: HeroMediaProps) {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           aria-hidden="true"
           tabIndex={-1}
           onLoadedData={() => setIsReady(true)}

@@ -1,5 +1,4 @@
 import "server-only";
-
 import type { AboutPageContent } from "@/features/about/model/aboutPageTypes";
 import { BackendHttpError, backendPublicGet } from "@/server/backend/client";
 import { resolveMediaUrl } from "@/server/backend/resolveMediaUrl";
@@ -9,14 +8,17 @@ export type PublicAboutPageResult =
   | { ok: false; notPublished: true }
   | { ok: false; error: BackendHttpError };
 
+/** Default illustration until a real team photo is uploaded in the CMS. */
+const DEFAULT_GROUP_PORTRAIT = "/about/group-portrait.svg";
+
 function mapAboutContent(content: AboutPageContent): AboutPageContent {
-  const resolvedSrc = resolveMediaUrl(content.groupPortrait.src);
+  const resolvedSrc = resolveMediaUrl(content.groupPortrait.src) ?? DEFAULT_GROUP_PORTRAIT;
   return {
     ...content,
     groupPortrait: {
       ...content.groupPortrait,
       src: resolvedSrc,
-      assetStatus: resolvedSrc ? "ready" : "missing",
+      assetStatus: "ready",
     },
   };
 }

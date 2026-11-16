@@ -89,10 +89,10 @@ export const adminOverviewCopy = {
   mixLede: "Share of active content across the public site.",
   statusTitle: "System status",
   statusLabel: "PORTAL",
-  statusValue: "Mock",
-  statusLede: "Catalog and client records are loaded from the kit mock store.",
-  servicesLive: "Live from mock store",
-  faqsLive: "Live from mock store",
+  statusValue: "Live",
+  statusLede: "Catalog, CMS and client records are served by the GreenTech backend API.",
+  servicesLive: "Live from CMS",
+  faqsLive: "Live from CMS",
 } as const;
 
 export const adminEmptyCopy = {

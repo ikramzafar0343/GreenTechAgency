@@ -1,0 +1,270 @@
+@media (hover: hover) and (pointer: fine) {
+  .choicePill:hover {
+    transform: scale(1.1);
+  }
+}
+
+.choicePill:focus-visible {
+  outline: 2px solid var(--brand-cyan);
+  outline-offset: 3px;
+}
+
+.chipCloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 8px;
+  width: 100%;
+  max-width: 52rem;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .chipCloud {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chipCloud {
+    gap: 10px 8px;
+    max-width: 56rem;
+  }
+}
+
+.chipRow {
+  display: contents;
+}
+
+.chipGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 14px;
+  width: 100%;
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.chip {
+  appearance: none;
+  border: 0;
+  border-radius: var(--contact-pill-radius);
+  background: var(--contactChoice);
+  color: var(--contactChoiceInk);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 0.55rem 0.85rem;
+  cursor: pointer;
+  min-height: 0;
+  width: fit-content;
+  max-width: 100%;
+  flex: 0 0 auto;
+  justify-self: center;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.2;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0 1px 0 color-mix(in srgb, #000 12%, transparent);
+  transition:
+    transform 300ms cubic-bezier(0.22, 0.68, 0, 1.5),
+    background-color 200ms ease-out,
+    color 200ms ease-out,
+    box-shadow 200ms ease-out;
+}
+
+@media (min-width: 1024px) {
+  .chip {
+    font-size: 0.875rem;
+    line-height: 1.2;
+    padding: 0.6rem 0.95rem;
+  }
+}
+
+.chipSelected {
+  background: var(--contact-ink);
+  color: var(--contact-paper);
+  box-shadow:
+    inset 0 0 0 2px var(--contact-muted),
+    0 1px 0 color-mix(in srgb, #000 12%, transparent);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .chip:hover {
+    z-index: 1;
+    transform: scale(1.06);
+  }
+}
+
+.chip:focus-visible {
+  outline: 2px solid var(--brand-cyan);
+  outline-offset: 3px;
+}
+
+.hint {
+  margin: 16px 0 0;
+  font-size: 0.875rem;
+  color: color-mix(in srgb, #9b3a3a 70%, var(--brand-navy));
+  text-align: center;
+}
+
+.stepActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  margin-top: 48px;
+}
+
+@media (min-width: 1024px) {
+  .stepActions {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 32px;
+    margin-top: 0;
+    width: auto;
+  }
+}
+
+.formDetail {
+  width: min(100%, 520px);
+  margin-inline: auto;
+  padding-block: clamp(1rem, 3vw, 2rem);
+}
+
+@media (min-width: 1024px) {
+  .formDetail {
+    width: min(100%, 481px);
+  }
+}
+
+.promptStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  align-items: center;
+}
+
+.careersNote {
+  margin: 0;
+  max-width: 36rem;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  color: var(--contactMuted);
+  text-align: center;
+}
+
+.formToolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: clamp(1.5rem, 4vw, 2.75rem);
+}
+
+.formWorkLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--contactInk);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.formWorkArrow {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--brand-navy-deep);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--brand-navy) 12%, transparent);
+  line-height: 1;
+}
+
+.formWorkLink:focus-visible {
+  outline: 2px solid var(--brand-cyan);
+  outline-offset: 3px;
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.formEyebrow {
+  margin: 0 0 0.85rem;
+  font-size: clamp(0.95rem, 1.4vw, 1.125rem);
+  font-weight: 500;
+  color: var(--contactMuted);
+}
+
+.formTitle {
+  margin: 0;
+  max-width: 22ch;
+  margin-inline: auto;
+  font-size: clamp(1.85rem, 4vw, 3.1rem);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.05em;
+  color: var(--contactInk);
+  opacity: 1;
+  text-wrap: balance;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.formRow {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 640px) {
+  .formRowSplit {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field {
+  position: relative;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  min-height: 64px;
+  border: 0;
+  border-radius: var(--contact-field-radius);
+  background: var(--contactField);
+  color: var(--contactInk);
+  font: inherit;
+  font-size: 1rem;
+  padding: 1.45rem 0.75rem 0.75rem 1.5rem;
+  transition: background-color 150ms ease;
+}
+
+.textarea {
+  min-height: 156px;
+  resize: vertical;
+  padding-top: 1.6rem;
+}
+
+.input:focus-visible,
+.textarea:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--contact-ink) 55%, transparent);
+  outline-offset: 2px;
+}

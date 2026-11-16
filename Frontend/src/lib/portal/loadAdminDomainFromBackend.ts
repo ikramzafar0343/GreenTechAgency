@@ -1,13 +1,7 @@
 "use server";
 
-import type {
-  AdminDomain,
-  AdminDomainPayload,
-} from "@/lib/portal/types";
-import {
-  getOpsOverview,
-  listOpsResource,
-} from "@/server/backend/opsClient";
+import type { AdminDomain, AdminDomainPayload } from "@/lib/portal/types";
+import { getOpsOverview, listOpsResource } from "@/server/backend/opsClient";
 import { backendAdminGet } from "@/server/backend/client";
 
 async function listEnquiries() {
@@ -21,7 +15,7 @@ async function listEnquiries() {
   }
 }
 
-/** Loads admin domain data from Backend Ops APIs (no mockStore). */
+/** Loads admin domain data from Backend Ops APIs. */
 export async function loadAdminDomainFromBackend(
   domain: AdminDomain,
 ): Promise<AdminDomainPayload> {

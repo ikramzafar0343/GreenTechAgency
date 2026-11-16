@@ -18,7 +18,7 @@ export const IMPACT_CONTENT: ImpactMadeVisibleContent = {
       size: "tall",
       theme: "mint",
       image: {
-        src: "/services/editorial/rail-photo.svg",
+        src: "/impact/delivery.svg",
         alt: "Collaborative digital craft across design and engineering.",
         objectPosition: "center",
         tileTitle: "Delivery",
@@ -39,7 +39,7 @@ export const IMPACT_CONTENT: ImpactMadeVisibleContent = {
       size: "tall",
       theme: "dark",
       image: {
-        src: "/services/editorial/lead-dev.svg",
+        src: "/impact/collaboration.svg",
         alt: "Product and engineering delivery in progress.",
         objectPosition: "center 30%",
         tileTitle: "Delivery",

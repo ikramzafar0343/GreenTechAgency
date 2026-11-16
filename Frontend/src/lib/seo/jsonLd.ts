@@ -2,8 +2,15 @@ import { absoluteUrl, getSiteUrl } from "@/lib/seo/siteUrl";
 
 export type JsonLd = Record<string, unknown>;
 
+/**
+ * Serialises JSON-LD for a <script> tag. "<" is escaped so CMS text such as
+ * "</script>" cannot close the tag and inject HTML (stored XSS).
+ */
 export function jsonLdScript(data: JsonLd | JsonLd[]): string {
-  return JSON.stringify(data);
+  return JSON.stringify(data)
+    .replace(/</g, "\\u003c")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
 }
 
 export function organizationJsonLd(options?: {

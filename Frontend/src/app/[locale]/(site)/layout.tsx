@@ -4,6 +4,7 @@ import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/jsonLd";
 import { JsonLdScript } from "@/lib/seo/JsonLdScript";
 import { SiteHeader } from "@/shared/ui/SiteHeader";
 import { SiteHeaderGate } from "@/shared/ui/SiteHeaderGate";
+import { SiteMotion } from "@/shared/motion/SiteMotion";
 import { setRequestLocale } from "next-intl/server";
 
 export const dynamic = "force-dynamic";
@@ -23,6 +24,7 @@ export default async function SiteLayout({
   return (
     <>
       <JsonLdScript data={[organizationJsonLd(), websiteJsonLd()]} />
+      <SiteMotion />
       <SiteHeaderGate>
         <SiteHeader />
       </SiteHeaderGate>

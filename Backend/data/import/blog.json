@@ -10,20 +10,94 @@
       "excerpt": "How technical structure, clear metadata, and intent-led content work together before you scale content production.",
       "body": [
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Topic: Technical and on-page SEO foundations\n- Best time to fix: Before scaling content or launching a redesign\n- Core checks: Crawlability, indexing, metadata, internal links, speed\n- Related service: Search Engine Optimization | /services/search-engine-optimization"
+        },
+        {
           "type": "paragraph",
-          "text": "How technical structure, clear metadata, and intent-led content work together before you scale content production."
+          "text": "SEO foundations are the technical and structural basics that let search engines crawl, understand and trust a website. Getting them right first means every new page you publish has a fair chance to rank."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Why foundations come first"
+        },
+        {
+          "type": "paragraph",
+          "text": "Publishing more content on a site with crawl errors, duplicate pages or slow templates multiplies the problems. A short foundations audit usually reveals issues that affect every page at once, which makes them the highest-value fixes."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The foundation checklist"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Crawlability: robots.txt allows important sections and an XML sitemap lists canonical URLs.",
+            "Indexing: each page has one canonical URL and no accidental noindex tags.",
+            "Metadata: unique, descriptive title tags and meta descriptions for every template.",
+            "Structure: one H1 per page and logical heading levels.",
+            "Internal links: important pages are linked from navigation and related content.",
+            "Speed: templates meet Core Web Vitals on mobile.",
+            "Structured data: organisation, breadcrumbs and page-type markup where relevant."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Intent-led content"
+        },
+        {
+          "type": "paragraph",
+          "text": "Each page should target one clear search intent. Informational searches need explanations, comparison searches need honest comparisons and transactional searches need clear offers. Mixing intents on one page confuses both readers and search engines."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How do I know if my site has foundation problems?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Check Google Search Console for indexing and page-experience reports, crawl the site with an SEO crawler and review templates on a mobile connection."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Should foundations be fixed before a redesign?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Plan them into the redesign. Migrating URLs, templates and content is the best moment to fix structure, as long as redirects are mapped carefully."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Search Engine Optimization guide | /blog/search-engine-optimization-guide\n- SEO services | /services/search-engine-optimization"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. SEO Starter Guide — Google Search Central | https://developers.google.com/search/docs/fundamentals/seo-starter-guide\n2. Web Vitals — web.dev | https://web.dev/articles/vitals"
         }
       ],
-      "coverPath": "/insights/seo-foundations.jpg",
-      "coverAlt": "Workspace desk with analytics notes for SEO planning",
+      "coverPath": "/insights/seo-foundations.svg",
+      "coverAlt": "SEO Foundations — article cover illustration",
       "railLabel": "SEO Foundations",
       "category": "SEO",
-      "authorDisplay": null,
-      "seoTitle": null,
-      "seoDescription": null,
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "SEO Foundations for Growing Websites | GreenTech",
+      "seoDescription": "The technical structure, metadata and intent-led content every growing site needs before scaling content production.",
       "focalX": 0.5,
       "focalY": 0.45,
-      "readTimeMinutes": 6
+      "readTimeMinutes": 3
     }
   },
   {
@@ -37,20 +111,91 @@
       "excerpt": "Entity clarity, concise answers, and trustworthy sourcing help brands show up in AI-assisted discovery without empty claims.",
       "body": [
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Topic: Visibility in AI-generated answers\n- Main levers: Clear entities, direct answers, cited evidence, structured data\n- Foundation: Technical SEO and crawlable content\n- Related service: Generative Engine Optimization | /services/generative-engine-optimization"
+        },
+        {
           "type": "paragraph",
-          "text": "Entity clarity, concise answers, and trustworthy sourcing help brands show up in AI-assisted discovery without empty claims."
+          "text": "GEO visibility means being accurately represented when AI assistants and AI search features answer questions about your industry, services or brand. Clarity is the main lever: AI systems cite sources that state facts plainly and consistently."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Be an unambiguous entity"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the same company name, service names, location and contact details everywhere: website, business profiles, social accounts and directories. Publish an About page that states what the company does, who it serves and where, in plain sentences."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Write passages that can be quoted"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Put a one- or two-sentence direct answer under each question-style heading.",
+            "Define terms the way an encyclopedia would.",
+            "Support claims with named, linked sources and dates.",
+            "Use lists and tables for steps, comparisons and specifications."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Add machine-readable context"
+        },
+        {
+          "type": "paragraph",
+          "text": "Structured data for Organization, Service, Article and FAQPage helps systems connect your pages to the right entities. Keep sitemaps current and pages server-rendered so content is available without heavy scripts."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Can we check how AI describes our business?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Yes. Ask leading assistants your customers' typical questions, note whether your business appears and whether facts are accurate, and update your pages where descriptions are wrong or missing."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Does GEO replace SEO?"
+        },
+        {
+          "type": "paragraph",
+          "text": "No. GEO builds on SEO. Pages that are not crawlable, indexed and trusted are unlikely to be used in AI answers."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Generative Engine Optimization guide | /blog/generative-engine-optimization-guide\n- GEO services | /services/generative-engine-optimization"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Aggarwal et al., \"GEO: Generative Engine Optimization\" — arXiv | https://arxiv.org/abs/2311.09735\n2. AI features and your website — Google Search Central | https://developers.google.com/search/docs/appearance/ai-features"
         }
       ],
-      "coverPath": "/insights/geo-visibility.jpg",
-      "coverAlt": "Abstract shapes representing AI-assisted discovery",
+      "coverPath": "/insights/geo-visibility.svg",
+      "coverAlt": "GEO Visibility — article cover illustration",
       "railLabel": "GEO Visibility",
       "category": "GEO",
-      "authorDisplay": null,
-      "seoTitle": null,
-      "seoDescription": null,
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "GEO Visibility: Being Clear When AI Answers | GreenTech",
+      "seoDescription": "How to structure pages, entities and evidence so AI answer engines can understand and cite your business accurately.",
       "focalX": 0.5,
       "focalY": 0.45,
-      "readTimeMinutes": 7
+      "readTimeMinutes": 3
     }
   },
   {
@@ -64,20 +209,91 @@
       "excerpt": "Reduce friction in enquiry paths with clearer hierarchy, focused CTAs, and forms that respect visitor intent.",
       "body": [
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Topic: UX patterns that increase enquiries on service sites\n- Key elements: Clear value proposition, proof, simple forms, visible next step\n- Measure with: Enquiry rate, form completion, scroll and click data\n- Related service: UI/UX Design | /services/ui-ux-design"
+        },
+        {
           "type": "paragraph",
-          "text": "Reduce friction in enquiry paths with clearer hierarchy, focused CTAs, and forms that respect visitor intent."
+          "text": "Conversion-minded UX is design that makes it easy for the right visitors to take the next step, usually an enquiry or booking. On service websites, the main barriers are unclear offers, missing proof and forms that feel like hard work."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Answer three questions above the fold"
+        },
+        {
+          "type": "paragraph",
+          "text": "Within seconds a visitor should know what you do, who it is for and what to do next. A specific headline, a one-line supporting statement and a single primary button usually do this better than a slogan."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Show proof where doubts appear"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Case studies with the problem, approach and outcome.",
+            "Client logos and testimonials, used with permission.",
+            "Process explanations that reduce uncertainty about working together.",
+            "Clear pricing ranges or engagement models where possible."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Make contact effortless"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ask only for the information needed to reply well. Label every field, explain errors next to the field, confirm submission clearly and say when the visitor can expect a response. Offer an alternative, such as email or a booking link."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How many fields should a contact form have?"
+        },
+        {
+          "type": "paragraph",
+          "text": "As few as possible: typically name, email and a message, plus one or two qualifying questions if they genuinely help you respond."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Should every page have a call to action?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Yes. Every page should offer a relevant next step, even if it is reading a related case study rather than contacting you immediately."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- UI/UX Design guide | /blog/ui-ux-design-guide\n- UI/UX Design services | /services/ui-ux-design"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. 10 Usability Heuristics — Nielsen Norman Group | https://www.nngroup.com/articles/ten-usability-heuristics/\n2. Web Content Accessibility Guidelines (WCAG) 2.2 — W3C | https://www.w3.org/TR/WCAG22/"
         }
       ],
-      "coverPath": "/insights/conversion-ux.jpg",
-      "coverAlt": "Abstract interface blocks suggesting a focused user journey",
+      "coverPath": "/insights/conversion-ux.svg",
+      "coverAlt": "Conversion UX — article cover illustration",
       "railLabel": "Conversion UX",
       "category": "UI/UX",
-      "authorDisplay": null,
-      "seoTitle": null,
-      "seoDescription": null,
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Conversion-Minded UX for Service Websites | GreenTech",
+      "seoDescription": "Practical UX patterns that help visitors to a service website understand the offer, trust the business and get in touch.",
       "focalX": 0.5,
       "focalY": 0.45,
-      "readTimeMinutes": 5
+      "readTimeMinutes": 3
     }
   },
   {
@@ -91,20 +307,89 @@
       "excerpt": "Practical performance work for product pages, media delivery, and checkout confidence on real store traffic.",
       "body": [
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Topic: Speed optimisation for online stores\n- Biggest culprits: Unoptimised images, third-party scripts, slow filters\n- Targets: LCP ≤ 2.5 s, INP ≤ 200 ms, CLS ≤ 0.1\n- Related service: Ecommerce Development | /services/ecommerce-development"
+        },
+        {
           "type": "paragraph",
-          "text": "Practical performance work for product pages, media delivery, and checkout confidence on real store traffic."
+          "text": "Store performance is the speed and responsiveness of an online shop from the first product listing to the final payment step. Slow stores lose shoppers at every stage, so performance work protects revenue directly."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Where stores get slow"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Large product images served at full resolution to phones.",
+            "Too many third-party scripts for reviews, chat, tracking and pop-ups.",
+            "Filters and search that reload whole pages or query slowly.",
+            "Layout shifts when prices, badges or banners load late."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "A practical fix list"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Serve responsive, compressed images in modern formats with fixed dimensions.",
+            "Audit third-party scripts; remove unused ones and load the rest after the main content.",
+            "Cache category and product pages and invalidate them when stock or prices change.",
+            "Keep checkout lean: no unnecessary scripts on payment steps.",
+            "Monitor Core Web Vitals from real users, not just lab tests."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Which page should we optimise first?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with your highest-traffic landing pages, usually category and product pages, then the cart and checkout."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Do apps and plugins slow a store down?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Each extension can add scripts and requests. Review them regularly and keep only those that clearly earn their place."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Ecommerce Development guide | /blog/ecommerce-development-guide\n- Ecommerce services | /services/ecommerce-development"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Web Vitals — web.dev | https://web.dev/articles/vitals\n2. Cart Abandonment Rate statistics — Baymard Institute | https://baymard.com/lists/cart-abandonment-rate"
         }
       ],
-      "coverPath": "/insights/ecommerce-speed.jpg",
-      "coverAlt": "Abstract commerce and speed motif",
+      "coverPath": "/insights/ecommerce-speed.svg",
+      "coverAlt": "Store Speed — article cover illustration",
       "railLabel": "Store Speed",
       "category": "Ecommerce",
-      "authorDisplay": null,
-      "seoTitle": null,
-      "seoDescription": null,
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Ecommerce Performance That Protects Revenue | GreenTech",
+      "seoDescription": "Where online stores lose speed and how to fix images, scripts, filters and checkout performance without losing features.",
       "focalX": 0.5,
       "focalY": 0.45,
-      "readTimeMinutes": 8
+      "readTimeMinutes": 3
     }
   },
   {
@@ -118,20 +403,100 @@
       "excerpt": "Release planning, feedback loops, and QA checkpoints that keep product teams shipping without constant fire drills.",
       "body": [
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Topic: Reliable mobile app releases\n- Key practices: CI builds, beta testing, staged rollouts, crash monitoring\n- Annual pressure: New iOS and Android versions every year\n- Related service: Mobile App Development | /services/mobile-app-development"
+        },
+        {
           "type": "paragraph",
-          "text": "Release planning, feedback loops, and QA checkpoints that keep product teams shipping without constant fire drills."
+          "text": "Stable release habits are the routines that let a team ship mobile app updates frequently without breaking things for users. Because app-store updates cannot be rolled back instantly, prevention matters more than on the web."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Build and test automatically"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every change should produce a build through continuous integration, run automated tests and be installable by testers. Regular test builds catch problems while they are still small."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Release in stages"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Internal testing with the team.",
+            "Beta testing with a wider group through the platforms' test programmes.",
+            "Staged rollout to a percentage of users, watching crash rates and reviews.",
+            "Full release once the numbers are healthy."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Watch real-world health"
+        },
+        {
+          "type": "paragraph",
+          "text": "Crash reporting, performance monitoring and in-app feedback show problems quickly. Set thresholds that pause a rollout automatically if crash rates rise."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Plan for platform changes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Apple and Google release major operating system versions every year and update store policies regularly. Test against beta versions early and schedule time for compatibility work."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How often should we release app updates?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Many teams release every two to four weeks. Smaller, regular releases are easier to test and roll out safely than large infrequent ones."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What is a staged rollout?"
+        },
+        {
+          "type": "paragraph",
+          "text": "It is releasing an update to a small share of users first, then expanding gradually if no serious problems appear."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Mobile App Development guide | /blog/mobile-app-development-guide\n- Mobile App services | /services/mobile-app-development"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Android developer guides — Android Developers | https://developer.android.com/guide\n2. Human Interface Guidelines — Apple Developer | https://developer.apple.com/design/human-interface-guidelines/"
         }
       ],
-      "coverPath": "/insights/mobile-delivery.jpg",
-      "coverAlt": "Abstract mobile device frames",
+      "coverPath": "/insights/mobile-delivery.svg",
+      "coverAlt": "Mobile Delivery — article cover illustration",
       "railLabel": "Mobile Delivery",
       "category": "Mobile",
-      "authorDisplay": null,
-      "seoTitle": null,
-      "seoDescription": null,
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Shipping Mobile Apps With Stable Release Habits | GreenTech",
+      "seoDescription": "Release practices that keep mobile apps stable: test builds, staged rollouts, crash monitoring and planning for yearly OS updates.",
       "focalX": 0.5,
       "focalY": 0.45,
-      "readTimeMinutes": 6
+      "readTimeMinutes": 3
     }
   },
   {
@@ -145,20 +510,92 @@
       "excerpt": "Build a repeatable editorial rhythm that supports SEO, campaigns, and sales enablement without constant reinvention.",
       "body": [
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Topic: Repeatable content operations\n- Core parts: Strategy, templates, calendar, workflow, measurement\n- Benefit: Consistent quality and output with a small team\n- Related service: Content Marketing | /services/content-marketing"
+        },
+        {
           "type": "paragraph",
-          "text": "Build a repeatable editorial rhythm that supports SEO, campaigns, and sales enablement without constant reinvention."
+          "text": "A content system is the set of templates, roles, workflows and tools that turns content strategy into a steady flow of published work. It replaces last-minute scrambling with a predictable process."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The parts of a content system"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Strategy: audience, topics, goals and channels written down in one place.",
+            "Templates: briefs, article outlines, social formats and design templates.",
+            "Calendar: what is published where and when, with owners.",
+            "Workflow: draft, review, approve, publish and promote.",
+            "Measurement: a monthly review of what worked and what to change."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Create once, distribute many times"
+        },
+        {
+          "type": "paragraph",
+          "text": "A single in-depth guide can become a newsletter, several social posts, a short video and a sales one-pager. Planning these derivatives from the start multiplies the value of each piece."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Keep it current"
+        },
+        {
+          "type": "paragraph",
+          "text": "Schedule reviews for important pages so statistics, screenshots and recommendations stay accurate. Updating a strong page is often more valuable than publishing a new one."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What tools do we need?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A shared document space, a task board or calendar and your CMS are enough for most teams. Process matters more than tools."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How do we keep content on-brand?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use a voice guide, approved templates and a single reviewer who checks tone and facts before publishing."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Content Marketing guide | /blog/content-marketing-guide\n- Content Marketing services | /services/content-marketing"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Creating helpful, reliable, people-first content — Google Search Central | https://developers.google.com/search/docs/fundamentals/creating-helpful-content\n2. Content Marketing Institute | https://contentmarketinginstitute.com/"
         }
       ],
-      "coverPath": "/insights/content-systems.jpg",
-      "coverAlt": "Abstract editorial grid composition",
+      "coverPath": "/insights/content-systems.svg",
+      "coverAlt": "Content Systems — article cover illustration",
       "railLabel": "Content Systems",
       "category": "Marketing",
-      "authorDisplay": null,
-      "seoTitle": null,
-      "seoDescription": null,
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Content Systems for Consistent Digital Marketing | GreenTech",
+      "seoDescription": "How templates, workflows and a shared calendar let small teams publish consistent, on-brand marketing content every week.",
       "focalX": 0.5,
       "focalY": 0.45,
-      "readTimeMinutes": 7
+      "readTimeMinutes": 3
     }
   },
   {
@@ -172,20 +609,99 @@
       "excerpt": "Choose AI use cases that reduce real work, with clear boundaries for accuracy, privacy, and human review.",
       "body": [
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Topic: Adding AI features to digital products\n- Reliable features: Search, summarisation, classification, drafting assistants\n- Must-haves: Human review, data limits, evaluation, clear labelling\n- Related service: Artificial Intelligence | /services/artificial-intelligence"
+        },
+        {
           "type": "paragraph",
-          "text": "Choose AI use cases that reduce real work, with clear boundaries for accuracy, privacy, and human review."
+          "text": "Practical AI features are capabilities that solve a specific user problem reliably enough to ship, such as smarter search, document summaries or drafting help. The best ones feel like natural product features rather than a separate chatbot."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Features that work well today"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Semantic search that understands meaning, not just keywords.",
+            "Summaries of long documents, tickets or conversations.",
+            "Classification and routing of incoming requests.",
+            "Drafting assistants that propose text for a human to edit.",
+            "Data extraction from forms, invoices and emails."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How to scope an AI feature"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Write down the user problem and how success is measured today.",
+            "Collect realistic examples, including difficult edge cases.",
+            "Prototype quickly and evaluate output quality against the examples.",
+            "Design the experience for mistakes: easy correction and human review.",
+            "Launch to a small group, monitor quality and costs, then expand."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Responsible design"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tell users when content is AI-generated, avoid sending sensitive data unnecessarily, keep logs for review and set clear limits on what the feature can do on its own."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Do we need our own AI model?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Usually not. Most features can use existing models through APIs, combined with your own data and rules."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How do we stop AI from making things up?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ground responses in approved sources, show citations, restrict the feature to tasks it handles well and keep a human in the loop for important outputs."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Artificial Intelligence guide | /blog/artificial-intelligence-guide\n- AI services | /services/artificial-intelligence"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. AI Risk Management Framework — NIST | https://www.nist.gov/itl/ai-risk-management-framework\n2. OECD AI Principles | https://oecd.ai/en/ai-principles"
         }
       ],
-      "coverPath": "/insights/practical-ai.jpg",
-      "coverAlt": "Abstract neural and product interface motif",
+      "coverPath": "/insights/practical-ai.svg",
+      "coverAlt": "Practical AI — article cover illustration",
       "railLabel": "Practical AI",
       "category": "AI",
-      "authorDisplay": null,
-      "seoTitle": null,
-      "seoDescription": null,
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Practical AI Features for Business Products | GreenTech",
+      "seoDescription": "AI features that deliver value in real products today, and how to scope, test and launch them responsibly.",
       "focalX": 0.5,
       "focalY": 0.45,
-      "readTimeMinutes": 9
+      "readTimeMinutes": 3
     }
   },
   {
@@ -199,20 +715,92 @@
       "excerpt": "Tokens, type, and component rules that keep campaigns and product UI aligned as teams and vendors grow.",
       "body": [
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Topic: Practical, scalable brand systems\n- Core parts: Identity rules, design tokens, templates, governance\n- Common failure: Guidelines that nobody can apply quickly\n- Related service: Digital Branding & Creatives | /services/digital-branding-creatives"
+        },
+        {
           "type": "paragraph",
-          "text": "Tokens, type, and component rules that keep campaigns and product UI aligned as teams and vendors grow."
+          "text": "A brand system is a practical toolkit that lets many people create consistent, on-brand work. It goes beyond a logo and a PDF of guidelines by providing ready-made templates, coded design tokens and clear rules for everyday decisions."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Why guidelines alone fail"
+        },
+        {
+          "type": "paragraph",
+          "text": "Long guideline documents are rarely read under deadline pressure. When templates are missing, people improvise and the brand drifts. A system makes the right choice the easiest choice."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What a durable brand system includes"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Core identity: logo versions, colour palette, typography and imagery style.",
+            "Design tokens: colours, type sizes and spacing as named values used in code.",
+            "Templates: social posts, presentations, ads, documents and email.",
+            "Component library: interface elements for websites and apps.",
+            "Governance: who approves new assets and how the system is updated."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Test it on real work"
+        },
+        {
+          "type": "paragraph",
+          "text": "Before finalising, apply the system to real tasks: a product launch, a hiring post, a sales deck. Gaps appear quickly and can be fixed before rollout."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Who should own the brand system?"
+        },
+        {
+          "type": "paragraph",
+          "text": "One person or small team should own it, gather feedback and publish updates, so changes happen deliberately rather than by accident."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How often should a brand system be updated?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Review it at least yearly and whenever new channels or products appear."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Digital Branding guide | /blog/digital-branding-creatives-guide\n- Branding services | /services/digital-branding-creatives"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Brand — Wikipedia | https://en.wikipedia.org/wiki/Brand\n2. Material Design 3 — Google | https://m3.material.io/"
         }
       ],
-      "coverPath": "/insights/brand-systems.jpg",
-      "coverAlt": "Abstract brand color and type blocks",
+      "coverPath": "/insights/brand-systems.svg",
+      "coverAlt": "Brand Systems — article cover illustration",
       "railLabel": "Brand Systems",
       "category": "Branding",
-      "authorDisplay": null,
-      "seoTitle": null,
-      "seoDescription": null,
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Brand Systems That Survive Real Projects | GreenTech",
+      "seoDescription": "How to build a brand system with tokens, templates and rules that stays consistent when many people create assets.",
       "focalX": 0.5,
       "focalY": 0.45,
-      "readTimeMinutes": 5
+      "readTimeMinutes": 3
     }
   },
   {
@@ -226,20 +814,2443 @@
       "excerpt": "Admin access, content ownership, and maintenance plans that prevent post-launch confusion for internal teams.",
       "body": [
         {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Topic: Handing a finished website to the client team\n- Must include: Account ownership, documentation, training, backups\n- Biggest risk: Credentials and knowledge held only by the agency\n- Related service: Web Development | /services/web-development"
+        },
+        {
           "type": "paragraph",
-          "text": "Admin access, content ownership, and maintenance plans that prevent post-launch confusion for internal teams."
+          "text": "A website handover is the process of transferring full control and understanding of a finished website to the team that will run it. A good handover means the business can update, maintain and, if needed, move the site without depending on any one person."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What a complete handover includes"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Ownership: domain, hosting, repositories, analytics and third-party accounts registered to the business.",
+            "Access: named admin accounts with strong authentication, and agency access removed or limited.",
+            "Documentation: architecture overview, environment setup, deployment steps and integrations.",
+            "CMS training: recorded sessions and short guides for common editing tasks.",
+            "Backups: automated backups with a tested restore procedure.",
+            "Maintenance plan: who updates dependencies, monitors uptime and fixes issues."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Check it before sign-off"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ask the team to publish a page, replace an image, restore a backup to a test environment and find the deployment instructions without help. If they cannot, the handover is not finished."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Who should own the domain and hosting?"
+        },
+        {
+          "type": "paragraph",
+          "text": "The business should always own its domain, hosting and code repositories, even when an agency manages them day to day."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What happens after handover?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Agree a support or maintenance arrangement so security updates, backups and small changes continue to happen."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Web Development guide | /blog/web-development-guide\n- Web Development services | /services/web-development"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Web Content Accessibility Guidelines (WCAG) 2.2 — W3C | https://www.w3.org/TR/WCAG22/\n2. SEO Starter Guide — Google Search Central | https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
         }
       ],
-      "coverPath": "/insights/site-handover.jpg",
-      "coverAlt": "Abstract checklist and handover motif",
+      "coverPath": "/insights/site-handover.svg",
+      "coverAlt": "Site Handover — article cover illustration",
       "railLabel": "Site Handover",
       "category": "Delivery",
-      "authorDisplay": null,
-      "seoTitle": null,
-      "seoDescription": null,
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Website Handover Your Team Can Actually Own | GreenTech",
+      "seoDescription": "What a complete website handover includes: access, documentation, CMS training, backups and a clear maintenance plan.",
       "focalX": 0.5,
       "focalY": 0.45,
-      "readTimeMinutes": 6
+      "readTimeMinutes": 3
+    }
+  },
+  {
+    "id": "guide-web-development",
+    "slug": "web-development-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-10-12T09:00:00.000Z",
+    "doc": {
+      "title": "What Is Web Development? A Practical Guide for Growing Businesses",
+      "excerpt": "Web development is the work of planning, building and maintaining websites and web applications. This guide explains the layers involved, how a professional build runs, and what makes a site fast, secure and easy to grow.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Discipline: Building and maintaining websites and web applications\n- Main layers: Front end, back end, database, hosting\n- Typical timeline: 6–14 weeks for a business website\n- Quality signals: Core Web Vitals, WCAG 2.2 accessibility, security headers\n- GreenTech service: Web Development | /services/web-development"
+        },
+        {
+          "type": "paragraph",
+          "text": "Web development is the practice of turning a business goal into a working website or web application. It covers the code that runs in the visitor's browser (the front end), the code and data that run on a server (the back end), and the hosting, monitoring and maintenance that keep everything available."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "A modern website is not a single file. It is a set of templates, components, content, integrations and infrastructure that must work together on every device and connection speed. Good web development makes that complexity invisible: pages load quickly, forms work, content is easy to update and search engines can understand what each page is about."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The main layers of a website"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Front end"
+        },
+        {
+          "type": "paragraph",
+          "text": "The front end is everything a visitor sees and interacts with: layout, typography, navigation, forms and animation. It is built with HTML for structure, CSS for presentation and JavaScript for behaviour. Frameworks such as React and Next.js help teams build reusable components and render pages on the server so they appear quickly."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Back end"
+        },
+        {
+          "type": "paragraph",
+          "text": "The back end stores and serves data. It handles logins, enquiries, orders, content and integrations with tools such as CRMs or payment providers. A back end is usually an API written in a language such as JavaScript (Node.js), PHP or Python, connected to a database such as PostgreSQL."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Content management"
+        },
+        {
+          "type": "paragraph",
+          "text": "Most businesses need to edit pages without a developer. A content management system (CMS) gives editors structured fields, media uploads, drafts and publishing controls, while developers keep the design system consistent."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Hosting and operations"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hosting covers servers, domains, TLS certificates, backups and monitoring. A reliable setup includes automated deployments, daily database backups and alerts when something fails."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How a professional web project runs"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Discovery: goals, audiences, competitors, content inventory and success metrics.",
+            "Information architecture: sitemap, page templates and user journeys.",
+            "Design: wireframes, then a visual design system with accessible colours and type.",
+            "Build: components, CMS models, integrations and analytics.",
+            "Quality assurance: devices, browsers, accessibility, performance and security checks.",
+            "Launch: redirects, sitemap submission, monitoring and handover training.",
+            "Growth: measured improvements based on analytics and user feedback."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What makes a website high-performing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Speed matters because people leave slow pages. Google's Core Web Vitals measure loading (Largest Contentful Paint, good at 2.5 seconds or less), responsiveness (Interaction to Next Paint, good at 200 milliseconds or less) and visual stability (Cumulative Layout Shift, good at 0.1 or less). Hitting those targets usually means optimised images, fewer scripts, server rendering and good caching."
+        },
+        {
+          "type": "paragraph",
+          "text": "Accessibility is equally important. The WCAG 2.2 guidelines describe how to make content usable for people with disabilities, covering contrast, keyboard access, focus visibility and clear forms. Accessible sites are easier for everyone to use."
+        },
+        {
+          "type": "paragraph",
+          "text": "Security protects the business and its customers: HTTPS everywhere, security headers, rate-limited forms, least-privilege database access, patched dependencies and tested backups."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Common mistakes to avoid"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Launching without redirects from old URLs, which loses search visibility.",
+            "Heavy autoplay video or uncompressed images on the first screen.",
+            "Contact forms without spam protection or confirmation messages.",
+            "No owner for updates, so plugins and dependencies fall out of date.",
+            "Measuring traffic but not enquiries, sales or other real outcomes."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How long does it take to build a business website?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A focused marketing website usually takes six to fourteen weeks, depending on the number of templates, the amount of content and the integrations required. Web applications with accounts or payments take longer."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What is the difference between web design and web development?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Web design defines how a site looks and how people move through it. Web development turns that design into working code, connects data and integrations, and keeps the site fast and secure."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Should I use a CMS?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Yes, if non-technical people need to update content. A well-structured CMS keeps pages consistent while letting your team publish news, case studies and service updates without developer time."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Web Development services at GreenTech | /services/web-development\n- UI/UX Design | /services/ui-ux-design\n- Search Engine Optimization | /services/search-engine-optimization"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Web Vitals — web.dev | https://web.dev/articles/vitals\n2. Web Content Accessibility Guidelines (WCAG) 2.2 — W3C | https://www.w3.org/TR/WCAG22/\n3. SEO Starter Guide — Google Search Central | https://developers.google.com/search/docs/fundamentals/seo-starter-guide\n4. Web development — Wikipedia | https://en.wikipedia.org/wiki/Web_development"
+        }
+      ],
+      "coverPath": "/blog/web-development.svg",
+      "coverAlt": "Web Development guide — article cover illustration",
+      "railLabel": "Web Development",
+      "category": "Development",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "What Is Web Development? Process, Stack and Costs Explained",
+      "seoDescription": "A clear guide to web development: front end, back end, CMS, performance and security, plus how a professional website project runs from discovery to launch.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-mobile-app-development",
+    "slug": "mobile-app-development-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-10-14T09:00:00.000Z",
+    "doc": {
+      "title": "Mobile App Development Explained: Native, Cross-Platform and What to Choose",
+      "excerpt": "Mobile app development is the process of designing, building, testing and releasing applications for phones and tablets. Learn how native and cross-platform approaches compare and how a reliable app project is delivered.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Platforms: iOS (Apple) and Android (Google)\n- Approaches: Native, cross-platform, progressive web app\n- Common frameworks: Swift, Kotlin, React Native, Flutter\n- Release channels: Apple App Store and Google Play\n- GreenTech service: Mobile App Development | /services/mobile-app-development"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mobile app development is the work of creating software that runs on smartphones and tablets. It includes product planning, interface design, writing the app and its back-end services, testing on real devices, publishing to app stores and maintaining the app as operating systems change."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "People use apps for tasks they repeat: banking, ordering, booking, tracking and messaging. A successful app therefore focuses on a few frequent jobs and does them faster than a website could, often using device features such as notifications, the camera, location or biometric login."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Native, cross-platform or web?"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Native apps"
+        },
+        {
+          "type": "paragraph",
+          "text": "Native apps are written specifically for each platform, usually in Swift for iOS and Kotlin for Android. They offer the best access to new platform features and the most polished platform behaviour, but they mean maintaining two codebases."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Cross-platform apps"
+        },
+        {
+          "type": "paragraph",
+          "text": "Frameworks such as React Native and Flutter let one team share most of the code across iOS and Android. For many business apps this reduces cost and keeps features in sync, while still producing apps that feel native."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Progressive web apps"
+        },
+        {
+          "type": "paragraph",
+          "text": "A progressive web app (PWA) is a website that can be installed and can work offline. It avoids app-store review but has more limited access to device features, especially on iOS."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How an app project is delivered"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Product discovery: users, core jobs, success metrics and the smallest valuable release.",
+            "UX and interface design following Apple's Human Interface Guidelines and Material Design.",
+            "Architecture: app structure, API design, authentication and offline behaviour.",
+            "Iterative build in short sprints with test builds shared every one to two weeks.",
+            "Testing on real devices, accessibility checks and crash monitoring.",
+            "Store preparation: screenshots, privacy details, review submission.",
+            "Launch, analytics and a roadmap of improvements."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What users expect from a good app"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Fast start-up and responsive screens, even on older devices.",
+            "Clear onboarding that explains value before asking for permissions.",
+            "Secure sign-in, including passkeys or biometrics where appropriate.",
+            "Notifications that are useful and easy to control.",
+            "Accessibility support such as dynamic text sizes and screen readers."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Maintenance after launch"
+        },
+        {
+          "type": "paragraph",
+          "text": "Apple and Google release major operating system versions every year. Apps need updates to stay compatible, to meet new store policies and to patch security issues. Budgeting for maintenance from the start avoids an app that slowly breaks."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Is cross-platform development good enough for a business app?"
+        },
+        {
+          "type": "paragraph",
+          "text": "For most business apps, yes. Cross-platform frameworks are mature and widely used. Native development is worth the extra cost when an app depends heavily on the newest platform features or demanding graphics."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How long does it take to build an app?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A focused first release often takes three to six months, including design, back-end work, testing and store review. Complex apps with many integrations take longer."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Do I need a back end for my app?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Most apps do. Accounts, payments, content and notifications all require a secure server and database. The back end can often be shared with your website."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Mobile App Development services | /services/mobile-app-development\n- UI/UX Design | /services/ui-ux-design\n- Web Development | /services/web-development"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Human Interface Guidelines — Apple Developer | https://developer.apple.com/design/human-interface-guidelines/\n2. Material Design 3 — Google | https://m3.material.io/\n3. React Native documentation | https://reactnative.dev/\n4. Flutter documentation | https://flutter.dev/\n5. Mobile app development — Wikipedia | https://en.wikipedia.org/wiki/Mobile_app_development"
+        }
+      ],
+      "coverPath": "/blog/mobile-app-development.svg",
+      "coverAlt": "Mobile App Development guide — article cover illustration",
+      "railLabel": "Mobile App Development",
+      "category": "Development",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Mobile App Development: Native vs Cross-Platform Guide",
+      "seoDescription": "How mobile app development works: iOS and Android, native vs cross-platform frameworks, the delivery process, store release and long-term maintenance.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-ecommerce-development",
+    "slug": "ecommerce-development-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-10-16T09:00:00.000Z",
+    "doc": {
+      "title": "Ecommerce Development: How to Build an Online Store That Sells",
+      "excerpt": "Ecommerce development covers the platform, catalogue, checkout, payments and integrations behind an online store. This guide explains the choices that most affect conversion, speed and day-to-day operations.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Scope: Storefront, catalogue, cart, checkout, payments, fulfilment\n- Platform types: Hosted SaaS, open-source, headless\n- Average cart abandonment: about 70% (Baymard Institute)\n- Critical pages: Product listing, product detail, cart, checkout\n- GreenTech service: Ecommerce Development | /services/ecommerce-development"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ecommerce development is the design and engineering of online stores. It includes choosing a platform, structuring product data, building product and checkout pages, connecting payment and shipping providers, and integrating stock, accounting and marketing tools."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "An online store is a sales system, not just a website. Every step from search to payment can lose customers, so ecommerce development focuses on clarity, speed and trust. Baymard Institute's aggregated research puts average documented cart abandonment at roughly seven in ten carts, which shows how much revenue depends on a smooth checkout."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Choosing a platform"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Hosted platforms"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hosted SaaS platforms handle servers, security patches and payments for a monthly fee. They are quick to launch and suit most small and mid-sized stores."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Open-source platforms"
+        },
+        {
+          "type": "paragraph",
+          "text": "Open-source platforms offer full control over code and hosting. They suit businesses with unusual requirements and the budget for ongoing development and maintenance."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Headless commerce"
+        },
+        {
+          "type": "paragraph",
+          "text": "Headless setups separate the storefront (often built with Next.js) from the commerce engine. They allow highly custom, very fast experiences but require a stronger engineering team."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The pages that matter most"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Category and search pages: filters, sorting and fast results.",
+            "Product pages: clear photos, price, delivery information, reviews and stock status.",
+            "Cart: editable quantities, total cost including shipping, visible trust signals.",
+            "Checkout: guest checkout, few fields, address lookup and familiar payment methods.",
+            "Order confirmation and emails: what happens next and how to get help."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Speed and product SEO"
+        },
+        {
+          "type": "paragraph",
+          "text": "Store speed directly affects sales. Optimised product images, efficient filters and caching keep category pages fast. For search visibility, each product needs a unique title and description, clean URLs, and structured data using the schema.org Product type so search engines can show price and availability."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Integrations that keep a store running"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Payment gateways and fraud screening.",
+            "Shipping rates, label printing and tracking.",
+            "Inventory and order management.",
+            "Accounting and tax tools.",
+            "Email marketing and abandoned-cart reminders."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Which ecommerce platform is best?"
+        },
+        {
+          "type": "paragraph",
+          "text": "There is no single best platform. Hosted platforms suit most stores; open-source or headless setups suit businesses with complex catalogues, custom pricing or very high performance targets. The right choice depends on catalogue size, integrations and team skills."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How can I reduce cart abandonment?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Show full costs early, offer guest checkout, keep forms short, support popular payment methods and make delivery and returns information easy to find."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Do product pages need structured data?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Structured data is not required, but it helps search engines understand price, availability and reviews, and can make your listings more informative in results."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Ecommerce Development services | /services/ecommerce-development\n- Search Engine Optimization | /services/search-engine-optimization\n- Digital Marketing | /services/digital-marketing"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Cart Abandonment Rate statistics — Baymard Institute | https://baymard.com/lists/cart-abandonment-rate\n2. Product structured data type — schema.org | https://schema.org/Product\n3. Ecommerce guidance — Google Search Central | https://developers.google.com/search/docs/specialty/ecommerce\n4. E-commerce — Wikipedia | https://en.wikipedia.org/wiki/E-commerce"
+        }
+      ],
+      "coverPath": "/blog/ecommerce-development.svg",
+      "coverAlt": "Ecommerce Development guide — article cover illustration",
+      "railLabel": "Ecommerce Development",
+      "category": "Development",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Ecommerce Development Guide: Platforms, Checkout and Speed",
+      "seoDescription": "Ecommerce development explained: choosing a platform, product data, checkout and payments, store speed, product SEO and the integrations that keep a shop running.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-ui-ux-design",
+    "slug": "ui-ux-design-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-10-18T09:00:00.000Z",
+    "doc": {
+      "title": "UI/UX Design: What It Is and How It Improves Digital Products",
+      "excerpt": "UI design shapes how an interface looks; UX design shapes how it works for the people using it. This guide explains the UX process, core usability principles and how design systems keep products consistent.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- UX: How a product works and feels across a whole journey\n- UI: The visual and interactive layer of screens\n- Core methods: Research, journey mapping, wireframes, prototyping, testing\n- Accessibility standard: WCAG 2.2\n- GreenTech service: UI/UX Design | /services/ui-ux-design"
+        },
+        {
+          "type": "paragraph",
+          "text": "UI/UX design is the discipline of making digital products useful, usable and attractive. User experience (UX) design looks at the whole journey a person takes to complete a task. User interface (UI) design focuses on the screens themselves: layout, typography, colour, controls and feedback."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Good design reduces effort. When an interface is clear, people finish tasks faster, make fewer mistakes and need less support. That is why design work starts with understanding users and their goals, not with colours or animation."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The UX design process"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Research: interviews, analytics and support tickets reveal real needs and pain points.",
+            "Definition: personas, jobs to be done and success measures.",
+            "Information architecture: how content and features are grouped and named.",
+            "Wireframes: low-detail layouts that test structure before visual design.",
+            "Prototypes: clickable flows used to test ideas with real users.",
+            "Visual design: the UI layer, built on an accessible design system.",
+            "Validation: usability testing and analytics after release."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Usability principles"
+        },
+        {
+          "type": "paragraph",
+          "text": "Jakob Nielsen's ten usability heuristics remain a practical checklist. They include keeping users informed about system status, matching the language people use, giving users control to undo, staying consistent, preventing errors and favouring recognition over memory."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Accessibility is part of design"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Web Content Accessibility Guidelines (WCAG) 2.2 describe how to make interfaces usable for people with visual, motor, hearing and cognitive disabilities. Designers apply them through sufficient colour contrast, visible focus states, large enough touch targets, clear labels and error messages that explain how to fix a problem."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Design systems"
+        },
+        {
+          "type": "paragraph",
+          "text": "A design system is a shared library of colours, type styles, spacing, components and usage rules. It keeps products consistent, speeds up development and makes accessibility easier to maintain because each component is checked once and reused everywhere."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Deliverables you should expect"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Research summary and user journey maps.",
+            "Sitemap or product structure.",
+            "Wireframes and an interactive prototype.",
+            "High-fidelity screens for mobile and desktop.",
+            "A documented component library and design tokens."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What is the difference between UI and UX?"
+        },
+        {
+          "type": "paragraph",
+          "text": "UX is about how a product works for people across a whole task. UI is the visible layer of that experience: screens, controls and visual style. Both are needed for a product to feel good to use."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Why is user testing important?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Teams are too close to their own product to see its problems. Watching five or six real users attempt key tasks usually reveals the biggest usability issues quickly and cheaply."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Do small businesses need a design system?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Even a small site benefits from a lightweight design system: a defined palette, type scale and a handful of reusable components. It keeps the brand consistent as the site grows."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- UI/UX Design services | /services/ui-ux-design\n- Web Development | /services/web-development\n- Digital Branding & Creatives | /services/digital-branding-creatives"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. 10 Usability Heuristics for User Interface Design — Nielsen Norman Group | https://www.nngroup.com/articles/ten-usability-heuristics/\n2. Web Content Accessibility Guidelines (WCAG) 2.2 — W3C | https://www.w3.org/TR/WCAG22/\n3. Material Design 3 — Google | https://m3.material.io/\n4. User experience design — Wikipedia | https://en.wikipedia.org/wiki/User_experience_design"
+        }
+      ],
+      "coverPath": "/blog/ui-ux-design.svg",
+      "coverAlt": "UI/UX Design guide — article cover illustration",
+      "railLabel": "UI/UX Design",
+      "category": "Design",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "UI/UX Design Explained: Process, Principles and Deliverables",
+      "seoDescription": "What UI and UX design mean, how the design process works, the usability principles behind good interfaces, accessibility and why design systems matter.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-content-marketing",
+    "slug": "content-marketing-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-10-20T09:00:00.000Z",
+    "doc": {
+      "title": "Content Marketing: Building Content That Attracts and Converts Buyers",
+      "excerpt": "Content marketing is the practice of creating useful content that attracts a defined audience and moves them toward a purchase. Learn how to plan topics, produce consistently and measure what content actually delivers.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Goal: Attract, educate and convert a defined audience\n- Core assets: Articles, guides, case studies, video, email\n- Planning tools: Audience research, topic clusters, editorial calendar\n- Success measures: Qualified traffic, leads, assisted revenue\n- GreenTech service: Content Marketing | /services/content-marketing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content marketing is a marketing approach that earns attention by publishing genuinely useful material, such as guides, case studies, videos and newsletters, instead of interrupting people with advertising. The aim is to build trust with a defined audience so that, when they are ready to buy, your business is the obvious choice."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Buyers research before they contact a supplier. Content marketing makes sure the answers they find are yours. Done well, it supports search visibility, sales conversations, social media and email at the same time."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Building a content strategy"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Define the audience: roles, problems, questions and buying stages.",
+            "Set goals: for example qualified enquiries, newsletter sign-ups or demo requests.",
+            "Choose topics: map questions to stages from awareness to decision.",
+            "Organise topic clusters: a pillar page supported by detailed related articles.",
+            "Plan an editorial calendar with owners and deadlines.",
+            "Decide distribution: search, email, social, partners and sales enablement."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Formats that work"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "In-depth guides that answer a broad question completely.",
+            "Case studies that show a real problem, approach and result.",
+            "Comparison and pricing explainers for buyers close to a decision.",
+            "Short videos and visuals for social channels.",
+            "Email newsletters that keep past visitors engaged."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Writing content people trust"
+        },
+        {
+          "type": "paragraph",
+          "text": "Google's guidance on helpful, reliable, people-first content emphasises original insight, clear sourcing and demonstrated experience. Practical steps include naming the author, citing sources, updating articles when facts change, and answering the question directly before adding detail."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Measuring results"
+        },
+        {
+          "type": "paragraph",
+          "text": "Traffic alone is not a goal. Track how content contributes to enquiries and sales: conversions from content pages, assisted conversions, newsletter growth, and sales feedback on which pieces help close deals. Review performance quarterly and refresh or merge weak articles."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How often should we publish?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Consistency matters more than volume. One well-researched article every week or two, promoted properly, usually outperforms daily thin posts."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How long does content marketing take to work?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Search-driven content typically needs several months to gain visibility. Email and social distribution can show engagement sooner. Treat content as a compounding asset rather than a short campaign."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Should content be gated behind a form?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Gate only high-value assets such as detailed reports or templates. Keep educational articles open so they can be found, shared and cited."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Content Marketing services | /services/content-marketing\n- Copywriting | /services/copywriting\n- Search Engine Optimization | /services/search-engine-optimization"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Creating helpful, reliable, people-first content — Google Search Central | https://developers.google.com/search/docs/fundamentals/creating-helpful-content\n2. Content Marketing Institute | https://contentmarketinginstitute.com/\n3. Content marketing — Wikipedia | https://en.wikipedia.org/wiki/Content_marketing"
+        }
+      ],
+      "coverPath": "/blog/content-marketing.svg",
+      "coverAlt": "Content Marketing guide — article cover illustration",
+      "railLabel": "Content Marketing",
+      "category": "Marketing",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Content Marketing Guide: Strategy, Production and Measurement",
+      "seoDescription": "What content marketing is, how to build a content strategy, which formats work, how to publish consistently and how to measure content by leads and revenue.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-copywriting",
+    "slug": "copywriting-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-10-22T09:00:00.000Z",
+    "doc": {
+      "title": "Copywriting for Websites and Campaigns: Words That Move People to Act",
+      "excerpt": "Copywriting is persuasive writing that helps a reader understand an offer and take the next step. This guide covers proven structures, voice and tone, writing for the web and how to test copy.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Purpose: Persuade a reader to take a specific action\n- Common uses: Websites, landing pages, ads, emails, product pages\n- Classic structures: AIDA, Problem–Agitate–Solve, Before–After–Bridge\n- Key qualities: Clarity, specificity, credibility, a single call to action\n- GreenTech service: Copywriting | /services/copywriting"
+        },
+        {
+          "type": "paragraph",
+          "text": "Copywriting is the craft of writing text that leads a reader to act: book a call, buy a product, subscribe or keep reading. Unlike general content writing, every line of copy has a job in moving the reader toward a decision."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Visitors scan web pages quickly. Good copy respects that by putting the most important message first, using the reader's language and proving claims with specifics. Design gets attention; copy explains why it matters."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Proven structures"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "AIDA"
+        },
+        {
+          "type": "paragraph",
+          "text": "Attention, Interest, Desire, Action. Capture attention with a clear headline, build interest with the problem you solve, create desire with outcomes and proof, and end with one clear action."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Problem–Agitate–Solve"
+        },
+        {
+          "type": "paragraph",
+          "text": "Name the reader's problem, show its cost or frustration, then present your solution. It works well for services that fix painful situations."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Before–After–Bridge"
+        },
+        {
+          "type": "paragraph",
+          "text": "Describe life before, life after, and your product or service as the bridge between them."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Writing for the web"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Lead with the benefit, not the feature.",
+            "Use headings and short paragraphs so readers can scan.",
+            "Replace vague claims with specifics: numbers, timeframes and examples.",
+            "Use plain language and explain any necessary jargon.",
+            "Write descriptive link and button text, such as \"Book a discovery call\" instead of \"Click here\".",
+            "Keep one primary call to action per page section."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Voice and tone"
+        },
+        {
+          "type": "paragraph",
+          "text": "A brand voice is consistent personality in writing; tone adapts to the situation. A voice guide with examples of preferred words, phrases to avoid and sample rewrites keeps copy consistent across writers."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Honest, compliant claims"
+        },
+        {
+          "type": "paragraph",
+          "text": "Advertising claims must be truthful and substantiated. Avoid exaggeration you cannot prove, disclose material connections in endorsements, and follow consumer-protection guidance in the markets where you sell."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Testing copy"
+        },
+        {
+          "type": "paragraph",
+          "text": "Copy can be measured. Test headlines, calls to action and offer framing with A/B tests on landing pages or subject lines in email, and watch conversion rate rather than clicks alone."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What is the difference between copywriting and content writing?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Copywriting aims to drive a specific action, such as a purchase or enquiry. Content writing informs and educates over a longer period. Most websites need both."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How long should a landing page be?"
+        },
+        {
+          "type": "paragraph",
+          "text": "As long as needed to answer the buyer's questions and no longer. Simple, low-cost offers can be short; complex or expensive services usually need more explanation and proof."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Can AI write my copy?"
+        },
+        {
+          "type": "paragraph",
+          "text": "AI tools can help with drafts and variations, but strong copy still needs human understanding of the audience, the offer and the brand, plus careful fact-checking."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Copywriting services | /services/copywriting\n- Content Marketing | /services/content-marketing\n- Digital Branding & Creatives | /services/digital-branding-creatives"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Advertising and marketing guidance — U.S. Federal Trade Commission | https://www.ftc.gov/business-guidance/advertising-marketing\n2. Copywriting — Wikipedia | https://en.wikipedia.org/wiki/Copywriting\n3. Creating helpful, reliable, people-first content — Google Search Central | https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+        }
+      ],
+      "coverPath": "/blog/copywriting.svg",
+      "coverAlt": "Copywriting guide — article cover illustration",
+      "railLabel": "Copywriting",
+      "category": "Marketing",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Copywriting Guide: Website Copy, Structure and Testing",
+      "seoDescription": "What copywriting is, how persuasive structures work, writing clear website and campaign copy, brand voice, accessibility of language and how to test what converts.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-digital-marketing",
+    "slug": "digital-marketing-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-10-24T09:00:00.000Z",
+    "doc": {
+      "title": "Digital Marketing: How Paid and Organic Channels Work Together",
+      "excerpt": "Digital marketing promotes a business through online channels such as search, social media, email and advertising. This guide explains the main channels, how to plan a balanced mix and how to measure real return.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Definition: Marketing products and services through digital channels\n- Organic channels: SEO, content, social media, email\n- Paid channels: Search ads, social ads, display, retargeting\n- Core metrics: Cost per lead, conversion rate, customer acquisition cost\n- GreenTech service: Digital Marketing | /services/digital-marketing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Digital marketing is the promotion of products and services through online channels, including search engines, social media, email, websites and digital advertising. Its biggest advantage over traditional marketing is measurability: most activity can be tracked from first click to enquiry or sale."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Effective digital marketing combines channels that build long-term demand, such as search and content, with channels that capture demand quickly, such as paid search. The right mix depends on how buyers research, how long they take to decide and how much a customer is worth."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The main channels"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Search engine optimization"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO earns visibility in organic search results by improving technical quality, content and authority. It takes time but compounds."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Paid search"
+        },
+        {
+          "type": "paragraph",
+          "text": "Search ads appear for chosen keywords and capture people actively looking for a solution. Budgets, bids and ad copy can be adjusted daily."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Social media"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organic social builds community and trust; paid social reaches precise audiences by interests, roles or behaviour."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Email marketing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Email nurtures leads and existing customers at low cost. Segmented, useful emails outperform generic broadcasts."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Building a channel plan"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Define the business goal and the conversion that represents it.",
+            "Understand the buyer journey and where people look for answers.",
+            "Choose two or three priority channels instead of spreading budget thinly.",
+            "Create offers and landing pages matched to each channel's intent.",
+            "Set up conversion tracking before spending money.",
+            "Review results weekly for paid channels and monthly for organic ones."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Measuring return"
+        },
+        {
+          "type": "paragraph",
+          "text": "Useful metrics connect spend to revenue: cost per qualified lead, conversion rate by channel, customer acquisition cost and lifetime value. Attribution is never perfect, so combine analytics with CRM data and simple questions such as \"How did you hear about us?\"."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Privacy and consent"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tracking must respect privacy law and user consent. Use consent banners where required, collect only the data you need and keep your privacy policy accurate."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Which digital marketing channel is best?"
+        },
+        {
+          "type": "paragraph",
+          "text": "It depends on intent. Paid search captures existing demand quickly, SEO builds durable traffic, and social media creates awareness. Most businesses benefit from combining one demand-capture channel with one demand-building channel."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How much should we spend on digital marketing?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start from your target cost per customer and the value of a customer, then test a budget large enough to gather meaningful data for a few weeks before scaling."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How soon will we see results?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Paid channels can produce leads within days of launch. SEO and content usually take several months."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Digital Marketing services | /services/digital-marketing\n- Social Media Marketing | /services/social-media-marketing\n- Search Engine Optimization | /services/search-engine-optimization"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Search Essentials — Google Search Central | https://developers.google.com/search/docs/essentials\n2. Advertising and marketing guidance — U.S. Federal Trade Commission | https://www.ftc.gov/business-guidance/advertising-marketing\n3. Digital marketing — Wikipedia | https://en.wikipedia.org/wiki/Digital_marketing"
+        }
+      ],
+      "coverPath": "/blog/digital-marketing.svg",
+      "coverAlt": "Digital Marketing guide — article cover illustration",
+      "railLabel": "Digital Marketing",
+      "category": "Marketing",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Digital Marketing Guide: Channels, Strategy and Measurement",
+      "seoDescription": "Digital marketing explained: search, paid ads, social, email and content; how to build a channel plan, set budgets, track conversions and measure return on spend.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-social-media-marketing",
+    "slug": "social-media-marketing-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-10-26T09:00:00.000Z",
+    "doc": {
+      "title": "Social Media Marketing: Turning Attention Into Community and Growth",
+      "excerpt": "Social media marketing uses social platforms to build awareness, community and demand. Learn how to choose platforms, plan content pillars, combine organic and paid social and measure what matters.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Purpose: Awareness, community, traffic and leads\n- Approaches: Organic content, community management, paid social, creators\n- Planning tools: Content pillars, calendar, brand guidelines\n- Key metrics: Reach, engagement rate, click-through, conversions\n- GreenTech service: Social Media Marketing | /services/social-media-marketing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Social media marketing is the use of social platforms, such as LinkedIn, Instagram, Facebook, TikTok, X and YouTube, to reach an audience, build relationships and drive business results. It combines organic publishing, community conversations and paid advertising."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Social platforms are where people discover brands, ask for recommendations and judge credibility. A consistent, helpful presence shows that a business is active and trustworthy, while paid social lets you reach new audiences with precise targeting."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Choosing the right platforms"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pick platforms where your buyers already spend time and where your content format fits. B2B services often prioritise LinkedIn; consumer brands may focus on Instagram, TikTok or YouTube. It is better to do two platforms well than five poorly."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Content pillars"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Expertise: tips, explainers and answers to common questions.",
+            "Proof: case studies, results and client stories (with permission).",
+            "Culture: the team, values and behind-the-scenes work.",
+            "Offers: services, events and clear calls to action."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Organic and paid together"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organic content builds trust with existing followers. Paid social extends reach to new audiences and can retarget website visitors. Use your best-performing organic posts as the starting point for ads."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Community management"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reply to comments and messages promptly, thank people for mentions and handle complaints publicly with care before moving details to a private channel. Community management turns followers into advocates."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Measuring performance"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Reach and impressions show visibility.",
+            "Engagement rate shows whether content resonates.",
+            "Link clicks and conversions show business impact.",
+            "Follower growth matters less than the quality of the audience."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How often should a business post on social media?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Post as often as you can maintain quality and consistency. For many businesses three to five posts per week on a primary platform is sustainable."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Should we use influencers or creators?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Creators can be effective when their audience matches your buyers. Agree clear deliverables, disclose paid partnerships as required, and measure results like any other channel."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Is paid social worth it?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Paid social is worth testing when you have a clear offer, a fast landing page and conversion tracking in place."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Social Media Marketing services | /services/social-media-marketing\n- Digital Marketing | /services/digital-marketing\n- Video & Animation | /services/video-animation-2d-3d"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Advertising and marketing guidance — U.S. Federal Trade Commission | https://www.ftc.gov/business-guidance/advertising-marketing\n2. Social media marketing — Wikipedia | https://en.wikipedia.org/wiki/Social_media_marketing"
+        }
+      ],
+      "coverPath": "/blog/social-media-marketing.svg",
+      "coverAlt": "Social Media Marketing guide — article cover illustration",
+      "railLabel": "Social Media Marketing",
+      "category": "Marketing",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Social Media Marketing Guide: Platforms, Content and Ads",
+      "seoDescription": "How social media marketing works: choosing platforms, content pillars, posting rhythm, community management, paid social and measuring engagement and leads.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-search-engine-optimization",
+    "slug": "search-engine-optimization-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-10-28T09:00:00.000Z",
+    "doc": {
+      "title": "Search Engine Optimization (SEO): A Complete Beginner-to-Pro Guide",
+      "excerpt": "Search engine optimization is the practice of improving a website so it earns more relevant visits from organic search. This guide covers technical SEO, content, links, local search and how to measure progress.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Definition: Improving visibility in unpaid search results\n- Three pillars: Technical quality, helpful content, authority\n- Key tools: Google Search Console, analytics, site crawlers\n- Typical time to impact: Several months\n- GreenTech service: Search Engine Optimization | /services/search-engine-optimization"
+        },
+        {
+          "type": "paragraph",
+          "text": "Search engine optimization (SEO) is the process of improving a website so that search engines can find, understand and rank its pages for the searches your customers make. Unlike ads, organic rankings are not bought; they are earned through technical quality, useful content and a trustworthy reputation."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How search engines work"
+        },
+        {
+          "type": "paragraph",
+          "text": "Search engines follow three broad steps. They crawl the web to discover pages, index those pages by analysing their content, and rank indexed pages for each query based on relevance and quality. SEO work helps at each step."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Technical SEO"
+        },
+        {
+          "type": "paragraph",
+          "text": "Technical SEO makes sure search engines can access and interpret your site:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "A clean XML sitemap and a robots.txt file that does not block important pages.",
+            "Fast, mobile-friendly pages that meet Core Web Vitals.",
+            "One canonical URL per page and correct redirects after changes.",
+            "Descriptive title tags and meta descriptions.",
+            "Structured data that describes organisations, services, products, articles and FAQs.",
+            "HTTPS everywhere and no broken internal links."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Content"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content answers the questions behind searches. Google's guidance asks for helpful, reliable, people-first content that shows real experience and expertise. In practice that means researching what people search for, matching the intent (learn, compare or buy), answering clearly and keeping pages updated."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Authority and links"
+        },
+        {
+          "type": "paragraph",
+          "text": "Links from relevant, reputable websites signal trust. Earn them with genuinely useful resources, original data, partnerships and digital PR. Avoid buying links or joining link schemes, which violate search engine policies."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Local SEO"
+        },
+        {
+          "type": "paragraph",
+          "text": "Businesses serving specific areas should maintain an accurate business profile, consistent name, address and phone details across directories, location pages with real information and reviews from genuine customers."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Measuring SEO"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Impressions, clicks and average position in Google Search Console.",
+            "Indexed pages and coverage errors.",
+            "Organic conversions such as enquiries and sales.",
+            "Rankings for priority topics, tracked over months rather than days."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How long does SEO take?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Most sites need several months to see meaningful change, depending on competition, the site's history and how much work is done. Technical fixes can show effects sooner."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Is SEO still relevant with AI search?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Yes. AI-powered search features still rely on crawlable, high-quality pages. Strong SEO foundations also support generative engine optimization."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Can we guarantee a number one ranking?"
+        },
+        {
+          "type": "paragraph",
+          "text": "No one can guarantee rankings, because search engines control their algorithms. Be wary of any provider who promises a specific position."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Search Engine Optimization services | /services/search-engine-optimization\n- Generative Engine Optimization | /services/generative-engine-optimization\n- Content Marketing | /services/content-marketing"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. SEO Starter Guide — Google Search Central | https://developers.google.com/search/docs/fundamentals/seo-starter-guide\n2. Search Essentials — Google Search Central | https://developers.google.com/search/docs/essentials\n3. Introduction to structured data — Google Search Central | https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data\n4. Search engine optimization — Wikipedia | https://en.wikipedia.org/wiki/Search_engine_optimization"
+        }
+      ],
+      "coverPath": "/blog/search-engine-optimization.svg",
+      "coverAlt": "Search Engine Optimization guide — article cover illustration",
+      "railLabel": "Search Engine Optimization",
+      "category": "SEO",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "SEO Guide: Technical SEO, Content and Links Explained",
+      "seoDescription": "What search engine optimization is and how it works: crawling and indexing, technical SEO, helpful content, links, local SEO, structured data and measuring results.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-generative-engine-optimization",
+    "slug": "generative-engine-optimization-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-10-30T09:00:00.000Z",
+    "doc": {
+      "title": "Generative Engine Optimization (GEO): Getting Your Brand Into AI Answers",
+      "excerpt": "Generative engine optimization is the practice of making content easy for AI search assistants to find, understand and cite. Learn how GEO relates to SEO and the practical steps that improve your chances of appearing in AI answers.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Definition: Optimising content to be cited in AI-generated answers\n- Term origin: Research paper \"GEO: Generative Engine Optimization\" (2023)\n- Builds on: Technical SEO, structured content, authority\n- Useful formats: Clear definitions, statistics with sources, FAQs, comparisons\n- GreenTech service: Generative Engine Optimization | /services/generative-engine-optimization"
+        },
+        {
+          "type": "paragraph",
+          "text": "Generative engine optimization (GEO) is the practice of shaping content so that AI-powered answer engines, such as AI overviews in search and chat assistants, can find it, understand it and cite it when they generate answers. The term was popularised by a 2023 research paper from Princeton University and partner researchers."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Traditional search shows a list of links. Generative engines write an answer and may cite a few sources. If your business is not among those sources, a potential customer may never visit your site. GEO aims to make your expertise the material those systems rely on."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How GEO relates to SEO"
+        },
+        {
+          "type": "paragraph",
+          "text": "GEO does not replace SEO. AI search features generally draw on content that is crawlable, indexed and trusted, so technical SEO remains the foundation. GEO adds a focus on how content is written and structured so that individual passages can be extracted and quoted accurately."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What makes content citable"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Direct answers: state the answer in the first sentence under a clear heading.",
+            "Definitions: explain key terms plainly, as an encyclopedia would.",
+            "Evidence: include statistics and claims with named, linked sources.",
+            "Structure: descriptive headings, short paragraphs, lists and tables.",
+            "Entities: consistent names for your company, services, people and locations.",
+            "Freshness: dates, version numbers and regular updates on changing topics."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The GEO research paper found that adding citations, quotations and statistics to content could improve visibility in generative engine responses in its experiments."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Technical signals"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Allow reputable crawlers in robots.txt unless you have a reason to block them.",
+            "Publish structured data for your organisation, services, articles and FAQs.",
+            "Keep an up-to-date sitemap and fast, server-rendered pages.",
+            "Consider an llms.txt file that points AI tools to your most important pages."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Measuring GEO"
+        },
+        {
+          "type": "paragraph",
+          "text": "Measurement is still developing. Practical methods include checking how AI assistants describe your brand for priority questions, tracking referral traffic from AI tools in analytics and monitoring branded search demand."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Is GEO different from AEO?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Answer engine optimization (AEO) usually refers to winning direct answers such as featured snippets and voice results. GEO extends the idea to generative AI answers. The practical techniques overlap heavily."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Can I pay to appear in AI answers?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organic AI answers cannot be bought. Some platforms offer advertising formats, but citations in generated answers depend on content quality and relevance."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Do I need new content for GEO?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Often you can improve existing pages first: add clear definitions, sources, FAQs and structured data to the content that already ranks."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Generative Engine Optimization services | /services/generative-engine-optimization\n- Search Engine Optimization | /services/search-engine-optimization\n- Artificial Intelligence | /services/artificial-intelligence"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Aggarwal et al., \"GEO: Generative Engine Optimization\" — arXiv | https://arxiv.org/abs/2311.09735\n2. AI features and your website — Google Search Central | https://developers.google.com/search/docs/appearance/ai-features\n3. The /llms.txt file proposal | https://llmstxt.org/\n4. Introduction to structured data — Google Search Central | https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
+        }
+      ],
+      "coverPath": "/blog/generative-engine-optimization.svg",
+      "coverAlt": "Generative Engine Optimization guide — article cover illustration",
+      "railLabel": "Generative Engine Optimization",
+      "category": "GEO",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Generative Engine Optimization (GEO): Complete Guide",
+      "seoDescription": "What generative engine optimization is, how AI answer engines select sources, how GEO differs from SEO and practical steps to make your brand citable in AI answers.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-artificial-intelligence",
+    "slug": "artificial-intelligence-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-11-01T09:00:00.000Z",
+    "doc": {
+      "title": "Artificial Intelligence for Business: Practical Uses, Risks and Getting Started",
+      "excerpt": "Artificial intelligence lets software perform tasks that normally need human judgement, such as understanding language or spotting patterns. This guide explains practical business uses, how to run a first AI project and how to manage risk.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Definition: Software that performs tasks requiring human-like judgement\n- Common business uses: Assistants, document processing, search, forecasting\n- Key technologies: Machine learning, large language models, computer vision\n- Risk framework: NIST AI Risk Management Framework\n- GreenTech service: Artificial Intelligence | /services/artificial-intelligence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Artificial intelligence (AI) is a field of computer science that builds systems able to perform tasks normally associated with human intelligence, such as understanding language, recognising images, making predictions and generating text. For businesses, AI is most valuable when it removes repetitive work or helps people make better decisions faster."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Modern AI ranges from classic machine learning models that predict outcomes from historical data to large language models (LLMs) that can read, summarise and draft text. Most successful business projects start small, target a clear workflow and keep a human in the loop."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Practical business uses"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Customer and staff assistants that answer questions from approved knowledge.",
+            "Document processing: extracting data from invoices, forms and contracts.",
+            "Semantic search across internal documents and help centres.",
+            "Lead scoring, demand forecasting and anomaly detection.",
+            "Drafting content, summaries and reports for human review."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Running a first AI project"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Pick one workflow with clear volume, cost and a measurable outcome.",
+            "Map the current process and where errors or delays happen.",
+            "Check data: availability, quality, permissions and privacy.",
+            "Build a small pilot with real users and a fallback to manual handling.",
+            "Evaluate accuracy, time saved and user satisfaction against a baseline.",
+            "Decide whether to scale, adjust or stop."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Managing risk"
+        },
+        {
+          "type": "paragraph",
+          "text": "AI systems can be wrong with confidence, reflect bias in their data or expose sensitive information if poorly designed. Good practice includes limiting the data a system can access, logging decisions, testing with realistic edge cases, telling users when they are interacting with AI and keeping human review for consequential decisions. The NIST AI Risk Management Framework and the OECD AI Principles provide widely used structures for this work."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Build or buy?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Many needs can be met with existing AI services connected to your systems through APIs. Custom models make sense when you have unique data, strict control requirements or high volume that justifies the investment."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Will AI replace our staff?"
+        },
+        {
+          "type": "paragraph",
+          "text": "In most businesses AI changes tasks rather than replacing whole roles. It handles repetitive steps so people can focus on judgement, relationships and exceptions."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Is our data safe with AI tools?"
+        },
+        {
+          "type": "paragraph",
+          "text": "It depends on the tool and configuration. Use providers with clear data-handling terms, restrict access to sensitive data and avoid sending personal information unless necessary and lawful."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How do we measure AI value?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Compare the pilot against a baseline: time per task, error rate, customer satisfaction and cost. If the numbers do not improve, the project should not scale."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Artificial Intelligence services | /services/artificial-intelligence\n- Generative Engine Optimization | /services/generative-engine-optimization\n- IT Resource Outsourcing | /services/it-resource-outsourcing"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. AI Risk Management Framework — NIST | https://www.nist.gov/itl/ai-risk-management-framework\n2. OECD AI Principles | https://oecd.ai/en/ai-principles\n3. Artificial intelligence — Wikipedia | https://en.wikipedia.org/wiki/Artificial_intelligence"
+        }
+      ],
+      "coverPath": "/blog/artificial-intelligence.svg",
+      "coverAlt": "Artificial Intelligence guide — article cover illustration",
+      "railLabel": "Artificial Intelligence",
+      "category": "AI",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "AI for Business: Practical Use Cases and Implementation Guide",
+      "seoDescription": "How businesses use artificial intelligence: automation, assistants, search and analytics; how to scope a pilot, prepare data, manage risk and measure value.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-augmented-reality",
+    "slug": "augmented-reality-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-11-03T09:00:00.000Z",
+    "doc": {
+      "title": "Augmented Reality (AR) for Brands: How It Works and Where It Pays Off",
+      "excerpt": "Augmented reality overlays digital content on the real world through a phone, tablet or headset. Learn how AR works, the most useful business applications and how to plan an AR experience people will actually use.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Definition: Digital content layered onto a live view of the real world\n- Devices: Smartphones, tablets, AR glasses and headsets\n- Toolkits: ARKit (Apple), ARCore (Google), WebXR\n- Strong use cases: Product visualisation, training, wayfinding, marketing\n- GreenTech service: Augmented Reality | /services/augmented-reality"
+        },
+        {
+          "type": "paragraph",
+          "text": "Augmented reality (AR) is technology that adds digital elements, such as 3D models, labels or animations, to a person's view of the real world in real time. Unlike virtual reality, AR keeps users in their actual environment."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How AR works"
+        },
+        {
+          "type": "paragraph",
+          "text": "An AR system uses a device's camera and sensors to understand the space around it: flat surfaces, lighting and the device's position. It then places digital objects so they appear anchored in the room. Apple's ARKit and Google's ARCore provide these capabilities on phones, and the WebXR standard brings AR to supported browsers."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "WebAR or app-based AR?"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "WebAR"
+        },
+        {
+          "type": "paragraph",
+          "text": "Runs in the browser with no download, which removes friction for marketing campaigns and product previews. Capabilities vary by device and browser."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "App-based AR"
+        },
+        {
+          "type": "paragraph",
+          "text": "Offers the most advanced tracking and performance and suits repeated use, such as training or field-service tools, but requires users to install an app."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Business applications"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Product visualisation: placing furniture, equipment or packaging at real scale.",
+            "Training: step-by-step guidance overlaid on machinery.",
+            "Retail and marketing: interactive packaging, try-ons and campaigns.",
+            "Wayfinding: guidance in venues, campuses and events.",
+            "Sales: showing large products that cannot be brought to a meeting."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Planning an AR experience"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Define the job AR does better than a photo or video.",
+            "Identify the target devices and decide between WebAR and an app.",
+            "Prepare optimised 3D assets with accurate scale and materials.",
+            "Design clear onboarding: how to scan, place and interact.",
+            "Test in real lighting and spaces, not only in the studio.",
+            "Measure engagement time, conversions and return visits."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Do customers need special hardware for AR?"
+        },
+        {
+          "type": "paragraph",
+          "text": "No. Most recent smartphones support AR. Headsets and glasses add hands-free use but are not required for most marketing and product experiences."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How much 3D content do we need?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Start with a small set of priority products or scenes. Well-optimised 3D models load faster and look better than a large library of heavy files."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What is the difference between AR and VR?"
+        },
+        {
+          "type": "paragraph",
+          "text": "AR adds digital content to the real world; VR replaces the real world with a fully virtual environment."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Augmented Reality services | /services/augmented-reality\n- Virtual Reality | /services/virtual-reality\n- 2D/3D Video Animation | /services/video-animation-2d-3d"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Augmented reality — Apple Developer | https://developer.apple.com/augmented-reality/\n2. ARCore — Google for Developers | https://developers.google.com/ar\n3. WebXR Device API — W3C | https://www.w3.org/TR/webxr/\n4. Augmented reality — Wikipedia | https://en.wikipedia.org/wiki/Augmented_reality"
+        }
+      ],
+      "coverPath": "/blog/augmented-reality.svg",
+      "coverAlt": "Augmented Reality guide — article cover illustration",
+      "railLabel": "Augmented Reality",
+      "category": "Emerging Tech",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Augmented Reality for Business: Uses, Tech and Planning",
+      "seoDescription": "What augmented reality is, how AR works on phones and headsets, WebAR vs app-based AR, the best business use cases and how to plan an AR project.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-virtual-reality",
+    "slug": "virtual-reality-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-11-05T09:00:00.000Z",
+    "doc": {
+      "title": "Virtual Reality (VR) for Training, Storytelling and Engagement",
+      "excerpt": "Virtual reality places people inside a fully digital environment using a headset. This guide explains how VR works, where it creates real business value and what to consider before commissioning a VR experience.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Definition: A fully immersive, computer-generated environment\n- Hardware: Standalone and PC-connected headsets, controllers, hand tracking\n- Open standard: OpenXR (Khronos Group)\n- Strong use cases: Training, simulation, virtual tours, events\n- GreenTech service: Virtual Reality | /services/virtual-reality"
+        },
+        {
+          "type": "paragraph",
+          "text": "Virtual reality (VR) is a technology that immerses a user in a computer-generated environment, usually through a head-mounted display that tracks head and hand movement. Because the experience surrounds the user, VR is especially effective for practising skills and understanding spaces."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How VR works"
+        },
+        {
+          "type": "paragraph",
+          "text": "A VR headset shows a slightly different image to each eye to create depth and updates the view as the user moves. Sensors track position, and controllers or hand tracking let users interact. The OpenXR standard from the Khronos Group helps developers build experiences that run across different headsets."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Where VR creates value"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Training and simulation"
+        },
+        {
+          "type": "paragraph",
+          "text": "VR lets people rehearse procedures, safety drills and customer conversations without real-world risk or cost, and lets them repeat scenarios until confident."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Sales and virtual tours"
+        },
+        {
+          "type": "paragraph",
+          "text": "Buyers can explore properties, facilities or large products before they exist or without travelling."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Storytelling and events"
+        },
+        {
+          "type": "paragraph",
+          "text": "Immersive stories and virtual events create memorable brand experiences and can reach remote audiences."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Comfort and accessibility"
+        },
+        {
+          "type": "paragraph",
+          "text": "Poorly designed VR can cause discomfort or motion sickness. Good practice includes stable frame rates, teleport or comfortable movement options, seated modes, short session lengths for new users, readable text and alternatives for people who cannot use a headset."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Planning a VR project"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Define the learning or business outcome you want to change.",
+            "Choose target headsets and whether users will be guided or self-serve.",
+            "Script scenarios and interactions before building 3D environments.",
+            "Prototype early and test comfort with real users.",
+            "Plan device management, updates and hygiene for shared headsets.",
+            "Measure completion, performance improvement and feedback."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Is VR only for gaming?"
+        },
+        {
+          "type": "paragraph",
+          "text": "No. Training, healthcare, engineering, real estate and education all use VR because practising in a simulated environment is safe and repeatable."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Do we need expensive equipment?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Standalone headsets have made VR far more affordable and portable. PC-connected headsets are needed only for very high-fidelity simulations."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How is VR different from AR?"
+        },
+        {
+          "type": "paragraph",
+          "text": "VR replaces your surroundings with a virtual world; AR adds digital content to the real world you can still see."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Virtual Reality services | /services/virtual-reality\n- Augmented Reality | /services/augmented-reality\n- 2D/3D Video Animation | /services/video-animation-2d-3d"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. OpenXR — The Khronos Group | https://www.khronos.org/openxr/\n2. WebXR Device API — W3C | https://www.w3.org/TR/webxr/\n3. Virtual reality — Wikipedia | https://en.wikipedia.org/wiki/Virtual_reality"
+        }
+      ],
+      "coverPath": "/blog/virtual-reality.svg",
+      "coverAlt": "Virtual Reality guide — article cover illustration",
+      "railLabel": "Virtual Reality",
+      "category": "Emerging Tech",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Virtual Reality for Business: Training, Storytelling and ROI",
+      "seoDescription": "What virtual reality is, how VR headsets work, business uses in training, sales and storytelling, comfort and accessibility, and how to plan a VR project.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-digital-branding-creatives",
+    "slug": "digital-branding-creatives-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-11-07T09:00:00.000Z",
+    "doc": {
+      "title": "Digital Branding: Building a Brand System That Works Everywhere",
+      "excerpt": "Digital branding defines how a business looks, sounds and behaves across websites, social media, apps and advertising. Learn what a brand system includes and how to keep creative work consistent as you grow.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Definition: How a brand is expressed across digital channels\n- Core parts: Strategy, visual identity, verbal identity, guidelines\n- Visual identity: Logo, colour, typography, imagery, motion\n- Success signals: Recognition, consistency, trust, preference\n- GreenTech service: Digital Branding & Creatives | /services/digital-branding-creatives"
+        },
+        {
+          "type": "paragraph",
+          "text": "Digital branding is the strategy and creative system that shapes how a business is perceived online. It covers the brand's positioning and personality, its visual identity (logo, colours, typography, imagery) and its verbal identity (name, tagline, voice), applied consistently across every digital touchpoint."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "People judge businesses quickly, often from a website, a social profile or an ad. A coherent brand makes a company recognisable and trustworthy, and it makes marketing more efficient because every asset reinforces the same idea."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The parts of a brand system"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Strategy"
+        },
+        {
+          "type": "paragraph",
+          "text": "Who the brand serves, what it promises, how it differs from competitors and what it values. Strategy guides every creative decision."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Visual identity"
+        },
+        {
+          "type": "paragraph",
+          "text": "The logo and its variations, colour palette, type families, iconography, photography or illustration style, layout principles and motion behaviour."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Verbal identity"
+        },
+        {
+          "type": "paragraph",
+          "text": "Brand name, tagline, key messages and voice: the consistent personality of the brand's writing."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Guidelines"
+        },
+        {
+          "type": "paragraph",
+          "text": "A practical guide showing correct and incorrect usage, with ready-to-use templates for social posts, presentations and ads."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Designing for screens"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Create logo versions that stay clear at very small sizes, such as favicons and app icons.",
+            "Choose colour combinations that meet accessibility contrast requirements.",
+            "Select typefaces licensed for web and app use and with good on-screen legibility.",
+            "Define motion principles so animation feels consistent across products.",
+            "Build design tokens so the identity can be applied in code."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Keeping creative consistent"
+        },
+        {
+          "type": "paragraph",
+          "text": "Brands drift when many people create assets without shared tools. Central templates, a shared asset library, simple approval steps and a design system for digital products keep quality high as output grows."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "What is the difference between a brand and a logo?"
+        },
+        {
+          "type": "paragraph",
+          "text": "A logo is one symbol. A brand is the whole perception people have of a business, shaped by its promise, behaviour, visuals and words."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "When should a business rebrand?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Consider a rebrand when the current identity no longer reflects what the company offers, confuses customers, fails on digital channels or follows a merger or major change in strategy."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Do brand colours need to be accessible?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Yes. Text and interface colours must have enough contrast to be readable. A good palette includes accessible combinations for both light and dark backgrounds."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- Digital Branding & Creatives services | /services/digital-branding-creatives\n- UI/UX Design | /services/ui-ux-design\n- 2D/3D Video Animation | /services/video-animation-2d-3d"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. Brand — Wikipedia | https://en.wikipedia.org/wiki/Brand\n2. Web Content Accessibility Guidelines (WCAG) 2.2 — W3C | https://www.w3.org/TR/WCAG22/\n3. Material Design 3 (design tokens and theming) — Google | https://m3.material.io/"
+        }
+      ],
+      "coverPath": "/blog/digital-branding-creatives.svg",
+      "coverAlt": "Digital Branding & Creatives guide — article cover illustration",
+      "railLabel": "Digital Branding & Creatives",
+      "category": "Branding",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "Digital Branding Guide: Brand Strategy, Identity and Systems",
+      "seoDescription": "What digital branding is, the parts of a brand system (strategy, identity, voice, guidelines), designing for screens and how to keep creative consistent across channels.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-it-resource-outsourcing",
+    "slug": "it-resource-outsourcing-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-11-09T09:00:00.000Z",
+    "doc": {
+      "title": "IT Resource Outsourcing: How to Extend Your Team With Dedicated Specialists",
+      "excerpt": "IT resource outsourcing gives a business access to engineers, designers and other specialists without hiring them full time. This guide compares engagement models and explains how to set up an outsourced team for success.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- Definition: Using external specialists to extend in-house capability\n- Models: Staff augmentation, dedicated team, managed project\n- Typical roles: Developers, QA engineers, designers, DevOps, marketers\n- Success factors: Clear ownership, shared tools, security, regular reviews\n- GreenTech service: IT Resource Outsourcing | /services/it-resource-outsourcing"
+        },
+        {
+          "type": "paragraph",
+          "text": "IT resource outsourcing is the practice of engaging external professionals, such as software developers, designers, QA engineers or DevOps specialists, to work on a company's projects. It lets a business add skills and capacity quickly without the time and cost of permanent hiring."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hiring experienced technical staff is slow and competitive. Outsourcing provides vetted people who can start soon, scale up or down with demand and bring experience from many projects."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Engagement models"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Staff augmentation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Individual specialists join your existing team and follow your processes and management. Best when you have strong technical leadership and need extra hands or specific skills."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Dedicated team"
+        },
+        {
+          "type": "paragraph",
+          "text": "A complete team, often with a lead, works only on your product over a long period. Best for ongoing product development without building an internal department."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Managed project"
+        },
+        {
+          "type": "paragraph",
+          "text": "The provider takes responsibility for delivering a defined scope, timeline and outcome. Best for well-defined projects such as a website build or migration."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Benefits and risks"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Benefits: faster start, flexible capacity, access to specialist skills, predictable cost.",
+            "Risks: communication gaps, knowledge leaving with the team, security exposure and unclear ownership.",
+            "Mitigation: documented processes, shared repositories, code reviews, access controls and handover plans."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Setting up for success"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Define goals, responsibilities and decision-makers on both sides.",
+            "Share tools: code repository, task board, documentation and chat.",
+            "Agree working hours overlap and a regular meeting rhythm.",
+            "Set quality standards: code review, testing and definition of done.",
+            "Control access with least-privilege accounts and revoke them promptly when people leave.",
+            "Review delivery and satisfaction monthly."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Security and compliance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Outsourced teams should follow your security policies, sign confidentiality agreements and work in company-controlled accounts. Frameworks such as ISO/IEC 27001 describe information security management practices many providers follow, and data-protection law applies to personal data processed on your behalf."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Is outsourcing cheaper than hiring?"
+        },
+        {
+          "type": "paragraph",
+          "text": "It is often more cost-effective for short or variable needs because you avoid recruitment, onboarding and idle time. For permanent core roles, hiring may be better long term."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Who owns the code an outsourced team writes?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ownership should be set out in the contract. Normally the client owns all work product and intellectual property once paid for."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How do we keep knowledge in-house?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Require documentation, keep everything in your repositories and accounts, and plan structured handovers when people rotate."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- IT Resource Outsourcing services | /services/it-resource-outsourcing\n- Web Development | /services/web-development\n- Mobile App Development | /services/mobile-app-development"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. ISO/IEC 27001 Information security management — ISO | https://www.iso.org/standard/27001\n2. Data protection in the EU — European Commission | https://commission.europa.eu/law/law-topic/data-protection_en\n3. Outsourcing — Wikipedia | https://en.wikipedia.org/wiki/Outsourcing"
+        }
+      ],
+      "coverPath": "/blog/it-resource-outsourcing.svg",
+      "coverAlt": "IT Resource Outsourcing guide — article cover illustration",
+      "railLabel": "IT Resource Outsourcing",
+      "category": "Development",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "IT Resource Outsourcing Guide: Models, Benefits and Setup",
+      "seoDescription": "How IT resource outsourcing works: staff augmentation vs dedicated teams vs project delivery, benefits and risks, security, communication and measuring outcomes.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
+    }
+  },
+  {
+    "id": "guide-video-animation-2d-3d",
+    "slug": "video-animation-2d-3d-guide",
+    "featured": false,
+    "homepageOrder": 0,
+    "firstPublishedAt": "2026-11-11T09:00:00.000Z",
+    "doc": {
+      "title": "2D and 3D Animation for Business: Explainers, Product Films and Motion Design",
+      "excerpt": "2D and 3D animation turn complex ideas into clear, memorable visuals. Learn the difference between animation styles, how an animation project is produced and how to use motion across websites, ads and social media.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key facts\n- 2D animation: Flat illustration and motion graphics\n- 3D animation: Modelled objects and scenes rendered with lighting\n- Common outputs: Explainer videos, product films, social clips, UI motion\n- Production stages: Script, storyboard, design, animation, sound, delivery\n- GreenTech service: 2D/3D Video Animation | /services/video-animation-2d-3d"
+        },
+        {
+          "type": "paragraph",
+          "text": "Animation is the technique of creating the illusion of movement from a sequence of images. In business communication, 2D and 3D animation are used to explain products, services and processes that are hard to film, too abstract to photograph or simply clearer when simplified."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "2D vs 3D"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "2D animation and motion graphics"
+        },
+        {
+          "type": "paragraph",
+          "text": "2D work uses flat illustration, typography and shapes. It is fast to produce, easy to keep on-brand and ideal for explainer videos, social content and interface animation."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "3D animation"
+        },
+        {
+          "type": "paragraph",
+          "text": "3D animation builds objects and environments as digital models, then lights and renders them. It is ideal for product visualisation, showing internal mechanisms, architectural walk-throughs and premium campaign films."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "How an animation project is produced"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Brief: audience, key message, call to action, length and channels.",
+            "Script: usually around 130–150 spoken words per minute of video.",
+            "Storyboard: frame-by-frame sketches showing the visual sequence.",
+            "Style frames: final-quality stills that set the look.",
+            "Animation: movement, timing and transitions.",
+            "Sound: voice-over, music and sound design.",
+            "Delivery: formats and aspect ratios for each channel, with captions."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Using motion on websites"
+        },
+        {
+          "type": "paragraph",
+          "text": "On the web, motion should guide attention and explain change, not distract. Keep animations short, animate transform and opacity for smooth performance, avoid large autoplay videos on the first screen and respect the reduced-motion setting that some visitors enable for comfort."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Accessibility of video"
+        },
+        {
+          "type": "paragraph",
+          "text": "Add captions to every video, provide transcripts for longer content, avoid rapid flashing and make sure important information is not conveyed by animation alone."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "How long should an explainer video be?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Most explainer videos work best at 60 to 90 seconds. Social clips are often 15 to 30 seconds."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Is 3D animation always better than 2D?"
+        },
+        {
+          "type": "paragraph",
+          "text": "No. 3D is more realistic and impressive for physical products, while 2D is faster, more flexible and often clearer for abstract services."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Can animations be reused?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Yes. A good production delivers source files and cut-downs so scenes can be reused in ads, social posts, presentations and the website."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "See also\n- 2D/3D Video Animation services | /services/video-animation-2d-3d\n- Digital Branding & Creatives | /services/digital-branding-creatives\n- Social Media Marketing | /services/social-media-marketing"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "References\n1. CSS animations — MDN Web Docs | https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations\n2. Web Content Accessibility Guidelines (WCAG) 2.2 — W3C | https://www.w3.org/TR/WCAG22/\n3. Computer animation — Wikipedia | https://en.wikipedia.org/wiki/Computer_animation"
+        }
+      ],
+      "coverPath": "/blog/video-animation-2d-3d.svg",
+      "coverAlt": "2D/3D Video Animation guide — article cover illustration",
+      "railLabel": "2D/3D Video Animation",
+      "category": "Creative",
+      "authorDisplay": "GreenTech Agency",
+      "seoTitle": "2D vs 3D Animation for Business: Styles, Process and Uses",
+      "seoDescription": "How 2D and 3D animation help businesses explain products, the main animation styles, the production process from script to delivery and how to use motion on the web.",
+      "focalX": 0.5,
+      "focalY": 0.45,
+      "readTimeMinutes": 4
     }
   }
 ]

@@ -23,8 +23,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Delivery detail photograph",
+      "cardImagePath": "/services/editorial/web-development/card.svg",
+      "cardImageAlt": "Web Development service illustration",
       "heroHeadline": "Websites that feel clear, fast, and ready to grow.",
       "heroIntro": "We plan and ship high-performance websites that load quickly, scale with demand, and support conversion-focused journeys from first visit to enquiry.",
       "storyLabel": "About Web Development",
@@ -35,8 +35,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-dev.svg",
-      "leadImageAlt": "Editorial workspace scene for development services",
+      "leadImagePath": "/services/editorial/web-development/lead.svg",
+      "leadImageAlt": "Web Development — overview illustration",
       "principles": [
         {
           "id": "web-development-p1",
@@ -71,7 +71,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "web-development-faq-1",
+          "question": "How long does it take to build a business website?",
+          "answer": "A focused marketing website usually takes six to fourteen weeks, depending on the number of templates, the amount of content and the integrations required. Web applications with accounts or payments take longer."
+        },
+        {
+          "id": "web-development-faq-2",
+          "question": "What is the difference between web design and web development?",
+          "answer": "Web design defines how a site looks and how people move through it. Web development turns that design into working code, connects data and integrations, and keeps the site fast and secure."
+        },
+        {
+          "id": "web-development-faq-3",
+          "question": "Should I use a CMS?",
+          "answer": "Yes, if non-technical people need to update content. A well-structured CMS keeps pages consistent while letting your team publish news, case studies and service updates without developer time."
+        }
+      ],
       "relatedHeading": "Services that strengthen the same journey.",
       "relatedIntro": "Web delivery often pairs with design, commerce, and search when the business needs a fuller digital foundation.",
       "relatedSlugs": [
@@ -87,13 +103,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/web-development/pair-a-left.svg",
           "alt": "Team discussion at a workstation",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/web-development/pair-a-right.svg",
           "alt": "Close detail of interface design work",
           "width": 1200,
           "height": 1800
@@ -101,13 +117,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/web-development/pair-b-left.svg",
           "alt": "Craft and environment detail",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/web-development/pair-b-right.svg",
           "alt": "Collaborative working session",
           "width": 1200,
           "height": 1800
@@ -139,8 +155,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Delivery detail photograph",
+      "cardImagePath": "/services/editorial/mobile-app-development/card.svg",
+      "cardImageAlt": "Mobile App Development service illustration",
       "heroHeadline": "Mobile products people can rely on every day.",
       "heroIntro": "Native and cross-platform apps shaped for clear navigation, reliable performance, and experiences tuned for every device.",
       "storyLabel": "About Mobile App Development",
@@ -151,8 +167,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-dev.svg",
-      "leadImageAlt": "Editorial workspace scene for development services",
+      "leadImagePath": "/services/editorial/mobile-app-development/lead.svg",
+      "leadImageAlt": "Mobile App Development — overview illustration",
       "principles": [
         {
           "id": "mobile-app-development-p1",
@@ -187,7 +203,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "mobile-app-development-faq-1",
+          "question": "Is cross-platform development good enough for a business app?",
+          "answer": "For most business apps, yes. Cross-platform frameworks are mature and widely used. Native development is worth the extra cost when an app depends heavily on the newest platform features or demanding graphics."
+        },
+        {
+          "id": "mobile-app-development-faq-2",
+          "question": "How long does it take to build an app?",
+          "answer": "A focused first release often takes three to six months, including design, back-end work, testing and store review. Complex apps with many integrations take longer."
+        },
+        {
+          "id": "mobile-app-development-faq-3",
+          "question": "Do I need a back end for my app?",
+          "answer": "Most apps do. Accounts, payments, content and notifications all require a secure server and database. The back end can often be shared with your website."
+        }
+      ],
       "relatedHeading": "Related skills behind stronger apps.",
       "relatedIntro": "Mobile work often pairs with product design, web platforms, and practical AI features.",
       "relatedSlugs": [
@@ -203,13 +235,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/mobile-app-development/pair-a-left.svg",
           "alt": "Team discussion at a workstation",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/mobile-app-development/pair-a-right.svg",
           "alt": "Close detail of interface design work",
           "width": 1200,
           "height": 1800
@@ -217,13 +249,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/mobile-app-development/pair-b-left.svg",
           "alt": "Craft and environment detail",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/mobile-app-development/pair-b-right.svg",
           "alt": "Collaborative working session",
           "width": 1200,
           "height": 1800
@@ -255,8 +287,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Delivery detail photograph",
+      "cardImagePath": "/services/editorial/ecommerce-development/card.svg",
+      "cardImageAlt": "Ecommerce Development service illustration",
       "heroHeadline": "Stores built for discovery, trust, and checkout clarity.",
       "heroIntro": "Ecommerce experiences designed so catalogues, merchandising, and retention workflows support measurable sales growth.",
       "storyLabel": "About Ecommerce Development",
@@ -267,8 +299,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-dev.svg",
-      "leadImageAlt": "Editorial workspace scene for development services",
+      "leadImagePath": "/services/editorial/ecommerce-development/lead.svg",
+      "leadImageAlt": "Ecommerce Development — overview illustration",
       "principles": [
         {
           "id": "ecommerce-development-p1",
@@ -303,7 +335,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "ecommerce-development-faq-1",
+          "question": "Which ecommerce platform is best?",
+          "answer": "There is no single best platform. Hosted platforms suit most stores; open-source or headless setups suit businesses with complex catalogues, custom pricing or very high performance targets. The right choice depends on catalogue size, integrations and team skills."
+        },
+        {
+          "id": "ecommerce-development-faq-2",
+          "question": "How can I reduce cart abandonment?",
+          "answer": "Show full costs early, offer guest checkout, keep forms short, support popular payment methods and make delivery and returns information easy to find."
+        },
+        {
+          "id": "ecommerce-development-faq-3",
+          "question": "Do product pages need structured data?",
+          "answer": "Structured data is not required, but it helps search engines understand price, availability and reviews, and can make your listings more informative in results."
+        }
+      ],
       "relatedHeading": "Commerce sits with design and demand.",
       "relatedIntro": "Strong stores usually need web foundations, UX clarity, and marketing that feeds qualified traffic.",
       "relatedSlugs": [
@@ -319,13 +367,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/ecommerce-development/pair-a-left.svg",
           "alt": "Team discussion at a workstation",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/ecommerce-development/pair-a-right.svg",
           "alt": "Close detail of interface design work",
           "width": 1200,
           "height": 1800
@@ -333,13 +381,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/ecommerce-development/pair-b-left.svg",
           "alt": "Craft and environment detail",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/ecommerce-development/pair-b-right.svg",
           "alt": "Collaborative working session",
           "width": 1200,
           "height": 1800
@@ -371,8 +419,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Creative delivery detail",
+      "cardImagePath": "/services/editorial/ui-ux-design/card.svg",
+      "cardImageAlt": "UI/UX Design service illustration",
       "heroHeadline": "Interfaces that make complex products feel simple.",
       "heroIntro": "Research-led journeys and systems that keep hierarchy, usability, and brand consistency across every screen.",
       "storyLabel": "About UI/UX Design",
@@ -383,8 +431,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-creative.svg",
-      "leadImageAlt": "Editorial scene for creative services",
+      "leadImagePath": "/services/editorial/ui-ux-design/lead.svg",
+      "leadImageAlt": "UI/UX Design — overview illustration",
       "principles": [
         {
           "id": "ui-ux-design-p1",
@@ -419,7 +467,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "ui-ux-design-faq-1",
+          "question": "What is the difference between UI and UX?",
+          "answer": "UX is about how a product works for people across a whole task. UI is the visible layer of that experience: screens, controls and visual style. Both are needed for a product to feel good to use."
+        },
+        {
+          "id": "ui-ux-design-faq-2",
+          "question": "Why is user testing important?",
+          "answer": "Teams are too close to their own product to see its problems. Watching five or six real users attempt key tasks usually reveals the biggest usability issues quickly and cheaply."
+        },
+        {
+          "id": "ui-ux-design-faq-3",
+          "question": "Do small businesses need a design system?",
+          "answer": "Even a small site benefits from a lightweight design system: a defined palette, type scale and a handful of reusable components. It keeps the brand consistent as the site grows."
+        }
+      ],
       "relatedHeading": "Design that connects product and brand.",
       "relatedIntro": "UI/UX often pairs with web, mobile, and branding when experience and identity need to move together.",
       "relatedSlugs": [
@@ -435,13 +499,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/ui-ux-design/pair-a-left.svg",
           "alt": "Brand and creative discussion",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/ui-ux-design/pair-a-right.svg",
           "alt": "Motion and visual detail",
           "width": 1200,
           "height": 1800
@@ -449,13 +513,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/ui-ux-design/pair-b-left.svg",
           "alt": "Studio craft environment",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/ui-ux-design/pair-b-right.svg",
           "alt": "Creative collaboration",
           "width": 1200,
           "height": 1800
@@ -487,8 +551,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Marketing delivery detail",
+      "cardImagePath": "/services/editorial/content-marketing/card.svg",
+      "cardImageAlt": "Content Marketing service illustration",
       "heroHeadline": "Editorial systems that earn attention over time.",
       "heroIntro": "Content planned for search intent, sales conversations, and lasting authority—not one-off posts.",
       "storyLabel": "About Content Marketing",
@@ -499,8 +563,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-marketing.svg",
-      "leadImageAlt": "Editorial scene for marketing services",
+      "leadImagePath": "/services/editorial/content-marketing/lead.svg",
+      "leadImageAlt": "Content Marketing — overview illustration",
       "principles": [
         {
           "id": "content-marketing-p1",
@@ -535,7 +599,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "content-marketing-faq-1",
+          "question": "How often should we publish?",
+          "answer": "Consistency matters more than volume. One well-researched article every week or two, promoted properly, usually outperforms daily thin posts."
+        },
+        {
+          "id": "content-marketing-faq-2",
+          "question": "How long does content marketing take to work?",
+          "answer": "Search-driven content typically needs several months to gain visibility. Email and social distribution can show engagement sooner. Treat content as a compounding asset rather than a short campaign."
+        },
+        {
+          "id": "content-marketing-faq-3",
+          "question": "Should content be gated behind a form?",
+          "answer": "Gate only high-value assets such as detailed reports or templates. Keep educational articles open so they can be found, shared and cited."
+        }
+      ],
       "relatedHeading": "Content needs craft and distribution.",
       "relatedIntro": "Editorial systems pair naturally with copywriting, SEO, and social channels.",
       "relatedSlugs": [
@@ -551,13 +631,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/content-marketing/pair-a-left.svg",
           "alt": "Campaign planning discussion",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/content-marketing/pair-a-right.svg",
           "alt": "Content and brand detail",
           "width": 1200,
           "height": 1800
@@ -565,13 +645,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/content-marketing/pair-b-left.svg",
           "alt": "Creative production environment",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/content-marketing/pair-b-right.svg",
           "alt": "Team reviewing channel work",
           "width": 1200,
           "height": 1800
@@ -603,8 +683,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Marketing delivery detail",
+      "cardImagePath": "/services/editorial/copywriting/card.svg",
+      "cardImageAlt": "Copywriting service illustration",
       "heroHeadline": "Words that clarify offers and reduce friction.",
       "heroIntro": "Persuasive messaging for websites, campaigns, and product storytelling—written for real decisions.",
       "storyLabel": "About Copywriting",
@@ -615,8 +695,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-marketing.svg",
-      "leadImageAlt": "Editorial scene for marketing services",
+      "leadImagePath": "/services/editorial/copywriting/lead.svg",
+      "leadImageAlt": "Copywriting — overview illustration",
       "principles": [
         {
           "id": "copywriting-p1",
@@ -651,7 +731,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "copywriting-faq-1",
+          "question": "What is the difference between copywriting and content writing?",
+          "answer": "Copywriting aims to drive a specific action, such as a purchase or enquiry. Content writing informs and educates over a longer period. Most websites need both."
+        },
+        {
+          "id": "copywriting-faq-2",
+          "question": "How long should a landing page be?",
+          "answer": "As long as needed to answer the buyer's questions and no longer. Simple, low-cost offers can be short; complex or expensive services usually need more explanation and proof."
+        },
+        {
+          "id": "copywriting-faq-3",
+          "question": "Can AI write my copy?",
+          "answer": "AI tools can help with drafts and variations, but strong copy still needs human understanding of the audience, the offer and the brand, plus careful fact-checking."
+        }
+      ],
       "relatedHeading": "Copy connects brand, content, and UX.",
       "relatedIntro": "Strong messaging often sits beside editorial systems, visual identity, and interface design.",
       "relatedSlugs": [
@@ -667,13 +763,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/copywriting/pair-a-left.svg",
           "alt": "Campaign planning discussion",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/copywriting/pair-a-right.svg",
           "alt": "Content and brand detail",
           "width": 1200,
           "height": 1800
@@ -681,13 +777,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/copywriting/pair-b-left.svg",
           "alt": "Creative production environment",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/copywriting/pair-b-right.svg",
           "alt": "Team reviewing channel work",
           "width": 1200,
           "height": 1800
@@ -719,8 +815,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Marketing delivery detail",
+      "cardImagePath": "/services/editorial/digital-marketing/card.svg",
+      "cardImageAlt": "Digital Marketing service illustration",
       "heroHeadline": "Demand programs measured against commercial goals.",
       "heroIntro": "Paid and organic work across the channels your buyers already use—planned around offers, audiences, and clear outcomes.",
       "storyLabel": "About Digital Marketing",
@@ -731,8 +827,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-marketing.svg",
-      "leadImageAlt": "Editorial scene for marketing services",
+      "leadImagePath": "/services/editorial/digital-marketing/lead.svg",
+      "leadImageAlt": "Digital Marketing — overview illustration",
       "principles": [
         {
           "id": "digital-marketing-p1",
@@ -767,7 +863,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "digital-marketing-faq-1",
+          "question": "Which digital marketing channel is best?",
+          "answer": "It depends on intent. Paid search captures existing demand quickly, SEO builds durable traffic, and social media creates awareness. Most businesses benefit from combining one demand-capture channel with one demand-building channel."
+        },
+        {
+          "id": "digital-marketing-faq-2",
+          "question": "How much should we spend on digital marketing?",
+          "answer": "Start from your target cost per customer and the value of a customer, then test a budget large enough to gather meaningful data for a few weeks before scaling."
+        },
+        {
+          "id": "digital-marketing-faq-3",
+          "question": "How soon will we see results?",
+          "answer": "Paid channels can produce leads within days of launch. SEO and content usually take several months."
+        }
+      ],
       "relatedHeading": "Channels that reinforce each other.",
       "relatedIntro": "Digital marketing is strongest when SEO, social, and content share the same demand story.",
       "relatedSlugs": [
@@ -783,13 +895,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/digital-marketing/pair-a-left.svg",
           "alt": "Campaign planning discussion",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/digital-marketing/pair-a-right.svg",
           "alt": "Content and brand detail",
           "width": 1200,
           "height": 1800
@@ -797,13 +909,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/digital-marketing/pair-b-left.svg",
           "alt": "Creative production environment",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/digital-marketing/pair-b-right.svg",
           "alt": "Team reviewing channel work",
           "width": 1200,
           "height": 1800
@@ -835,8 +947,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Marketing delivery detail",
+      "cardImagePath": "/services/editorial/social-media-marketing/card.svg",
+      "cardImageAlt": "Social Media Marketing service illustration",
       "heroHeadline": "Social systems that turn attention into community.",
       "heroIntro": "Channel strategy, creative, and publishing rhythms that support demand—not isolated posts.",
       "storyLabel": "About Social Media Marketing",
@@ -847,8 +959,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-marketing.svg",
-      "leadImageAlt": "Editorial scene for marketing services",
+      "leadImagePath": "/services/editorial/social-media-marketing/lead.svg",
+      "leadImageAlt": "Social Media Marketing — overview illustration",
       "principles": [
         {
           "id": "social-media-marketing-p1",
@@ -883,7 +995,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "social-media-marketing-faq-1",
+          "question": "How often should a business post on social media?",
+          "answer": "Post as often as you can maintain quality and consistency. For many businesses three to five posts per week on a primary platform is sustainable."
+        },
+        {
+          "id": "social-media-marketing-faq-2",
+          "question": "Should we use influencers or creators?",
+          "answer": "Creators can be effective when their audience matches your buyers. Agree clear deliverables, disclose paid partnerships as required, and measure results like any other channel."
+        },
+        {
+          "id": "social-media-marketing-faq-3",
+          "question": "Is paid social worth it?",
+          "answer": "Paid social is worth testing when you have a clear offer, a fast landing page and conversion tracking in place."
+        }
+      ],
       "relatedHeading": "Social works best with content and motion.",
       "relatedIntro": "Strong social programs borrow from editorial systems, paid amplification, and animation.",
       "relatedSlugs": [
@@ -899,13 +1027,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/social-media-marketing/pair-a-left.svg",
           "alt": "Campaign planning discussion",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/social-media-marketing/pair-a-right.svg",
           "alt": "Content and brand detail",
           "width": 1200,
           "height": 1800
@@ -913,13 +1041,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/social-media-marketing/pair-b-left.svg",
           "alt": "Creative production environment",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/social-media-marketing/pair-b-right.svg",
           "alt": "Team reviewing channel work",
           "width": 1200,
           "height": 1800
@@ -951,8 +1079,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Marketing delivery detail",
+      "cardImagePath": "/services/editorial/search-engine-optimization/card.svg",
+      "cardImageAlt": "Search Engine Optimization service illustration",
       "heroHeadline": "Search work with clear technical and content priorities.",
       "heroIntro": "SEO that improves organic acquisition through crawl health, intent coverage, and conversion-minded pages.",
       "storyLabel": "About Search Engine Optimization",
@@ -963,8 +1091,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-marketing.svg",
-      "leadImageAlt": "Editorial scene for marketing services",
+      "leadImagePath": "/services/editorial/search-engine-optimization/lead.svg",
+      "leadImageAlt": "Search Engine Optimization — overview illustration",
       "principles": [
         {
           "id": "search-engine-optimization-p1",
@@ -999,7 +1127,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "search-engine-optimization-faq-1",
+          "question": "How long does SEO take?",
+          "answer": "Most sites need several months to see meaningful change, depending on competition, the site's history and how much work is done. Technical fixes can show effects sooner."
+        },
+        {
+          "id": "search-engine-optimization-faq-2",
+          "question": "Is SEO still relevant with AI search?",
+          "answer": "Yes. AI-powered search features still rely on crawlable, high-quality pages. Strong SEO foundations also support generative engine optimization."
+        },
+        {
+          "id": "search-engine-optimization-faq-3",
+          "question": "Can we guarantee a number one ranking?",
+          "answer": "No one can guarantee rankings, because search engines control their algorithms. Be wary of any provider who promises a specific position."
+        }
+      ],
       "relatedHeading": "SEO connects content, GEO, and the site itself.",
       "relatedIntro": "Organic growth usually needs editorial systems, AI-answer readiness, and a sound website.",
       "relatedSlugs": [
@@ -1015,13 +1159,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/search-engine-optimization/pair-a-left.svg",
           "alt": "Campaign planning discussion",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/search-engine-optimization/pair-a-right.svg",
           "alt": "Content and brand detail",
           "width": 1200,
           "height": 1800
@@ -1029,13 +1173,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/search-engine-optimization/pair-b-left.svg",
           "alt": "Creative production environment",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/search-engine-optimization/pair-b-right.svg",
           "alt": "Team reviewing channel work",
           "width": 1200,
           "height": 1800
@@ -1067,8 +1211,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Marketing delivery detail",
+      "cardImagePath": "/services/editorial/generative-engine-optimization/card.svg",
+      "cardImageAlt": "Generative Engine Optimization service illustration",
       "heroHeadline": "Make your brand clearer in AI answers.",
       "heroIntro": "GEO work that strengthens entity clarity, authoritative content, and discovery-ready structure—without inventing claims.",
       "storyLabel": "About Generative Engine Optimization",
@@ -1079,8 +1223,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-marketing.svg",
-      "leadImageAlt": "Editorial scene for marketing services",
+      "leadImagePath": "/services/editorial/generative-engine-optimization/lead.svg",
+      "leadImageAlt": "Generative Engine Optimization — overview illustration",
       "principles": [
         {
           "id": "generative-engine-optimization-p1",
@@ -1115,7 +1259,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "generative-engine-optimization-faq-1",
+          "question": "Is GEO different from AEO?",
+          "answer": "Answer engine optimization (AEO) usually refers to winning direct answers such as featured snippets and voice results. GEO extends the idea to generative AI answers. The practical techniques overlap heavily."
+        },
+        {
+          "id": "generative-engine-optimization-faq-2",
+          "question": "Can I pay to appear in AI answers?",
+          "answer": "Organic AI answers cannot be bought. Some platforms offer advertising formats, but citations in generated answers depend on content quality and relevance."
+        },
+        {
+          "id": "generative-engine-optimization-faq-3",
+          "question": "Do I need new content for GEO?",
+          "answer": "Often you can improve existing pages first: add clear definitions, sources, FAQs and structured data to the content that already ranks."
+        }
+      ],
       "relatedHeading": "GEO sits with SEO, content, and AI.",
       "relatedIntro": "Answer readiness is strongest when organic search, editorial systems, and practical AI are aligned.",
       "relatedSlugs": [
@@ -1131,13 +1291,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/generative-engine-optimization/pair-a-left.svg",
           "alt": "Campaign planning discussion",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/generative-engine-optimization/pair-a-right.svg",
           "alt": "Content and brand detail",
           "width": 1200,
           "height": 1800
@@ -1145,13 +1305,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/generative-engine-optimization/pair-b-left.svg",
           "alt": "Creative production environment",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/generative-engine-optimization/pair-b-right.svg",
           "alt": "Team reviewing channel work",
           "width": 1200,
           "height": 1800
@@ -1183,8 +1343,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Emerging tech delivery detail",
+      "cardImagePath": "/services/editorial/artificial-intelligence/card.svg",
+      "cardImageAlt": "Artificial Intelligence service illustration",
       "heroHeadline": "Practical AI for real workflows and decisions.",
       "heroIntro": "Automation, assistants, and insights grounded in your data, tools, and business process—not speculative demos.",
       "storyLabel": "About Artificial Intelligence",
@@ -1195,8 +1355,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-emerging.svg",
-      "leadImageAlt": "Editorial scene for emerging technology",
+      "leadImagePath": "/services/editorial/artificial-intelligence/lead.svg",
+      "leadImageAlt": "Artificial Intelligence — overview illustration",
       "principles": [
         {
           "id": "artificial-intelligence-p1",
@@ -1231,7 +1391,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "artificial-intelligence-faq-1",
+          "question": "Will AI replace our staff?",
+          "answer": "In most businesses AI changes tasks rather than replacing whole roles. It handles repetitive steps so people can focus on judgement, relationships and exceptions."
+        },
+        {
+          "id": "artificial-intelligence-faq-2",
+          "question": "Is our data safe with AI tools?",
+          "answer": "It depends on the tool and configuration. Use providers with clear data-handling terms, restrict access to sensitive data and avoid sending personal information unless necessary and lawful."
+        },
+        {
+          "id": "artificial-intelligence-faq-3",
+          "question": "How do we measure AI value?",
+          "answer": "Compare the pilot against a baseline: time per task, error rate, customer satisfaction and cost. If the numbers do not improve, the project should not scale."
+        }
+      ],
       "relatedHeading": "AI that connects discovery and product.",
       "relatedIntro": "Practical AI often pairs with GEO, web platforms, and mobile experiences.",
       "relatedSlugs": [
@@ -1247,13 +1423,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/artificial-intelligence/pair-a-left.svg",
           "alt": "Product exploration session",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/artificial-intelligence/pair-a-right.svg",
           "alt": "Immersive experience detail",
           "width": 1200,
           "height": 1800
@@ -1261,13 +1437,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/artificial-intelligence/pair-b-left.svg",
           "alt": "Technology craft detail",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/artificial-intelligence/pair-b-right.svg",
           "alt": "Collaborative prototyping",
           "width": 1200,
           "height": 1800
@@ -1299,8 +1475,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Emerging tech delivery detail",
+      "cardImagePath": "/services/editorial/augmented-reality/card.svg",
+      "cardImageAlt": "Augmented Reality service illustration",
       "heroHeadline": "AR that helps customers explore with confidence.",
       "heroIntro": "Product and space experiences designed for real devices, clarity, and purchase confidence.",
       "storyLabel": "About Augmented Reality",
@@ -1311,8 +1487,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-emerging.svg",
-      "leadImageAlt": "Editorial scene for emerging technology",
+      "leadImagePath": "/services/editorial/augmented-reality/lead.svg",
+      "leadImageAlt": "Augmented Reality — overview illustration",
       "principles": [
         {
           "id": "augmented-reality-p1",
@@ -1347,7 +1523,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "augmented-reality-faq-1",
+          "question": "Do customers need special hardware for AR?",
+          "answer": "No. Most recent smartphones support AR. Headsets and glasses add hands-free use but are not required for most marketing and product experiences."
+        },
+        {
+          "id": "augmented-reality-faq-2",
+          "question": "How much 3D content do we need?",
+          "answer": "Start with a small set of priority products or scenes. Well-optimised 3D models load faster and look better than a large library of heavy files."
+        },
+        {
+          "id": "augmented-reality-faq-3",
+          "question": "What is the difference between AR and VR?",
+          "answer": "AR adds digital content to the real world; VR replaces the real world with a fully virtual environment."
+        }
+      ],
       "relatedHeading": "AR sits with VR, UX, and commerce.",
       "relatedIntro": "Spatial experiences often need immersion partners, interface design, and storefront integration.",
       "relatedSlugs": [
@@ -1363,13 +1555,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/augmented-reality/pair-a-left.svg",
           "alt": "Product exploration session",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/augmented-reality/pair-a-right.svg",
           "alt": "Immersive experience detail",
           "width": 1200,
           "height": 1800
@@ -1377,13 +1569,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/augmented-reality/pair-b-left.svg",
           "alt": "Technology craft detail",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/augmented-reality/pair-b-right.svg",
           "alt": "Collaborative prototyping",
           "width": 1200,
           "height": 1800
@@ -1415,8 +1607,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Emerging tech delivery detail",
+      "cardImagePath": "/services/editorial/virtual-reality/card.svg",
+      "cardImageAlt": "Virtual Reality service illustration",
       "heroHeadline": "Immersive environments with measurable purpose.",
       "heroIntro": "VR for training, storytelling, and engagement—built for comfort, clarity, and outcomes you can review.",
       "storyLabel": "About Virtual Reality",
@@ -1427,8 +1619,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-emerging.svg",
-      "leadImageAlt": "Editorial scene for emerging technology",
+      "leadImagePath": "/services/editorial/virtual-reality/lead.svg",
+      "leadImageAlt": "Virtual Reality — overview illustration",
       "principles": [
         {
           "id": "virtual-reality-p1",
@@ -1463,7 +1655,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "virtual-reality-faq-1",
+          "question": "Is VR only for gaming?",
+          "answer": "No. Training, healthcare, engineering, real estate and education all use VR because practising in a simulated environment is safe and repeatable."
+        },
+        {
+          "id": "virtual-reality-faq-2",
+          "question": "Do we need expensive equipment?",
+          "answer": "Standalone headsets have made VR far more affordable and portable. PC-connected headsets are needed only for very high-fidelity simulations."
+        },
+        {
+          "id": "virtual-reality-faq-3",
+          "question": "How is VR different from AR?",
+          "answer": "VR replaces your surroundings with a virtual world; AR adds digital content to the real world you can still see."
+        }
+      ],
       "relatedHeading": "VR pairs with AR, motion, and UX.",
       "relatedIntro": "Immersive work often needs spatial partners, animation craft, and interaction design.",
       "relatedSlugs": [
@@ -1479,13 +1687,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/virtual-reality/pair-a-left.svg",
           "alt": "Product exploration session",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/virtual-reality/pair-a-right.svg",
           "alt": "Immersive experience detail",
           "width": 1200,
           "height": 1800
@@ -1493,13 +1701,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/virtual-reality/pair-b-left.svg",
           "alt": "Technology craft detail",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/virtual-reality/pair-b-right.svg",
           "alt": "Collaborative prototyping",
           "width": 1200,
           "height": 1800
@@ -1531,8 +1739,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Creative delivery detail",
+      "cardImagePath": "/services/editorial/digital-branding-creatives/card.svg",
+      "cardImageAlt": "Digital Branding & Creatives service illustration",
       "heroHeadline": "Brand systems that stay unmistakable.",
       "heroIntro": "Identity and creative assets built for clarity and consistency across sites, campaigns, and product touchpoints.",
       "storyLabel": "About Digital Branding & Creatives",
@@ -1543,8 +1751,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-creative.svg",
-      "leadImageAlt": "Editorial scene for creative services",
+      "leadImagePath": "/services/editorial/digital-branding-creatives/lead.svg",
+      "leadImageAlt": "Digital Branding & Creatives — overview illustration",
       "principles": [
         {
           "id": "digital-branding-creatives-p1",
@@ -1579,7 +1787,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "digital-branding-creatives-faq-1",
+          "question": "What is the difference between a brand and a logo?",
+          "answer": "A logo is one symbol. A brand is the whole perception people have of a business, shaped by its promise, behaviour, visuals and words."
+        },
+        {
+          "id": "digital-branding-creatives-faq-2",
+          "question": "When should a business rebrand?",
+          "answer": "Consider a rebrand when the current identity no longer reflects what the company offers, confuses customers, fails on digital channels or follows a merger or major change in strategy."
+        },
+        {
+          "id": "digital-branding-creatives-faq-3",
+          "question": "Do brand colours need to be accessible?",
+          "answer": "Yes. Text and interface colours must have enough contrast to be readable. A good palette includes accessible combinations for both light and dark backgrounds."
+        }
+      ],
       "relatedHeading": "Brand connects words, motion, and interfaces.",
       "relatedIntro": "Identity systems often pair with messaging, animation, and product UI.",
       "relatedSlugs": [
@@ -1595,13 +1819,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/digital-branding-creatives/pair-a-left.svg",
           "alt": "Brand and creative discussion",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/digital-branding-creatives/pair-a-right.svg",
           "alt": "Motion and visual detail",
           "width": 1200,
           "height": 1800
@@ -1609,13 +1833,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/digital-branding-creatives/pair-b-left.svg",
           "alt": "Studio craft environment",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/digital-branding-creatives/pair-b-right.svg",
           "alt": "Creative collaboration",
           "width": 1200,
           "height": 1800
@@ -1647,8 +1871,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Delivery detail photograph",
+      "cardImagePath": "/services/editorial/it-resource-outsourcing/card.svg",
+      "cardImageAlt": "IT Resource Outsourcing service illustration",
       "heroHeadline": "Specialists who extend your team without the overhead.",
       "heroIntro": "Dedicated engineering and digital talent that plugs into your delivery rhythm when capacity needs to scale.",
       "storyLabel": "About IT Resource Outsourcing",
@@ -1659,8 +1883,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-dev.svg",
-      "leadImageAlt": "Editorial workspace scene for development services",
+      "leadImagePath": "/services/editorial/it-resource-outsourcing/lead.svg",
+      "leadImageAlt": "IT Resource Outsourcing — overview illustration",
       "principles": [
         {
           "id": "it-resource-outsourcing-p1",
@@ -1695,7 +1919,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "it-resource-outsourcing-faq-1",
+          "question": "Is outsourcing cheaper than hiring?",
+          "answer": "It is often more cost-effective for short or variable needs because you avoid recruitment, onboarding and idle time. For permanent core roles, hiring may be better long term."
+        },
+        {
+          "id": "it-resource-outsourcing-faq-2",
+          "question": "Who owns the code an outsourced team writes?",
+          "answer": "Ownership should be set out in the contract. Normally the client owns all work product and intellectual property once paid for."
+        },
+        {
+          "id": "it-resource-outsourcing-faq-3",
+          "question": "How do we keep knowledge in-house?",
+          "answer": "Require documentation, keep everything in your repositories and accounts, and plan structured handovers when people rotate."
+        }
+      ],
       "relatedHeading": "Talent that supports active delivery.",
       "relatedIntro": "Outsourcing often pairs with web, mobile, and AI work already on your roadmap.",
       "relatedSlugs": [
@@ -1711,13 +1951,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/it-resource-outsourcing/pair-a-left.svg",
           "alt": "Team discussion at a workstation",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/it-resource-outsourcing/pair-a-right.svg",
           "alt": "Close detail of interface design work",
           "width": 1200,
           "height": 1800
@@ -1725,13 +1965,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/it-resource-outsourcing/pair-b-left.svg",
           "alt": "Craft and environment detail",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/it-resource-outsourcing/pair-b-right.svg",
           "alt": "Collaborative working session",
           "width": 1200,
           "height": 1800
@@ -1763,8 +2003,8 @@
         }
       ],
       "iconName": null,
-      "cardImagePath": "/services/editorial/rail-photo.svg",
-      "cardImageAlt": "Creative delivery detail",
+      "cardImagePath": "/services/editorial/video-animation-2d-3d/card.svg",
+      "cardImageAlt": "2D/3D Video Animation service illustration",
       "heroHeadline": "Motion that explains value faster.",
       "heroIntro": "2D and 3D animation for explainers, campaigns, and product stories—planned before production begins.",
       "storyLabel": "About 2D/3D Video Animation",
@@ -1775,8 +2015,8 @@
       ],
       "storyCtaLabel": "Talk about your project",
       "storyCtaHref": "/contact",
-      "leadImagePath": "/services/editorial/lead-creative.svg",
-      "leadImageAlt": "Editorial scene for creative services",
+      "leadImagePath": "/services/editorial/video-animation-2d-3d/lead.svg",
+      "leadImageAlt": "2D/3D Video Animation — overview illustration",
       "principles": [
         {
           "id": "video-animation-2d-3d-p1",
@@ -1811,7 +2051,23 @@
       ],
       "benefits": [],
       "processSteps": [],
-      "faqs": [],
+      "faqs": [
+        {
+          "id": "video-animation-2d-3d-faq-1",
+          "question": "How long should an explainer video be?",
+          "answer": "Most explainer videos work best at 60 to 90 seconds. Social clips are often 15 to 30 seconds."
+        },
+        {
+          "id": "video-animation-2d-3d-faq-2",
+          "question": "Is 3D animation always better than 2D?",
+          "answer": "No. 3D is more realistic and impressive for physical products, while 2D is faster, more flexible and often clearer for abstract services."
+        },
+        {
+          "id": "video-animation-2d-3d-faq-3",
+          "question": "Can animations be reused?",
+          "answer": "Yes. A good production delivers source files and cut-downs so scenes can be reused in ads, social posts, presentations and the website."
+        }
+      ],
       "relatedHeading": "Motion supports brand and demand channels.",
       "relatedIntro": "Animation often pairs with identity systems, social distribution, and editorial content.",
       "relatedSlugs": [
@@ -1827,13 +2083,13 @@
       "leadImageHeight": 1450,
       "pairA": {
         "left": {
-          "path": "/services/editorial/pair-a-left.svg",
+          "path": "/services/editorial/video-animation-2d-3d/pair-a-left.svg",
           "alt": "Brand and creative discussion",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-a-right.svg",
+          "path": "/services/editorial/video-animation-2d-3d/pair-a-right.svg",
           "alt": "Motion and visual detail",
           "width": 1200,
           "height": 1800
@@ -1841,13 +2097,13 @@
       },
       "pairB": {
         "left": {
-          "path": "/services/editorial/pair-b-left.svg",
+          "path": "/services/editorial/video-animation-2d-3d/pair-b-left.svg",
           "alt": "Studio craft environment",
           "width": 1200,
           "height": 1800
         },
         "right": {
-          "path": "/services/editorial/pair-b-right.svg",
+          "path": "/services/editorial/video-animation-2d-3d/pair-b-right.svg",
           "alt": "Creative collaboration",
           "width": 1200,
           "height": 1800

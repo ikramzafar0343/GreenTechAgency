@@ -1,5 +1,4 @@
 import "server-only";
-
 import { backendFetch, BackendHttpError } from "@/server/backend/client";
 
 export type PublicContactBody = {
@@ -61,6 +60,7 @@ export async function submitPublicContact(
     await backendFetch<{ ok?: boolean }>("/api/contact", {
       method: "POST",
       body,
+      forwardClientIp: true,
     });
     return { status: "success" };
   } catch (err) {

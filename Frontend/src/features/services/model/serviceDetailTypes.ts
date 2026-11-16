@@ -60,6 +60,7 @@ export type PublicServiceDetail = {
   pairA: ServiceDetailPhotoPair;
   pairB: ServiceDetailPhotoPair;
   principles: readonly ServiceDetailBlock[];
+  faqs: readonly { id: string; question: string; answer: string }[];
   relatedHeading: string;
   relatedIntro: string;
   related: readonly ServiceDetailLink[];

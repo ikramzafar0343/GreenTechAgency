@@ -1,11 +1,6 @@
 "use server";
 
-import type {
-  AdminEmployee,
-  EmployeeCrmBootstrap,
-  EmployeeDeliveryBootstrap,
-  EmployeeDomain,
-} from "@/lib/portal/types";
+import type { AdminEmployee, EmployeeCrmBootstrap, EmployeeDeliveryBootstrap, EmployeeDomain } from "@/lib/portal/types";
 import { getBackendEmployeeMe } from "@/server/backend/employeeSession";
 import { listOpsResource } from "@/server/backend/opsClient";
 import { backendFetch } from "@/server/backend/client";
@@ -63,7 +58,7 @@ async function resolveSelfEmployee(): Promise<AdminEmployee> {
   }
 }
 
-/** Loads employee CRM/delivery domains from Backend Ops APIs (no mockStore). */
+/** Loads employee CRM/delivery domains from Backend Ops APIs. */
 export async function loadEmployeeDomainFromBackend(
   domain: EmployeeDomain,
 ): Promise<EmployeeCrmBootstrap | EmployeeDeliveryBootstrap> {

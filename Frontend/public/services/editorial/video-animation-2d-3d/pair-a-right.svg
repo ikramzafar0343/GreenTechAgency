@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1800" width="1200" height="1800" role="img" aria-label="2D/3D Video Animation — interface detail illustration"><title>2D/3D Video Animation — interface detail illustration</title><defs>
+<linearGradient id="g57577bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06111c"/><stop offset=".6" stop-color="#0b1d2e"/><stop offset="1" stop-color="#10324a"/></linearGradient>
+<radialGradient id="g57577glow" cx="0.34" cy="0.21" r=".6"><stop offset="0" stop-color="#9db8ff" stop-opacity=".38"/><stop offset=".45" stop-color="#3e5bb8" stop-opacity=".16"/><stop offset="1" stop-color="#3e5bb8" stop-opacity="0"/></radialGradient>
+<linearGradient id="g57577acc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9db8ff"/><stop offset="1" stop-color="#3e5bb8"/></linearGradient>
+<linearGradient id="g57577glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".10"/><stop offset="1" stop-color="#ffffff" stop-opacity=".03"/></linearGradient>
+<linearGradient id="g57577edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9db8ff" stop-opacity=".75"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".12"/><stop offset="1" stop-color="#3e5bb8" stop-opacity=".5"/></linearGradient>
+<pattern id="g57577grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#1d3b52" stroke-width="1" opacity=".55"/></pattern>
+<filter id="g57577soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+<filter id="g57577shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".45"/></filter>
+</defs><style>
+@media (prefers-reduced-motion: no-preference){
+.fl{animation:fl 7s ease-in-out infinite}.fl2{animation:fl 9s ease-in-out -3s infinite}
+.pu{animation:pu 4s ease-in-out infinite}.da{stroke-dasharray:10 14;animation:da 6s linear infinite}
+.sp{transform-box:fill-box;transform-origin:center;animation:sp 24s linear infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes pu{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes da{to{stroke-dashoffset:-240}}
+@keyframes sp{to{transform:rotate(360deg)}}}
+</style><rect width="1200" height="1800" fill="url(#g57577bg)"/>
+<rect width="1200" height="1800" fill="url(#g57577grid)"/>
+<rect width="1200" height="1800" fill="url(#g57577glow)"/>
+<circle cx="256" cy="1038" r="1.6" fill="#9db8ff" opacity=".5"/>
+<circle cx="287" cy="1216" r="1.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="203" cy="1582" r="1.2" fill="#9db8ff" opacity=".5" class="pu"/>
+<circle cx="351" cy="950" r="1.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="200" cy="307" r="2.2" fill="#9db8ff" opacity=".5" class="pu"/>
+<circle cx="487" cy="959" r="1.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="416" cy="1029" r="2.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="386" cy="198" r="1.2" fill="#9db8ff" opacity=".5" class="pu"/>
+<circle cx="194" cy="1069" r="1.2" fill="#9db8ff" opacity=".5" class="pu"/>
+<circle cx="26" cy="214" r="2.2" fill="#9db8ff" opacity=".5" class="pu"/>
+<circle cx="446" cy="1723" r="2.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="708" cy="335" r="2.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="69" cy="425" r="1.6" fill="#9db8ff" opacity=".5"/>
+<circle cx="1197" cy="1239" r="1.6" fill="#9db8ff" opacity=".5"/>
+<circle cx="9" cy="64" r="1.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="1133" cy="1390" r="1.2" fill="#9db8ff" opacity=".5" class="pu"/>
+<circle cx="1055" cy="1391" r="1.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="671" cy="254" r="1.6" fill="#9db8ff" opacity=".5"/>
+<circle cx="428" cy="1260" r="1.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="871" cy="1098" r="1.6" fill="#9db8ff" opacity=".5"/>
+<circle cx="710" cy="1104" r="2.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="872" cy="529" r="1.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="695" cy="1108" r="2.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="990" cy="1101" r="1.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="437" cy="973" r="2.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="474" cy="1003" r="1.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="228" cy="807" r="1.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="227" cy="710" r="2.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="634" cy="510" r="2.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="678" cy="1244" r="1.6" fill="#9db8ff" opacity=".5"/>
+<circle cx="252" cy="644" r="2.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="637" cy="1552" r="1.6" fill="#9db8ff" opacity=".5"/>
+<circle cx="299" cy="473" r="1.6" fill="#9db8ff" opacity=".5"/>
+<circle cx="625" cy="566" r="1.6" fill="#9db8ff" opacity=".5"/>
+<circle cx="1006" cy="1170" r="2.2" fill="#9db8ff" opacity=".5"/>
+<circle cx="948" cy="471" r="1.6" fill="#9db8ff" opacity=".5"/>
+<g class="fl"><path d="M600.0 374.4 L783.6 466.2 L600.0 558.0 L416.4 466.2Z" fill="#9db8ff" opacity=".85"/><path d="M416.4 466.2 L600.0 558.0 L600.0 741.6 L416.4 649.8Z" fill="#3e5bb8" opacity=".9"/><path d="M783.6 466.2 L600.0 558.0 L600.0 741.6 L783.6 649.8Z" fill="#0f2a40" stroke="#9db8ff" stroke-width="2"/></g><g><ellipse cx="600.0" cy="631.44" rx="293.76" ry="106" fill="none" stroke="#9db8ff" stroke-width="2" opacity=".5" class="da"/><g class="sp"><circle cx="893.76" cy="631.44" r="9" fill="#9db8ff"/></g></g>
+<g><rect x="120" y="990" width="960" height="648" rx="26" fill="#0f2a40" opacity=".92" filter="url(#g57577shadow)"/><rect x="120" y="990" width="960" height="648" rx="26" fill="url(#g57577glass)" stroke="url(#g57577edge)" stroke-width="2"/></g><g class="fl"><path d="M170 1588 C385 1040 815 1588 1030 1040" fill="none" stroke="#9db8ff" stroke-width="6" stroke-linecap="round"/><line x1="170" y1="1588" x2="385" y2="1040" stroke="#8fb3c2" stroke-width="2" stroke-dasharray="6 8"/><line x1="1030" y1="1040" x2="815" y2="1588" stroke="#8fb3c2" stroke-width="2" stroke-dasharray="6 8"/><rect x="160" y="1578" width="20" height="20" rx="4" fill="#0f2a40" stroke="#9db8ff" stroke-width="3"/><rect x="375" y="1030" width="20" height="20" rx="4" fill="#0f2a40" stroke="#9db8ff" stroke-width="3"/><rect x="805" y="1578" width="20" height="20" rx="4" fill="#0f2a40" stroke="#9db8ff" stroke-width="3"/><rect x="1020" y="1030" width="20" height="20" rx="4" fill="#0f2a40" stroke="#9db8ff" stroke-width="3"/></g></svg>

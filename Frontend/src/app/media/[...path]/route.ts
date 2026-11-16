@@ -1,26 +1,24 @@
 import { type NextRequest } from "next/server";
-
-function backendBaseUrl(): string {
-  const configured = process.env.BACKEND_URL?.trim();
-  if (configured) {
-    return configured.replace(/\/$/, "");
-  }
-  return "http://localhost:4000";
-}
+import { getBackendUrl } from "@/server/backend/env";
 
 async function proxyMedia(
   request: NextRequest,
   pathParts: string[],
 ): Promise<Response> {
   const key = pathParts.map(encodeURIComponent).join("/");
-  const target = `${backendBaseUrl()}/media/${key}`;
-  const upstream = await fetch(target, {
-    method: "GET",
-    headers: { Accept: request.headers.get("accept") ?? "*/*" },
-    cache: "no-store",
-  });
+  let upstream: Response;
+  try {
+    upstream = await fetch(`${getBackendUrl()}/media/${key}`, {
+      method: "GET",
+      headers: { Accept: request.headers.get("accept") ?? "*/*" },
+      cache: "no-store",
+      signal: AbortSignal.timeout(10_000),
+    });
+  } catch {
+    return new Response("Media unavailable", { status: 502 });
+  }
 
-  const headers = new Headers();
+  const headers = new Headers({ "X-Content-Type-Options": "nosniff" });
   const contentType = upstream.headers.get("content-type");
   if (contentType) {
     headers.set("Content-Type", contentType);

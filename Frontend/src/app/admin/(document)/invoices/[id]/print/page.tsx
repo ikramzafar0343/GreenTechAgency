@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { InvoiceDocumentClient } from "@/components/invoices/InvoiceDocumentClient";
-import { loadInvoiceDocument } from "@/lib/portal/portalBackendActions";
+import { loadInvoiceDocument } from "@/lib/portal/portalDocumentActions";
 import { requireAdminActor } from "@/lib/portal/session";
 
 export const metadata: Metadata = {

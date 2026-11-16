@@ -53,6 +53,15 @@ export function createApp() {
   const app = express();
 
   app.disable("x-powered-by");
+  // Nginx on the same host is the only proxy: trust it so req.ip is the real client.
+  app.set("trust proxy", "loopback");
+
+  app.use((_req, res, next) => {
+    res.setHeader("X-Content-Type-Options", "nosniff");
+    res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+    res.setHeader("X-Frame-Options", "DENY");
+    next();
+  });
 
   app.use(
     cors({
@@ -71,7 +80,7 @@ export function createApp() {
   // VPS media files (no JSON body).
   app.use("/media", publicMediaRouter);
 
-  app.use(express.json({ limit: "512kb" }));
+  app.use(express.json({ limit: "256kb" }));
 
   app.use("/api/services", publicServicesRouter);
   app.use("/api/blog", publicBlogRouter);

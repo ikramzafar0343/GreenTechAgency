@@ -22,7 +22,9 @@
     "content:snapshot": "node scripts/build-import-snapshot.mjs",
     "content:seed-translations": "tsx src/scripts/seed-content-translations.ts",
     "content:seed-hero-curated": "tsx src/scripts/seed-hero-p1-curated.ts",
-    "i18n:check-db-coverage": "tsx src/scripts/check-db-coverage.ts"
+    "i18n:check-db-coverage": "tsx src/scripts/check-db-coverage.ts",
+    "content:seed-blog": "tsx src/scripts/seed-blog-posts.ts",
+    "content:sync-media": "tsx src/scripts/sync-media-defaults.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1151.0",

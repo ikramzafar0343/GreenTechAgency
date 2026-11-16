@@ -1,0 +1,268 @@
+.page {
+  /* SOHub Section 5 contact-local tokens (scoped to /contact only). */
+  --contact-paper: #f0f6f8;
+  --contact-ink: #0c1016;
+  --contact-panel: #d9e0e3;
+  --contact-muted: #a5abad;
+  --contact-choice: #333841;
+  --contact-control: #1e242c;
+  --contact-field: #c8cfd1;
+  --contact-footer-extension: #1e232c;
+  --contact-social-hover: #434f65;
+  --contact-panel-radius: 24px;
+  --contact-field-radius: 16px;
+  --contact-pill-radius: 999px;
+  --contact-choice-ink: #edf6f8;
+  --contact-highlight-mid: #808384;
+  --contact-tray-pill: #edf6f8;
+  --contact-accent: var(--brand-cyan);
+
+  /* Camel aliases for existing class rules */
+  --contactPage: var(--contact-paper);
+  --contactPanel: var(--contact-panel);
+  --contactInk: var(--contact-ink);
+  --contactMuted: var(--contact-muted);
+  --contactField: var(--contact-field);
+  --contactDarkPanel: var(--contact-ink);
+  --contactDarkTray: var(--contact-footer-extension);
+  --contactChoice: var(--contact-choice);
+  --contactChoiceInk: var(--contact-choice-ink);
+  --contactArrowShell: var(--contact-control);
+  --contactSocialHover: var(--contact-social-hover);
+  --contactHighlightMid: var(--contact-highlight-mid);
+  --contactAccent: var(--contact-accent);
+  --contactTrayPill: var(--contact-tray-pill);
+  --contactGutter: 16px;
+
+  width: 100%;
+  background: var(--contact-paper);
+  color: var(--contact-ink);
+  overflow-x: clip;
+}
+
+@media (min-width: 768px) {
+  .page {
+    --contactGutter: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+    --contactGutter: 48px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page {
+    --contactGutter: 80px;
+  }
+}
+
+.main {
+  width: 100%;
+  max-width: none;
+  padding-inline: var(--contactGutter);
+}
+
+/* —— Hero — Section 7 viewport-relative composition —— */
+.contactHero {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: max(40svh, 320px);
+  background: var(--contact-paper);
+  /* Keep horizontal crop control on .page; don’t clip heading ascenders */
+  overflow: visible;
+}
+
+@media (min-width: 1024px) {
+  .contactHero {
+    min-height: 100svh;
+  }
+}
+
+/* Left copy — sits with the Scroll column */
+.description {
+  position: absolute;
+  z-index: 3;
+  left: 16px;
+  top: 42%;
+  width: min(calc(100% - 2rem), 16rem);
+  margin: 0;
+  padding-left: 2.5rem;
+  color: var(--contact-ink);
+  font-family: var(--fontFamilySans);
+  font-size: clamp(1.05rem, 2.4vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.045em;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .description {
+    left: 32px;
+    top: 38%;
+    width: min(20rem, 36vw);
+    padding-left: 3rem;
+    font-size: clamp(1.25rem, 2.2vw, 1.85rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .description {
+    left: 48px;
+    top: 36%;
+    width: min(22rem, 28vw);
+    padding-left: 3.5rem;
+    font-size: clamp(1.5rem, 2.4vw, 2.35rem);
+    line-height: 1.12;
+  }
+}
+
+.heroLineMask {
+  display: inline-block;
+  overflow: hidden;
+  padding-block: 3.2px;
+  vertical-align: top;
+}
+
+.heroLineMask > span {
+  display: inline-block;
+}
+
+/* Right-anchored word + logo below (no letter overlay) */
+.heroComposition {
+  position: absolute;
+  z-index: 1;
+  /* Clear sticky header; keep full word inside the viewport */
+  top: max(6.75rem, 13vh);
+  right: 0;
+  bottom: auto;
+  left: auto;
+  width: max-content;
+  max-width: min(100%, calc(100vw - 1rem));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .heroComposition {
+    top: max(7.5rem, 14vh);
+    right: var(--contactGutter);
+  }
+}
+
+.heroWordBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+  isolation: isolate;
+}
+
+.heading {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  /* Slight top pad so tight line-height doesn’t optically crop glyphs */
+  padding: 0.04em 0 0;
+  color: var(--contact-ink);
+  font-family: var(--fontFamilySans);
+  font-weight: 500;
+  /* Sized to keep full “contact” readable without right-edge crop */
+  font-size: clamp(72px, 14.5vw, 240px);
+  line-height: 0.9;
+  letter-spacing: -0.075em;
+  white-space: nowrap;
+  overflow: visible;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+/* Logo sits under the word — not covering glyphs */
+.logoLayer {
+  position: relative;
+  z-index: 1;
+  width: min(38vw, 280px);
+  /*
+   * Pull up relative to the heading scale (vw), not the logo’s own em,
+   * and compensate for transparent padding inside logo-mark.png.
+   */
+  /*
+   * logo-mark content starts ~34% into the square — pull by that pad
+   * so the teal mark sits just under the word (≈ half the prior gap).
+   */
+  margin-top: clamp(-5.5rem, -6.5vw, -2.75rem);
+  aspect-ratio: 1 / 1;
+  pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+  .logoLayer {
+    width: min(32vw, 360px);
+    margin-top: clamp(-7rem, -7.5vw, -4.25rem);
+  }
+}
+
+@media (min-width: 1536px) {
+  .logoLayer {
+    width: min(28vw, 400px);
+  }
+}
+
+.logoMotion {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transform-origin: center center;
+}
+
+.logoImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.scrollCue {
+  position: absolute;
+  z-index: 4;
+  left: 16px;
+  bottom: auto;
+  top: 58%;
+  color: var(--contact-muted);
+  font-family: var(--fontFamilySans);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  transform: rotate(-90deg);
+  transform-origin: left center;
+}
+
+@media (min-width: 768px) {
+  .scrollCue {
+    left: 32px;
+    top: 62%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scrollCue {
+    left: 48px;
+    top: 58%;
+    font-size: 1.875rem;
+  }
+}
+
+.scrollCue:focus-visible {
+  outline: 2px solid var(--contact-accent);
+  outline-offset: 4px;
+}

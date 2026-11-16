@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { brandFont } from "@/shared/lib/fonts";
 import { getSiteUrl } from "@/lib/seo/siteUrl";
 import "./globals.css";
@@ -31,9 +31,13 @@ export const metadata: Metadata = {
     description:
       "GreenTech Agency designs and develops high-performance websites, digital products and SEO strategies that help ambitious businesses grow online.",
   },
-  icons: {
-    icon: "/logo.png",
-  },
+  // Favicons come from the file conventions in this folder:
+  // favicon.ico, icon.png, apple-icon.png, manifest.ts, opengraph-image.png.
+  applicationName: "GreenTech Agency",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0b1d2e",
 };
 
 export default function RootLayout({

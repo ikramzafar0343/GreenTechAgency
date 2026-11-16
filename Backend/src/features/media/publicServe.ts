@@ -3,6 +3,7 @@ import { createReadStream } from "node:fs";
 import { access } from "node:fs/promises";
 import { constants } from "node:fs";
 import path from "node:path";
+import { pipeline } from "node:stream/promises";
 import { asyncHandler } from "../../http/asyncHandler.js";
 import { AppError } from "../../http/errors.js";
 import { objectKeyFromRequest } from "./objectKeyFromRequest.js";
@@ -35,7 +36,9 @@ publicMediaRouter.get(
     const ext = path.extname(full).toLowerCase();
     const mime = MIME_BY_EXT[ext] ?? "application/octet-stream";
     res.setHeader("Content-Type", mime);
+    res.setHeader("X-Content-Type-Options", "nosniff");
     res.setHeader("Cache-Control", "public, max-age=86400");
-    createReadStream(full).pipe(res);
+    // pipeline() propagates stream errors to asyncHandler instead of crashing the process.
+    await pipeline(createReadStream(full), res);
   }),
 );

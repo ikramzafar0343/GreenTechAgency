@@ -109,7 +109,8 @@ export function resolveVpsPath(objectKey: string): string {
   }
   const root = getMediaRoot();
   const full = path.resolve(root, objectKey);
-  if (!full.startsWith(path.resolve(root))) {
+  // Compare with a trailing separator so "/media-evil" cannot pass as inside "/media".
+  if (!full.startsWith(path.resolve(root) + path.sep)) {
     throw new AppError("VALIDATION", "Invalid media object key");
   }
   return full;

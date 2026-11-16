@@ -1,0 +1,279 @@
+@media (max-width: 767px) {
+  .contactHero {
+    min-height: max(70svh, 520px);
+    padding-bottom: 2rem;
+  }
+
+  .description {
+    top: auto;
+    bottom: 28%;
+    left: 16px;
+    padding-left: 0;
+    max-width: 70%;
+  }
+
+  .heroComposition {
+    top: max(5rem, 14vh);
+    right: 0;
+  }
+
+  .scrollCue {
+    top: auto;
+    bottom: 12%;
+  }
+}
+
+/* —— Intro — Section 8 scale ladder —— */
+.intro {
+  margin-top: 96px;
+  max-width: 100%;
+  scroll-margin-top: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    margin-top: 0;
+  }
+}
+
+.introEyebrow {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--contactMuted);
+}
+
+@media (min-width: 768px) {
+  .introEyebrow {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introEyebrow {
+    margin-bottom: 40px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .introEyebrow {
+    font-size: 1.5rem;
+  }
+}
+
+.introParagraph {
+  margin: 0;
+  max-width: 18em;
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.075em;
+}
+
+@media (min-width: 768px) {
+  .introParagraph {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introParagraph {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .introParagraph {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .introParagraph {
+    font-size: 7rem;
+  }
+}
+
+.introHighlight {
+  background-image: linear-gradient(
+    90deg,
+    var(--contact-ink),
+    var(--contact-highlight-mid),
+    var(--contact-ink)
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: contactHighlightShift 5s ease infinite;
+}
+
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .introHighlight {
+    color: var(--contactInk);
+    background: none;
+    animation: none;
+  }
+}
+
+@keyframes contactHighlightShift {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .introHighlight {
+    animation: none;
+    color: var(--contactInk);
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+  }
+}
+
+/* —— Panel —— */
+.panelSection {
+  margin-top: 48px;
+  margin-bottom: 64px;
+  scroll-margin-top: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .panelSection {
+    margin-top: 64px;
+    margin-bottom: 80px;
+  }
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+  min-height: 85svh;
+  border-radius: var(--contact-panel-radius);
+  background: var(--contactPanel);
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .panel {
+    min-height: 75svh;
+  }
+}
+
+.panelInner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: inherit;
+  padding: 32px 20px 96px;
+}
+
+@media (min-width: 1024px) {
+  .panelInner {
+    padding: 64px 48px;
+  }
+}
+
+.step {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .step {
+    width: 60%;
+  }
+
+  .stepWide {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.stepCentered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 48px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .stepCentered {
+    gap: 56px;
+  }
+}
+
+.prompt {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.06em;
+}
+
+@media (min-width: 1024px) {
+  .prompt {
+    font-size: 3rem;
+  }
+}
+
+.promptScale {
+  transform-origin: center center;
+}
+
+.choiceRow {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 28rem;
+}
+
+@media (min-width: 1024px) {
+  .choiceRow {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    max-width: none;
+    width: auto;
+  }
+}
+
+.choicePill {
+  appearance: none;
+  border: 0;
+  border-radius: var(--contact-pill-radius);
+  background: var(--contactChoice);
+  color: var(--contactChoiceInk);
+  font: inherit;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 12px 32px;
+  cursor: pointer;
+  min-height: 44px;
+  transition: transform 300ms cubic-bezier(0.22, 0.68, 0, 1.5);
+}
+
+@media (min-width: 1024px) {
+  .choicePill {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    padding: 20px 48px;
+  }
+}

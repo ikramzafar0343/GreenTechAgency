@@ -9,6 +9,7 @@ import {
 import { getDb } from "../../db/client.js";
 import { AppError } from "../../http/errors.js";
 import type { ListQuery } from "../../http/pagination.js";
+import { assertSafeOpsPayload } from "./payloadGuard.js";
 
 export const OPS_STATUSES = ["active", "archived"] as const;
 
@@ -77,6 +78,7 @@ function payloadFromBody(body: Record<string, unknown>): Record<string, unknown>
       out[key] = value;
     }
   }
+  assertSafeOpsPayload(out);
   return out;
 }
 
@@ -131,7 +133,8 @@ export function createOpsResourceCrud(config: OpsResourceCrudConfig) {
         filters.push(eq(table.status, query.status));
       }
       if (query.q) {
-        filters.push(sql`${table.payload}::text ilike ${`%${query.q}%`}`);
+        const escaped = query.q.replace(/[\\%_]/g, "\\$&");
+        filters.push(sql`${table.payload}::text ilike ${`%${escaped}%`}`);
       }
       const where = filters.length ? and(...filters) : undefined;
       const [totalRow] = await db

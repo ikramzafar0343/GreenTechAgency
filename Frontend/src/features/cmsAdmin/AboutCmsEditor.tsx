@@ -4,46 +4,10 @@ import { useCallback, useEffect, useMemo, useState, useTransition } from "react"
 import { adminFieldClass, adminLabelClass } from "@/components/admin/adminFormStyles";
 import { CmsImageField } from "@/features/cmsAdmin/CmsImageField";
 import { cmsAdminFetch, CmsAdminError } from "@/features/cmsAdmin/api";
-import {
-  cmsBtnPrimary,
-  cmsBtnSecondary,
-  cmsCardClass,
-} from "@/features/cmsAdmin/cmsUi";
+import { cmsBtnPrimary, cmsBtnSecondary, cmsCardClass } from "@/features/cmsAdmin/cmsUi";
 import type { SiteDocumentAdminRow } from "@/features/cmsAdmin/types";
 import { useDirtyGuard } from "@/features/cmsAdmin/useDirtyGuard";
-
-type GroupPortraitForm = {
-  src: string;
-  alt: string;
-  focalPoint: string;
-};
-
-type AboutForm = {
-  groupPortrait: GroupPortraitForm;
-  /** Full about document; portrait fields are mirrored into this on save. */
-  document: Record<string, unknown>;
-};
-
-function asRecord(value: unknown): Record<string, unknown> {
-  return value && typeof value === "object" && !Array.isArray(value)
-    ? (value as Record<string, unknown>)
-    : {};
-}
-
-function portraitFromDoc(doc: Record<string, unknown>): GroupPortraitForm {
-  const portrait = asRecord(doc.groupPortrait);
-  return {
-    src: typeof portrait.src === "string" ? portrait.src : "",
-    alt:
-      typeof portrait.alt === "string" && portrait.alt.trim()
-        ? portrait.alt
-        : "GreenTech Agency team working together",
-    focalPoint:
-      typeof portrait.focalPoint === "string" && portrait.focalPoint.trim()
-        ? portrait.focalPoint
-        : "50% 42%",
-  };
-}
+import { type GroupPortraitForm, type AboutForm, portraitFromDoc } from "./AboutCmsEditorPart";
 
 function formFromDoc(doc: Record<string, unknown>): AboutForm {
   return {

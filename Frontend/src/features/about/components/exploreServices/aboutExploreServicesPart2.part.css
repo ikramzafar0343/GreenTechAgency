@@ -1,0 +1,51 @@
+@media (max-width: 767px) {
+  .heading {
+    min-height: 70px;
+    font-size: 0.6875rem;
+  }
+
+  .foreground {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+    padding: 4.5rem clamp(20px, 5vw, 30px) 5rem;
+  }
+
+  .content {
+    padding-top: 0;
+    gap: 1.25rem;
+  }
+
+  .description {
+    max-width: none;
+    text-indent: 0;
+    font-size: clamp(1.375rem, 5.5vw, 1.875rem);
+  }
+
+  .eyebrow {
+    font-size: clamp(1.125rem, 4.2vw, 1.375rem);
+  }
+
+  .number {
+    font-size: clamp(4.5rem, 18vw, 5.5rem);
+    letter-spacing: -0.04em;
+  }
+
+  .shell:not(:first-child)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .heading,
+  .foreground {
+    padding-inline: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .number :global(.serviceNumeralTrack),
+  .description :global(.serviceWordInner) {
+    will-change: auto;
+    transform: none;
+  }
+}

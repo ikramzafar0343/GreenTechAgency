@@ -1,4 +1,5 @@
 import type { PublicRichBlock } from "@/shared/lib/normalizeRichBlocks";
+import { RichContent } from "@/shared/ui/RichContent";
 
 type BlogArticleBodyProps = {
   readonly articleId: string;
@@ -6,22 +7,11 @@ type BlogArticleBodyProps = {
 };
 
 export function BlogArticleBody({ articleId, blocks }: BlogArticleBodyProps) {
-  if (blocks.length === 0) {
-    return null;
-  }
-
   return (
-    <div className="typeProse mt-8 text-white/90">
-      {blocks.map((block, index) => {
-        const key = `${articleId}-${block.type}-${index}`;
-        if (block.type === "heading") {
-          if (block.level === 3) {
-            return <h3 key={key}>{block.text}</h3>;
-          }
-          return <h2 key={key}>{block.text}</h2>;
-        }
-        return <p key={key}>{block.text}</p>;
-      })}
-    </div>
+    <RichContent
+      idPrefix={articleId}
+      blocks={blocks}
+      className="typeProse mt-10 text-white/85 [&_a]:text-[var(--accent-cyan,#58e2ec)] [&_h2]:text-white [&_h3]:text-white"
+    />
   );
 }

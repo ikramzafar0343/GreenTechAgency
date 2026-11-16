@@ -4,6 +4,7 @@ export type AppErrorCode =
   | "FORBIDDEN"
   | "NOT_FOUND"
   | "CONFLICT"
+  | "PAYLOAD_TOO_LARGE"
   | "RATE_LIMIT"
   | "UNAVAILABLE"
   | "INTERNAL";
@@ -14,6 +15,7 @@ const STATUS_BY_CODE: Record<AppErrorCode, number> = {
   FORBIDDEN: 403,
   NOT_FOUND: 404,
   CONFLICT: 409,
+  PAYLOAD_TOO_LARGE: 413,
   RATE_LIMIT: 429,
   UNAVAILABLE: 503,
   INTERNAL: 500,
@@ -45,6 +47,17 @@ export function toErrorBody(err: unknown): {
         message: err.message,
         ...(err.details !== null ? { details: err.details } : {}),
       },
+    };
+  }
+  const bodyParserType =
+    err && typeof err === "object" && "type" in err ? String(err.type) : "";
+  if (bodyParserType === "entity.parse.failed") {
+    return { status: 400, body: { error: "VALIDATION", message: "Malformed JSON body" } };
+  }
+  if (bodyParserType === "entity.too.large") {
+    return {
+      status: 413,
+      body: { error: "PAYLOAD_TOO_LARGE", message: "Request body is too large" },
     };
   }
   if (err instanceof Error) {

@@ -28,3 +28,16 @@ describe("parseRichDoc", () => {
     );
   });
 });
+
+describe("parseRichDoc lists", () => {
+  it("accepts ordered and unordered lists", () => {
+    const doc = parseRichDoc([
+      { type: "list", ordered: true, items: ["One", "Two | https://example.com"] },
+    ]);
+    expect(doc[0]).toEqual({ type: "list", ordered: true, items: ["One", "Two | https://example.com"] });
+  });
+
+  it("rejects empty lists", () => {
+    expect(() => parseRichDoc([{ type: "list", items: [] }])).toThrow(/at least one item/);
+  });
+});

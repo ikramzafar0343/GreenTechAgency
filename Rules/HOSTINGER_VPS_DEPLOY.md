@@ -20,7 +20,8 @@ BETTER_AUTH_SECRET=...
 BETTER_AUTH_URL=https://your-frontend-domain.com
 MEDIA_ROOT=/var/www/greentech/media
 MEDIA_PUBLIC_BASE_URL=https://api.your-domain.com/media
-RATE_LIMIT_MODE=memory
+HOST=127.0.0.1
+NODE_ENV=production
 ```
 
 Frontend `.env`:
@@ -83,7 +84,7 @@ location /media/ {
 - [ ] `FRONTEND_ORIGIN` (= Frontend origin)
 - [ ] `MEDIA_ROOT` writable on VPS disk
 - [ ] `MEDIA_PUBLIC_BASE_URL` = `https://api.your-domain.com/media`
-- [ ] `RATE_LIMIT_MODE=memory`
+- [ ] `HOST=127.0.0.1` and `NODE_ENV=production` set; migration `0006_rate_limit_bucket` applied
 - [ ] Frontend `BACKEND_URL` = `https://api.your-domain.com`
 - [ ] Nginx proxies `/api` and `/media` (or alias `/media` to `MEDIA_ROOT`)
 - [ ] Process manager: `pm2` or systemd running `npm start` after `npm run build`

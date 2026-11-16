@@ -48,11 +48,48 @@ function mediaRemotePatterns(): NonNullable<
   return patterns;
 }
 
+const isDev = process.env.NODE_ENV !== "production";
+
+/**
+ * Content Security Policy. 'unsafe-inline' scripts are still required for the
+ * Next.js bootstrap and JSON-LD blocks (no nonce pipeline yet); 'unsafe-eval' is
+ * only allowed in development for React refresh. Media may come from CMS URLs.
+ */
+const CSP = [
+  "default-src 'self'",
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https:",
+  "media-src 'self' blob: https:",
+  "font-src 'self' data:",
+  `connect-src 'self'${isDev ? " ws: http://localhost:*" : ""}`,
+  "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com",
+  "frame-ancestors 'self'",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  ...(isDev ? [] : ["upgrade-insecure-requests"]),
+].join("; ");
+
+const SECURITY_HEADERS = [
+  { key: "Content-Security-Policy", value: CSP },
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+  { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
+];
+
 const nextConfig: NextConfig = {
-  // Portal kit mock actions/components ship looser contracts than this host's
-  // strict TS; keep runtime wiring. Tighten when swapping portal/actions.ts.
+  poweredByHeader: false,
+  // RELEASE BLOCKER (audit C2): run `npm run typecheck`, fix every error, then delete
+  // this block so type errors fail the build. Left on only because this change set
+  // was written without node_modules and could not be type-checked.
   typescript: {
     ignoreBuildErrors: true,
+  },
+  async headers() {
+    return [{ source: "/:path*", headers: SECURITY_HEADERS }];
   },
   images: {
     remotePatterns: mediaRemotePatterns(),

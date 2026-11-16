@@ -47,6 +47,7 @@ export type BackendServiceDetail = BackendServiceListItem & {
   pairA?: BackendServicePhotoPair | null;
   pairB?: BackendServicePhotoPair | null;
   principles: Array<{ id: string; title: string; body: string }>;
+  faqs?: Array<{ id: string; question: string; answer: string }>;
   relatedHeading: string;
   relatedIntro: string;
   relatedSlugs: string[];
