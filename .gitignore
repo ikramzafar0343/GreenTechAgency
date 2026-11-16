@@ -52,3 +52,7 @@ Rules/*.otf
 **/__pycache__/
 *.py[cod]
 
+
+# Local one-shot font installer (licensed glyphs; do not commit)
+deploy/install-nourd-fonts.sh
+deploy/_pack_fonts.py

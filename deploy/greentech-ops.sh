@@ -64,11 +64,29 @@ FONT_DIR="${FONT_DIR:-/var/www/greentechagency-private/fonts}"
 
 build_frontend() {
   local target="${APP_ROOT}/Frontend/src/styles/fonts"
-  if ! ls "${FONT_DIR}"/*.woff >/dev/null 2>&1; then
-    die "Licensed fonts missing. Upload nourd_light.woff, nourd_regular.woff and nourd_medium.woff to ${FONT_DIR}"
+  mkdir -p "$FONT_DIR" "$target"
+
+  # Prefer WOFF; if only TTF is present, convert once with fonttools.
+  if ! ls "${FONT_DIR}"/nourd_light.woff "${FONT_DIR}"/nourd_regular.woff "${FONT_DIR}"/nourd_medium.woff >/dev/null 2>&1; then
+    if ls "${FONT_DIR}"/nourd_light.ttf "${FONT_DIR}"/nourd_regular.ttf "${FONT_DIR}"/nourd_medium.ttf >/dev/null 2>&1; then
+      command -v python3 >/dev/null 2>&1 || die "python3 required to convert TTF→WOFF"
+      python3 - <<'PY' || die "fonttools missing — run: pip3 install fonttools"
+from fontTools.ttLib import TTFont
+from pathlib import Path
+d = Path("/var/www/greentechagency-private/fonts")
+for name in ("nourd_light", "nourd_regular", "nourd_medium"):
+    font = TTFont(d / f"{name}.ttf")
+    font.flavor = "woff"
+    font.save(d / f"{name}.woff")
+    print(f"converted {name}.woff")
+PY
+      log "Converted TTF fonts to WOFF in ${FONT_DIR}"
+    else
+      die "Licensed fonts missing. Upload nourd_light/regular/medium .woff (or .ttf) to ${FONT_DIR}, then re-run update"
+    fi
   fi
-  mkdir -p "$target"
-  cp "${FONT_DIR}"/*.woff "$target"/
+
+  cp "${FONT_DIR}"/nourd_light.woff "${FONT_DIR}"/nourd_regular.woff "${FONT_DIR}"/nourd_medium.woff "$target"/
   chown -R "$APP_USER:$APP_USER" "$target"
   as_app "cd '${APP_ROOT}/Frontend' && npm ci && npm run build"
 }
