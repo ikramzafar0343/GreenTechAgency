@@ -153,6 +153,9 @@ clone_or_update() {
 }
 
 write_env() {
+  # chown below needs the system user; create it before any ownership changes.
+  ensure_app_user
+
   local pass_file="${APP_ROOT}/.db_password"
   local DB_PASS
   DB_PASS="$(cat "$pass_file")"
