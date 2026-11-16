@@ -285,6 +285,10 @@ cmd_deploy() {
 cmd_update() {
   need_root
   clone_or_update
+  # Helpers were sourced before the pull, so restart once with the new code.
+  if [[ -z "${GREENTECH_REEXECED:-}" ]]; then
+    GREENTECH_REEXECED=1 exec bash "${APP_ROOT}/deploy/hostinger-greentech.sh" update
+  fi
   write_env
   build_apps
   start_pm2
