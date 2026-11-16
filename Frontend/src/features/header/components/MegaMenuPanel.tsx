@@ -54,11 +54,26 @@ export function MegaMenuPanel({
       setPanelTop(Math.round(rect.bottom + 20));
     };
     update();
-    window.addEventListener("resize", update);
-    window.addEventListener("scroll", update, { passive: true });
+    if (!isShown) {
+      // The panel is mounted on every page; only follow the header while it is
+      // open, so a closed menu costs nothing per scroll event.
+      return;
+    }
+    let frame = 0;
+    const onScroll = () => {
+      if (!frame) {
+        frame = window.requestAnimationFrame(() => {
+          frame = 0;
+          update();
+        });
+      }
+    };
+    window.addEventListener("resize", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
-      window.removeEventListener("resize", update);
-      window.removeEventListener("scroll", update);
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("resize", onScroll);
+      window.removeEventListener("scroll", onScroll);
     };
   }, [headerElement, isShown]);
 

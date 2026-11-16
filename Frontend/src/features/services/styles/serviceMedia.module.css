@@ -96,9 +96,9 @@
   margin: 0;
   padding: 0.85rem 1rem 0.9rem;
   border-radius: 0.5rem;
-  background: color-mix(in srgb, #0f2430 78%, transparent);
+  /* Opaque tint rather than a backdrop blur; see impactCards.part.css. */
+  background: color-mix(in srgb, #0f2430 93%, transparent);
   border: 1px solid color-mix(in srgb, var(--brand-cyan) 28%, transparent);
-  backdrop-filter: blur(6px);
   pointer-events: none;
 }
 

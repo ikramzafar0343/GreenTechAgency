@@ -113,9 +113,10 @@
   box-sizing: border-box;
   padding: 0.85rem 1rem 0.95rem;
   border-radius: 6px;
-  background: color-mix(in srgb, #1a3a4c 78%, transparent);
+  /* Opaque tint rather than a backdrop blur: one blur per card re-samples the
+     artwork behind it on every scroll frame. */
+  background: color-mix(in srgb, #1a3a4c 93%, transparent);
   border: 1px solid color-mix(in srgb, #a8f4f8 22%, transparent);
-  backdrop-filter: blur(6px);
   pointer-events: none;
 }
 

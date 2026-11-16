@@ -182,10 +182,11 @@
   height: 44px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 9999px;
-  background: rgba(12, 43, 71, 0.55);
+  /* Opaque tint rather than a backdrop blur: this sits over playing video, so the
+     blur would be re-sampled on every video frame as well as every scroll frame. */
+  background: rgba(12, 43, 71, 0.82);
   color: #fff;
   cursor: pointer;
-  backdrop-filter: blur(6px);
   pointer-events: auto;
 }
 .playback:focus-visible {

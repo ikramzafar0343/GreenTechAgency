@@ -40,41 +40,35 @@ class Canvas:
 <linearGradient id="{u}glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".10"/><stop offset="1" stop-color="#ffffff" stop-opacity=".03"/></linearGradient>
 <linearGradient id="{u}edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{a}" stop-opacity=".75"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".12"/><stop offset="1" stop-color="{a2}" stop-opacity=".5"/></linearGradient>
 <pattern id="{u}grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="{LINE}" stroke-width="1" opacity=".55"/></pattern>
-<filter id="{u}soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
-<filter id="{u}shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".45"/></filter>
 </defs>"""
 
     def style(self):
-        # These files are shown through <img>, where no outside script can start the
-        # motion, so every class drives itself: build in, hold for most of the cycle,
-        # clear out, repeat. The `--i` stagger turns each cycle into a wave.
+        # The art is shown through <img>, where no outside script can start the motion,
+        # so each class drives itself: the browser runs these when the image first
+        # becomes visible. They play once and finish — a permanently looping image has
+        # to be re-rastered on every frame, which is what makes a page stutter while
+        # it scrolls. `backwards` holds the start pose through the stagger delay, and
+        # every animation lands on the element's own base style, so if it never runs
+        # (reduced motion, old renderer) the finished scene is what shows.
         # Selectors are scoped to the art root so inlined copies cannot style the page.
-        # Reduced-motion users get the finished art because all rules live in the query.
         return """<style>
+svg[data-art] .draw{stroke-dasharray:1}
+svg[data-art] .area{fill-opacity:.12}
 @media (prefers-reduced-motion: no-preference){
-svg[data-art] .tw{transform-box:fill-box;transform-origin:left center;animation:tw 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.055s)}
-svg[data-art] .draw{stroke-dasharray:1;animation:draw 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.06s)}
-svg[data-art] .area{animation:area 12s ease infinite}
-svg[data-art] .rise{transform-box:fill-box;transform-origin:center bottom;animation:rise 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.07s)}
-svg[data-art] .ring-draw{animation:ringDraw 12s cubic-bezier(.22,1,.36,1) infinite}
-svg[data-art] .st{animation:st 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.07s)}
-svg[data-art] .pop{transform-box:fill-box;transform-origin:center;animation:pop 12s cubic-bezier(.22,1,.36,1) infinite}
-svg[data-art] .fl{animation:fl 7s ease-in-out infinite}
-svg[data-art] .fl2{animation:fl 9s ease-in-out infinite}
-svg[data-art] .pu{animation:pu 4s ease-in-out infinite}
-svg[data-art] .da{stroke-dasharray:10 14;animation:da 6s linear infinite}
-svg[data-art] .sp{transform-box:fill-box;transform-origin:center;animation:sp 24s linear infinite}
-@keyframes tw{0%{transform:scaleX(0)}5%,93%{transform:scaleX(1)}100%{transform:scaleX(0)}}
-@keyframes draw{0%{stroke-dashoffset:1}11%,92%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
-@keyframes area{0%,5%{fill-opacity:0}13%,92%{fill-opacity:.12}100%{fill-opacity:0}}
-@keyframes rise{0%{transform:scaleY(0)}7%,93%{transform:scaleY(1)}100%{transform:scaleY(0)}}
-@keyframes ringDraw{0%{stroke-dashoffset:1}10%,92%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
-@keyframes st{0%{opacity:0;transform:translateY(14px)}5%,93%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-10px)}}
-@keyframes pop{0%,7%{transform:scale(0);opacity:0}13%,92%{transform:scale(1);opacity:1}100%{transform:scale(0);opacity:0}}
-@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@keyframes pu{0%,100%{opacity:.35}50%{opacity:1}}
-@keyframes da{to{stroke-dashoffset:-240}}
-@keyframes sp{to{transform:rotate(360deg)}}}
+svg[data-art] .tw{transform-box:fill-box;transform-origin:left center;animation:tw .4s cubic-bezier(.22,1,.36,1) backwards;animation-delay:calc(var(--i,0)*.03s)}
+svg[data-art] .draw{animation:draw 1s cubic-bezier(.22,1,.36,1) .1s backwards}
+svg[data-art] .area{animation:area .6s ease .45s backwards}
+svg[data-art] .rise{transform-box:fill-box;transform-origin:center bottom;animation:rise .55s cubic-bezier(.22,1,.36,1) backwards;animation-delay:calc(.15s + var(--i,0)*.05s)}
+svg[data-art] .ring-draw{animation:ringDraw .9s cubic-bezier(.22,1,.36,1) .2s backwards}
+svg[data-art] .st{animation:st .5s cubic-bezier(.22,1,.36,1) backwards;animation-delay:calc(var(--i,0)*.045s)}
+svg[data-art] .pop{transform-box:fill-box;transform-origin:center;animation:pop .4s cubic-bezier(.22,1,.36,1) .75s backwards}
+@keyframes tw{from{transform:scaleX(0)}}
+@keyframes draw{from{stroke-dashoffset:1}}
+@keyframes area{from{fill-opacity:0}}
+@keyframes rise{from{transform:scaleY(0)}}
+@keyframes ringDraw{from{stroke-dashoffset:1}}
+@keyframes st{from{opacity:0;transform:translateY(14px)}}
+@keyframes pop{from{transform:scale(0);opacity:0}}}
 </style>"""
 
     def background(self):
@@ -98,9 +92,14 @@ svg[data-art] .sp{transform-box:fill-box;transform-origin:center;animation:sp 24
 
 
 def panel(c, x, y, w, h, r=28, cls=""):
+    # Stacked translucent rects instead of a blur filter: these scenes animate on a
+    # loop, and re-running a Gaussian drop shadow every frame is the single most
+    # expensive thing a browser can do while the page is also scrolling.
     u = c.uid
     k = f' class="{cls}"' if cls else ""
-    return (f'<g{k}><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{INK}" opacity=".92" filter="url(#{u}shadow)"/>'
+    return (f'<g{k}><rect x="{x + 12}" y="{y + 26}" width="{w - 24}" height="{h}" rx="{r}" fill="#01070d" opacity=".3"/>'
+            f'<rect x="{x + 5}" y="{y + 14}" width="{w - 10}" height="{h}" rx="{r}" fill="#01070d" opacity=".3"/>'
+            f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{INK}" opacity=".92"/>'
             f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="url(#{u}glass)" stroke="url(#{u}edge)" stroke-width="2"/></g>')
 
 

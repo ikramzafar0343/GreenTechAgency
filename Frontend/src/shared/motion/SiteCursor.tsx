@@ -55,11 +55,13 @@ export function SiteCursor() {
     };
   }, []);
 
+  // No blend mode: blending a fixed overlay forces the page underneath it to be
+  // re-composited on every scroll frame.
   return (
     <div
       ref={ringRef}
       aria-hidden="true"
-      className="pointer-events-none fixed top-0 left-0 z-[9999] -mt-4 -ml-4 flex size-8 items-center justify-center rounded-full border border-[var(--brand-cyan,#58e2ec)] opacity-0 mix-blend-difference"
+      className="pointer-events-none fixed top-0 left-0 z-[9999] -mt-4 -ml-4 flex size-8 items-center justify-center rounded-full border border-[var(--brand-cyan,#58e2ec)] opacity-0 shadow-[0_0_0_1px_rgba(0,0,0,0.35)] will-change-transform"
     >
       <span ref={labelRef} className="text-[0.32rem] font-semibold tracking-[0.12em] text-white uppercase" />
     </div>

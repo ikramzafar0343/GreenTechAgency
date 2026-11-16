@@ -102,30 +102,36 @@ export function useBrandMarquee(
     let inView = true;
 
     const applyTransforms = () => {
+      if (pausedRef.current) {
+        return;
+      }
       const viewportHeight = window.innerHeight;
       const viewportWidth = window.innerWidth;
 
-      for (const row of rowsRef.current) {
+      // Read every rect before writing any transform: interleaving the two forces
+      // a synchronous layout per row, on every frame.
+      const progress = rowsRef.current.map((row) => {
         const rect = row.row.getBoundingClientRect();
-        const p = Math.min(
+        return Math.min(
           1,
           Math.max(
             0,
             (viewportHeight - rect.top) / (viewportHeight + rect.height),
           ),
         );
+      });
 
+      rowsRef.current.forEach((row, index) => {
+        const p = progress[index] ?? 0;
         const trackX = -row.groupWidth + row.phase * row.groupWidth;
         const scrollX =
           row.baseDirection === 1
             ? (-0.1 + 0.2 * p) * viewportWidth
             : (0.1 - 0.2 * p) * viewportWidth;
 
-        if (!pausedRef.current) {
-          row.track.style.transform = `translate3d(${trackX}px, 0, 0)`;
-          row.scrollLayer.style.transform = `translate3d(${scrollX}px, 0, 0)`;
-        }
-      }
+        row.track.style.transform = `translate3d(${trackX}px, 0, 0)`;
+        row.scrollLayer.style.transform = `translate3d(${scrollX}px, 0, 0)`;
+      });
     };
 
     const tick = (now: number) => {
@@ -149,6 +155,8 @@ export function useBrandMarquee(
       frame = window.requestAnimationFrame(tick);
     };
 
+    // The rAF loop below already repaints every frame, so the scroll handler only
+    // records direction. Measuring here would add a layout to each scroll event.
     const onScroll = () => {
       const current = window.scrollY;
       const delta = current - lastScrollY.current;
@@ -156,9 +164,6 @@ export function useBrandMarquee(
         scrollDirection.current = delta > 0 ? 1 : -1;
       }
       lastScrollY.current = current;
-      if (!pausedRef.current) {
-        applyTransforms();
-      }
     };
 
     const onResize = () => {

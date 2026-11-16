@@ -18,13 +18,18 @@ python3 tools/media-art/build_media.py .
 SVGs ship CSS-only motion and respect `prefers-reduced-motion`.
 
 The art is served through `<img>`, where no outside script can reach it, so the
-motion drives itself: every class runs a 12s loop that builds the element in,
-holds it for most of the cycle, clears it out and repeats. The `--i` stagger
-turns each cycle into a wave. Rules are scoped to `svg[data-art]` so a copy
-inlined into a page cannot style the page around it.
+motion drives itself: the browser plays these when the image first becomes
+visible. Each animation runs **once** and settles, with `--i` staggering it into
+a wave. It must stay one-shot — an image that animates forever is re-rastered on
+every frame, which measurably stutters the page while it scrolls. For the same
+reason the panels draw their shadow as stacked translucent rects rather than a
+Gaussian drop-shadow filter.
 
-Nothing is hidden by default: if the animation never runs (reduced motion, an
-old renderer), the illustration still shows its finished state.
+Rules are scoped to `svg[data-art]` so a copy inlined into a page cannot style
+the page around it. Nothing is hidden by default: `animation-fill-mode:
+backwards` holds the start pose only through the delay, and every animation ends
+on the element's own base style, so if it never runs (reduced motion, an old
+renderer) the finished illustration is what shows.
 
 | Class | Role |
 |-------|------|
@@ -35,4 +40,6 @@ old renderer), the illustration still shows its finished state.
 | `ring-draw` | Progress ring reveal |
 | `st` | Soft stagger (opacity + lift) for chrome / cards |
 | `pop` | Endpoint / node pop after a draw |
-| `fl` / `fl2` / `pu` / `da` / `sp` | Ambient float / pulse / dash / spin |
+
+`fl`, `fl2`, `pu`, `da` and `sp` are still in the markup but carry no rules: they
+were ambient loops (float, pulse, dash, spin) and loops are what cost frames.
