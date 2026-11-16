@@ -89,7 +89,7 @@ export function AboutGroupPortrait({ content }: AboutGroupPortraitProps) {
               sizes="100vw"
               className={styles.media}
               style={{ objectPosition: content.focalPoint }}
-              priority
+              priority={false}
             />
           ) : null}
         </div>

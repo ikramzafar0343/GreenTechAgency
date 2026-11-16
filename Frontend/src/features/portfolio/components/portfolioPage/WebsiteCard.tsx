@@ -6,14 +6,9 @@ import { PlayOnViewSvg } from "@/shared/media/PlayOnViewSvg";
 type WebsiteCardProps = {
   project: WebsiteProject;
   reveal?: boolean;
-  priority?: boolean | undefined;
 };
 
-export function WebsiteCard({
-  project,
-  reveal = false,
-  priority = false,
-}: WebsiteCardProps) {
+export function WebsiteCard({ project, reveal = false }: WebsiteCardProps) {
   const caseStudyHref = `/portfolio/${project.id}`;
   const frame = (
     <div className={styles.websiteFrame}>
@@ -24,7 +19,6 @@ export function WebsiteCard({
         height={project.screenshotHeight}
         className={styles.websiteImage}
         sizes="(max-width: 550px) 100vw, (max-width: 850px) 50vw, 33vw"
-        priority={priority}
       />
     </div>
   );

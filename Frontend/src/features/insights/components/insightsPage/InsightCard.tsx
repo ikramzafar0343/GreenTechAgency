@@ -8,10 +8,9 @@ import styles from "@/features/insights/styles/insightsPage.module.css";
 
 type InsightCardProps = {
   article: InsightArticle;
-  priority?: boolean | undefined;
 };
 
-export function InsightCard({ article, priority = false }: InsightCardProps) {
+export function InsightCard({ article }: InsightCardProps) {
   const dateLabel = formatInsightCardDate(article.publishedAt);
   const readLabel =
     article.readTimeMinutes != null
@@ -36,7 +35,6 @@ export function InsightCard({ article, priority = false }: InsightCardProps) {
             height={1000}
             className={styles.image}
             sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-            priority={priority}
             unoptimized={isVectorCover || isInsightCmsMediaSrc(article.coverUrl)}
             style={
               isVectorCover

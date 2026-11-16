@@ -43,32 +43,27 @@ class Canvas:
 </defs>"""
 
     def style(self):
-        # The art is shown through <img>, where no outside script can start the motion,
-        # so each class drives itself: the browser runs these when the image first
-        # becomes visible. They play once and finish — a permanently looping image has
-        # to be re-rastered on every frame, which is what makes a page stutter while
-        # it scrolls. `backwards` holds the start pose through the stagger delay, and
-        # every animation lands on the element's own base style, so if it never runs
-        # (reduced motion, old renderer) the finished scene is what shows. Delays are
-        # capped so a dense scene still settles in about a second.
-        # Selectors are scoped to the art root so inlined copies cannot style the page.
+        # Runs through <img>: the clock starts the instant the image paints.
+        # `backwards` holds the hidden start pose only through a short stagger —
+        # long delays made cards look blank for a second, then suddenly animate.
+        # One-shot (not infinite) so scroll stays cheap. Scoped to svg[data-art].
         return """<style>
 svg[data-art] .draw{stroke-dasharray:1}
 svg[data-art] .area{fill-opacity:.12}
 @media (prefers-reduced-motion: no-preference){
-svg[data-art] .tw{transform-box:fill-box;transform-origin:left center;animation:tw .4s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*.03s),.6s)}
-svg[data-art] .draw{animation:draw 1s cubic-bezier(.22,1,.36,1) .1s backwards}
-svg[data-art] .area{animation:area .6s ease .45s backwards}
-svg[data-art] .rise{transform-box:fill-box;transform-origin:center bottom;animation:rise .55s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(.15s + var(--i,0)*.05s),.6s)}
-svg[data-art] .ring-draw{animation:ringDraw .9s cubic-bezier(.22,1,.36,1) .2s backwards}
-svg[data-art] .st{animation:st .5s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*.045s),.6s)}
-svg[data-art] .pop{transform-box:fill-box;transform-origin:center;animation:pop .4s cubic-bezier(.22,1,.36,1) .75s backwards}
+svg[data-art] .tw{transform-box:fill-box;transform-origin:left center;animation:tw .35s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*.02s),.18s)}
+svg[data-art] .draw{animation:draw .7s cubic-bezier(.22,1,.36,1) backwards}
+svg[data-art] .area{animation:area .45s ease .15s backwards}
+svg[data-art] .rise{transform-box:fill-box;transform-origin:center bottom;animation:rise .4s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*.03s),.18s)}
+svg[data-art] .ring-draw{animation:ringDraw .65s cubic-bezier(.22,1,.36,1) .05s backwards}
+svg[data-art] .st{animation:st .35s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*.025s),.18s)}
+svg[data-art] .pop{transform-box:fill-box;transform-origin:center;animation:pop .3s cubic-bezier(.22,1,.36,1) .2s backwards}
 @keyframes tw{from{transform:scaleX(0)}}
 @keyframes draw{from{stroke-dashoffset:1}}
 @keyframes area{from{fill-opacity:0}}
 @keyframes rise{from{transform:scaleY(0)}}
 @keyframes ringDraw{from{stroke-dashoffset:1}}
-@keyframes st{from{opacity:0;transform:translateY(14px)}}
+@keyframes st{from{opacity:0;transform:translateY(10px)}}
 @keyframes pop{from{transform:scale(0);opacity:0}}}
 </style>"""
 

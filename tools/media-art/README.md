@@ -18,18 +18,15 @@ python3 tools/media-art/build_media.py .
 SVGs ship CSS-only motion and respect `prefers-reduced-motion`.
 
 The art is served through `<img>`, where no outside script can reach it, so the
-motion drives itself: the browser plays these when the image first becomes
-visible. Each animation runs **once** and settles, with `--i` staggering it into
-a wave. It must stay one-shot — an image that animates forever is re-rastered on
-every frame, which measurably stutters the page while it scrolls. For the same
-reason the panels draw their shadow as stacked translucent rects rather than a
-Gaussian drop-shadow filter.
+motion drives itself the instant the image paints. Each animation runs **once**
+and settles; stagger is capped under ~0.2s so cards do not sit blank before the
+entrance. It must stay one-shot — a forever-looping image is re-rastered every
+frame and stutters scroll. Panels use stacked translucent rects instead of a
+Gaussian drop-shadow filter for the same reason.
 
-Rules are scoped to `svg[data-art]` so a copy inlined into a page cannot style
-the page around it. Nothing is hidden by default: `animation-fill-mode:
-backwards` holds the start pose only through the delay, and every animation ends
-on the element's own base style, so if it never runs (reduced motion, an old
-renderer) the finished illustration is what shows.
+Rules are scoped to `svg[data-art]`. `animation-fill-mode: backwards` holds the
+start pose only through that short delay; every animation ends on the element's
+own base style, so reduced-motion / old renderers still show the finished art.
 
 | Class | Role |
 |-------|------|
