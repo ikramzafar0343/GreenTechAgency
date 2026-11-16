@@ -7,6 +7,7 @@ import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo/jsonLd";
 import { JsonLdScript } from "@/lib/seo/JsonLdScript";
 import { absoluteUrl } from "@/lib/seo/siteUrl";
 import { redirectOrNotFound } from "@/server/backend/redirectOrNotFound";
+import { isVectorAsset } from "@/shared/media/isVectorAsset";
 
 export const dynamic = "force-dynamic";
 
@@ -85,7 +86,11 @@ export default async function PortfolioCaseStudyPage({
         </p>
       ) : null}
       {project.coverUrl ? (
-        <div className="relative mt-10 aspect-[16/10] w-full overflow-hidden rounded-lg bg-white/5">
+        <div
+          className={`relative mt-10 w-full overflow-hidden rounded-lg bg-white/5 ${
+            isVectorAsset(project.coverUrl) ? "aspect-square" : "aspect-[16/10]"
+          }`}
+        >
           <Image
             src={project.coverUrl}
             alt={project.coverAlt}

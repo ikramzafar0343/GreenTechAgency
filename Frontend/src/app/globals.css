@@ -35,6 +35,17 @@ body {
   color: var(--foreground);
 }
 
+/*
+ * Generated vector art is a composed scene, so cropping it loses whole widgets.
+ * Beats the `object-fit: cover` in the surface stylesheets on specificity.
+ */
+img[src$=".svg"],
+img[src*=".svg?"],
+img[src*=".svg&"] {
+  object-fit: contain;
+  object-position: center;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

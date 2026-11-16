@@ -138,7 +138,8 @@
 
 .media {
   position: relative;
-  aspect-ratio: 0.9;
+  /* Matches the 1600x1000 article illustrations so they fill without cropping. */
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   background: color-mix(in srgb, var(--ip-ink) 8%, var(--ip-surface));
 }

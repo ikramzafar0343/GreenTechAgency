@@ -70,7 +70,7 @@
 .mediaFrame {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   background: color-mix(in srgb, var(--brand-navy-panel) 10%, #ffffff);
   border-radius: 4px;

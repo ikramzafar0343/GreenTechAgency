@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { formatInsightCardDate } from "@/features/insights/lib/formatInsightCardDate";
 import { isInsightCmsMediaSrc } from "@/features/insights/lib/normalizeInsightCoverUrl";
 import type { InsightArticle } from "@/features/insights/model/types";
+import { isVectorAsset } from "@/shared/media/isVectorAsset";
 import styles from "@/features/insights/styles/insightsPage.module.css";
 
 type InsightCardProps = {
@@ -15,6 +16,8 @@ export function InsightCard({ article }: InsightCardProps) {
     article.readTimeMinutes != null
       ? `${article.readTimeMinutes} min read`
       : null;
+  // Focal cropping only applies to photos; vector covers stay centred and whole.
+  const isVectorCover = isVectorAsset(article.coverUrl);
 
   return (
     <Link
@@ -28,14 +31,18 @@ export function InsightCard({ article }: InsightCardProps) {
           <Image
             src={article.coverUrl}
             alt={article.coverAlt}
-            width={822}
-            height={914}
+            width={1600}
+            height={1000}
             className={styles.image}
             sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-            unoptimized={isInsightCmsMediaSrc(article.coverUrl)}
-            style={{
-              objectPosition: `${article.focalX * 100}% ${article.focalY * 100}%`,
-            }}
+            unoptimized={isVectorCover || isInsightCmsMediaSrc(article.coverUrl)}
+            style={
+              isVectorCover
+                ? undefined
+                : {
+                    objectPosition: `${article.focalX * 100}% ${article.focalY * 100}%`,
+                  }
+            }
           />
         ) : null}
         {readLabel || dateLabel ? (

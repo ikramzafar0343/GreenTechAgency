@@ -166,8 +166,9 @@ export function PlayOnViewSvg({
         src.startsWith("http://") ||
         src.startsWith("https://"));
 
+    // Focal positioning is for photos; a cropped or offset vector scene loses widgets.
     const fitStyle: CSSProperties = isSvgSrc(src)
-      ? { objectFit: "contain", objectPosition: "center", ...style }
+      ? { ...style, objectFit: "contain", objectPosition: "center" }
       : { ...style };
 
     if (fill) {
