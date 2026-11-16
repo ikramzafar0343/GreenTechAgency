@@ -17,9 +17,11 @@ export function InsightsGallery({ articles }: InsightsGalleryProps) {
 
   return (
     <ul className={styles.gallery}>
-      {articles.map((article) => (
+      {articles.map((article, index) => (
         <li key={article.id} className={styles.cardItem}>
-          <InsightCard article={article} />
+          {/* The top row is on screen at load; lazy-loading it makes the art
+              arrive, and animate, a second after the page looks finished. */}
+          <InsightCard article={article} priority={index < 3} />
         </li>
       ))}
     </ul>

@@ -49,18 +49,19 @@ class Canvas:
         # to be re-rastered on every frame, which is what makes a page stutter while
         # it scrolls. `backwards` holds the start pose through the stagger delay, and
         # every animation lands on the element's own base style, so if it never runs
-        # (reduced motion, old renderer) the finished scene is what shows.
+        # (reduced motion, old renderer) the finished scene is what shows. Delays are
+        # capped so a dense scene still settles in about a second.
         # Selectors are scoped to the art root so inlined copies cannot style the page.
         return """<style>
 svg[data-art] .draw{stroke-dasharray:1}
 svg[data-art] .area{fill-opacity:.12}
 @media (prefers-reduced-motion: no-preference){
-svg[data-art] .tw{transform-box:fill-box;transform-origin:left center;animation:tw .4s cubic-bezier(.22,1,.36,1) backwards;animation-delay:calc(var(--i,0)*.03s)}
+svg[data-art] .tw{transform-box:fill-box;transform-origin:left center;animation:tw .4s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*.03s),.6s)}
 svg[data-art] .draw{animation:draw 1s cubic-bezier(.22,1,.36,1) .1s backwards}
 svg[data-art] .area{animation:area .6s ease .45s backwards}
-svg[data-art] .rise{transform-box:fill-box;transform-origin:center bottom;animation:rise .55s cubic-bezier(.22,1,.36,1) backwards;animation-delay:calc(.15s + var(--i,0)*.05s)}
+svg[data-art] .rise{transform-box:fill-box;transform-origin:center bottom;animation:rise .55s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(.15s + var(--i,0)*.05s),.6s)}
 svg[data-art] .ring-draw{animation:ringDraw .9s cubic-bezier(.22,1,.36,1) .2s backwards}
-svg[data-art] .st{animation:st .5s cubic-bezier(.22,1,.36,1) backwards;animation-delay:calc(var(--i,0)*.045s)}
+svg[data-art] .st{animation:st .5s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*.045s),.6s)}
 svg[data-art] .pop{transform-box:fill-box;transform-origin:center;animation:pop .4s cubic-bezier(.22,1,.36,1) .75s backwards}
 @keyframes tw{from{transform:scaleX(0)}}
 @keyframes draw{from{stroke-dashoffset:1}}

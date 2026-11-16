@@ -44,6 +44,9 @@ export function WebsiteGallery({ items }: WebsiteGalleryProps) {
             key={project.id}
             project={project}
             reveal={index >= INITIAL_COUNT}
+            // The first row is on screen at load, so it should not wait for a
+            // lazy fetch before it appears and plays its entrance.
+            priority={index < 3}
           />
         ))}
       </div>
