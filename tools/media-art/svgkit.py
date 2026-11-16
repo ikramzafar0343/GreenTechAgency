@@ -45,36 +45,32 @@ class Canvas:
 </defs>"""
 
     def style(self):
-        # Entrance classes stay at the pre-play pose until `svg.play` is set by PlayOnViewSvg.
-        # Reduced-motion users see the finished art (no entrance rules apply).
+        # These files are shown through <img>, where no outside script can start the
+        # motion, so every class drives itself: build in, hold for most of the cycle,
+        # clear out, repeat. The `--i` stagger turns each cycle into a wave.
+        # Selectors are scoped to the art root so inlined copies cannot style the page.
+        # Reduced-motion users get the finished art because all rules live in the query.
         return """<style>
 @media (prefers-reduced-motion: no-preference){
-.tw{transform-box:fill-box;transform-origin:left center;transform:scaleX(0)}
-.draw{stroke-dasharray:1;stroke-dashoffset:1}
-.area{fill-opacity:0}
-.rise{transform-box:fill-box;transform-origin:center bottom;transform:scaleY(0)}
-.ring-draw{stroke-dashoffset:1}
-.st{opacity:0;transform:translateY(14px)}
-.pop{transform-box:fill-box;transform-origin:center;transform:scale(0);opacity:0}
-svg.play .tw{animation:tw .42s cubic-bezier(.22,1,.36,1) forwards;animation-delay:calc(var(--i,0)*.055s)}
-svg.play .draw{animation:draw 1.15s cubic-bezier(.22,1,.36,1) .15s forwards}
-svg.play .area{animation:area .7s ease .55s forwards}
-svg.play .rise{animation:rise .55s cubic-bezier(.22,1,.36,1) forwards;animation-delay:calc(.2s + var(--i,0)*.07s)}
-svg.play .ring-draw{animation:ringDraw 1s cubic-bezier(.22,1,.36,1) .25s forwards}
-svg.play .st{animation:st .5s cubic-bezier(.22,1,.36,1) forwards;animation-delay:calc(var(--i,0)*.07s)}
-svg.play .pop{animation:pop .4s cubic-bezier(.22,1,.36,1) 1.1s forwards}
-svg.play .fl{animation:fl 7s ease-in-out 1.3s infinite}
-svg.play .fl2{animation:fl 9s ease-in-out 1.1s infinite}
-svg.play .pu{animation:pu 4s ease-in-out 1.2s infinite}
-svg.play .da{stroke-dasharray:10 14;animation:da 6s linear 1.2s infinite}
-svg.play .sp{transform-box:fill-box;transform-origin:center;animation:sp 24s linear 1.2s infinite}
-@keyframes tw{to{transform:scaleX(1)}}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes area{to{fill-opacity:.12}}
-@keyframes rise{to{transform:scaleY(1)}}
-@keyframes ringDraw{to{stroke-dashoffset:0}}
-@keyframes st{to{opacity:1;transform:translateY(0)}}
-@keyframes pop{to{transform:scale(1);opacity:1}}
+svg[data-art] .tw{transform-box:fill-box;transform-origin:left center;animation:tw 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.055s)}
+svg[data-art] .draw{stroke-dasharray:1;animation:draw 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.06s)}
+svg[data-art] .area{animation:area 12s ease infinite}
+svg[data-art] .rise{transform-box:fill-box;transform-origin:center bottom;animation:rise 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.07s)}
+svg[data-art] .ring-draw{animation:ringDraw 12s cubic-bezier(.22,1,.36,1) infinite}
+svg[data-art] .st{animation:st 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.07s)}
+svg[data-art] .pop{transform-box:fill-box;transform-origin:center;animation:pop 12s cubic-bezier(.22,1,.36,1) infinite}
+svg[data-art] .fl{animation:fl 7s ease-in-out infinite}
+svg[data-art] .fl2{animation:fl 9s ease-in-out infinite}
+svg[data-art] .pu{animation:pu 4s ease-in-out infinite}
+svg[data-art] .da{stroke-dasharray:10 14;animation:da 6s linear infinite}
+svg[data-art] .sp{transform-box:fill-box;transform-origin:center;animation:sp 24s linear infinite}
+@keyframes tw{0%{transform:scaleX(0)}5%,93%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+@keyframes draw{0%{stroke-dashoffset:1}11%,92%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+@keyframes area{0%,5%{fill-opacity:0}13%,92%{fill-opacity:.12}100%{fill-opacity:0}}
+@keyframes rise{0%{transform:scaleY(0)}7%,93%{transform:scaleY(1)}100%{transform:scaleY(0)}}
+@keyframes ringDraw{0%{stroke-dashoffset:1}10%,92%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+@keyframes st{0%{opacity:0;transform:translateY(14px)}5%,93%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-10px)}}
+@keyframes pop{0%,7%{transform:scale(0);opacity:0}13%,92%{transform:scale(1);opacity:1}100%{transform:scale(0);opacity:0}}
 @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @keyframes pu{0%,100%{opacity:.35}50%{opacity:1}}
 @keyframes da{to{stroke-dashoffset:-240}}
@@ -96,7 +92,7 @@ svg.play .sp{transform-box:fill-box;transform-origin:center;animation:sp 24s lin
         title = title.replace("&", "&amp;").replace("<", "&lt;").replace('"', "&quot;")
         body = "\n".join(self.parts)
         return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {self.w} {self.h}" '
-                f'width="{self.w}" height="{self.h}" overflow="visible" '
+                f'width="{self.w}" height="{self.h}" overflow="visible" data-art="1" '
                 f'role="img" aria-label="{title}">'
                 f"<title>{title}</title>{self.defs()}{self.style()}{body}</svg>\n")
 

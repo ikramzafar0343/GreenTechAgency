@@ -17,8 +17,14 @@ python3 tools/media-art/build_media.py .
 
 SVGs ship CSS-only motion and respect `prefers-reduced-motion`.
 
-Entrance animations stay paused until the root `<svg>` has class `play`
-(added by `Frontend/src/shared/media/PlayOnViewSvg.tsx` when the art scrolls into view).
+The art is served through `<img>`, where no outside script can reach it, so the
+motion drives itself: every class runs a 12s loop that builds the element in,
+holds it for most of the cycle, clears it out and repeats. The `--i` stagger
+turns each cycle into a wave. Rules are scoped to `svg[data-art]` so a copy
+inlined into a page cannot style the page around it.
+
+Nothing is hidden by default: if the animation never runs (reduced motion, an
+old renderer), the illustration still shows its finished state.
 
 | Class | Role |
 |-------|------|
@@ -29,6 +35,4 @@ Entrance animations stay paused until the root `<svg>` has class `play`
 | `ring-draw` | Progress ring reveal |
 | `st` | Soft stagger (opacity + lift) for chrome / cards |
 | `pop` | Endpoint / node pop after a draw |
-| `fl` / `fl2` / `pu` / `da` / `sp` | Ambient float / pulse / dash / spin after entrance |
-
-Without `play` (and with reduced motion), illustrations render in their finished state.
+| `fl` / `fl2` / `pu` / `da` / `sp` | Ambient float / pulse / dash / spin |
