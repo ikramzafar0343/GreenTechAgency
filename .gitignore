@@ -47,3 +47,8 @@ Frontend/src/styles/fonts/*.otf
 Rules/*.ttf
 Rules/*.otf
 *.zip
+
+# Python
+**/__pycache__/
+*.py[cod]
+
