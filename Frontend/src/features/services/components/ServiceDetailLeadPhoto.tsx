@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef } from "react";
 import type { ServiceDetailImage } from "@/features/services/model/serviceDetailTypes";
 import styles from "@/features/services/styles/serviceDetailEditorial.module.css";
+import { PlayOnViewSvg } from "@/shared/media/PlayOnViewSvg";
 
 type Props = {
   image: ServiceDetailImage;
@@ -64,7 +64,7 @@ export function ServiceDetailLeadPhoto({ image }: Props) {
     <div className={`${styles.leadShell} ${styles.reveal}`}>
       <div ref={frameRef} className={styles.leadFrame} style={{ width: "82%" }}>
         <div ref={innerRef} className={styles.leadInner}>
-          <Image
+          <PlayOnViewSvg
             src={image.src}
             alt={image.alt}
             width={image.width}

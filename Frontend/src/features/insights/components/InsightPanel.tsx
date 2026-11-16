@@ -1,12 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import type { FocusEvent } from "react";
 import { formatInsightDate } from "@/features/insights/lib/formatInsightDate";
-import { isInsightCmsMediaSrc } from "@/features/insights/lib/normalizeInsightCoverUrl";
 import type { InsightArticle } from "@/features/insights/model/types";
 import styles from "@/features/insights/styles/insights.module.css";
+import { PlayOnViewSvg } from "@/shared/media/PlayOnViewSvg";
 
 type InsightPanelProps = {
   article: InsightArticle;
@@ -104,7 +103,7 @@ export function InsightPanel({
           <Link href={article.href} className={styles.mediaLink} tabIndex={isActive ? 0 : -1}>
             <div className={styles.mediaFrame}>
               {article.coverUrl ? (
-                <Image
+                <PlayOnViewSvg
                   src={article.coverUrl}
                   alt={article.coverAlt || article.title}
                   fill
@@ -114,7 +113,6 @@ export function InsightPanel({
                     objectPosition: `${article.focalX * 100}% ${article.focalY * 100}%`,
                   }}
                   priority={isActive && index === 0}
-                  unoptimized={isInsightCmsMediaSrc(article.coverUrl)}
                 />
               ) : (
                 <div className={styles.mediaFallback} aria-hidden="true" />

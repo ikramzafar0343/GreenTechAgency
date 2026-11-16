@@ -1,8 +1,8 @@
-import Image from "next/image";
 import { PublicFetchErrorPanel } from "@/components/site/PublicFetchErrorPanel";
 import { SectionIntro } from "@/components/site/SectionIntro";
 import { getPublicWhyChoose } from "@/features/why-choose-us/server/getPublicWhyChoose";
 import styles from "@/features/why-choose-us/styles/whyChoose.module.css";
+import { PlayOnViewSvg } from "@/shared/media/PlayOnViewSvg";
 
 export async function WhyChooseUsSection() {
   const result = await getPublicWhyChoose();
@@ -55,7 +55,7 @@ export async function WhyChooseUsSection() {
 
         <div className={styles.mediaDuo}>
           <figure className={styles.large}>
-            <Image
+            <PlayOnViewSvg
               src={largeImage.src}
               alt={largeImage.alt}
               fill
@@ -67,7 +67,7 @@ export async function WhyChooseUsSection() {
 
           <div className={styles.smallWrap}>
             <figure className={styles.small}>
-              <Image
+              <PlayOnViewSvg
                 src={smallImage.src}
                 alt={smallImage.alt}
                 fill

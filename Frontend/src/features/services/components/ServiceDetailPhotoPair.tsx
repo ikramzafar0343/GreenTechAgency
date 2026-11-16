@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, type RefObject } from "react";
 import type {
   ServiceDetailImage,
   ServiceDetailPhotoPair as Pair,
 } from "@/features/services/model/serviceDetailTypes";
 import styles from "@/features/services/styles/serviceDetailEditorial.module.css";
+import { PlayOnViewSvg } from "@/shared/media/PlayOnViewSvg";
 
 type Props = {
   pair: Pair;
@@ -24,22 +24,15 @@ function PairFrame({
   sizes: string;
   offset?: boolean;
 }) {
-  const unoptimized =
-    image.src.endsWith(".svg") ||
-    image.src.startsWith("/media/") ||
-    image.src.startsWith("http://") ||
-    image.src.startsWith("https://");
-
   return (
     <figure className={offset ? `${styles.pairFigure} ${styles.pairOffset}` : styles.pairFigure}>
       <div ref={motionRef} className={styles.pairMotion}>
-        <Image
+        <PlayOnViewSvg
           src={image.src}
           alt={image.alt}
           width={image.width}
           height={image.height}
           sizes={sizes}
-          unoptimized={unoptimized}
           className={styles.pairImage}
         />
         <div className={styles.pairTile} aria-hidden="true">

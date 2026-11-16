@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import styles from "@/features/services/styles/serviceMedia.module.css";
+import { PlayOnViewSvg } from "@/shared/media/PlayOnViewSvg";
 
 type ServiceMediaWipeProps = {
   src: string | null;
@@ -29,13 +29,6 @@ export function ServiceMediaWipe({
   const [loaded, setLoaded] = useState(!src);
   const shouldWipe = active && !reduceMotion && loaded;
   const wipeState = reduceMotion || !active ? "done" : shouldWipe ? "wiping" : "idle";
-  const unoptimized =
-    !src ||
-    src.endsWith(".svg") ||
-    src.startsWith("/media/") ||
-    src.startsWith("http://") ||
-    src.startsWith("https://");
-
   return (
     <div
       key={shouldWipe ? wipeKey : "parked"}
@@ -45,13 +38,12 @@ export function ServiceMediaWipe({
       <div className={styles.backing} aria-hidden="true" />
       <div className={styles.imageClip}>
         {src ? (
-          <Image
+          <PlayOnViewSvg
             src={src}
             alt={alt}
             fill
             sizes="(max-width: 767px) 100vw, 375px"
             className={styles.image}
-            unoptimized={unoptimized}
             onLoad={() => setLoaded(true)}
             onError={() => setLoaded(true)}
           />

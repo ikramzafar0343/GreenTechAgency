@@ -3,11 +3,11 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
 import { useRef } from "react";
 import { prefersReducedMotion } from "@/features/about/lib/prefersReducedMotion";
 import type { AboutGroupPortraitContent } from "@/features/about/model/aboutPageTypes";
 import styles from "@/features/about/styles/aboutPortrait.module.css";
+import { PlayOnViewSvg } from "@/shared/media/PlayOnViewSvg";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -68,12 +68,6 @@ export function AboutGroupPortrait({ content }: AboutGroupPortraitProps) {
   );
 
   const missing = content.assetStatus === "missing" || !content.src;
-  const unoptimized =
-    !!content.src &&
-    (content.src.endsWith(".svg") ||
-      content.src.startsWith("/media/") ||
-      content.src.startsWith("http://") ||
-      content.src.startsWith("https://"));
 
   return (
     <section
@@ -88,7 +82,7 @@ export function AboutGroupPortrait({ content }: AboutGroupPortraitProps) {
           {missing ? (
             <div className={styles.fallback} aria-hidden="true" />
           ) : content.src ? (
-            <Image
+            <PlayOnViewSvg
               src={content.src}
               alt={content.alt}
               fill
@@ -96,7 +90,6 @@ export function AboutGroupPortrait({ content }: AboutGroupPortraitProps) {
               className={styles.media}
               style={{ objectPosition: content.focalPoint }}
               priority={false}
-              unoptimized={unoptimized}
             />
           ) : null}
         </div>

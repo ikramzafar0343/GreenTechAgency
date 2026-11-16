@@ -159,7 +159,7 @@
 .proofHeading {
   margin: 0 0 1.5rem;
   max-width: 16ch;
-  color: var(--nav-muted);
+  color: #fff;
 }
 
 .logoGrid {
@@ -188,8 +188,9 @@
   max-width: 100%;
   max-height: 2.4rem;
   object-fit: contain;
-  filter: grayscale(1) brightness(1.35);
-  opacity: 0.85;
+  /* Force dark PNG marks to solid white on the navy mega-menu panel. */
+  filter: brightness(0) invert(1);
+  opacity: 1;
 }
 
 .bridge {
