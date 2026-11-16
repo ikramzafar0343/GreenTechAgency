@@ -9,10 +9,20 @@ import { service, subservice } from "../db/schema/services.js";
 import { faqItem, siteDocument, statMetric, testimonial } from "../db/schema/siteContent.js";
 import { closeAppPool } from "../db/pool.js";
 import { CONTENT_LOCALES, contentTranslation, type ContentEntityType, type ContentLocale } from "../db/schema/translations.js";
-import { TARGETS, FORCE, CONCURRENCY, collectStrings, applyTranslations, buildLocaleMap } from "./seed-content-translationsPart.js";
+import {
+  TARGETS as DEFAULT_TARGETS,
+  FORCE,
+  CONCURRENCY,
+  collectStrings,
+  applyTranslations,
+  buildLocaleMap,
+} from "./seed-content-translationsPart.js";
 
 loadEnv({ path: ".env.local" });
 loadEnv();
+
+/** Mutable seed locale list (DEFAULT_TARGETS, or SEED_LOCALES override). */
+let targets: ContentLocale[] = [...DEFAULT_TARGETS];
 
 function sampleTranslatableStrings(doc: unknown, limit = 8): string[] {
   const set = new Set<string>();
@@ -70,7 +80,7 @@ async function seedEntity(
   collectStrings(publishedDoc, null, strings);
   const list = [...strings];
 
-  for (const locale of TARGETS) {
+  for (const locale of targets) {
     if (await alreadyPublished(entityType, id, locale, publishedDoc)) {
       console.log(`skip ${entityType} ${label} ${locale}`);
       continue;
@@ -105,7 +115,7 @@ async function main() {
       .map((s) => s.trim())
       .filter(Boolean) ?? null;
   if (only?.length) {
-    TARGETS = only.filter(
+    targets = only.filter(
       (locale): locale is ContentLocale =>
         (CONTENT_LOCALES as readonly string[]).includes(locale) &&
         locale !== "en",
@@ -113,7 +123,7 @@ async function main() {
   }
 
   console.log(
-    `Seeding locales: ${TARGETS.join(", ")} (concurrency=${CONCURRENCY}, force=${FORCE})`,
+    `Seeding locales: ${targets.join(", ")} (concurrency=${CONCURRENCY}, force=${FORCE})`,
   );
   const db = getDb();
 

@@ -1,7 +1,7 @@
 import { CONTENT_LOCALES, type ContentLocale } from "../db/schema/translations.js";
 import { translateFromEnglish } from "../content/translateProvider.js";
 
-export let TARGETS = CONTENT_LOCALES.filter((l) => l !== "en") as ContentLocale[];
+export const TARGETS = CONTENT_LOCALES.filter((l) => l !== "en") as ContentLocale[];
 
 export const FORCE = process.env.SEED_FORCE === "1";
 
