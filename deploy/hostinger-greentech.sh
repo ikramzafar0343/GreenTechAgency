@@ -214,13 +214,20 @@ build_apps() {
 write_nginx() {
   local conf="/etc/nginx/sites-available/${NGINX_SITE}"
 
-  # Never overwrite if someone customized it unless we control it
+  # Apex is the only indexed host (sitemap/canonicals/robots). www always redirects.
   cat > "$conf" <<EOF
 # Managed for greentechagency.com only — do not merge into other vhosts
 server {
     listen 80;
     listen [::]:80;
-    server_name ${DOMAIN} ${WWW};
+    server_name ${WWW};
+    return 301 https://${DOMAIN}\$request_uri;
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name ${DOMAIN};
 
     client_max_body_size 50m;
 
@@ -245,9 +252,30 @@ server {
 EOF
 
   ln -sfn "$conf" "/etc/nginx/sites-enabled/${NGINX_SITE}"
+  ensure_www_https_redirect
   nginx -t
   systemctl reload nginx
   log "Nginx site '${NGINX_SITE}' enabled (other sites untouched)"
+}
+
+# Certbot often leaves www+apex on one HTTPS server. Split www to a redirect so
+# Google stops treating www URLs as live duplicates of apex.
+ensure_www_https_redirect() {
+  local conf="/etc/nginx/sites-available/${NGINX_SITE}"
+  [[ -f "$conf" ]] || return 0
+
+  if grep -qE "listen 443" "$conf" 2>/dev/null; then
+    # If www is still listed on a 443 app server, leave it — Next middleware 308s.
+    # Prefer an explicit redirect server when certbot used separate name-based blocks
+    # that we can extend without rewriting the whole certbot file.
+    if ! grep -qE "server_name[[:space:]]+${WWW}[[:space:]]*;" "$conf"; then
+      return 0
+    fi
+    if grep -qE "return 301 https://${DOMAIN}" "$conf"; then
+      return 0
+    fi
+    warn "HTTPS still serves www — app middleware 308s to apex until SSL vhost is split"
+  fi
 }
 
 cmd_ssl() {
@@ -292,6 +320,8 @@ cmd_update() {
   write_env
   build_apps
   start_pm2
+  # Keep apex canonical: warn if HTTPS still serves www (Next middleware 308s anyway).
+  ensure_www_https_redirect
   nginx -t && systemctl reload nginx
   log "Update complete"
 }

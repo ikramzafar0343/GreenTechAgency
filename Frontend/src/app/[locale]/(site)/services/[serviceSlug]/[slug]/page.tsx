@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SubserviceDetailPage } from "@/features/services/components/SubserviceDetailPage";
 import { getPublicSubserviceDetail } from "@/features/services/server/getPublicSubserviceDetail";
+import { absoluteUrl } from "@/lib/seo/siteUrl";
 import { redirectOrNotFound } from "@/server/backend/redirectOrNotFound";
 
 export const dynamic = "force-dynamic";
@@ -17,9 +18,16 @@ export async function generateMetadata({
   if (!detail) {
     return { title: "Service" };
   }
+  const path = `/services/${serviceSlug}/${slug}`;
   return {
     title: `${detail.title} | GreenTech Agency`,
     description: detail.summary,
+    alternates: { canonical: path },
+    openGraph: {
+      title: `${detail.title} | GreenTech Agency`,
+      description: detail.summary,
+      url: absoluteUrl(path),
+    },
   };
 }
 

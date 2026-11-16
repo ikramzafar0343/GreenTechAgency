@@ -13,9 +13,6 @@ export const metadata: Metadata = {
   },
   description:
     "GreenTech Agency designs and develops high-performance websites, digital products and SEO strategies that help ambitious businesses grow online.",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     locale: "en_US",
