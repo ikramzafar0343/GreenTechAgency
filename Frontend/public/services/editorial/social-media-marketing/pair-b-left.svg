@@ -6,23 +6,30 @@
 <linearGradient id="g39165edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7cf0b4" stop-opacity=".75"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".12"/><stop offset="1" stop-color="#1f8c6a" stop-opacity=".5"/></linearGradient>
 <pattern id="g39165grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#1d3b52" stroke-width="1" opacity=".55"/></pattern>
 </defs><style>
-svg[data-art] .draw{stroke-dasharray:1}
-svg[data-art] .area{fill-opacity:.12}
 @media (prefers-reduced-motion: no-preference){
-svg[data-art] .tw{transform-box:fill-box;transform-origin:left center;animation:tw .35s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*.02s),.18s)}
-svg[data-art] .draw{animation:draw .7s cubic-bezier(.22,1,.36,1) backwards}
-svg[data-art] .area{animation:area .45s ease .15s backwards}
-svg[data-art] .rise{transform-box:fill-box;transform-origin:center bottom;animation:rise .4s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*.03s),.18s)}
-svg[data-art] .ring-draw{animation:ringDraw .65s cubic-bezier(.22,1,.36,1) .05s backwards}
-svg[data-art] .st{animation:st .35s cubic-bezier(.22,1,.36,1) backwards;animation-delay:min(calc(var(--i,0)*.025s),.18s)}
-svg[data-art] .pop{transform-box:fill-box;transform-origin:center;animation:pop .3s cubic-bezier(.22,1,.36,1) .2s backwards}
-@keyframes tw{from{transform:scaleX(0)}}
-@keyframes draw{from{stroke-dashoffset:1}}
-@keyframes area{from{fill-opacity:0}}
-@keyframes rise{from{transform:scaleY(0)}}
-@keyframes ringDraw{from{stroke-dashoffset:1}}
-@keyframes st{from{opacity:0;transform:translateY(10px)}}
-@keyframes pop{from{transform:scale(0);opacity:0}}}
+svg[data-art] .tw{transform-box:fill-box;transform-origin:left center;animation:tw 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.055s)}
+svg[data-art] .draw{stroke-dasharray:1;animation:draw 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.06s)}
+svg[data-art] .area{animation:area 12s ease infinite}
+svg[data-art] .rise{transform-box:fill-box;transform-origin:center bottom;animation:rise 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.07s)}
+svg[data-art] .ring-draw{animation:ringDraw 12s cubic-bezier(.22,1,.36,1) infinite}
+svg[data-art] .st{animation:st 12s cubic-bezier(.22,1,.36,1) infinite;animation-delay:calc(var(--i,0)*-.07s)}
+svg[data-art] .pop{transform-box:fill-box;transform-origin:center;animation:pop 12s cubic-bezier(.22,1,.36,1) infinite}
+svg[data-art] .fl{animation:fl 7s ease-in-out infinite}
+svg[data-art] .fl2{animation:fl 9s ease-in-out infinite}
+svg[data-art] .pu{animation:pu 4s ease-in-out infinite}
+svg[data-art] .da{stroke-dasharray:10 14;animation:da 6s linear infinite}
+svg[data-art] .sp{transform-box:fill-box;transform-origin:center;animation:sp 24s linear infinite}
+@keyframes tw{0%{transform:scaleX(0)}5%,93%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+@keyframes draw{0%{stroke-dashoffset:1}11%,92%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+@keyframes area{0%,5%{fill-opacity:0}13%,92%{fill-opacity:.12}100%{fill-opacity:0}}
+@keyframes rise{0%{transform:scaleY(0)}7%,93%{transform:scaleY(1)}100%{transform:scaleY(0)}}
+@keyframes ringDraw{0%{stroke-dashoffset:1}10%,92%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+@keyframes st{0%{opacity:0;transform:translateY(14px)}5%,93%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-10px)}}
+@keyframes pop{0%,7%{transform:scale(0);opacity:0}13%,92%{transform:scale(1);opacity:1}100%{transform:scale(0);opacity:0}}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes pu{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes da{to{stroke-dashoffset:-240}}
+@keyframes sp{to{transform:rotate(360deg)}}}
 </style><rect width="1200" height="1800" fill="url(#g39165bg)"/>
 <rect width="1200" height="1800" fill="url(#g39165grid)"/>
 <rect width="1200" height="1800" fill="url(#g39165glow)"/>

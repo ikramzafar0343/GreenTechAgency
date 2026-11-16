@@ -18,25 +18,24 @@ python3 tools/media-art/build_media.py .
 SVGs ship CSS-only motion and respect `prefers-reduced-motion`.
 
 The art is served through `<img>`, where no outside script can reach it, so the
-motion drives itself the instant the image paints. Each animation runs **once**
-and settles; stagger is capped under ~0.2s so cards do not sit blank before the
-entrance. It must stay one-shot — a forever-looping image is re-rastered every
-frame and stutters scroll. Panels use stacked translucent rects instead of a
-Gaussian drop-shadow filter for the same reason.
+motion drives itself: every class runs a **12s infinite** build–hold–clear cycle
+(hold for most of the cycle), plus ambient float / pulse / dash / spin. Negative
+`--i` stagger puts elements mid-cycle on first paint so the scene is never blank.
 
-Rules are scoped to `svg[data-art]`. `animation-fill-mode: backwards` holds the
-start pose only through that short delay; every animation ends on the element's
-own base style, so reduced-motion / old renderers still show the finished art.
+Rules are scoped to `svg[data-art]`. Reduced-motion users get the finished art
+because all rules live inside the media query. Panels use stacked translucent
+rects instead of a Gaussian drop-shadow filter to keep loop cost lower.
 
 | Class | Role |
 |-------|------|
 | `tw` | Typewriter: bars scale in from the left (`--i` stagger) |
 | `draw` | Stroke draw via `pathLength="1"` + dashoffset |
-| `area` | Chart fill fade-in under a drawn line |
+| `area` | Chart fill fade under a drawn line |
 | `rise` | Bar charts grow from the baseline |
 | `ring-draw` | Progress ring reveal |
 | `st` | Soft stagger (opacity + lift) for chrome / cards |
 | `pop` | Endpoint / node pop after a draw |
-
-`fl`, `fl2`, `pu`, `da` and `sp` are still in the markup but carry no rules: they
-were ambient loops (float, pulse, dash, spin) and loops are what cost frames.
+| `fl` / `fl2` | Ambient float |
+| `pu` | Ambient pulse |
+| `da` | Ambient dash travel |
+| `sp` | Ambient spin |
